@@ -1,7 +1,7 @@
 {
-  "name": "way2web-ds",
+  "name": "my-blog",
   "version": "1.0.0",
-  "description": "Tooling DS",
+  "description": "My blog",
   "scripts": {
     "build-dev:webpack": "webpack",
     "watch:webpack": "webpack --watch",
