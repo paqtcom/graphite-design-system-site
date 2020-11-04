@@ -1,7 +1,7 @@
 {
-  "name": "my-blog",
-  "version": "1.0.0",
-  "description": "My blog",
+  "name": "way2web-design-system-site",
+  "version": "0.1.0",
+  "description": "Way2web design system",
   "scripts": {
     "build-dev:webpack": "webpack",
     "watch:webpack": "webpack --watch",
