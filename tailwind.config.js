@@ -32,10 +32,6 @@ module.exports = {
           900: '#314156',
         },
       },
-      // TODO: CMPAPP-197 - this one is added for the specific height of the project switcher. Can we think of another solution based on the relative position of the element?
-      height: {
-        72: '22rem',
-      },
     },
     fontFamily: {
       sans: ['Ubuntu', 'sans-serif'],
@@ -48,15 +44,9 @@ module.exports = {
     borderWidth: ['responsive', 'hover', 'focus'],
   },
   plugins: [],
-  purge: {
-    // Learn more on https://tailwindcss.com/docs/controlling-file-size/#removing-unused-css
-    enabled: process.env.NODE_ENV === 'production',
-    content: [
-      'components/**/*.vue',
-      'layouts/**/*.vue',
-      'pages/**/*.vue',
-      'plugins/**/*.js',
-      'nuxt.config.js',
-    ],
-  },
-}
+  purge:
+  [
+    './src/**/*.ejs',
+    './src/**/*.md',
+  ],
+};

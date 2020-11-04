@@ -1,8 +1,8 @@
 {
-  "site_name": "Starter",
-  "title": "Eleventy Starter Boilerplate",
-  "description": "Starter code for your 11ty blog Boilerplate",
-  "url": "https://example.com",
+  "site_name": "Way2web design system",
+  "title": "Way2web design system",
+  "description": "A design system made by Way2web",
+  "url": "https://www.way2web.nl",
   "locale": "en",
-  "author": "Anonymous"
+  "author": "Way2web"
 }
