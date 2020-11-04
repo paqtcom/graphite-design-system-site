@@ -3,6 +3,7 @@
 
 # Output directories
 /_site
+/public
 
 # Generated file
 /src/_includes/layouts/webpack.ejs
