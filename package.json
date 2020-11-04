@@ -59,5 +59,8 @@
     "*.json": [
       "prettier --write"
     ]
+  },
+  "dependencies": {
+    "@w2wds/core": "^0.2.3"
   }
 }
