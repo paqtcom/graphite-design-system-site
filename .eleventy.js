@@ -2,6 +2,7 @@ const htmlmin = require('html-minifier');
 const dateFns = require('date-fns');
 const lazyImagesPlugin = require('eleventy-plugin-lazyimages');
 const syntaxHighlight = require('@11ty/eleventy-plugin-syntaxhighlight');
+const hydrate = require('@w2wds/core/hydrate');
 
 module.exports = function (eleventyConfig) {
   eleventyConfig.addPlugin(syntaxHighlight);
@@ -27,6 +28,20 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.setBrowserSyncConfig({
     files: './_site/assets/styles/main.css',
   });
+
+  eleventyConfig.addTransform("hydrate", async(content, outputPath) => {
+    if (process.env.ELEVENTY_ENV == "production") {
+      if (outputPath.endsWith(".html")) {
+        try {
+          const results = await hydrate.renderToString(content)
+          return results.html
+        } catch (error) {
+          return error
+        }
+      }
+    }
+    return content
+  })
 
   eleventyConfig.addTransform('htmlmin', (content, outputPath) => {
     if (outputPath.endsWith('.html')) {
