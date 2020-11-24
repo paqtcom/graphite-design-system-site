@@ -1,5 +1,5 @@
 ---
-title: Way2Design
+title: Styleguide - Way2Web Design System
 ---
 
 ## Styleguide

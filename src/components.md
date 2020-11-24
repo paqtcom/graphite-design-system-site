@@ -1,5 +1,5 @@
 ---
-title: Components
+title: Components - Way2Web Design System
 ---
 
 ## Components
