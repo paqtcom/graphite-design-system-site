@@ -1,5 +1,5 @@
 ---
-title: Way2Design
+title: Way2Web Design System
 ---
 
 ## Welcome
