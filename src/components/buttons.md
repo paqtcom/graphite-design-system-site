@@ -1,5 +1,5 @@
 ---
-title: Components - Way2Web Design System
+title: Components - Way-button
 ---
 
 ## Components
@@ -17,3 +17,5 @@ title: Components - Way2Web Design System
 ```html
 <way-button href="https://www.way2web.nl" fill="outline">Way2Web</way-button>
 ```
+
+
