@@ -1,23 +1,21 @@
-<a href="/" class="pb-3 text-white"> Home </a>
-<a href="/styleguide" class="pb-3 text-white"> Styleguide </a>
-<a id="dropdown-toggle" href="#" class="pb-3 text-white" onclick="showComponents()">Components</a>
-<div class="hidden | pb-3" id="dropdown-content">
-    <div class="flex flex-col">
-        <a href="/components/input" class="inline-block text-sm text-white no-underline">
-            Input
-        </a>
-        <a href="/components/buttons" class="inline-block text-sm text-white no-underline">
-            Buttons
-        </a>
-    </div>
+<a href="/" class="pb-3 text-white">Home</a>
+<a href="/styleguide" class="pb-3 text-white">Styleguide</a>
+<a href="#" class="text-white" onclick="showComponents()">Components</a>
+<div class="<%= page.url.includes('components') ? '' : 'hidden' %> pb-3" id="dropdown-content">
+  <div class="flex flex-col">
+    <a href="/components/button" class="inline-block text-sm text-white no-underline">
+      Button
+    </a>
+    <a href="/components/input" class="inline-block text-sm text-white no-underline">
+      Input
+    </a>
+  </div>
 </div>
 
 <script>
-    function showComponents() {
-        var dropdownToggle = document.getElementById("dropdown-toggle");
-        var dropdownContent = document.getElementById("dropdown-content");
+  function showComponents() {
+    var dropdownContent = document.getElementById("dropdown-content");
 
-        dropdownToggle.classList.toggle('pb-3');
-        dropdownContent.classList.toggle("hidden");
-    } 
+    dropdownContent.classList.toggle("hidden");
+  } 
 </script>
