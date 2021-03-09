@@ -5,6 +5,10 @@ const syntaxHighlight = require('@11ty/eleventy-plugin-syntaxhighlight');
 const hydrate = require('@w2wds/core/hydrate');
 
 module.exports = function (eleventyConfig) {
+  eleventyConfig.addPassthroughCopy({
+    "node_modules/@w2wds/core/dist/core": "assets/w2wds",
+  });
+  
   eleventyConfig.addPlugin(syntaxHighlight);
 
   eleventyConfig.addPlugin(lazyImagesPlugin, {

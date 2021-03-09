@@ -1,7 +1,7 @@
 @tailwind base;
 
 a {
-  @apply text-blue-700 
+  @apply text-blue-700;
 }
 
 a:hover {
@@ -83,22 +83,6 @@ a:hover {
 
 .content th {
   @apply bg-gray-100;
-}
-
-:root {
-  --way-input-font-size: 15px;
-  --way-input-font-size-small: 12px;
-  --way-input-font-size-large: 18px;
-  --way-input-background-color: #ffffff;
-  --way-input-border-color: #d2d6dc;
-  --way-input-border-width: 1px;
-  --way-input-border-radius: 0.375rem;
-
-  /* Label */
-  --way-label-font-size: 14px;
-  --way-label-font-size-small: 12px;
-  --way-label-font-size-large: 17px;
-  --way-label-font-weight: 500;
 }
 
 code {
