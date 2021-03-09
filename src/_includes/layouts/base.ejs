@@ -107,17 +107,8 @@
             </g>
           </g>
         </svg>
-        <a href="/" class="pb-3 text-white"> Home </a>
-        <a href="/styleguide" class="pb-3 text-white"> Styleguide </a>
-        <a id="nav-toggle" href="#" class="pb-3 text-white">Components</a>
-        <div class="flex flex-col | hidden" id="nav-content">
-            <a href="/components/input" class="inline-block text-sm text-white no-underline">
-              Input
-            </a>
-            <a href="/components/buttons" class="inline-block text-sm text-white no-underline">
-              Buttons
-            </a>
-        </div>
+        
+        <%- include('../menu.ejs') %>
       </div>
     </div>
 
@@ -126,47 +117,5 @@
         <div class="p-8 lg:pt-16 lg:px-24 content"><%- content %></div>
       </div>
     </div>
-
-     <script>
-        var navMenuDiv = document.getElementById("nav-content");
-        var navMenu = document.getElementById("nav-toggle");
-
-        document.onclick = check;
-
-        function check(e) {
-          var target = (e && e.target) || (event && event.srcElement);
-        
-          if (!checkParent(target, navMenuDiv)) {
-            // click NOT on the menu
-            if (checkParent(target, navMenu)) {
-              // click on the link
-              if (navMenuDiv.classList.contains("hidden")) {
-                navMenuDiv
-                  .classList
-                  .remove("hidden");
-              } else {
-                navMenuDiv
-                  .classList
-                  .add("hidden");
-              }
-            } else {
-              // click both outside link and outside menu, hide menu
-              navMenuDiv
-                .classList
-                .add("hidden");
-            }
-          }
-        }
-        
-        function checkParent(t, elm) {
-          while (t.parentNode) {
-            if (t == elm) {
-              return true;
-            }
-            t = t.parentNode;
-          }
-          return false;
-        }
-    </script>
   </body>
 </html>

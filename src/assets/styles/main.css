@@ -1,7 +1,7 @@
 @tailwind base;
 
 a {
-  @apply text-blue-700;
+  @apply text-blue-700 
 }
 
 a:hover {
@@ -99,4 +99,13 @@ a:hover {
   --way-label-font-size-small: 12px;
   --way-label-font-size-large: 17px;
   --way-label-font-weight: 500;
+}
+
+code {
+  font-size: 15px;
+}
+
+pre {
+  padding: 0.5rem 0.75rem !important;
+  width: max-content;
 }
