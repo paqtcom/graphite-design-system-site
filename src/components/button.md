@@ -18,7 +18,15 @@ Buttons provide a clickable element, which can be used in forms, or anywhere tha
 
 ### Variants
 
-Use the `variant` attribute to set the button variant.
+Use the `variant` attribute to set the appropiate button style.
+
+| Variant     | Purpose                                                                                                                                                                     |
+| ----------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `default`   | Most common button in the interface. Only use another variant if a button requires more or less visual weight.                                                              |
+| `primary`   | Use for the main view's call-to-action. Don’t use more than one primary button in a section or screen to avoid overwhelming the user.                                       |
+| `secondary` | Use for secondary actions in a section or screen. Most commonly used when there is already a primary action and we want to highlight another action with a different style. |
+| `danger`    | Use when the action will delete data or be otherwise difficult to recover from.                                                                                             |
+| `plain`     | Use for less important or less commonly used actions since they’re less prominent.                                                                                          |
 
 <way-button>Default</way-button>
 <way-button variant="primary">Primary</way-button>
@@ -134,7 +142,7 @@ Use the `expand="block"` attribute to create a full-width button with rounded co
 
 ### Full Button
 
-Use the `expand="full"` attribute to create a full-width button with square corners and no border on the left or right. Useful if you want it to run over the full-width of the viewport (without left & right margin).
+Use the `expand="full"` attribute to create a full-width button with square corners and no border on the left or right. Useful if you want it to run over the full-width of the viewport or a section (where you don't apply any horizontal margin).
 
 <way-button expand="full">Full</way-button>
 
@@ -172,7 +180,7 @@ Use the `disabled` attribute to disable a button. Clicks will be suppressed unti
 | `size`     | `size`     | The button's size.                                                                                                                                                                     | `"large"  | "medium"    | "small"`    | `'medium'`  |
 | `target`   | `target`   | Specifies where to display the linked URL. Special keywords: `"_blank"`, `"_self"`, `"_parent"`, `"_top"`.                                                                             | `string`  | `undefined` |
 | `type`     | `type`     | The type of the button.                                                                                                                                                                | `"button" | "reset"     | "submit"`   | `'button'`  |
-| `variant`  | `variant`  | The different variants. The options are: `"default"`, `"primary"`, `"secondary"`, "danger", and `"text"`.                                                                              | `"danger" | "default"   | "primary"   | "secondary" | "text"` | `'default'` |
+| `variant`  | `variant`  | The different variants. The options are: `"default"`, `"primary"`, `"secondary"`, `"danger"`, and `"text"`.                                                                            | `"danger" | "default"   | "primary"   | "secondary" | "text"` | `'default'` |
 
 ## Events
 
