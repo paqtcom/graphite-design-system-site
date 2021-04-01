@@ -20,6 +20,7 @@
     />
     <meta property="og:locale" content="<%= site.locale %>" />
     <meta property="og:site_name" content="<%= site.site_name %>" />
+    <script type="module" src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.esm.js"></script>
     <link rel="stylesheet" href="/assets/w2wds/core.css" />
     <% if (process.env.ELEVENTY_ENV != "production") { %>
     <script type="module" src="/assets/w2wds/core.esm.js"></script>
@@ -63,7 +64,6 @@
       }
     </script>
     <% } %>
-    <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
   </head>
 
   <body>
@@ -75,16 +75,14 @@
               <%- include('../logo.ejs') %>
             </div>
             <div class="flex flex-col flex-grow mt-5">
-              <nav class="flex-1 px-2 space-y-1 bg-blue-800">
-                <%- include('../menu.ejs') %>
-              </nav>
+              <%- include('../menu.ejs') %>
             </div>
           </div>
         </div>
       </div>
       
       <main class="relative flex-1 overflow-y-auto bg-gray-100 focus:outline-none" tabindex="0">
-        <div class="m-8">
+        <div class="m-8 content">
           <%- content %>
         </div>
       </main>
