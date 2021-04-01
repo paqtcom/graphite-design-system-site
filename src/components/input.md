@@ -6,8 +6,7 @@ title: Components - way-input
 
 <div class="block p-8 mb-5 bg-white rounded-lg shadow-lg">
 
-Inputs can be used in forms, or anywhere where the user needs to provide information.
-
+Inputs can be used in forms, or anywhere where the user needs to provide information.s
 <way-input type="text" name="input" size="medium" label="label"></way-input>
 
 ```html
