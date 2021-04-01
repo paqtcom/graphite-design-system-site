@@ -6,7 +6,7 @@ title: Components - way-input
 
 <div class="block p-8 bg-white rounded-lg shadow-lg">
 
-Inputs blablabla
+Inputs
 
 <way-input type="text" name="input" size="medium" label="label"></way-input>
 
