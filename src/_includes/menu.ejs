@@ -1,15 +1,25 @@
-<a href="/" class="pb-3 text-white">Home</a>
-<a href="/styleguide" class="pb-3 text-white">Styleguide</a>
-<a href="#" class="text-white" onclick="showComponents()">Components</a>
+<a href="/" class="flex items-center px-2 py-2 text-sm font-medium text-white rounded-md hover:no-underline md:text-base hover:bg-blue-700">
+  <span class="mr-3 iconify" data-icon="fa-solid:home"></span>
+  Home
+</a>
+<a href="/styleguide" class="flex items-center px-2 py-2 text-sm font-medium text-white rounded-md hover:no-underline md:text-base hover:bg-blue-700">
+  <span class="mr-3 iconify" data-icon="fa-solid:palette"></span>
+  Styleguide
+</a>
+<a href="#" class="flex items-center px-2 py-2 text-sm font-medium text-white rounded-md hover:no-underline md:text-base hover:bg-blue-700" onclick="showComponents()">
+  <span class="mr-3 iconify" data-icon="fa-solid:th"></span>
+  Components
+</a>
 <div class="<%= page.url.includes('components') ? '' : 'hidden' %> pb-3" id="dropdown-content">
   <div class="flex flex-col">
-    <a href="/components/button" class="inline-block text-sm text-white no-underline">
+    <a href="/components/button" class="flex items-center px-2 py-2 text-sm font-medium text-white rounded-md hover:no-underline md:text-base hover:bg-blue-700">
       Button
     </a>
-    <a href="/components/input" class="inline-block text-sm text-white no-underline">
+    <a href="/components/input" class="flex items-center px-2 py-2 text-sm font-medium text-white rounded-md hover:no-underline md:text-base hover:bg-blue-700">
       Input
     </a>
   </div>
+</div>
 
 <script>
     function showComponents() {
