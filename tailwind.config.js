@@ -62,10 +62,23 @@ module.exports = {
           900: '#314156',
         },
       },
+
+      fontSize: {
+        xxSmall: '0.625rem',
+        xSmall: '0.75rem',
+        small: '0.875rem',
+        medium: '1rem',
+        large: '1.25rem',
+        xLarge: '1.5rem',
+        xxLarge: '2.25rem',
+        xxxLarge: '3rem',
+        xxxxLarge: '4.5rem',
+      },
     },
     fontFamily: {
       sans: ['Ubuntu', 'sans-serif'],
     },
+
   },
   variants: {
     textColor: ['responsive', 'hover', 'focus', 'group-hover'],
