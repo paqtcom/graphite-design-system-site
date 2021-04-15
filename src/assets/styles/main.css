@@ -13,7 +13,7 @@ a:hover {
 @tailwind utilities;
 
 .content {
-  @apply text-xl leading-8 tracking-wider;
+  @apply text-base leading-8 tracking-wider;
 }
 
 .content p {
@@ -73,7 +73,7 @@ a:hover {
 }
 
 .content table {
-  @apply block overflow-auto whitespace-no-wrap border-collapse;
+  @apply block overflow-auto border-collapse whitespace-nowrap;
 }
 
 .content th,

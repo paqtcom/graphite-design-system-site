@@ -8,6 +8,36 @@ module.exports = {
   theme: {
     extend: {
       colors: {
+        primary: '#1799de',
+        primaryContrast: '#fff',
+        primaryShade: '#00679e',
+        primaryTint: '#46b2ec',
+
+        secondary: '#061f2c',
+        secondaryContrast: '#fff',
+        secondaryShade: '#000',
+        secondaryTint: '#0a415c',
+
+        danger: '#ff5363',
+        dangerContrast: '#051f2c',
+        dangerShade: '#ff1f35',
+        dangerTint: '#ff8591',
+
+        light: '#dbe5eb',
+        lightContrast: '#051f2c',
+        lightShade: '#c1d1db',
+        lightTint: '#e7eef4',
+
+        medium: '#697886',
+        mediumContrast: '#fff',
+        mediumShade: '#4c5960',
+        mediumTint: '#9eaeb7',
+
+        dark: '#02131b',
+        darkContrast: '#ffffff',
+        darkShade: '#000',
+        darkTint: '#051f2c',
+
         blue: {
           500: '#1799de',
           700: '#00679e',
