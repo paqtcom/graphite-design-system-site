@@ -186,6 +186,18 @@ title: Styleguide - Way2Web Design System
 <div class="block p-8 mb-5 bg-white rounded-lg shadow-lg">
   <div class="mb-12">
     <legend class="mb-2 font-bold border-b">
+      Font-family
+    </legend>
+    <div class="flex items-center mb-8">
+        <span class="mr-3 w-72">--way-font-family</span>
+        <span>
+          -apple-system, system-ui, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif
+        </span>
+    </div>
+  </div>
+
+  <div class="mb-12">
+    <legend class="mb-2 font-bold border-b">
       Font-sizes
     </legend>
     <div class="flex items-center mb-8">
