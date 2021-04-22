@@ -7,9 +7,9 @@ title: Styleguide - Way2Web Design System
 ### Theme color tokens
 
 <div class="block p-8 mb-5 bg-white rounded-lg shadow-lg">
-<div class="grid grid-cols-3 gap-4 mb-8">
+<div class="grid grid-cols-3 gap-4 mb-12">
   <div>
-    <legend class="mb-2 font-medium border-b">Primary</legend>
+    <legend class="mb-2 font-bold border-b">Primary</legend>
     <div>
       <span>--way-color-primary</span>
       <div class="flex flex-col h-8 overflow-hidden rounded">
@@ -37,7 +37,7 @@ title: Styleguide - Way2Web Design System
   </div>
 
   <div>
-    <legend class="mb-2 font-medium border-b">Secondary</legend>
+    <legend class="mb-2 font-bold border-b">Secondary</legend>
     <div>
       <span>--way-color-secondary</span>
       <div class="flex flex-col h-8 overflow-hidden rounded">
@@ -65,7 +65,7 @@ title: Styleguide - Way2Web Design System
   </div>
 
   <div>
-    <legend class="mb-2 font-medium border-b">Danger</legend>
+    <legend class="mb-2 font-bold border-b">Danger</legend>
     <div>
       <span>--way-color-danger</span>
       <div class="flex flex-col h-8 overflow-hidden rounded">
@@ -93,9 +93,9 @@ title: Styleguide - Way2Web Design System
   </div>
 </div>
 
-<div class="grid grid-cols-3 gap-4 mb-8">
+<div class="grid grid-cols-3 gap-4">
   <div>
-    <legend class="mb-2 font-medium border-b">Light</legend>
+    <legend class="mb-2 font-bold border-b">Light</legend>
     <div>
       <span>--way-color-light</span>
       <div class="flex flex-col h-8 overflow-hidden rounded">
@@ -123,7 +123,7 @@ title: Styleguide - Way2Web Design System
   </div>
   
   <div>
-    <legend class="mb-2 font-medium border-b">Medium</legend>
+    <legend class="mb-2 font-bold border-b">Medium</legend>
     <div>
       <span>--way-color-medium</span>
       <div class="flex flex-col h-8 overflow-hidden rounded">
@@ -151,7 +151,7 @@ title: Styleguide - Way2Web Design System
   </div>
 
   <div>
-    <legend class="mb-2 font-medium border-b">Dark</legend>
+    <legend class="mb-2 font-bold border-b">Dark</legend>
     <div>
       <span>--way-color-dark</span>
       <div class="flex flex-col h-8 overflow-hidden rounded">
@@ -184,45 +184,68 @@ title: Styleguide - Way2Web Design System
 ### Typography tokens
 
 <div class="block p-8 mb-5 bg-white rounded-lg shadow-lg">
-    <legend class="mb-2 font-medium border-b">
-        Font-sizes
+  <div class="mb-12">
+    <legend class="mb-2 font-bold border-b">
+      Font-sizes
     </legend>
-    <div class="grid grid-cols-4 gap-4 mb-8">
-    <div class="flex flex-col">
-        <span>--way-font-size-xx-small (10px)</span>
+    <div class="flex items-center mb-8">
+        <span class="mr-3 w-72">--way-font-size-xx-small (10px)</span>
         <span class="text-xxSmall">The quick brown fox...</span>
     </div>
-    <div class="flex flex-col">
-      <span>--way-font-size-x-small (12px)</span>
-        <span class="text-xSmall">The quick brown fox...</span>
+    <div class="flex items-center mb-8">
+      <span class="mr-3 w-72">--way-font-size-x-small (12px)</span>
+      <span class="text-xSmall">The quick brown fox...</span>
     </div>
-    <div class="flex flex-col">
-      <span>--way-font-size-small (14px)</span>
-        <span class="text-small">The quick brown fox...</span>
+    <div class="flex items-center mb-8">
+      <span class="mr-3 w-72">--way-font-size-small (14px)</span>
+      <span class="text-small">The quick brown fox...</span>
     </div>
-    <div class="flex flex-col">
-      <span>--way-font-size-medium (16px)</span>
-        <span class="text-medium">The quick brown fox...</span>
+    <div class="flex items-center mb-8">
+      <span class="mr-3 w-72">--way-font-size-medium (16px)</span>
+      <span class="text-mediumSize">The quick brown fox...</span>
     </div>
-    </div>
-    <div>
-      <span>--way-font-size-large (20px)</span>
+    <div class="flex items-center mb-8">
+      <span class="mr-3 w-72">--way-font-size-large (20px)</span>
         <span class="text-large">The quick brown fox...</span>
     </div>
-    <div>
-      <span>--way-font-size-x-large (24px)</span>
+    <div class="flex items-center mb-8">
+      <span class="mr-3 w-72">--way-font-size-x-large (24px)</span>
         <span class="text-xLarge">The quick brown fox...</span>
     </div>
-    <div>
-      <span>--way-font-size-xx-large (36px)</span>
+    <div class="flex items-center mb-8">
+      <span class="mr-3 w-72">--way-font-size-xx-large (36px)</span>
         <span class="text-xxLarge">The quick brown fox...</span>
     </div>
-    <div>
-      <span>--way-font-size-xxx-large (48px)</span>
+    <div class="flex items-center mb-8">
+      <span class="mr-3 w-72">--way-font-size-xxx-large (48px)</span>
         <span class="text-xxxLarge">The quick brown fox...</span>
     </div>
-    <div>
-      <span>--way-font-size-xxxx-large (72px)</span>
+    <div class="flex items-center mb-8">
+      <span class="mr-3 w-72">--way-font-size-xxxx-large (72px)</span>
         <span class="text-xxxxLarge">The quick brown fox...</span>
     </div>
+  </div>
+
+  <div>
+    <legend class="mb-2 font-bold border-b">
+      Font-weights
+    </legend>
+    <div class="flex items-center mb-8">
+        <span class="mr-3 w-72">--way-font-weight-light (300)</span>
+        <span class="font-light">The quick brown fox...</span>
+    </div>
+    <div class="flex items-center mb-8">
+      <span class="mr-3 w-72">--way-font-weight-normal (400)</span>
+      <span class="font-normal">The quick brown fox...</span>
+    </div>
+    <div class="flex items-center mb-8">
+      <span class="mr-3 w-72">--way-font-weight-semibold (500)</span>
+      <span class="font-semibold">The quick brown fox...</span>
+    </div>
+    <div class="flex items-center mb-8">
+      <span class="mr-3 w-72">--way-font-weight-bold(700)</span>
+      <span class="font-bold">The quick brown fox...</span>
+    </div>
+  </div>
+
 </div>
