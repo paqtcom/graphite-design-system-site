@@ -1,15 +1,15 @@
 ---
-title: Components - way-input
+title: Components - way-textarea
 ---
-# way-input
+# way-textarea
 
 <div class="block p-8 mb-5 bg-white rounded-lg shadow-lg">
 
-Inputs can be used in forms, or anywhere where the user needs to provide information.s
-<way-input type="text" name="input" size="medium" label="label"></way-input>
+Textarea can be used in forms, or anywhere where the user needs to provide information.
+<way-textarea type="text" name="textarea" label="label" rows="5"></way-textarea>
 
 ```html
-<way-input type="text" name="input" size="medium" label="label"></way-input>
+<way-textarea type="text" name="textarea" label="label" rows="5"></way-textarea>
 ```
 ## Sections
 <div class="flex items-center">
@@ -24,53 +24,67 @@ Inputs can be used in forms, or anywhere where the user needs to provide informa
 
 ## Examples
 
-### Sizes
+### Autofocus
 
-Use the `size` attribute to change a input's size.
+Use the `autofocus` attribute to set automic focus on the textarea.
 
-<way-input type="text" name="input" size="small" label="small"></way-input>
-<way-input type="text" name="input" size="medium" label="medium"></way-input>
-<way-input type="text" name="input" size="large" label="large"></way-input>
+<way-textarea type="text" name="textarea" label="label" rows="10" autofocus></way-textarea>
 
 ```html
-<way-input type="text" name="input" size="small" label="small"></way-input>
-<way-input type="text" name="input" size="medium" label="medium"></way-input>
-<way-input type="text" name="input" size="large" label="large"></way-input>
+<way-textarea type="text" name="textarea" label="label" rows="10" autofocus></way-textarea>
 ```
 
-### Inline
+### Rows
 
-Use the `inline` attribute to use the label inline.
+Use the `rows` attribute to set the amount of rows to use.
 
-<way-input type="text" name="input" size="medium" label="medium" inline></way-input>
+<way-textarea type="text" name="textarea" label="label" rows="5"></way-textarea>
+
+<way-textarea type="text" name="textarea" label="label" rows="10"></way-textarea>
+
+<way-textarea type="text" name="textarea" label="label" rows="15"></way-textarea>
 
 ```html
-<way-input type="text" name="input" size="medium" label="medium" inline></way-input>
+<way-textarea type="text" name="textarea" label="label" rows="5"></way-textarea>
+<way-textarea type="text" name="textarea" label="label" rows="10"></way-textarea>
+<way-textarea type="text" name="textarea" label="label" rows="15"></way-textarea>
 ```
 
 ### Disabled
 
-Use the `disabled` attribute to disable a input. Clicks will be suppressed until the disabled state is removed.
+Use the `disabled` attribute to disable a textarea. Clicks will be suppressed until the disabled state is removed.
 
-<way-input type="text" name="input" size="medium" label="medium" disabled></way-input>
+<way-textarea type="text" name="textarea" label="label" rows="10" disabled></way-textarea>
 
 ```html
-<way-input type="text" name="input" size="medium" label="medium" disabled></way-input>
+<way-textarea type="text" name="textarea" label="label" rows="10" disabled></way-textarea>
 ```
+
+### Max characters
+
+Use the `autofocus` attribute to set automic focus on the textarea.
+
+<way-textarea type="text" name="textarea" label="label" rows="10" maxlength="20"></way-textarea>
+
+```html
+<way-textarea type="text" name="textarea" label="label" rows="10" maxlength="20"></way-textarea>
+```
+
 </div>
 
 <div id="properties" class="block p-8 mb-5 bg-white rounded-lg shadow-lg">
 
 ## Properties
 
-| Property   | Attribute  | Description                                                   | Type                             | Default     |
-| ---------- | ---------- | ------------------------------------------------------------- | -------------------------------- | ----------- |
-| `disabled` | `disabled` | Specifies what if input is disabled.                          | `boolean`                        | `undefined` |
-| `inline`   | `inline`   | Specifies what if label and input must be inline.             | `boolean`                        | `undefined` |
-| `label`    | `label`    | The input's label. Alternatively, you can use the label slot. | `string`                         | `undefined` |
-| `name`     | `name`     | The input's name attribute.                                   | `string`                         | `undefined` |
-| `variant`  | `variant`  | The input's variant.                                          | `"large" \| "medium" \| "small"` | `'medium'`  |
-| `type`     | `type`     | Specifies what type of input to use.                          | `string`                         | `undefined` |
+| Property    | Attribute   | Description                                                      | Type      | Default     |
+| ----------- | ----------- | ---------------------------------------------------------------- | --------- | ----------- |
+| `autofocus` | `autofocus` | If `true`, the textarea should autofocus.                        | `boolean` | `false`     |
+| `disabled`  | `disabled`  | If `true`, the user cannot interact with the textarea.           | `boolean` | `false`     |
+| `label`     | `label`     | The textarea's label. Alternatively, you can use the label slot. | `string`  | `undefined` |
+| `maxlength` | `maxlength` | Specifies how many characters are allowed.                       | `number`  | `undefined` |
+| `name`      | `name`      | The textarea's name attribute.                                   | `string`  | `undefined` |
+| `rows`      | `rows`      | Specifies how many textarea rows to use.                         | `number`  | `undefined` |
+| `type`      | `type`      | Specifies what type of textarea to use.                          | `string`  | `undefined` |
 
 </div>
 
