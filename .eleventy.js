@@ -52,7 +52,7 @@ module.exports = function (eleventyConfig) {
       const minified = htmlmin.minify(content, {
         useShortDoctype: true,
         removeComments: true,
-        collapseWhitespace: true,
+        collapseWhitespace: false,
         minifyJS: true,
       });
       return minified;
