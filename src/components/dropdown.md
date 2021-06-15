@@ -380,7 +380,7 @@ Type: `Promise<void>`
 
 | Slot        | Description                                               |
 | ----------- | --------------------------------------------------------- |
-|             | The dropdown's content.                                   |
+| `(default)` | The dropdown's content.                                   |
 | `"trigger"` | The dropdown's trigger, usually a `<way-button>` element. |
 
 </div>

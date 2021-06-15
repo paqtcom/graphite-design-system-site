@@ -384,7 +384,7 @@ Type: `Promise<void>`
 
 | Slot          | Description                                                    |
 | ------------- | -------------------------------------------------------------- |
-|               | The select's options in the form of menu items.                |
+| `(default)`   | The select's options in the form of menu items.                |
 | `"help-text"` | Help text that describes how to use the select.                |
 | `"label"`     | The select's label. Alternatively, you can use the label prop. |
 
