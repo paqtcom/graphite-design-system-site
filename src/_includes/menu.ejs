@@ -1,26 +1,52 @@
 <nav class="flex-1 px-2 space-y-1 bg-blue-800">
-  <a href="/" class="flex items-center px-2 py-2 text-sm font-medium text-white rounded-md hover:no-underline md:text-base hover:bg-blue-700 hover:bg-opacity-25 group">
+  <a
+    href="/"
+    class="flex items-center px-2 py-2 text-sm font-medium text-white rounded-md hover:no-underline md:text-base hover:bg-blue-700 hover:bg-opacity-25 group"
+  >
     <ion-icon class="mr-3" name="home-outline"></ion-icon>
     Home
   </a>
-  <a href="/styleguide" class="flex items-center px-2 py-2 text-sm font-medium text-white rounded-md hover:no-underline md:text-base hover:bg-blue-700 hover:bg-opacity-25 group">
+  <a
+    href="/styleguide"
+    class="flex items-center px-2 py-2 text-sm font-medium text-white rounded-md hover:no-underline md:text-base hover:bg-blue-700 hover:bg-opacity-25 group"
+  >
     <ion-icon class="mr-3" name="color-palette-outline"></ion-icon>
     Styleguide
   </a>
-  <a href="#" class="flex items-center px-2 py-2 text-sm font-medium text-white rounded-md hover:no-underline md:text-base hover:bg-blue-700 hover:bg-opacity-25 group" onclick="showComponents()">
+  <a
+    href="#"
+    class="flex items-center px-2 py-2 text-sm font-medium text-white rounded-md hover:no-underline md:text-base hover:bg-blue-700 hover:bg-opacity-25 group"
+    onclick="showComponents()"
+  >
     <ion-icon class="mr-3" name="grid-outline"></ion-icon>
     Components
     <ion-icon class="ml-2 text-xs" name="chevron-down-outline"></ion-icon>
   </a>
-  <div class="<%= page.url.includes('components') ? '' : 'hidden' %> bg-blue-700 bg-opacity-25 rounded-md h-64 overflow-y-auto" id="dropdown-content">
+  <div
+    class="<%= page.url.includes('components') ? '' : 'hidden' %> bg-blue-700 bg-opacity-25 rounded-md h-64 overflow-y-auto"
+    id="dropdown-content"
+  >
     <div class="flex flex-col">
-      <a href="/components/button" class="flex items-center px-2 py-2 text-sm font-medium text-white rounded-md hover:no-underline md:text-base hover:bg-blue-700 hover:bg-opacity-25 group">
+      <a
+        href="/components/button"
+        class="flex items-center px-2 py-2 text-sm font-medium text-white rounded-md hover:no-underline md:text-base hover:bg-blue-700 hover:bg-opacity-25 group"
+      >
         <ion-icon class="mr-3" name="arrow-forward-circle-outline"></ion-icon>
         Button
       </a>
-      <a href="/components/input" class="flex items-center px-2 py-2 text-sm font-medium text-white rounded-md hover:no-underline md:text-base hover:bg-blue-700 hover:bg-opacity-25 group">
-        <ion-icon class="mr-3" name="arrow-forward-circle-outline"></ion-icon>        
+      <a
+        href="/components/input"
+        class="flex items-center px-2 py-2 text-sm font-medium text-white rounded-md hover:no-underline md:text-base hover:bg-blue-700 hover:bg-opacity-25 group"
+      >
+        <ion-icon class="mr-3" name="arrow-forward-circle-outline"></ion-icon>
         Input
+      </a>
+      <a
+        href="/components/select"
+        class="flex items-center px-2 py-2 text-sm font-medium text-white rounded-md hover:no-underline md:text-base hover:bg-blue-700 hover:bg-opacity-25 group"
+      >
+        <ion-icon class="mr-3" name="arrow-forward-circle-outline"></ion-icon>
+        Select
       </a>
     </div>
   </div>
@@ -28,8 +54,8 @@
 
 <script>
   function showComponents() {
-    var dropdownContent = document.getElementById("dropdown-content");
+    var dropdownContent = document.getElementById('dropdown-content');
 
-        dropdownContent.classList.toggle('hidden');
-    } 
+    dropdownContent.classList.toggle('hidden');
+  }
 </script>
