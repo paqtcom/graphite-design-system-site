@@ -20,11 +20,13 @@
     />
     <meta property="og:locale" content="<%= site.locale %>" />
     <meta property="og:site_name" content="<%= site.site_name %>" />
-    <script type="module" src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.esm.js"></script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.esm.js"
+    ></script>
     <link rel="stylesheet" href="/assets/w2wds/core.css" />
-    <% if (process.env.ELEVENTY_ENV != "production") { %>
     <script type="module" src="/assets/w2wds/core.esm.js"></script>
-    <% } %> <% if (locals.tags == "posts") { %>
+    <% if (locals.tags == "posts") { %>
     <meta property="og:type" content="article" />
     <meta property="article:published_time" content="<%= date.toISOString() %>" />
     <script type="application/ld+json">
@@ -71,20 +73,14 @@
       <div class="hidden md:flex md:flex-shrink-0">
         <div class="flex flex-col w-64">
           <div class="flex flex-col flex-grow pt-5 pb-4 overflow-y-auto border-r border-gray-200">
-            <div class="flex items-center flex-shrink-0 px-4">
-              <%- include('../logo.ejs') %>
-            </div>
-            <div class="flex flex-col flex-grow mt-5">
-              <%- include('../menu.ejs') %>
-            </div>
+            <div class="flex items-center flex-shrink-0 px-4"><%- include('../logo.ejs') %></div>
+            <div class="flex flex-col flex-grow mt-5"><%- include('../menu.ejs') %></div>
           </div>
         </div>
       </div>
-      
+
       <main class="relative flex-1 overflow-y-auto bg-gray-100 focus:outline-none" tabindex="0">
-        <div class="m-8 content">
-          <%- content %>
-        </div>
+        <div class="m-8 content"><%- content %></div>
       </main>
     </div>
   </body>

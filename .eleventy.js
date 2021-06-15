@@ -37,7 +37,9 @@ module.exports = function (eleventyConfig) {
     if (process.env.ELEVENTY_ENV == "production") {
       if (outputPath.endsWith(".html")) {
         try {
-          const results = await hydrate.renderToString(content)
+          const results = await hydrate.renderToString(content, {
+            removeUnusedStyles: false,
+          })
           return results.html
         } catch (error) {
           return error
@@ -51,7 +53,7 @@ module.exports = function (eleventyConfig) {
     if (outputPath.endsWith('.html')) {
       const minified = htmlmin.minify(content, {
         useShortDoctype: true,
-        removeComments: true,
+        removeComments: false,
         collapseWhitespace: false,
         minifyJS: true,
       });
