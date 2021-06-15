@@ -2,7 +2,7 @@ const htmlmin = require('html-minifier');
 const dateFns = require('date-fns');
 const lazyImagesPlugin = require('eleventy-plugin-lazyimages');
 const syntaxHighlight = require('@11ty/eleventy-plugin-syntaxhighlight');
-const hydrate = require('@w2wds/core/hydrate');
+// const hydrate = require('@w2wds/core/hydrate');
 
 module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy({
@@ -33,7 +33,8 @@ module.exports = function (eleventyConfig) {
     files: './_site/assets/styles/main.css',
   });
 
-  eleventyConfig.addTransform("hydrate", async(content, outputPath) => {
+  // Disabled for now, because client side hydration doesn't work well for all components (double elements in the shadow dom)
+  /*eleventyConfig.addTransform("hydrate", async(content, outputPath) => {
     if (process.env.ELEVENTY_ENV == "production") {
       if (outputPath.endsWith(".html")) {
         try {
@@ -47,7 +48,7 @@ module.exports = function (eleventyConfig) {
       }
     }
     return content
-  })
+  })*/
 
   eleventyConfig.addTransform('htmlmin', (content, outputPath) => {
     if (outputPath.endsWith('.html')) {
