@@ -23,12 +23,12 @@ Dropdowns are designed to work well with [menus](/components/menu) to provide a 
     <way-menu-item disabled>Disabled</way-menu-item>
     <way-menu-divider></way-menu-divider>
     <way-menu-item>
-      Prefix
-      <way-icon slot="prefix" name="gift"></way-icon>
+      Start Icon
+      <ion-icon slot="start" name="gift-outline"></ion-icon>
     </way-menu-item>
     <way-menu-item>
-      Suffix Icon
-      <way-icon slot="suffix" name="heart"></way-icon>
+      End Icon
+      <ion-icon slot="end" name="heart-outline"></ion-icon>
     </way-menu-item>
   </way-menu>
 </way-dropdown>
@@ -45,12 +45,12 @@ Dropdowns are designed to work well with [menus](/components/menu) to provide a 
     <way-menu-item disabled>Disabled</way-menu-item>
     <way-menu-divider></way-menu-divider>
     <way-menu-item>
-      Prefix
-      <way-icon slot="prefix" name="gift"></way-icon>
+      Start Icon
+      <ion-icon slot="start" name="gift-outline"></ion-icon>
     </way-menu-item>
     <way-menu-item>
-      Suffix Icon
-      <way-icon slot="suffix" name="heart"></way-icon>
+      End Icon
+      <ion-icon slot="end" name="heart-outline"></ion-icon>
     </way-menu-item>
   </way-menu>
 </way-dropdown>
