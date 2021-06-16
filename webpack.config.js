@@ -12,6 +12,8 @@ entries.push(path.resolve(__dirname, 'src/assets/styles/main.css'));
 // TODO: Remove if the blog does not need syntax highlight
 entries.push(path.resolve(__dirname, 'src/assets/styles/prism-atom-dark.css'));
 
+entries.push(path.resolve(__dirname, 'src/assets/js/main.js'));
+
 let cssFileName = 'styles/[name].css';
 
 if (process.env.NODE_ENV === 'production') {
@@ -46,7 +48,7 @@ module.exports = {
     rules: [
       {
         test: /\.css$/,
-        exclude: /node_modules/,
+        // exclude: /node_modules/,
         use: [MiniCssExtractPlugin.loader, 'css-loader', 'postcss-loader'],
       },
       {
