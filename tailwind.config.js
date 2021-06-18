@@ -8,6 +8,51 @@ module.exports = {
   theme: {
     extend: {
       colors: {
+        primary: 'var(--way-color-primary)',
+        primaryContrast: 'var(--way-color-primary-contrast)',
+        primaryShade: 'var(--way-color-primary-shade)',
+        primaryTint: 'var(--way-color-primary-tint)',
+
+        secondary: 'var(--way-color-secondary)',
+        secondaryContrast: 'var(--way-color-secondary-contrast)',
+        secondaryShade: 'var(--way-color-secondary-shade)',
+        secondaryTint: 'var(--way-color-secondary-tint)',
+
+        tertiary: 'var(--way-color-tertiary)',
+        tertiaryContrast: 'var(--way-color-tertiary-contrast)',
+        tertiaryShade: 'var(--way-color-tertiary-shade)',
+        tertiaryTint: 'var(--way-color-tertiary-tint)',
+
+        success: 'var(--way-color-success)',
+        successContrast: 'var(--way-color-success-contrast)',
+        successShade: 'var(--way-color-success-shade)',
+        successTint: 'var(--way-color-success-tint)',
+
+        warning: 'var(--way-color-warning)',
+        warningContrast: 'var(--way-color-warning-contrast)',
+        warningShade: 'var(--way-color-warning-shade)',
+        warningTint: 'var(--way-color-warning-tint)',
+
+        danger: 'var(--way-color-danger)',
+        dangerContrast: 'var(--way-color-danger-contrast)',
+        dangerShade: 'var(--way-color-danger-shade)',
+        dangerTint: 'var(--way-color-danger-tint)',
+
+        light: 'var(--way-color-light)',
+        lightContrast: 'var(--way-color-light-contrast)',
+        lightShade: 'var(--way-color-light-shade)',
+        lightTint: 'var(--way-color-light-tint)',
+
+        medium: 'var(--way-color-medium)',
+        mediumContrast: 'var(--way-color-medium-contrast)',
+        mediumShade: 'var(--way-color-medium-shade)',
+        mediumTint: 'var(--way-color-medium-tint)',
+
+        dark: 'var(--way-color-dark)',
+        darkContrast: 'var(--way-color-dark-contrast)',
+        darkShade: 'var(--way-color-dark-shade)',
+        darkTint: 'var(--way-color-dark-tint)',
+
         blue: {
           500: '#1799de',
           700: '#00679e',
@@ -32,10 +77,30 @@ module.exports = {
           900: '#314156',
         },
       },
+
+      fontSize: {
+        xxSmall: 'var(--way-font-size-xx-small)',
+        xSmall: 'var(--way-font-size-x-small)',
+        small: 'var(--way-font-size-small)',
+        mediumSize: 'var(--way-font-size-medium)',
+        large: 'var(--way-font-size-large)',
+        xLarge: 'var(--way-font-size-x-large)',
+        xxLarge: 'var(--way-font-size-xx-large)',
+        xxxLarge: 'var(--way-font-size-xxx-large)',
+        xxxxLarge: 'var(--way-font-size-xxxx-large)',
+      },
+
+      fontWeight: {
+        light: 'var(--way-font-weight-light)',
+        normal: 'var(--way-font-weight-normal)',
+        semibold: 'var(--way-font-weight-semibold)',
+        bold: 'var(--way-font-weight-bold)',
+      },
     },
     fontFamily: {
       sans: ['Ubuntu', 'sans-serif'],
     },
+
   },
   variants: {
     textColor: ['responsive', 'hover', 'focus', 'group-hover'],
