@@ -4,11 +4,10 @@ title: Customizing - Way2Web Design System
 
 ## Customizing
 
-
 ### Theme color tokens
 
 <div class="block p-8 mb-5 bg-white rounded-lg shadow-lg">
-<div class="grid grid-cols-2 gap-4 mb-12">
+<div class="grid grid-cols-3 gap-4 mb-12">
   <div>
     <legend class="mb-2 font-bold border-b">Primary</legend>
     <div>
@@ -61,6 +60,34 @@ title: Customizing - Way2Web Design System
       <span>--way-color-secondary-tint</span>
       <div class="flex flex-col h-8 overflow-hidden rounded">
         <span class="flex-1 bg-secondaryTint"></span>
+      </div>
+    </div>
+  </div>
+
+  <div>
+    <legend class="mb-2 font-bold border-b">Tertiary</legend>
+    <div>
+      <span>--way-color-tertiary</span>
+      <div class="flex flex-col h-8 overflow-hidden rounded">
+        <span class="flex-1 bg-tertiary"></span>
+      </div>
+    </div>
+    <div>
+      <span>--way-color-tertiary-contrast</span>
+      <div class="flex flex-col h-8 overflow-hidden rounded">
+        <span class="flex-1 border bg-tertiaryContrast"></span>
+      </div>
+    </div>
+    <div>
+      <span>--way-color-tertiary-shade</span>
+      <div class="flex flex-col h-8 overflow-hidden rounded">
+        <span class="flex-1 bg-tertiaryShade"></span>
+      </div>
+    </div>
+    <div>
+      <span>--way-color-tertiary-tint</span>
+      <div class="flex flex-col h-8 overflow-hidden rounded">
+        <span class="flex-1 bg-tertiaryTint"></span>
       </div>
     </div>
   </div>
