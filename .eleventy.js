@@ -5,10 +5,6 @@ const syntaxHighlight = require('@11ty/eleventy-plugin-syntaxhighlight');
 // const hydrate = require('@w2wds/core/hydrate');
 
 module.exports = function (eleventyConfig) {
-  eleventyConfig.addPassthroughCopy({
-    "node_modules/@w2wds/core/dist/core": "assets/w2wds",
-  });
-  
   eleventyConfig.addPlugin(syntaxHighlight);
 
   eleventyConfig.addPlugin(lazyImagesPlugin, {
@@ -30,7 +26,7 @@ module.exports = function (eleventyConfig) {
   });
 
   eleventyConfig.setBrowserSyncConfig({
-    files: './_site/assets/styles/main.css',
+    files: ['./_site/assets/styles/main.css', './_site/assets/js/main.js'],
   });
 
   // Disabled for now, because client side hydration doesn't work well for all components (double elements in the shadow dom)
