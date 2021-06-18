@@ -18,6 +18,21 @@ module.exports = {
         secondaryShade: 'var(--way-color-secondary-shade)',
         secondaryTint: 'var(--way-color-secondary-tint)',
 
+        tertiary: 'var(--way-color-tertiary)',
+        tertiaryContrast: 'var(--way-color-tertiary-contrast)',
+        tertiaryShade: 'var(--way-color-tertiary-shade)',
+        tertiaryTint: 'var(--way-color-tertiary-tint)',
+
+        success: 'var(--way-color-success)',
+        successContrast: 'var(--way-color-success-contrast)',
+        successShade: 'var(--way-color-success-shade)',
+        successTint: 'var(--way-color-success-tint)',
+
+        warning: 'var(--way-color-warning)',
+        warningContrast: 'var(--way-color-warning-contrast)',
+        warningShade: 'var(--way-color-warning-shade)',
+        warningTint: 'var(--way-color-warning-tint)',
+
         danger: 'var(--way-color-danger)',
         dangerContrast: 'var(--way-color-danger-contrast)',
         dangerShade: 'var(--way-color-danger-shade)',
@@ -64,19 +79,22 @@ module.exports = {
       },
 
       fontSize: {
-        xxSmall: 'var(----way-font-size-xx-small)',
-        xSmall: 'var(----way-font-size-x-small)',
-        small: 'var(----way-font-size-small)',
-        mediumSize: 'var(----way-font-size-medium)',
-        large: 'var(----way-font-size-large)',
-        xLarge: 'var(----way-font-size-x-large)',
-        xxLarge: 'var(----way-font-size-xx-large)',
-        xxxLarge: 'var(----way-font-size-xxx-large)',
-        xxxxLarge: 'var(----way-font-size-xxxx-large)',
+        xxSmall: 'var(--way-font-size-xx-small)',
+        xSmall: 'var(--way-font-size-x-small)',
+        small: 'var(--way-font-size-small)',
+        mediumSize: 'var(--way-font-size-medium)',
+        large: 'var(--way-font-size-large)',
+        xLarge: 'var(--way-font-size-x-large)',
+        xxLarge: 'var(--way-font-size-xx-large)',
+        xxxLarge: 'var(--way-font-size-xxx-large)',
+        xxxxLarge: 'var(--way-font-size-xxxx-large)',
       },
 
       fontWeight: {
+        light: 'var(--way-font-weight-light)',
+        normal: 'var(--way-font-weight-normal)',
         semibold: 'var(--way-font-weight-semibold)',
+        bold: 'var(--way-font-weight-bold)',
       },
     },
     fontFamily: {

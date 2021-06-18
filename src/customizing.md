@@ -8,7 +8,7 @@ title: Customizing - Way2Web Design System
 ### Theme color tokens
 
 <div class="block p-8 mb-5 bg-white rounded-lg shadow-lg">
-<div class="grid grid-cols-3 gap-4 mb-12">
+<div class="grid grid-cols-2 gap-4 mb-12">
   <div>
     <legend class="mb-2 font-bold border-b">Primary</legend>
     <div>
@@ -64,6 +64,64 @@ title: Customizing - Way2Web Design System
       </div>
     </div>
   </div>
+</div>
+
+<div class="grid grid-cols-3 gap-4 mb-12">
+  <div>
+    <legend class="mb-2 font-bold border-b">Success</legend>
+    <div>
+      <span>--way-color-success</span>
+      <div class="flex flex-col h-8 overflow-hidden rounded">
+        <span class="flex-1 bg-success"></span>
+      </div>
+    </div>
+    <div>
+      <span>--way-color-success-contrast</span>
+      <div class="flex flex-col h-8 overflow-hidden rounded">
+        <span class="flex-1 border bg-successContrast"></span>
+      </div>
+    </div>
+    <div>
+      <span>--way-color-success-shade</span>
+      <div class="flex flex-col h-8 overflow-hidden rounded">
+        <span class="flex-1 bg-successShade"></span>
+      </div>
+    </div>
+    <div>
+      <span>--way-color-success-tint</span>
+      <div class="flex flex-col h-8 overflow-hidden rounded">
+        <span class="flex-1 bg-successTint"></span>
+      </div>
+    </div>
+  </div>
+
+  <div>
+    <legend class="mb-2 font-bold border-b">Warning</legend>
+    <div>
+      <span>--way-color-warning</span>
+      <div class="flex flex-col h-8 overflow-hidden rounded">
+        <span class="flex-1 bg-warning"></span>
+      </div>
+    </div>
+    <div>
+      <span>--way-color-warning-contrast</span>
+      <div class="flex flex-col h-8 overflow-hidden rounded">
+        <span class="flex-1 border bg-warningContrast"></span>
+      </div>
+    </div>
+    <div>
+      <span>--way-color-warning-shade</span>
+      <div class="flex flex-col h-8 overflow-hidden rounded">
+        <span class="flex-1 bg-warningShade"></span>
+      </div>
+    </div>
+    <div>
+      <span>--way-color-warning-tint</span>
+      <div class="flex flex-col h-8 overflow-hidden rounded">
+        <span class="flex-1 bg-warningTint"></span>
+      </div>
+    </div>
+  </div>
 
   <div>
     <legend class="mb-2 font-bold border-b">Danger</legend>
@@ -100,7 +158,7 @@ title: Customizing - Way2Web Design System
     <div>
       <span>--way-color-light</span>
       <div class="flex flex-col h-8 overflow-hidden rounded">
-        <span class="flex-1 bg-light"></span>
+        <span class="flex-1 border bg-light"></span>
       </div>
     </div>
     <div>
@@ -178,6 +236,7 @@ title: Customizing - Way2Web Design System
       </div>
     </div>
   </div>
+
 </div>
 
 </div>
@@ -202,40 +261,40 @@ title: Customizing - Way2Web Design System
       Font-sizes
     </legend>
     <div class="flex items-center mb-8">
-        <span class="mr-3 w-72">--way-font-size-xx-small (10px)</span>
-        <span class="text-xxSmall">The quick brown fox jumps over the lazy dog</span>
+        <span class="w-1/3 mr-3">--way-font-size-xx-small (10px)</span>
+        <span class="w-2/3 text-xxSmall">The quick brown fox jumps over the lazy dog</span>
     </div>
     <div class="flex items-center mb-8">
-      <span class="mr-3 w-72">--way-font-size-x-small (12px)</span>
-      <span class="text-xSmall">The quick brown fox jumps over the lazy dog</span>
+      <span class="w-1/3 mr-3">--way-font-size-x-small (12px)</span>
+      <span class="w-2/3 text-xSmall">The quick brown fox jumps over the lazy dog</span>
     </div>
     <div class="flex items-center mb-8">
-      <span class="mr-3 w-72">--way-font-size-small (14px)</span>
-      <span class="text-small">The quick brown fox jumps over the lazy dog</span>
+      <span class="w-1/3 mr-3">--way-font-size-small (14px)</span>
+      <span class="w-2/3 text-small">The quick brown fox jumps over the lazy dog</span>
     </div>
     <div class="flex items-center mb-8">
-      <span class="mr-3 w-72">--way-font-size-medium (16px)</span>
-      <span class="text-mediumSize">The quick brown fox jumps over the lazy dog</span>
+      <span class="w-1/3 mr-3">--way-font-size-medium (16px)</span>
+      <span class="w-2/3 text-mediumSize">The quick brown fox jumps over the lazy dog</span>
     </div>
     <div class="flex items-center mb-8">
-      <span class="mr-3 w-72">--way-font-size-large (20px)</span>
-        <span class="text-large">The quick brown fox jumps over the lazy dog</span>
+      <span class="w-1/3 mr-3">--way-font-size-large (20px)</span>
+        <span class="w-2/3 text-large">The quick brown fox jumps over the lazy dog</span>
     </div>
     <div class="flex items-center mb-8">
-      <span class="mr-3 w-72">--way-font-size-x-large (24px)</span>
-        <span class="text-xLarge">The quick brown fox jumps over the lazy dog</span>
+      <span class="w-1/3 mr-3">--way-font-size-x-large (24px)</span>
+        <span class="w-2/3 text-xLarge">The quick brown fox jumps over the lazy dog</span>
     </div>
     <div class="flex items-center mb-8">
-      <span class="mr-3 w-72">--way-font-size-xx-large (36px)</span>
-        <span class="text-xxLarge">The quick brown fox jumps over the lazy dog</span>
+      <span class="w-1/3 mr-3">--way-font-size-xx-large (36px)</span>
+        <span class="w-2/3 text-xxLarge">The quick brown fox jumps over the lazy dog</span>
     </div>
     <div class="flex items-center mb-8">
-      <span class="mr-3 w-72">--way-font-size-xxx-large (48px)</span>
-        <span class="text-xxxLarge">The quick brown fox jumps over the lazy dog</span>
+      <span class="w-1/3 mr-3">--way-font-size-xxx-large (48px)</span>
+        <span class="w-2/3 leading-none text-xxxLarge">The quick brown fox jumps over the lazy dog</span>
     </div>
     <div class="flex items-center mb-8">
-      <span class="mr-3 w-72">--way-font-size-xxxx-large (72px)</span>
-        <span class="text-xxxxLarge">The quick brown fox jumps over the lazy dog</span>
+      <span class="w-1/3 mr-3">--way-font-size-xxxx-large (72px)</span>
+        <span class="w-2/3 leading-none text-xxxxLarge">The quick brown fox jumps over the lazy dog</span>
     </div>
   </div>
 
