@@ -2,13 +2,9 @@ const htmlmin = require('html-minifier');
 const dateFns = require('date-fns');
 const lazyImagesPlugin = require('eleventy-plugin-lazyimages');
 const syntaxHighlight = require('@11ty/eleventy-plugin-syntaxhighlight');
-const hydrate = require('@w2wds/core/hydrate');
+// const hydrate = require('@w2wds/core/hydrate');
 
 module.exports = function (eleventyConfig) {
-  eleventyConfig.addPassthroughCopy({
-    "node_modules/@w2wds/core/dist/core": "assets/w2wds",
-  });
-  
   eleventyConfig.addPlugin(syntaxHighlight);
 
   eleventyConfig.addPlugin(lazyImagesPlugin, {
@@ -30,14 +26,17 @@ module.exports = function (eleventyConfig) {
   });
 
   eleventyConfig.setBrowserSyncConfig({
-    files: './_site/assets/styles/main.css',
+    files: ['./_site/assets/styles/main.css', './_site/assets/js/main.js'],
   });
 
-  eleventyConfig.addTransform("hydrate", async(content, outputPath) => {
+  // Disabled for now, because client side hydration doesn't work well for all components (double elements in the shadow dom)
+  /*eleventyConfig.addTransform("hydrate", async(content, outputPath) => {
     if (process.env.ELEVENTY_ENV == "production") {
       if (outputPath.endsWith(".html")) {
         try {
-          const results = await hydrate.renderToString(content)
+          const results = await hydrate.renderToString(content, {
+            removeUnusedStyles: false,
+          })
           return results.html
         } catch (error) {
           return error
@@ -45,13 +44,13 @@ module.exports = function (eleventyConfig) {
       }
     }
     return content
-  })
+  })*/
 
   eleventyConfig.addTransform('htmlmin', (content, outputPath) => {
     if (outputPath.endsWith('.html')) {
       const minified = htmlmin.minify(content, {
         useShortDoctype: true,
-        removeComments: true,
+        removeComments: false,
         collapseWhitespace: false,
         minifyJS: true,
       });
