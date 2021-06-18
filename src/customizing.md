@@ -1,8 +1,9 @@
 ---
-title: Styleguide - Way2Web Design System
+title: Customizing - Way2Web Design System
 ---
 
-## Styleguide
+## Customizing
+
 
 ### Theme color tokens
 
@@ -202,39 +203,39 @@ title: Styleguide - Way2Web Design System
     </legend>
     <div class="flex items-center mb-8">
         <span class="mr-3 w-72">--way-font-size-xx-small (10px)</span>
-        <span class="text-xxSmall">The quick brown fox...</span>
+        <span class="text-xxSmall">The quick brown fox jumps over the lazy dog</span>
     </div>
     <div class="flex items-center mb-8">
       <span class="mr-3 w-72">--way-font-size-x-small (12px)</span>
-      <span class="text-xSmall">The quick brown fox...</span>
+      <span class="text-xSmall">The quick brown fox jumps over the lazy dog</span>
     </div>
     <div class="flex items-center mb-8">
       <span class="mr-3 w-72">--way-font-size-small (14px)</span>
-      <span class="text-small">The quick brown fox...</span>
+      <span class="text-small">The quick brown fox jumps over the lazy dog</span>
     </div>
     <div class="flex items-center mb-8">
       <span class="mr-3 w-72">--way-font-size-medium (16px)</span>
-      <span class="text-mediumSize">The quick brown fox...</span>
+      <span class="text-mediumSize">The quick brown fox jumps over the lazy dog</span>
     </div>
     <div class="flex items-center mb-8">
       <span class="mr-3 w-72">--way-font-size-large (20px)</span>
-        <span class="text-large">The quick brown fox...</span>
+        <span class="text-large">The quick brown fox jumps over the lazy dog</span>
     </div>
     <div class="flex items-center mb-8">
       <span class="mr-3 w-72">--way-font-size-x-large (24px)</span>
-        <span class="text-xLarge">The quick brown fox...</span>
+        <span class="text-xLarge">The quick brown fox jumps over the lazy dog</span>
     </div>
     <div class="flex items-center mb-8">
       <span class="mr-3 w-72">--way-font-size-xx-large (36px)</span>
-        <span class="text-xxLarge">The quick brown fox...</span>
+        <span class="text-xxLarge">The quick brown fox jumps over the lazy dog</span>
     </div>
     <div class="flex items-center mb-8">
       <span class="mr-3 w-72">--way-font-size-xxx-large (48px)</span>
-        <span class="text-xxxLarge">The quick brown fox...</span>
+        <span class="text-xxxLarge">The quick brown fox jumps over the lazy dog</span>
     </div>
     <div class="flex items-center mb-8">
       <span class="mr-3 w-72">--way-font-size-xxxx-large (72px)</span>
-        <span class="text-xxxxLarge">The quick brown fox...</span>
+        <span class="text-xxxxLarge">The quick brown fox jumps over the lazy dog</span>
     </div>
   </div>
 
@@ -244,19 +245,19 @@ title: Styleguide - Way2Web Design System
     </legend>
     <div class="flex items-center mb-8">
         <span class="mr-3 w-72">--way-font-weight-light (300)</span>
-        <span class="font-light">The quick brown fox...</span>
+        <span class="font-light">The quick brown fox jumps over the lazy dog</span>
     </div>
     <div class="flex items-center mb-8">
       <span class="mr-3 w-72">--way-font-weight-normal (400)</span>
-      <span class="font-normal">The quick brown fox...</span>
+      <span class="font-normal">The quick brown fox jumps over the lazy dog</span>
     </div>
     <div class="flex items-center mb-8">
       <span class="mr-3 w-72">--way-font-weight-semibold (500)</span>
-      <span class="font-semibold">The quick brown fox...</span>
+      <span class="font-semibold">The quick brown fox jumps over the lazy dog</span>
     </div>
     <div class="flex items-center mb-8">
       <span class="mr-3 w-72">--way-font-weight-bold(700)</span>
-      <span class="font-bold">The quick brown fox...</span>
+      <span class="font-bold">The quick brown fox jumps over the lazy dog</span>
     </div>
   </div>
 

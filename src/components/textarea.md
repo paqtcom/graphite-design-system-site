@@ -62,7 +62,7 @@ Use the `disabled` attribute to disable a textarea. Clicks will be suppressed un
 
 ### Max characters
 
-Use the `autofocus` attribute to set automic focus on the textarea.
+Use the `maxlength` attribute to set max allowed characters.
 
 <way-textarea type="text" name="textarea" label="label" rows="10" maxlength="20"></way-textarea>
 
