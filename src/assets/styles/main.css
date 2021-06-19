@@ -36,12 +36,19 @@ a:hover {
   @apply mb-5 text-base font-bold;
 }
 
+.content h1 a,
+.content h2 a,
+.content h3 a,
+.content h4 a {
+  @apply text-dark-tint;
+}
+
 .content pre[class*='language-'] {
   @apply my-8;
 }
 
 .content table {
-  @apply block overflow-auto border-collapse whitespace-nowrap;
+  @apply block overflow-auto border-collapse whitespace-nowrap mb-8;
 }
 
 .content th,

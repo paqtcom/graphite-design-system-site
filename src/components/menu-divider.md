@@ -4,7 +4,7 @@ title: Components - way-menu-divider
 
 # way-menu-divider
 
-<div>
+[[toc]]
 
 Menu dividers are used to visually group menu items.
 
@@ -34,16 +34,6 @@ Menu dividers are used to visually group menu items.
 </way-menu>
 ```
 
-## Sections
-
-<div class="flex items-center mb-3">
-<a href="#css-custom-properties">CSS Custom Properties</a> 
-</div>
-
-</div>
-
-<div id="css-custom-properties">
-
 ## CSS Custom Properties
 
 | Name              | Description                            |
@@ -51,5 +41,3 @@ Menu dividers are used to visually group menu items.
 | `--border-color`  | Border color of the menu item divider  |
 | `--margin-bottom` | Bottom margin of the menu item divider |
 | `--margin-top`    | Top margin of the menu item divider    |
-
-</div>

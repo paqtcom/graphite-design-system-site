@@ -4,7 +4,7 @@ title: Components - way-input
 
 # way-input
 
-<div>
+[[toc]]
 
 Inputs can be used in forms, or anywhere where the user needs to provide information.
 <way-input type="text" name="input" size="medium" label="label"></way-input>
@@ -12,18 +12,6 @@ Inputs can be used in forms, or anywhere where the user needs to provide informa
 ```html
 <way-input type="text" name="input" size="medium" label="label"></way-input>
 ```
-
-## Sections
-
-<div class="flex items-center mb-3">
-<a href="#examples" class="mr-3">Examples</a>
-<a href="#properties" class="mr-3">Properties</a>
-<a href="#events">Events</a>
-</div>
-
-</div>
-
-<div id="examples">
 
 ## Examples
 
@@ -61,10 +49,6 @@ Use the `disabled` attribute to disable a input. Clicks will be suppressed until
 <way-input type="text" name="input" size="medium" label="medium" disabled></way-input>
 ```
 
-</div>
-
-<div id="properties">
-
 ## Properties
 
 | Property   | Attribute  | Description                                                   | Type                             | Default     |
@@ -76,15 +60,9 @@ Use the `disabled` attribute to disable a input. Clicks will be suppressed until
 | `variant`  | `variant`  | The input's variant.                                          | `"large" \| "medium" \| "small"` | `'medium'`  |
 | `type`     | `type`     | Specifies what type of input to use.                          | `string`                         | `undefined` |
 
-</div>
-
-<div id="events">
-
 ## Events
 
 | Event      | Description                         | Type                |
 | ---------- | ----------------------------------- | ------------------- |
 | `wayBlur`  | Emitted when the input loses focus. | `CustomEvent<void>` |
 | `wayFocus` | Emitted when the input has focus.   | `CustomEvent<void>` |
-
-</div>

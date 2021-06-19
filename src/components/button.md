@@ -4,6 +4,8 @@ title: Components - way-button
 
 # way-button
 
+[[toc]]
+
 Buttons provide a clickable element, which can be used in forms, or anywhere that needs simple, standard button functionality. They may display text, icons, or both. Buttons can be styled with several attributes to look a specific way.
 
 <way-button>Button</way-button>
@@ -11,18 +13,6 @@ Buttons provide a clickable element, which can be used in forms, or anywhere tha
 ```html
 <way-button>Button</way-button>
 ```
-
-## Sections
-
-<div class="flex items-center mb-3">
-  <a href="#examples" class="mr-3">Examples</a> 
-  <a href="#properties" class="mr-3">Properties</a> 
-  <a href="#events" class="mr-3">Events</a> 
-  <a href="#slots" class="mr-3">Slots</a> 
-  <a href="#css-custom-properties">CSS Custom Properties</a> 
-</div>
-
-<div id="examples">
 
 ## Examples
 
@@ -178,10 +168,6 @@ Use the `disabled` attribute to disable a button. Clicks will be suppressed unti
 <way-button variant="plain" disabled>Plain</way-button>
 ```
 
-</div>
-
-<div id="properties">
-
 ## Properties
 
 | Property   | Attribute  | Description                                                                                                                                                                            | Type      | Default     |
@@ -196,20 +182,12 @@ Use the `disabled` attribute to disable a button. Clicks will be suppressed unti
 | `type`     | `type`     | The type of the button.                                                                                                                                                                | `"button" | "reset"     | "submit"`   | `'button'`  |
 | `variant`  | `variant`  | The different variants. The options are: `"default"`, `"primary"`, `"secondary"`, `"danger"`, and `"text"`.                                                                            | `"danger" | "default"   | "primary"   | "secondary" | "text"` | `'default'` |
 
-</div>
-
-<div id="events">
-
 ## Events
 
 | Event      | Description                          | Type                |
 | ---------- | ------------------------------------ | ------------------- |
 | `wayBlur`  | Emitted when the button loses focus. | `CustomEvent<void>` |
 | `wayFocus` | Emitted when the button has focus.   | `CustomEvent<void>` |
-
-</div>
-
-<div id="slots">
 
 ## Slots
 
@@ -219,10 +197,6 @@ Use the `disabled` attribute to disable a button. Clicks will be suppressed unti
 | `"end"`       | Content is placed to the right of the button text (will be to the left when we support right-to-left direction) |
 | `"icon-only"` | Should be used on an icon in a button that has no text.                                                         |
 | `"start"`     | Content is placed to the left of the button text (will be to the right when we support right-to-left direction) |
-
-</div>
-
-<div id="css-custom-properties">
 
 ## CSS Custom Properties
 

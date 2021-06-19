@@ -4,7 +4,7 @@ title: Components - way-menu-label
 
 # way-menu-label
 
-<div>
+[[toc]]
 
 Menu labels are used to describe a group of menu items.
 
@@ -36,16 +36,6 @@ Menu labels are used to describe a group of menu items.
 </way-menu>
 ```
 
-## Sections
-
-<div class="flex items-center mb-3">
-<a href="#css-custom-properties">CSS Custom Properties</a> 
-</div>
-
-</div>
-
-<div id="css-custom-properties">
-
 ## CSS Custom Properties
 
 | Name                 | Description                                                                                         |
@@ -59,5 +49,3 @@ Menu labels are used to describe a group of menu items.
 | `--padding-end`      | Right padding of the menu item label (will be left padding when we support right-to-left direction) |
 | `--padding-start`    | Left padding of the menu item label (will be right padding when we support right-to-left direction) |
 | `--padding-top`      | Top padding of the menu item label                                                                  |
-
-</div>

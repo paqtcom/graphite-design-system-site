@@ -4,7 +4,7 @@ title: Components - way-menu
 
 # way-menu
 
-<div>
+[[toc]]
 
 Menus provide a list of options for the user to choose from.
 
@@ -36,28 +36,11 @@ You can use [menu items](/components/menu-item), [menu dividers](/components/men
 
 Menus are intended for system menus (dropdown menus, select menus, context menus, etc.). They should not be mistaken for navigation menus which serve a different purpose and have a different semantic meaning. If you're building navigation, use `<nav>` and `<a>` elements instead.
 
-## Sections
-
-<div class="flex items-center mb-3">
-<a href="#events" class="mr-3">Events</a> 
-<a href="#methods" class="mr-3">Methods</a> 
-<a href="#slots" class="mr-3">Slots</a> 
-<a href="#css-custom-properties">CSS Custom Properties</a> 
-</div>
-
-</div>
-
-<div id="events">
-
 ## Events
 
 | Event        | Description                           | Type                                             |
 | ------------ | ------------------------------------- | ------------------------------------------------ |
 | `way-select` | Emitted when a menu item is selected. | `CustomEvent<{ item: HTMLWayMenuItemElement; }>` |
-
-</div>
-
-<div id="methods">
 
 ## Methods
 
@@ -72,19 +55,11 @@ enabling type-to-select when the menu doesn't have focus.
 
 Type: `Promise<void>`
 
-</div>
-
-<div id="slots">
-
 ## Slots
 
 | Slot        | Description                                                               |
 | ----------- | ------------------------------------------------------------------------- |
 | `(default)` | The menu's content, including menu items, menu dividers, and menu labels. |
-
-</div>
-
-<div id="css-custom-properties">
 
 ## CSS Custom Properties
 
@@ -92,5 +67,3 @@ Type: `Promise<void>`
 | ------------------ | -------------------------- |
 | `--padding-bottom` | Bottom padding of the menu |
 | `--padding-top`    | Top padding of the menu    |
-
-</div>
