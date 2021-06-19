@@ -5,53 +5,54 @@
  ** Default: https://github.com/tailwindcss/tailwindcss/blob/master/stubs/defaultConfig.stub.js
  */
 module.exports = {
+  mode: 'jit',
   theme: {
     extend: {
       colors: {
         primary: 'var(--way-color-primary)',
-        primaryContrast: 'var(--way-color-primary-contrast)',
-        primaryShade: 'var(--way-color-primary-shade)',
-        primaryTint: 'var(--way-color-primary-tint)',
+        'primary-contrast': 'var(--way-color-primary-contrast)',
+        'primary-shade': 'var(--way-color-primary-shade)',
+        'primary-tint': 'var(--way-color-primary-tint)',
 
         secondary: 'var(--way-color-secondary)',
-        secondaryContrast: 'var(--way-color-secondary-contrast)',
-        secondaryShade: 'var(--way-color-secondary-shade)',
-        secondaryTint: 'var(--way-color-secondary-tint)',
+        'secondary-contrast': 'var(--way-color-secondary-contrast)',
+        'secondary-shade': 'var(--way-color-secondary-shade)',
+        'secondary-tint': 'var(--way-color-secondary-tint)',
 
         tertiary: 'var(--way-color-tertiary)',
-        tertiaryContrast: 'var(--way-color-tertiary-contrast)',
-        tertiaryShade: 'var(--way-color-tertiary-shade)',
-        tertiaryTint: 'var(--way-color-tertiary-tint)',
+        'tertiary-contrast': 'var(--way-color-tertiary-contrast)',
+        'tertiary-shade': 'var(--way-color-tertiary-shade)',
+        'tertiary-tint': 'var(--way-color-tertiary-tint)',
 
         success: 'var(--way-color-success)',
-        successContrast: 'var(--way-color-success-contrast)',
-        successShade: 'var(--way-color-success-shade)',
-        successTint: 'var(--way-color-success-tint)',
+        'success-contrast': 'var(--way-color-success-contrast)',
+        'success-shade': 'var(--way-color-success-shade)',
+        'success-tint': 'var(--way-color-success-tint)',
 
         warning: 'var(--way-color-warning)',
-        warningContrast: 'var(--way-color-warning-contrast)',
-        warningShade: 'var(--way-color-warning-shade)',
-        warningTint: 'var(--way-color-warning-tint)',
+        'warning-contrast': 'var(--way-color-warning-contrast)',
+        'warning-shade': 'var(--way-color-warning-shade)',
+        'warning-tint': 'var(--way-color-warning-tint)',
 
         danger: 'var(--way-color-danger)',
-        dangerContrast: 'var(--way-color-danger-contrast)',
-        dangerShade: 'var(--way-color-danger-shade)',
-        dangerTint: 'var(--way-color-danger-tint)',
+        'danger-contrast': 'var(--way-color-danger-contrast)',
+        'danger-shade': 'var(--way-color-danger-shade)',
+        'danger-tint': 'var(--way-color-danger-tint)',
 
         light: 'var(--way-color-light)',
-        lightContrast: 'var(--way-color-light-contrast)',
-        lightShade: 'var(--way-color-light-shade)',
-        lightTint: 'var(--way-color-light-tint)',
+        'light-contrast': 'var(--way-color-light-contrast)',
+        'light-shade': 'var(--way-color-light-shade)',
+        'light-tint': 'var(--way-color-light-tint)',
 
         medium: 'var(--way-color-medium)',
-        mediumContrast: 'var(--way-color-medium-contrast)',
-        mediumShade: 'var(--way-color-medium-shade)',
-        mediumTint: 'var(--way-color-medium-tint)',
+        'medium-contrast': 'var(--way-color-medium-contrast)',
+        'medium-shade': 'var(--way-color-medium-shade)',
+        'medium-tint': 'var(--way-color-medium-tint)',
 
         dark: 'var(--way-color-dark)',
-        darkContrast: 'var(--way-color-dark-contrast)',
-        darkShade: 'var(--way-color-dark-shade)',
-        darkTint: 'var(--way-color-dark-tint)',
+        'dark-contrast': 'var(--way-color-dark-contrast)',
+        'dark-shade': 'var(--way-color-dark-shade)',
+        'dark-tint': 'var(--way-color-dark-tint)',
 
         blue: {
           500: '#1799de',
@@ -79,15 +80,15 @@ module.exports = {
       },
 
       fontSize: {
-        xxSmall: 'var(--way-font-size-xx-small)',
-        xSmall: 'var(--way-font-size-x-small)',
-        small: 'var(--way-font-size-small)',
-        mediumSize: 'var(--way-font-size-medium)',
-        large: 'var(--way-font-size-large)',
-        xLarge: 'var(--way-font-size-x-large)',
-        xxLarge: 'var(--way-font-size-xx-large)',
-        xxxLarge: 'var(--way-font-size-xxx-large)',
-        xxxxLarge: 'var(--way-font-size-xxxx-large)',
+        '2xs': 'var(--way-font-size-xx-small)',
+        xs: 'var(--way-font-size-x-small)',
+        sm: 'var(--way-font-size-small)',
+        base: 'var(--way-font-size-medium)',
+        lg: 'var(--way-font-size-large)',
+        xl: 'var(--way-font-size-x-large)',
+        '2xl': 'var(--way-font-size-xx-large)',
+        '3xl': 'var(--way-font-size-xxx-large)',
+        '4xl': 'var(--way-font-size-xxxx-large)',
       },
 
       fontWeight: {
@@ -98,9 +99,8 @@ module.exports = {
       },
     },
     fontFamily: {
-      sans: ['Ubuntu', 'sans-serif'],
+      sans: ['var(--way-font-family)'],
     },
-
   },
   variants: {
     textColor: ['responsive', 'hover', 'focus', 'group-hover'],
@@ -109,9 +109,5 @@ module.exports = {
     borderWidth: ['responsive', 'hover', 'focus'],
   },
   plugins: [],
-  purge:
-  [
-    './src/**/*.ejs',
-    './src/**/*.md',
-  ],
+  purge: ['./src/**/*.ejs', './src/**/*.md'],
 };
