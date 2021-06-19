@@ -4,7 +4,7 @@ title: Components - way-tag
 
 # way-tag
 
-<div class="block p-8 mb-5 bg-white rounded-lg shadow-lg">
+<div>
 
 Tags are used as labels to organize things or to indicate a selection.
 
@@ -24,7 +24,7 @@ Tags are used as labels to organize things or to indicate a selection.
 
 ## Sections
 
-<div class="flex items-center">
+<div class="flex items-center mb-3">
 <a href="#examples" class="mr-3">Examples</a> 
 <a href="#properties" class="mr-3">Properties</a> 
 <a href="#events" class="mr-3">Events</a> 
@@ -33,7 +33,7 @@ Tags are used as labels to organize things or to indicate a selection.
 
 </div>
 
-<div id="examples" class="block p-8 mb-5 bg-white rounded-lg shadow-lg">
+<div id="examples">
 
 ## Examples
 
@@ -117,7 +117,7 @@ Use the `clearable` attribute to add a clear button to the tag.
 
 </div>
 
-<div id="properties" class="block p-8 mb-5 bg-white rounded-lg shadow-lg">
+<div id="properties">
 
 ## Properties
 
@@ -130,7 +130,7 @@ Use the `clearable` attribute to add a clear button to the tag.
 
 </div>
 
-<div id="events" class="block p-8 mb-5 bg-white rounded-lg shadow-lg">
+<div id="events">
 
 ## Events
 
@@ -140,7 +140,7 @@ Use the `clearable` attribute to add a clear button to the tag.
 
 </div>
 
-<div id="css-custom-properties" class="block p-8 mb-5 bg-white rounded-lg shadow-lg">
+<div id="css-custom-properties">
 
 ## CSS Custom Properties
 

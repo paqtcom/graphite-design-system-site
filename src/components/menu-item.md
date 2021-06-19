@@ -4,7 +4,7 @@ title: Components - way-menu-item
 
 # way-menu-item
 
-<div class="block p-8 mb-5 bg-white rounded-lg shadow-lg">
+<div>
 
 Menu items provide options for the user to pick from in a menu.
 
@@ -50,7 +50,7 @@ Menu items provide options for the user to pick from in a menu.
 
 ## Sections
 
-<div class="flex items-center">
+<div class="flex items-center mb-3">
 <a href="#properties" class="mr-3">Properties</a> 
 <a href="#methods" class="mr-3">Methods</a> 
 <a href="#slots" class="mr-3">Slots</a> 
@@ -59,7 +59,7 @@ Menu items provide options for the user to pick from in a menu.
 
 </div>
 
-<div id="properties" class="block p-8 mb-5 bg-white rounded-lg shadow-lg">
+<div id="properties">
 
 ## Properties
 
@@ -71,7 +71,7 @@ Menu items provide options for the user to pick from in a menu.
 
 </div>
 
-<div id="methods" class="block p-8 mb-5 bg-white rounded-lg shadow-lg">
+<div id="methods">
 
 ## Methods
 
@@ -93,7 +93,7 @@ Type: `Promise<void>`
 
 </div>
 
-<div id="slots" class="block p-8 mb-5 bg-white rounded-lg shadow-lg">
+<div id="slots">
 
 ## Slots
 
@@ -105,7 +105,7 @@ Type: `Promise<void>`
 
 </div>
 
-<div id="css-custom-properties" class="block p-8 mb-5 bg-white rounded-lg shadow-lg">
+<div id="css-custom-properties">
 
 ## CSS Custom Properties
 

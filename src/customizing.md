@@ -6,7 +6,6 @@ title: Customizing - Way2Web Design System
 
 ### Theme color tokens
 
-<div class="block p-8 mb-5 bg-white rounded-lg shadow-lg">
 <div class="grid grid-cols-3 gap-4 mb-12">
   <div>
     <legend class="mb-2 font-bold border-b">Primary</legend>
@@ -263,88 +262,102 @@ title: Customizing - Way2Web Design System
       </div>
     </div>
   </div>
-
-</div>
-
 </div>
 
 ### Typography tokens
 
-<div class="block p-8 mb-5 bg-white rounded-lg shadow-lg">
-  <div class="mb-12">
-    <legend class="mb-2 font-bold border-b">
-      Font-family
-    </legend>
-    <div class="flex items-center mb-8">
-        <span class="mr-3 w-72">--way-font-family</span>
-        <code>
-          -apple-system, system-ui, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif
-        </span>
-    </div>
+<div class="mb-12">
+  <legend class="mb-2 font-bold border-b">
+    Font family
+  </legend>
+  <div class="flex items-center mb-8">
+      <code class="mr-3 w-72">--way-font-family</code>
+      <code>
+        -apple-system, system-ui, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif
+      </span>
   </div>
+</div>
 
-  <div class="mb-12">
-    <legend class="mb-2 font-bold border-b">
-      Font-sizes
-    </legend>
-    <div class="flex items-center mb-8">
-      <code class="w-1/3 mr-3">--way-font-size-xx-small</code>
-      <span class="w-2/3 text-2xs">The quick brown fox jumps over the lazy dog</span>
-    </div>
-    <div class="flex items-center mb-8">
-      <code class="w-1/3 mr-3">--way-font-size-x-small</code>
-      <span class="w-2/3 text-xs">The quick brown fox jumps over the lazy dog</span>
-    </div>
-    <div class="flex items-center mb-8">
-      <code class="w-1/3 mr-3">--way-font-size-small</code>
-      <span class="w-2/3 text-sm">The quick brown fox jumps over the lazy dog</span>
-    </div>
-    <div class="flex items-center mb-8">
-      <code class="w-1/3 mr-3">--way-font-size-medium</code>
-      <span class="w-2/3 text-base">The quick brown fox jumps over the lazy dog</span>
-    </div>
-    <div class="flex items-center mb-8">
-      <code class="w-1/3 mr-3">--way-font-size-large</code>
-        <span class="w-2/3 text-lg">The quick brown fox jumps over the lazy dog</span>
-    </div>
-    <div class="flex items-center mb-8">
-      <code class="w-1/3 mr-3">--way-font-size-x-large</code>
-        <span class="w-2/3 text-xl">The quick brown fox jumps over the lazy dog</span>
-    </div>
-    <div class="flex items-center mb-8">
-      <code class="w-1/3 mr-3">--way-font-size-xx-large</code>
-        <span class="w-2/3 text-2xl">The quick brown fox jumps over the lazy dog</span>
-    </div>
-    <div class="flex items-center mb-8">
-      <code class="w-1/3 mr-3">--way-font-size-xxx-large</code>
-        <span class="w-2/3 leading-none text-3xl">The quick brown fox jumps over the lazy dog</span>
-    </div>
-    <div class="flex items-center mb-8">
-      <code class="w-1/3 mr-3">--way-font-size-xxxx-large</code>
-        <span class="w-2/3 leading-none text-4xl">The quick brown fox jumps over the lazy dog</span>
-    </div>
+<div class="mb-12">
+  <legend class="mb-2 font-bold border-b">
+    Font sizes
+  </legend>
+  <div class="flex items-center mb-8">
+    <code class="w-1/3 mr-3">--way-font-size-xx-small</code>
+    <span class="w-2/3 text-2xs">The quick brown fox jumps over the lazy dog</span>
   </div>
-
-  <div>
-    <legend class="mb-2 font-bold border-b">
-      Font-weights
-    </legend>
-    <div class="flex items-center mb-8">
-        <span class="mr-3 w-72">--way-font-weight-light (300)</span>
-        <span class="font-light">The quick brown fox jumps over the lazy dog</span>
-    </div>
-    <div class="flex items-center mb-8">
-      <span class="mr-3 w-72">--way-font-weight-normal (400)</span>
-      <span class="font-normal">The quick brown fox jumps over the lazy dog</span>
-    </div>
-    <div class="flex items-center mb-8">
-      <span class="mr-3 w-72">--way-font-weight-semibold (500)</span>
-      <span class="font-semibold">The quick brown fox jumps over the lazy dog</span>
-    </div>
-    <div class="flex items-center mb-8">
-      <span class="mr-3 w-72">--way-font-weight-bold(700)</span>
-      <span class="font-bold">The quick brown fox jumps over the lazy dog</span>
-    </div>
+  <div class="flex items-center mb-8">
+    <code class="w-1/3 mr-3">--way-font-size-x-small</code>
+    <span class="w-2/3 text-xs">The quick brown fox jumps over the lazy dog</span>
   </div>
+  <div class="flex items-center mb-8">
+    <code class="w-1/3 mr-3">--way-font-size-small</code>
+    <span class="w-2/3 text-sm">The quick brown fox jumps over the lazy dog</span>
+  </div>
+  <div class="flex items-center mb-8">
+    <code class="w-1/3 mr-3">--way-font-size-medium</code>
+    <span class="w-2/3 text-base">The quick brown fox jumps over the lazy dog</span>
+  </div>
+  <div class="flex items-center mb-8">
+    <code class="w-1/3 mr-3">--way-font-size-large</code>
+    <span class="w-2/3 text-lg">The quick brown fox jumps over the lazy dog</span>
+  </div>
+  <div class="flex items-center mb-8">
+    <code class="w-1/3 mr-3">--way-font-size-x-large</code>
+    <span class="w-2/3 text-xl">The quick brown fox jumps over the lazy dog</span>
+  </div>
+  <div class="flex items-center mb-8">
+    <code class="w-1/3 mr-3">--way-font-size-xx-large</code>
+    <span class="w-2/3 text-2xl">The quick brown fox jumps over the lazy dog</span>
+  </div>
+  <div class="flex items-center mb-8">
+    <code class="w-1/3 mr-3">--way-font-size-xxx-large</code>
+    <span class="w-2/3 leading-none text-3xl">The quick brown fox jumps over the lazy dog</span>
+  </div>
+  <div class="flex items-center mb-8">
+    <code class="w-1/3 mr-3">--way-font-size-xxxx-large</code>
+    <span class="w-2/3 leading-none text-4xl">The quick brown fox jumps over the lazy dog</span>
+  </div>
+</div>
 
+<div>
+  <legend class="mb-2 font-bold border-b">
+    Font weights
+  </legend>
+  <div class="flex items-center mb-8">
+    <code class="mr-3 w-72">--way-font-weight-thin</code>
+    <span class="font-thin">The quick brown fox jumps over the lazy dog</span>
+  </div>
+  <div class="flex items-center mb-8">
+    <code class="mr-3 w-72">--way-font-weight-extra-light</code>
+    <span class="font-extralight">The quick brown fox jumps over the lazy dog</span>
+  </div>
+  <div class="flex items-center mb-8">
+    <code class="mr-3 w-72">--way-font-weight-light</code>
+    <span class="font-light">The quick brown fox jumps over the lazy dog</span>
+  </div>
+  <div class="flex items-center mb-8">
+    <code class="mr-3 w-72">--way-font-weight-normal</code>
+    <span class="font-normal">The quick brown fox jumps over the lazy dog</span>
+  </div>
+  <div class="flex items-center mb-8">
+    <code class="mr-3 w-72">--way-font-weight-medium</code>
+    <span class="font-medium">The quick brown fox jumps over the lazy dog</span>
+  </div>
+  <div class="flex items-center mb-8">
+    <code class="mr-3 w-72">--way-font-weight-semi-bold</code>
+    <span class="font-semibold">The quick brown fox jumps over the lazy dog</span>
+  </div>
+  <div class="flex items-center mb-8">
+    <code class="mr-3 w-72">--way-font-weight-bold</code>
+    <span class="font-bold">The quick brown fox jumps over the lazy dog</span>
+  </div>
+  <div class="flex items-center mb-8">
+    <code class="mr-3 w-72">--way-font-weight-extra-bold</code>
+    <span class="font-extrabold">The quick brown fox jumps over the lazy dog</span>
+  </div>
+  <div class="flex items-center mb-8">
+    <code class="mr-3 w-72">--way-font-weight-black</code>
+    <span class="font-black">The quick brown fox jumps over the lazy dog</span>
+  </div>
 </div>

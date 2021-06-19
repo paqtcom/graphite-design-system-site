@@ -1,9 +1,10 @@
 ---
 title: Components - way-textarea
 ---
+
 # way-textarea
 
-<div class="block p-8 mb-5 bg-white rounded-lg shadow-lg">
+<div>
 
 Textarea can be used in forms, or anywhere where the user needs to provide information.
 <way-textarea type="text" name="textarea" label="label" rows="5"></way-textarea>
@@ -11,8 +12,10 @@ Textarea can be used in forms, or anywhere where the user needs to provide infor
 ```html
 <way-textarea type="text" name="textarea" label="label" rows="5"></way-textarea>
 ```
+
 ## Sections
-<div class="flex items-center">
+
+<div class="flex items-center mb-3">
 <a href="#examples" class="mr-3">Examples</a>
 <a href="#properties" class="mr-3">Properties</a>
 <a href="#events">Events</a>
@@ -20,7 +23,7 @@ Textarea can be used in forms, or anywhere where the user needs to provide infor
 
 </div>
 
-<div id="examples" class="block p-8 mb-5 bg-white rounded-lg shadow-lg">
+<div id="examples">
 
 ## Examples
 
@@ -72,7 +75,7 @@ Use the `maxlength` attribute to set max allowed characters.
 
 </div>
 
-<div id="properties" class="block p-8 mb-5 bg-white rounded-lg shadow-lg">
+<div id="properties">
 
 ## Properties
 
@@ -88,12 +91,12 @@ Use the `maxlength` attribute to set max allowed characters.
 
 </div>
 
-<div id="events" class="block p-8 mb-5 bg-white rounded-lg shadow-lg">
+<div id="events">
 
 ## Events
 
-| Event      | Description                          | Type                |
-| ---------- | ------------------------------------ | ------------------- |
+| Event      | Description                         | Type                |
+| ---------- | ----------------------------------- | ------------------- |
 | `wayBlur`  | Emitted when the input loses focus. | `CustomEvent<void>` |
 | `wayFocus` | Emitted when the input has focus.   | `CustomEvent<void>` |
 

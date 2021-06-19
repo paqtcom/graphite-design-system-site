@@ -4,7 +4,7 @@ title: Components - way-menu-divider
 
 # way-menu-divider
 
-<div class="block p-8 mb-5 bg-white rounded-lg shadow-lg">
+<div>
 
 Menu dividers are used to visually group menu items.
 
@@ -36,13 +36,13 @@ Menu dividers are used to visually group menu items.
 
 ## Sections
 
-<div class="flex items-center">
+<div class="flex items-center mb-3">
 <a href="#css-custom-properties">CSS Custom Properties</a> 
 </div>
 
 </div>
 
-<div id="css-custom-properties" class="block p-8 mb-5 bg-white rounded-lg shadow-lg">
+<div id="css-custom-properties">
 
 ## CSS Custom Properties
 

@@ -4,7 +4,7 @@ title: Components - way-dropdown
 
 # way-dropdown
 
-<div class="block p-8 mb-5 bg-white rounded-lg shadow-lg">
+<div>
 
 Dropdowns expose additional content that "drops down" in a panel.
 
@@ -58,7 +58,7 @@ Dropdowns are designed to work well with [menus](/components/menu) to provide a 
 
 ## Sections
 
-<div class="flex items-center">
+<div class="flex items-center mb-3">
 <a href="#examples" class="mr-3">Examples</a> 
 <a href="#properties" class="mr-3">Properties</a> 
 <a href="#events" class="mr-3">Events</a> 
@@ -69,7 +69,7 @@ Dropdowns are designed to work well with [menus](/components/menu) to provide a 
 
 </div>
 
-<div id="examples" class="block p-8 mb-5 bg-white rounded-lg shadow-lg">
+<div id="examples">
 
 ## Examples
 
@@ -323,7 +323,7 @@ Alternatively, you can listen for the `click` event on individual menu items. No
 
 </div>
 
-<div id="properties" class="block p-8 mb-5 bg-white rounded-lg shadow-lg">
+<div id="properties">
 
 ## Properties
 
@@ -339,7 +339,7 @@ Alternatively, you can listen for the `click` event on individual menu items. No
 
 </div>
 
-<div id="events" class="block p-8 mb-5 bg-white rounded-lg shadow-lg">
+<div id="events">
 
 ## Events
 
@@ -352,7 +352,7 @@ Alternatively, you can listen for the `click` event on individual menu items. No
 
 </div>
 
-<div id="methods" class="block p-8 mb-5 bg-white rounded-lg shadow-lg">
+<div id="methods">
 
 ## Methods
 
@@ -374,7 +374,7 @@ Type: `Promise<void>`
 
 </div>
 
-<div id="slots" class="block p-8 mb-5 bg-white rounded-lg shadow-lg">
+<div id="slots">
 
 ## Slots
 
@@ -385,7 +385,7 @@ Type: `Promise<void>`
 
 </div>
 
-<div id="css-custom-properties" class="block p-8 mb-5 bg-white rounded-lg shadow-lg">
+<div id="css-custom-properties">
 
 ## CSS Custom Properties
 

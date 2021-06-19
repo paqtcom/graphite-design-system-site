@@ -4,7 +4,7 @@ title: Components - way-select
 
 # way-select
 
-<div class="block p-8 mb-5 bg-white rounded-lg shadow-lg">
+<div>
 
 Selects allow you to choose one or more items from a dropdown menu.
 
@@ -32,7 +32,7 @@ Selects allow you to choose one or more items from a dropdown menu.
 
 ## Sections
 
-<div class="flex items-center">
+<div class="flex items-center mb-3">
 <a href="#examples" class="mr-3">Examples</a> 
 <a href="#properties" class="mr-3">Properties</a> 
 <a href="#events" class="mr-3">Events</a> 
@@ -43,7 +43,7 @@ Selects allow you to choose one or more items from a dropdown menu.
 
 </div>
 
-<div id="examples" class="block p-8 mb-5 bg-white rounded-lg shadow-lg">
+<div id="examples">
 
 ## Examples
 
@@ -321,7 +321,7 @@ Add descriptive help text to a select with the `help-text` attribute. For help t
 
 </div>
 
-<div id="properties" class="block p-8 mb-5 bg-white rounded-lg shadow-lg">
+<div id="properties">
 
 ## Properties
 
@@ -344,7 +344,7 @@ Add descriptive help text to a select with the `help-text` attribute. For help t
 
 </div>
 
-<div id="events" class="block p-8 mb-5 bg-white rounded-lg shadow-lg">
+<div id="events">
 
 ## Events
 
@@ -356,7 +356,7 @@ Add descriptive help text to a select with the `help-text` attribute. For help t
 
 </div>
 
-<div id="methods" class="block p-8 mb-5 bg-white rounded-lg shadow-lg">
+<div id="methods">
 
 ## Methods
 
@@ -378,7 +378,7 @@ Type: `Promise<void>`
 
 </div>
 
-<div id="slots" class="block p-8 mb-5 bg-white rounded-lg shadow-lg">
+<div id="slots">
 
 ## Slots
 
@@ -390,7 +390,7 @@ Type: `Promise<void>`
 
 </div>
 
-<div id="css-custom-properties" class="block p-8 mb-5 bg-white rounded-lg shadow-lg">
+<div id="css-custom-properties">
 
 ## CSS Custom Properties
 

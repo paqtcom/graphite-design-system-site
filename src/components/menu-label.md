@@ -4,7 +4,7 @@ title: Components - way-menu-label
 
 # way-menu-label
 
-<div class="block p-8 mb-5 bg-white rounded-lg shadow-lg">
+<div>
 
 Menu labels are used to describe a group of menu items.
 
@@ -38,13 +38,13 @@ Menu labels are used to describe a group of menu items.
 
 ## Sections
 
-<div class="flex items-center">
+<div class="flex items-center mb-3">
 <a href="#css-custom-properties">CSS Custom Properties</a> 
 </div>
 
 </div>
 
-<div id="css-custom-properties" class="block p-8 mb-5 bg-white rounded-lg shadow-lg">
+<div id="css-custom-properties">
 
 ## CSS Custom Properties
 

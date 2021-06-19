@@ -4,7 +4,7 @@ title: Components - way-menu
 
 # way-menu
 
-<div class="block p-8 mb-5 bg-white rounded-lg shadow-lg">
+<div>
 
 Menus provide a list of options for the user to choose from.
 
@@ -38,7 +38,7 @@ Menus are intended for system menus (dropdown menus, select menus, context menus
 
 ## Sections
 
-<div class="flex items-center">
+<div class="flex items-center mb-3">
 <a href="#events" class="mr-3">Events</a> 
 <a href="#methods" class="mr-3">Methods</a> 
 <a href="#slots" class="mr-3">Slots</a> 
@@ -47,7 +47,7 @@ Menus are intended for system menus (dropdown menus, select menus, context menus
 
 </div>
 
-<div id="events" class="block p-8 mb-5 bg-white rounded-lg shadow-lg">
+<div id="events">
 
 ## Events
 
@@ -57,7 +57,7 @@ Menus are intended for system menus (dropdown menus, select menus, context menus
 
 </div>
 
-<div id="methods" class="block p-8 mb-5 bg-white rounded-lg shadow-lg">
+<div id="methods">
 
 ## Methods
 
@@ -74,7 +74,7 @@ Type: `Promise<void>`
 
 </div>
 
-<div id="slots" class="block p-8 mb-5 bg-white rounded-lg shadow-lg">
+<div id="slots">
 
 ## Slots
 
@@ -84,7 +84,7 @@ Type: `Promise<void>`
 
 </div>
 
-<div id="css-custom-properties" class="block p-8 mb-5 bg-white rounded-lg shadow-lg">
+<div id="css-custom-properties">
 
 ## CSS Custom Properties
 

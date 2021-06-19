@@ -4,8 +4,6 @@ title: Components - way-button
 
 # way-button
 
-<div class="block p-8 mb-5 bg-white rounded-lg shadow-lg">
-
 Buttons provide a clickable element, which can be used in forms, or anywhere that needs simple, standard button functionality. They may display text, icons, or both. Buttons can be styled with several attributes to look a specific way.
 
 <way-button>Button</way-button>
@@ -16,17 +14,15 @@ Buttons provide a clickable element, which can be used in forms, or anywhere tha
 
 ## Sections
 
-<div class="flex items-center">
-<a href="#examples" class="mr-3">Examples</a> 
-<a href="#properties" class="mr-3">Properties</a> 
-<a href="#events" class="mr-3">Events</a> 
-<a href="#slots" class="mr-3">Slots</a> 
-<a href="#css-custom-properties">CSS Custom Properties</a> 
+<div class="flex items-center mb-3">
+  <a href="#examples" class="mr-3">Examples</a> 
+  <a href="#properties" class="mr-3">Properties</a> 
+  <a href="#events" class="mr-3">Events</a> 
+  <a href="#slots" class="mr-3">Slots</a> 
+  <a href="#css-custom-properties">CSS Custom Properties</a> 
 </div>
 
-</div>
-
-<div id="examples" class="block p-8 mb-5 bg-white rounded-lg shadow-lg">
+<div id="examples">
 
 ## Examples
 
@@ -184,7 +180,7 @@ Use the `disabled` attribute to disable a button. Clicks will be suppressed unti
 
 </div>
 
-<div id="properties" class="block p-8 mb-5 bg-white rounded-lg shadow-lg">
+<div id="properties">
 
 ## Properties
 
@@ -202,7 +198,7 @@ Use the `disabled` attribute to disable a button. Clicks will be suppressed unti
 
 </div>
 
-<div id="events" class="block p-8 mb-5 bg-white rounded-lg shadow-lg">
+<div id="events">
 
 ## Events
 
@@ -213,7 +209,7 @@ Use the `disabled` attribute to disable a button. Clicks will be suppressed unti
 
 </div>
 
-<div id="slots" class="block p-8 mb-5 bg-white rounded-lg shadow-lg">
+<div id="slots">
 
 ## Slots
 
@@ -226,7 +222,7 @@ Use the `disabled` attribute to disable a button. Clicks will be suppressed unti
 
 </div>
 
-<div id="css-custom-properties" class="block p-8 mb-5 bg-white rounded-lg shadow-lg">
+<div id="css-custom-properties">
 
 ## CSS Custom Properties
 
@@ -247,5 +243,3 @@ Use the `disabled` attribute to disable a button. Clicks will be suppressed unti
 | `--padding-start`      | Left padding of the button (will be right padding when we support right-to-left direction) |
 | `--padding-top`        | Top padding of the button                                                                  |
 | `--transition`         | Transition of the button                                                                   |
-
-</div>

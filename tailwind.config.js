@@ -5,7 +5,6 @@
  ** Default: https://github.com/tailwindcss/tailwindcss/blob/master/stubs/defaultConfig.stub.js
  */
 module.exports = {
-  mode: 'jit',
   theme: {
     extend: {
       colors: {
@@ -92,10 +91,15 @@ module.exports = {
       },
 
       fontWeight: {
+        thin: 'var(--way-font-weight-thin)',
+        extralight: 'var(--way-font-weight-extra-light)',
         light: 'var(--way-font-weight-light)',
         normal: 'var(--way-font-weight-normal)',
-        semibold: 'var(--way-font-weight-semibold)',
+        medium: 'var(--way-font-weight-medium)',
+        semibold: 'var(--way-font-weight-semi-bold)',
         bold: 'var(--way-font-weight-bold)',
+        extrabold: 'var(--way-font-weight-extra-bold)',
+        black: 'var(--way-font-weight-black)',
       },
     },
     fontFamily: {

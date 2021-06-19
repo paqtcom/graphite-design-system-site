@@ -1,82 +1,43 @@
-<nav class="flex-1 px-2 space-y-1 bg-blue-800">
-  <a
-    href="/"
-    class="
-      flex
-      items-center
-      px-2
-      py-2
-      text-sm
-      font-medium
-      text-white
-      rounded-md
-      hover:no-underline
-      md:text-base
-      hover:bg-blue-700 hover:bg-opacity-25
-      group
-    "
-  >
-    <ion-icon class="mr-3" name="home-outline"></ion-icon>
-    Home
-  </a>
-  <a
-    href="/customizing"
-    class="
-      flex
-      items-center
-      px-2
-      py-2
-      text-sm
-      font-medium
-      text-white
-      rounded-md
-      hover:no-underline
-      md:text-base
-      hover:bg-blue-700 hover:bg-opacity-25
-      group
-    "
-  >
-    <ion-icon class="mr-3" name="color-palette-outline"></ion-icon>
-    Customizing
-  </a>
-  <a
-    href="#"
-    class="
-      flex
-      items-center
-      px-2
-      py-2
-      text-sm
-      font-medium
-      text-white
-      rounded-md
-      hover:no-underline
-      md:text-base
-      hover:bg-blue-700 hover:bg-opacity-25
-      group
-    "
-    onclick="showComponents()"
-  >
-    <ion-icon class="mr-3" name="grid-outline"></ion-icon>
+<nav class="flex-1 px-2 space-y-1">
+  <div class="flex items-center px-2 py-2 font-normal text-medium group uppercase text-sm">
+    Getting started
+  </div>
+  <div class="ml-3">
+    <a
+      href="/"
+      class="
+        flex
+        items-center
+        px-2
+        py-2
+        font-normal
+        text-dark-tint
+        hover:no-underline hover:text-primary hover:bg-opacity-25
+        group
+      "
+    >
+      Introduction
+    </a>
+    <a
+      href="/customizing"
+      class="
+        flex
+        items-center
+        px-2
+        py-2
+        font-normal
+        text-dark-tint
+        hover:no-underline hover:text-primary hover:bg-opacity-25
+        group
+      "
+    >
+      Customizing
+    </a>
+  </div>
+  <div class="flex items-center px-2 py-2 font-normal text-medium group uppercase text-sm">
     Components
-    <ion-icon class="ml-2 text-xs" name="chevron-down-outline"></ion-icon>
-  </a>
-  <div
-    class="
-      <%=
-      page.url.includes('components')
-      ?
-      ''
-      :
-      'hidden'
-      %>
-      bg-blue-700 bg-opacity-25
-      rounded-md
-      h-64
-      overflow-y-auto
-    "
-    id="dropdown-content"
-  >
+  </div>
+  <div class="ml-3">
     <div class="flex flex-col">
       <a
         href="/components/button"
@@ -85,17 +46,12 @@
           items-center
           px-2
           py-2
-          text-sm
-          font-medium
-          text-white
-          rounded-md
-          hover:no-underline
-          md:text-base
-          hover:bg-blue-700 hover:bg-opacity-25
+          font-normal
+          text-dark-tint
+          hover:no-underline hover:text-primary hover:bg-opacity-25
           group
         "
       >
-        <ion-icon class="mr-3" name="arrow-forward-circle-outline"></ion-icon>
         Button
       </a>
       <a
@@ -105,17 +61,12 @@
           items-center
           px-2
           py-2
-          text-sm
-          font-medium
-          text-white
-          rounded-md
-          hover:no-underline
-          md:text-base
-          hover:bg-blue-700 hover:bg-opacity-25
+          font-normal
+          text-dark-tint
+          hover:no-underline hover:text-primary hover:bg-opacity-25
           group
         "
       >
-        <ion-icon class="mr-3" name="arrow-forward-circle-outline"></ion-icon>
         Dropdown
       </a>
       <a
@@ -125,17 +76,12 @@
           items-center
           px-2
           py-2
-          text-sm
-          font-medium
-          text-white
-          rounded-md
-          hover:no-underline
-          md:text-base
-          hover:bg-blue-700 hover:bg-opacity-25
+          font-normal
+          text-dark-tint
+          hover:no-underline hover:text-primary hover:bg-opacity-25
           group
         "
       >
-        <ion-icon class="mr-3" name="arrow-forward-circle-outline"></ion-icon>
         Input
       </a>
       <a
@@ -145,17 +91,12 @@
           items-center
           px-2
           py-2
-          text-sm
-          font-medium
-          text-white
-          rounded-md
-          hover:no-underline
-          md:text-base
-          hover:bg-blue-700 hover:bg-opacity-25
+          font-normal
+          text-dark-tint
+          hover:no-underline hover:text-primary hover:bg-opacity-25
           group
         "
       >
-        <ion-icon class="mr-3" name="arrow-forward-circle-outline"></ion-icon>
         Menu
       </a>
       <a
@@ -165,17 +106,12 @@
           items-center
           px-2
           py-2
-          text-sm
-          font-medium
-          text-white
-          rounded-md
-          hover:no-underline
-          md:text-base
-          hover:bg-blue-700 hover:bg-opacity-25
+          font-normal
+          text-dark-tint
+          hover:no-underline hover:text-primary hover:bg-opacity-25
           group
         "
       >
-        <ion-icon class="mr-3" name="arrow-forward-circle-outline"></ion-icon>
         Menu Divider
       </a>
       <a
@@ -185,17 +121,12 @@
           items-center
           px-2
           py-2
-          text-sm
-          font-medium
-          text-white
-          rounded-md
-          hover:no-underline
-          md:text-base
-          hover:bg-blue-700 hover:bg-opacity-25
+          font-normal
+          text-dark-tint
+          hover:no-underline hover:text-primary hover:bg-opacity-25
           group
         "
       >
-        <ion-icon class="mr-3" name="arrow-forward-circle-outline"></ion-icon>
         Menu Item
       </a>
       <a
@@ -205,17 +136,12 @@
           items-center
           px-2
           py-2
-          text-sm
-          font-medium
-          text-white
-          rounded-md
-          hover:no-underline
-          md:text-base
-          hover:bg-blue-700 hover:bg-opacity-25
+          font-normal
+          text-dark-tint
+          hover:no-underline hover:text-primary hover:bg-opacity-25
           group
         "
       >
-        <ion-icon class="mr-3" name="arrow-forward-circle-outline"></ion-icon>
         Menu Label
       </a>
       <a
@@ -225,17 +151,12 @@
           items-center
           px-2
           py-2
-          text-sm
-          font-medium
-          text-white
-          rounded-md
-          hover:no-underline
-          md:text-base
-          hover:bg-blue-700 hover:bg-opacity-25
+          font-normal
+          text-dark-tint
+          hover:no-underline hover:text-primary hover:bg-opacity-25
           group
         "
       >
-        <ion-icon class="mr-3" name="arrow-forward-circle-outline"></ion-icon>
         Select
       </a>
       <a
@@ -245,17 +166,12 @@
           items-center
           px-2
           py-2
-          text-sm
-          font-medium
-          text-white
-          rounded-md
-          hover:no-underline
-          md:text-base
-          hover:bg-blue-700 hover:bg-opacity-25
+          font-normal
+          text-dark-tint
+          hover:no-underline hover:text-primary hover:bg-opacity-25
           group
         "
       >
-        <ion-icon class="mr-3" name="arrow-forward-circle-outline"></ion-icon>
         Tag
       </a>
       <a
@@ -265,27 +181,14 @@
           items-center
           px-2
           py-2
-          text-sm
-          font-medium
-          text-white
-          rounded-md
-          hover:no-underline
-          md:text-base
-          hover:bg-blue-700 hover:bg-opacity-25
+          font-normal
+          text-dark-tint
+          hover:no-underline hover:text-primary hover:bg-opacity-25
           group
         "
       >
-        <ion-icon class="mr-3" name="arrow-forward-circle-outline"></ion-icon>
         Textarea
       </a>
     </div>
   </div>
 </nav>
-
-<script>
-  function showComponents() {
-    var dropdownContent = document.getElementById('dropdown-content');
-
-    dropdownContent.classList.toggle('hidden');
-  }
-</script>

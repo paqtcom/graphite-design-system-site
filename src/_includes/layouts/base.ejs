@@ -66,18 +66,20 @@
     <% } %>
   </head>
 
-  <body>
-    <div class="flex h-screen overflow-hidden bg-blue-800">
+  <body class="bg-white">
+    <div class="flex h-screen overflow-hidden">
       <div class="hidden md:flex md:flex-shrink-0">
         <div class="flex flex-col w-64">
-          <div class="flex flex-col flex-grow pt-5 pb-4 overflow-y-auto border-r border-gray-200">
-            <div class="flex items-center flex-shrink-0 px-4"><%- include('../logo.ejs') %></div>
+          <div class="flex flex-col flex-grow pt-5 pb-4 overflow-y-auto border-r border-light">
+            <div class="flex items-center flex-shrink-0 px-4">
+              <a href="/"><%- include('../logo.ejs') %></a>
+            </div>
             <div class="flex flex-col flex-grow mt-5"><%- include('../menu.ejs') %></div>
           </div>
         </div>
       </div>
 
-      <main class="relative flex-1 overflow-y-auto bg-gray-100 focus:outline-none" tabindex="0">
+      <main class="relative flex-1 overflow-y-auto focus:outline-none" tabindex="0">
         <div class="m-8 content"><%- content %></div>
       </main>
     </div>
