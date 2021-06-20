@@ -68,8 +68,25 @@
 
   <body class="bg-white">
     <div class="flex h-screen overflow-hidden">
-      <div class="hidden md:flex md:flex-shrink-0">
-        <div class="flex flex-col w-64">
+      <div
+        class="
+          w-full
+          lg:w-1/5 lg:block
+          fixed
+          lg:relative
+          inset-0
+          lg:mt-0
+          z-30
+          bg-white
+          dark:bg-gray-900
+          lg:bg-transparent lg:dark:bg-transparent
+          block
+          hidden
+        "
+        id="sidebar"
+      >
+        <button class="lg:hidden" onClick="closeSidebar()">Close</button>
+        <div class="flex flex-col">
           <div class="flex flex-col flex-grow pt-5 pb-4 overflow-y-auto border-r border-light">
             <div class="flex items-center flex-shrink-0 px-4">
               <a href="/"><%- include('../logo.ejs') %></a>
@@ -80,8 +97,27 @@
       </div>
 
       <main class="relative flex-1 overflow-y-auto focus:outline-none" tabindex="0">
+        <button class="lg:hidden" onClick="openSidebar()">Open</button>
         <div class="m-8 content max-w-4xl mx-auto px-4"><%- content %></div>
       </main>
     </div>
+
+    <script>
+      function openSidebar() {
+        var sidebar = document.getElementById('sidebar');
+
+        sidebar.classList.remove('hidden');
+      }
+
+      function closeSidebar() {
+        var sidebar = document.getElementById('sidebar');
+
+        sidebar.classList.add('hidden');
+      }
+
+      window.addEventListener('DOMContentLoaded', function (event) {
+        sidebar.classList.add('hidden');
+      });
+    </script>
   </body>
 </html>
