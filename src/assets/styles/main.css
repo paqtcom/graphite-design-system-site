@@ -57,14 +57,30 @@ a:hover {
 }
 
 .content th {
-  @apply bg-light-tint;
+  @apply bg-light-tint w-full text-left;
 }
 
-code {
-  @apply text-base;
+.content code {
+  @apply text-sm bg-light-tint p-1 rounded;
 }
 
-pre {
-  padding: 0.5rem 0.75rem !important;
-  width: max-content;
+.content pre code {
+  background-color: inherit;
+}
+
+.main-nav a {
+  @apply ml-2 flex items-center px-2 py-2 font-normal text-dark-tint hover:no-underline hover:text-primary hover:bg-opacity-25 group;
+}
+
+.main-nav .header {
+  @apply flex items-center px-2 py-2 font-bold group uppercase text-xs;
+}
+
+.main-nav .active {
+  @apply text-primary rounded;
+  background-color: rgb(var(--way-color-primary-rgb), 0.1);
+}
+
+.toc-container-header {
+  @apply uppercase text-xs font-bold;
 }
