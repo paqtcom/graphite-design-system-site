@@ -48,16 +48,16 @@ a:hover {
 }
 
 .content table {
-  @apply block overflow-auto border-collapse whitespace-nowrap mb-8;
+  @apply block overflow-auto border-collapse whitespace-nowrap mb-8 text-sm;
 }
 
 .content th,
 .content td {
-  @apply px-8 py-4 border;
+  @apply px-4 py-2 border;
 }
 
 .content th {
-  @apply bg-light-tint w-full text-left;
+  @apply w-full text-left font-semibold;
 }
 
 .content code {
@@ -69,11 +69,11 @@ a:hover {
 }
 
 .main-nav a {
-  @apply ml-2 flex items-center px-2 py-2 font-normal text-dark-tint hover:no-underline hover:text-primary hover:bg-opacity-25 group;
+  @apply ml-2 flex items-center px-2 py-2 font-normal text-dark-tint hover:no-underline hover:text-primary hover:bg-opacity-25;
 }
 
 .main-nav .header {
-  @apply flex items-center px-2 py-2 font-bold group uppercase text-xs;
+  @apply flex items-center px-2 py-2 font-bold uppercase text-xs;
 }
 
 .main-nav .active {

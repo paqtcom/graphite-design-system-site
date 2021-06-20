@@ -66,39 +66,111 @@
     <% } %>
   </head>
 
-  <body class="bg-white">
-    <div class="flex h-screen overflow-hidden">
-      <div
-        class="
-          w-full
-          lg:w-1/5 lg:block
-          fixed
-          lg:relative
-          inset-0
-          lg:mt-0
-          z-30
-          bg-white
-          dark:bg-gray-900
-          lg:bg-transparent lg:dark:bg-transparent
-          block
-          hidden
-        "
-        id="sidebar"
-      >
-        <button class="lg:hidden" onClick="closeSidebar()">Close</button>
-        <div class="flex flex-col">
-          <div class="flex flex-col flex-grow pt-5 pb-4 overflow-y-auto border-r border-light">
-            <div class="flex items-center flex-shrink-0 px-4">
-              <a href="/"><%- include('../logo.ejs') %></a>
+  <body class="antialiased text-dark leading-normal bg-white lg:h-auto lg:overflow-y-auto">
+    <div class="pt-16">
+      <nav class="fixed top-0 z-40 w-full border-b bg-white">
+        <div class="container mx-auto flex-1 px-4 lg:px-8">
+          <div class="flex items-center justify-between h-16">
+            <div class="lg:w-4/5 flex items-center pr-4">
+              <a
+                href="/"
+                aria-label="Way2Web Logo"
+                class="flex-shrink-0 flex-1 font-bold text-xl nuxt-link-exact-active nuxt-link-active"
+                <%- page.url == '/' ? 'aria-current="page"' : '' %>
+              >
+                <%- include('../logo.ejs') %> 
+              </a>
             </div>
-            <div class="flex flex-col flex-grow mt-5"><%- include('../menu.ejs') %></div>
+            <div class="lg:w-1/5 flex items-center pr-4 lg:pr-8 justify-end">
+              <div class="flex items-center">
+                <a
+                  href="https://github.com/Way2Web/way2web-design-system"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  title="Github"
+                  name="Github"
+                  class="text-medium hover:text-primary-500 dark-hover:text-primary-500 p-2 hidden lg:block"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="w-5 h-5"
+                  >
+                    <path
+                      d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"
+                    ></path>
+                  </svg>
+                </a>
+                <button
+                  aria-label="Menu" 
+                  class="
+                    lg:hidden
+                    p-2
+                    rounded-md
+                    text-medium
+                    focus:outline-none
+                    -mr-2
+                  "
+                  onClick="toggleSidebar()"
+                >
+                  <svg
+                    fill="none"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                    class="w-5 h-5"
+                    id="menuButtonSVG"
+                  >
+                    <path d="M4 6h16M4 12h16M4 18h16"></path>
+                  </svg>
+                </button>
+              </div>
+            </div>
           </div>
         </div>
-      </div>
+      </nav>
 
-      <main class="relative flex-1 overflow-y-auto focus:outline-none" tabindex="0">
-        <button class="lg:hidden" onClick="openSidebar()">Open</button>
-        <div class="m-8 content max-w-4xl mx-auto px-4"><%- content %></div>
+      <main class="container mx-auto px-4 lg:px-8">
+        <div class="flex flex-wrap relative">
+          <aside
+            class="
+              w-full
+              lg:w-1/5 lg:block
+              fixed
+              lg:relative
+              inset-0
+              mt-16
+              lg:mt-0
+              z-30
+              bg-white
+              lg:bg-transparent
+              block
+              hidden
+            "
+            id="sidebar"
+          >
+            <div class="lg:sticky lg:top-16 overflow-y-auto h-full lg:h-auto lg:max-h-(screen-16)">
+              <div class="p-4 lg:py-8 lg:pl-0 lg:pr-8">
+                <%- include('../menu.ejs') %>
+              </div>
+            </div>
+          </aside>
+          
+          <div class="flex flex-wrap-reverse w-full lg:w-4/5">
+            <div class="w-full py-4 lg:pt-8 lg:pb-4 lg:border-l">
+              <article class="content max-w-none lg:px-8">
+                <%- content %>
+              </article>
+            </div>
+          </div>
+        </div>
       </main>
     </div>
 
@@ -115,8 +187,24 @@
         sidebar.classList.add('hidden');
       }
 
+      function toggleSidebar() {
+        var sidebar = document.getElementById('sidebar');
+        var menuButton = document.getElementById('menuButton');
+
+        sidebar.classList.toggle('hidden');
+        document.body.classList.toggle('h-screen');
+        document.body.classList.toggle('overflow-y-hidden');
+
+        if (sidebar.classList.contains('hidden')) {
+          menuButtonSVG.innerHTML = '<path d="M4 6h16M4 12h16M4 18h16"></path>';
+        } else {
+          menuButtonSVG.innerHTML = '<path d="M6 18L18 6M6 6l12 12"></path>';
+        }
+      }
+
       window.addEventListener('DOMContentLoaded', function (event) {
         sidebar.classList.add('hidden');
+        menuButtonSVG.innerHTML = '<path d="M4 6h16M4 12h16M4 18h16"></path>';
       });
     </script>
   </body>

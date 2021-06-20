@@ -5,7 +5,14 @@
  ** Default: https://github.com/tailwindcss/tailwindcss/blob/master/stubs/defaultConfig.stub.js
  */
 module.exports = {
+  mode: 'jit',
   theme: {
+    screens: {
+      sm: '640px',
+      md: '768px',
+      lg: '1024px',
+      xl: '1280px',
+    },
     extend: {
       colors: {
         primary: 'var(--way-color-primary)',
@@ -52,30 +59,6 @@ module.exports = {
         'dark-contrast': 'var(--way-color-dark-contrast)',
         'dark-shade': 'var(--way-color-dark-shade)',
         'dark-tint': 'var(--way-color-dark-tint)',
-
-        blue: {
-          500: '#1799de',
-          700: '#00679e',
-          800: '#051f2c',
-          900: '#02131b',
-        },
-        green: '#0fbe78',
-        purple: '#9775e7',
-        yellow: '#fbbc4e',
-        orange: '#ff6e41',
-        red: '#ff5363',
-        pink: 'ffa1aa',
-        gray: {
-          100: '#f4f8fb',
-          200: '#e7eef4',
-          300: '#dbe5eb',
-          400: '#c1d1db',
-          500: '#9eaeb7',
-          600: '#76879f',
-          700: '#697886',
-          800: '#4c5960',
-          900: '#314156',
-        },
       },
 
       fontSize: {
