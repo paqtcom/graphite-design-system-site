@@ -4,7 +4,7 @@ title: Components - way-tag
 
 # way-tag
 
-<div class="block p-8 mb-5 bg-white rounded-lg shadow-lg">
+[[toc]]
 
 Tags are used as labels to organize things or to indicate a selection.
 
@@ -21,19 +21,6 @@ Tags are used as labels to organize things or to indicate a selection.
 <way-tag type="warning">Warning</way-tag>
 <way-tag type="danger">Danger</way-tag>
 ```
-
-## Sections
-
-<div class="flex items-center">
-<a href="#examples" class="mr-3">Examples</a> 
-<a href="#properties" class="mr-3">Properties</a> 
-<a href="#events" class="mr-3">Events</a> 
-<a href="#css-custom-properties">CSS Custom Properties</a> 
-</div>
-
-</div>
-
-<div id="examples" class="block p-8 mb-5 bg-white rounded-lg shadow-lg">
 
 ## Examples
 
@@ -115,10 +102,6 @@ Use the `clearable` attribute to add a clear button to the tag.
 </style>
 ```
 
-</div>
-
-<div id="properties" class="block p-8 mb-5 bg-white rounded-lg shadow-lg">
-
 ## Properties
 
 | Property    | Attribute   | Description                                              | Type      | Default  |
@@ -128,19 +111,11 @@ Use the `clearable` attribute to add a clear button to the tag.
 | `size`      | `size`      | The tag's size.                                          | `"large"  | "medium" | "small"`  | `'medium'` |
 | `type`      | `type`      | The tag's type.                                          | `"danger" | "info"   | "primary" | "success"  | "warning"` | `'primary'` |
 
-</div>
-
-<div id="events" class="block p-8 mb-5 bg-white rounded-lg shadow-lg">
-
 ## Events
 
 | Event       | Description                                 | Type               |
 | ----------- | ------------------------------------------- | ------------------ |
 | `way-clear` | Emitted when the clear button is activated. | `CustomEvent<any>` |
-
-</div>
-
-<div id="css-custom-properties" class="block p-8 mb-5 bg-white rounded-lg shadow-lg">
 
 ## CSS Custom Properties
 
@@ -163,5 +138,3 @@ Use the `clearable` attribute to add a clear button to the tag.
 | `--padding-end`        | Right padding of the tag (will be left padding when we support right-to-left direction) |
 | `--padding-start`      | Left padding of the tag (will be right padding when we support right-to-left direction) |
 | `--padding-top`        | Top padding of the tag                                                                  |
-
-</div>

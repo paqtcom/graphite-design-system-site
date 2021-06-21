@@ -4,7 +4,7 @@ title: Components - way-select
 
 # way-select
 
-<div class="block p-8 mb-5 bg-white rounded-lg shadow-lg">
+[[toc]]
 
 Selects allow you to choose one or more items from a dropdown menu.
 
@@ -29,21 +29,6 @@ Selects allow you to choose one or more items from a dropdown menu.
   <way-menu-item value="option-6">Option 6</way-menu-item>
 </way-select>
 ```
-
-## Sections
-
-<div class="flex items-center">
-<a href="#examples" class="mr-3">Examples</a> 
-<a href="#properties" class="mr-3">Properties</a> 
-<a href="#events" class="mr-3">Events</a> 
-<a href="#methods" class="mr-3">Methods</a> 
-<a href="#slots" class="mr-3">Slots</a> 
-<a href="#css-custom-properties">CSS Custom Properties</a> 
-</div>
-
-</div>
-
-<div id="examples" class="block p-8 mb-5 bg-white rounded-lg shadow-lg">
 
 ## Examples
 
@@ -319,10 +304,6 @@ Add descriptive help text to a select with the `help-text` attribute. For help t
 </way-select>
 ```
 
-</div>
-
-<div id="properties" class="block p-8 mb-5 bg-white rounded-lg shadow-lg">
-
 ## Properties
 
 | Property         | Attribute          | Description                                                                                                                                                                                    | Type                             | Default    |
@@ -342,10 +323,6 @@ Add descriptive help text to a select with the `help-text` attribute. For help t
 | `size`           | `size`             | The select's size.                                                                                                                                                                             | `"large" \| "medium" \| "small"` | `'medium'` |
 | `value`          | `value`            | The value of the control. This will be a string or an array depending on `multiple`.                                                                                                           | `string \| string[]`             | `''`       |
 
-</div>
-
-<div id="events" class="block p-8 mb-5 bg-white rounded-lg shadow-lg">
-
 ## Events
 
 | Event        | Description                               | Type               |
@@ -353,10 +330,6 @@ Add descriptive help text to a select with the `help-text` attribute. For help t
 | `way-blur`   | Emitted when the control loses focus.     | `CustomEvent<any>` |
 | `way-change` | Emitted when the control's value changes. | `CustomEvent<any>` |
 | `way-focus`  | Emitted when the control gains focus.     | `CustomEvent<any>` |
-
-</div>
-
-<div id="methods" class="block p-8 mb-5 bg-white rounded-lg shadow-lg">
 
 ## Methods
 
@@ -376,10 +349,6 @@ Sets a custom validation message. If `message` is not empty, the field will be c
 
 Type: `Promise<void>`
 
-</div>
-
-<div id="slots" class="block p-8 mb-5 bg-white rounded-lg shadow-lg">
-
 ## Slots
 
 | Slot          | Description                                                    |
@@ -387,10 +356,6 @@ Type: `Promise<void>`
 | `(default)`   | The select's options in the form of menu items.                |
 | `"help-text"` | Help text that describes how to use the select.                |
 | `"label"`     | The select's label. Alternatively, you can use the label prop. |
-
-</div>
-
-<div id="css-custom-properties" class="block p-8 mb-5 bg-white rounded-lg shadow-lg">
 
 ## CSS Custom Properties
 
@@ -413,5 +378,3 @@ Type: `Promise<void>`
 | `--tags-margin-end`        | Right margin of the tags (will be left margin when we support right-to-left direction)       |
 | `--tags-padding-bottom`    | Bottom padding of the tags                                                                   |
 | `--tags-padding-top`       | Top padding of the tags                                                                      |
-
-</div>

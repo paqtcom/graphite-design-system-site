@@ -1,7 +1,7 @@
 @tailwind base;
 
 a {
-  @apply text-blue-700;
+  @apply text-primary;
 }
 
 a:hover {
@@ -21,27 +21,26 @@ a:hover {
 }
 
 .content h1 {
-  @apply mb-8 text-4xl font-bold leading-10;
+  @apply mb-8 text-2xl font-bold leading-10;
 }
 
 .content h2 {
-  @apply mb-8 text-3xl font-bold;
+  @apply mb-8 text-xl font-bold;
 }
 
 .content h3 {
-  @apply mb-5 text-2xl font-bold;
-}
-
-.content h4 {
-  @apply mb-5 text-xl font-bold;
-}
-
-.content h5 {
   @apply mb-5 text-lg font-bold;
 }
 
-.content h6 {
+.content h4 {
   @apply mb-5 text-base font-bold;
+}
+
+.content h1 a,
+.content h2 a,
+.content h3 a,
+.content h4 a {
+  @apply text-dark-tint;
 }
 
 .content pre[class*='language-'] {
@@ -49,23 +48,39 @@ a:hover {
 }
 
 .content table {
-  @apply block overflow-auto border-collapse whitespace-nowrap;
+  @apply block overflow-auto border-collapse whitespace-nowrap mb-8 text-sm;
 }
 
 .content th,
 .content td {
-  @apply px-8 py-4 border;
+  @apply px-4 py-2 border;
 }
 
 .content th {
-  @apply bg-gray-100;
+  @apply w-full text-left font-semibold;
 }
 
-code {
-  font-size: 15px;
+.content code {
+  @apply text-sm bg-light-tint p-1 rounded;
 }
 
-pre {
-  padding: 0.5rem 0.75rem !important;
-  width: max-content;
+.content pre code {
+  background-color: inherit;
+}
+
+.main-nav a {
+  @apply ml-2 flex items-center px-2 py-2 font-normal text-dark-tint hover:no-underline hover:text-primary hover:bg-opacity-25;
+}
+
+.main-nav .header {
+  @apply flex items-center px-2 py-2 font-bold uppercase text-xs;
+}
+
+.main-nav .active {
+  @apply text-primary rounded;
+  background-color: rgb(var(--way-color-primary-rgb), 0.1);
+}
+
+.toc-container-header {
+  @apply uppercase text-xs font-bold;
 }

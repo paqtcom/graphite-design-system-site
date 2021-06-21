@@ -4,7 +4,7 @@ title: Components - way-dropdown
 
 # way-dropdown
 
-<div class="block p-8 mb-5 bg-white rounded-lg shadow-lg">
+[[toc]]
 
 Dropdowns expose additional content that "drops down" in a panel.
 
@@ -55,21 +55,6 @@ Dropdowns are designed to work well with [menus](/components/menu) to provide a 
   </way-menu>
 </way-dropdown>
 ```
-
-## Sections
-
-<div class="flex items-center">
-<a href="#examples" class="mr-3">Examples</a> 
-<a href="#properties" class="mr-3">Properties</a> 
-<a href="#events" class="mr-3">Events</a> 
-<a href="#methods" class="mr-3">Methods</a> 
-<a href="#slots" class="mr-3">Slots</a> 
-<a href="#css-custom-properties">CSS Custom Properties</a> 
-</div>
-
-</div>
-
-<div id="examples" class="block p-8 mb-5 bg-white rounded-lg shadow-lg">
 
 ## Examples
 
@@ -321,10 +306,6 @@ Alternatively, you can listen for the `click` event on individual menu items. No
 </script>
 ```
 
-</div>
-
-<div id="properties" class="block p-8 mb-5 bg-white rounded-lg shadow-lg">
-
 ## Properties
 
 | Property            | Attribute         | Description                                                                                                                                | Type                                                                                                                                                                 | Default          |
@@ -337,10 +318,6 @@ Alternatively, you can listen for the `click` event on individual menu items. No
 | `placement`         | `placement`       | The preferred placement of the dropdown panel. Note that the actual placement may vary as needed to keep the panel inside of the viewport. | `"bottom" \| "bottom-end" \| "bottom-start" \| "left" \| "left-end" \| "left-start" \| "right" \| "right-end" \| "right-start" \| "top" \| "top-end" \| "top-start"` | `'bottom-start'` |
 | `skidding`          | `skidding`        | The distance in pixels from which to offset the panel along its trigger.                                                                   | `number`                                                                                                                                                             | `0`              |
 
-</div>
-
-<div id="events" class="block p-8 mb-5 bg-white rounded-lg shadow-lg">
-
 ## Events
 
 | Event            | Description                                                                                           | Type               |
@@ -349,10 +326,6 @@ Alternatively, you can listen for the `click` event on individual menu items. No
 | `way-after-show` | Emitted after the dropdown opens and all transitions are complete.                                    | `CustomEvent<any>` |
 | `way-hide`       | Emitted when the dropdown closes. Calling `event.preventDefault()` will prevent it from being closed. | `CustomEvent<any>` |
 | `way-show`       | Emitted when the dropdown opens. Calling `event.preventDefault()` will prevent it from being opened.  | `CustomEvent<any>` |
-
-</div>
-
-<div id="methods" class="block p-8 mb-5 bg-white rounded-lg shadow-lg">
 
 ## Methods
 
@@ -372,20 +345,12 @@ Shows the dropdown panel
 
 Type: `Promise<void>`
 
-</div>
-
-<div id="slots" class="block p-8 mb-5 bg-white rounded-lg shadow-lg">
-
 ## Slots
 
 | Slot        | Description                                               |
 | ----------- | --------------------------------------------------------- |
 | `(default)` | The dropdown's content.                                   |
 | `"trigger"` | The dropdown's trigger, usually a `<way-button>` element. |
-
-</div>
-
-<div id="css-custom-properties" class="block p-8 mb-5 bg-white rounded-lg shadow-lg">
 
 ## CSS Custom Properties
 
@@ -396,5 +361,3 @@ Type: `Promise<void>`
 | `--panel-border-radius`    | Border radius of the dropdown panel    |
 | `--panel-box-shadow`       | Box shadow of the dropdown panel       |
 | `--transition`             | Transition of the dropdown             |
-
-</div>

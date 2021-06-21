@@ -4,7 +4,7 @@ title: Components - way-menu-item
 
 # way-menu-item
 
-<div class="block p-8 mb-5 bg-white rounded-lg shadow-lg">
+[[toc]]
 
 Menu items provide options for the user to pick from in a menu.
 
@@ -48,19 +48,6 @@ Menu items provide options for the user to pick from in a menu.
 </way-menu>
 ```
 
-## Sections
-
-<div class="flex items-center">
-<a href="#properties" class="mr-3">Properties</a> 
-<a href="#methods" class="mr-3">Methods</a> 
-<a href="#slots" class="mr-3">Slots</a> 
-<a href="#css-custom-properties">CSS Custom Properties</a> 
-</div>
-
-</div>
-
-<div id="properties" class="block p-8 mb-5 bg-white rounded-lg shadow-lg">
-
 ## Properties
 
 | Property   | Attribute  | Description                                                                                               | Type      | Default |
@@ -68,10 +55,6 @@ Menu items provide options for the user to pick from in a menu.
 | `checked`  | `checked`  | Set to true to draw the item in a checked state.                                                          | `boolean` | `false` |
 | `disabled` | `disabled` | Set to true to draw the menu item in a disabled state.                                                    | `boolean` | `false` |
 | `value`    | `value`    | A unique value to store in the menu item. This can be used as a way to identify menu items when selected. | `string`  | `''`    |
-
-</div>
-
-<div id="methods" class="block p-8 mb-5 bg-white rounded-lg shadow-lg">
 
 ## Methods
 
@@ -91,10 +74,6 @@ Sets focus on the menu item.
 
 Type: `Promise<void>`
 
-</div>
-
-<div id="slots" class="block p-8 mb-5 bg-white rounded-lg shadow-lg">
-
 ## Slots
 
 | Slot        | Description                                                                                                           |
@@ -102,10 +81,6 @@ Type: `Promise<void>`
 | `(default)` | The menu item's label.                                                                                                |
 | `"end"`     | Content is placed to the right of the menu item's label (will be to the left when we support right-to-left direction) |
 | `"start"`   | Content is placed to the left of the menu item's label (will be to the right when we support right-to-left direction) |
-
-</div>
-
-<div id="css-custom-properties" class="block p-8 mb-5 bg-white rounded-lg shadow-lg">
 
 ## CSS Custom Properties
 
@@ -122,5 +97,3 @@ Type: `Promise<void>`
 | `--padding-start`            | Left padding of the menu item (will be right padding when we support right-to-left direction) |
 | `--padding-top`              | Top padding of the menu item                                                                  |
 | `--transition`               | Transition of the menu item                                                                   |
-
-</div>
