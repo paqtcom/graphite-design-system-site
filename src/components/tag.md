@@ -117,6 +117,12 @@ Use the `clearable` attribute to add a clear button to the tag.
 | ----------- | ------------------------------------------- | ------------------ |
 | `way-clear` | Emitted when the clear button is activated. | `CustomEvent<any>` |
 
+## Slots
+
+| Slot        | Description        |
+| ----------- | ------------------ |
+| `(default)` | The tag's content. |
+
 ## CSS Custom Properties
 
 | Name                   | Description                                                                             |

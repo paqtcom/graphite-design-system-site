@@ -36,6 +36,12 @@ Menu labels are used to describe a group of menu items.
 </way-menu>
 ```
 
+## Slots
+
+| Slot        | Description               |
+| ----------- | ------------------------- |
+| `(default)` | The menu label's content. |
+
 ## CSS Custom Properties
 
 | Name                 | Description                                                                                         |

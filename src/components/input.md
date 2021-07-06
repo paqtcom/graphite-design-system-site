@@ -62,7 +62,7 @@ Use the `disabled` attribute to disable a input. Clicks will be suppressed until
 
 ## Events
 
-| Event      | Description                         | Type                |
-| ---------- | ----------------------------------- | ------------------- |
-| `wayBlur`  | Emitted when the input loses focus. | `CustomEvent<void>` |
-| `wayFocus` | Emitted when the input has focus.   | `CustomEvent<void>` |
+| Event       | Description                         | Type                |
+| ----------- | ----------------------------------- | ------------------- |
+| `way-blur`  | Emitted when the input loses focus. | `CustomEvent<void>` |
+| `way-focus` | Emitted when the input has focus.   | `CustomEvent<void>` |
