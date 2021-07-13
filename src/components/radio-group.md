@@ -28,7 +28,13 @@ Radio Groups are used to group multiple radios so they function as a single cont
 
 You can hide the fieldset and legend that wraps the radio group using the `no-fieldset` attribute. In this case, a label is still required for assistive devices to properly identify the control.
 
-```html preview
+<way-radio-group label="Select an item" no-fieldset>
+  <way-radio value="1" checked>Item 1</way-radio>
+  <way-radio value="2">Item 2</way-radio>
+  <way-radio value="3">Item 3</way-radio>
+</way-radio-group>
+
+```html
 <way-radio-group label="Select an item" no-fieldset>
   <way-radio value="1" checked>Item 1</way-radio>
   <way-radio value="2">Item 2</way-radio>
