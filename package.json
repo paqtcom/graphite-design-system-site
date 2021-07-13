@@ -68,6 +68,6 @@
     ]
   },
   "dependencies": {
-    "@w2wds/core": "^0.5.4"
+    "@w2wds/core": "^0.6.0"
   }
 }
