@@ -84,6 +84,32 @@ module.exports = {
         extrabold: 'var(--way-font-weight-extra-bold)',
         black: 'var(--way-font-weight-black)',
       },
+      borderRadius: {
+        sm: 'var(--way-border-radius-small)',
+        md: 'var(--way-border-radius-medium)',
+        lg: 'var(--way-border-radius-large)',
+        xl: 'var(--way-border-radius-x-large)',
+      },
+      boxShadow: {
+        xs: 'var(--way-shadow-x-small)',
+        sm: 'var(--way-shadow-small)',
+        md: 'var(--way-shadow-medium)',
+        lg: 'var(--way-shadow-large)',
+        xl: 'var(--way-shadow-x-large)',
+      },
+
+      spacing: {
+        '3xs': 'var(--way-spacing-xxx-small)',
+        '2xs': 'var(--way-spacing-xx-small)',
+        xs: 'var(--way-spacing-x-small)',
+        sm: 'var(--way-spacing-small)',
+        md: 'var(--way-spacing-medium)',
+        lg: 'var(--way-spacing-large)',
+        xl: 'var(--way-spacing-x-large)',
+        // '2xl': 'var(--way-spacing-xx-large)',
+        // '3xl': 'var(--way-spacing-xxx-large)',
+        // '4xl': 'var(--way-spacing-xxxx-large)',
+      },
     },
     fontFamily: {
       sans: ['var(--way-font-family)'],
