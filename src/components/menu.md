@@ -67,3 +67,9 @@ Type: `Promise<void>`
 | ------------------ | -------------------------- |
 | `--padding-bottom` | Bottom padding of the menu |
 | `--padding-top`    | Top padding of the menu    |
+
+## Dependencies
+
+### Used by
+
+- [way-select](/components/select)
