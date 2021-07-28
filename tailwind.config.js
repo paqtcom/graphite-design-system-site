@@ -106,9 +106,9 @@ module.exports = {
         md: 'var(--way-spacing-medium)',
         lg: 'var(--way-spacing-large)',
         xl: 'var(--way-spacing-x-large)',
-        // '2xl': 'var(--way-spacing-xx-large)',
-        // '3xl': 'var(--way-spacing-xxx-large)',
-        // '4xl': 'var(--way-spacing-xxxx-large)',
+        '2xl': 'var(--way-spacing-xx-large)',
+        '3xl': 'var(--way-spacing-xxx-large)',
+        '4xl': 'var(--way-spacing-xxxx-large)',
       },
     },
     fontFamily: {

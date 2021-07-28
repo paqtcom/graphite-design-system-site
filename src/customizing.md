@@ -435,16 +435,44 @@ Graphite components can be customized through design tokens. We use them instead
 ## Spacing tokens
 
 <div class="mb-12">
-  <div class="grid grid-cols-9">
-    <code class="mr-xs">--way-spacing-xxx-small</code>
-    <code class="mr-sm">--way-spacing-xx-small</code>
-    <code class="mr-md">--way-spacing-x-small</code>
-    <code class="mr-lg">--way-spacing-small</code>
-    <code class="mr-xl">--way-spacing-medium</code>
-    <code class="mr-2xl">--way-spacing-large</code>
-    <code class="mr-3xl">--way-spacing-x-large</code>
-    <code class="mr-4xl">--way-spacing-xx-large<</code>
-    <code class="mr-5xl">--way-spacing-xxx-large</code>
-    <code class="mr-6xl">--way-spacing-xxxx-large</code>
+  <div class="flex items-center mb-3">
+    <code class="w-1/3 mr-3">--way-spacing-xxx-small</code>
+    <span class="w-auto h-10 bg-primary pr-3xs" />
+  </div>
+  <div class="flex items-center mb-3">
+    <code class="w-1/3 mr-3">--way-spacing-xx-small</code>
+    <span class="w-auto h-10 bg-primary pr-2xs" />
+  </div>
+  <div class="flex items-center mb-3">
+    <code class="w-1/3 mr-3">--way-spacing-x-small</code>
+    <span class="w-auto h-10 bg-primary pr-xs" />
+  </div>
+  <div class="flex items-center mb-3">
+    <code class="w-1/3 mr-3">--way-spacing-small</code>
+    <span class="w-auto h-10 bg-primary pr-sm" />
+  </div>
+  <div class="flex items-center mb-3">
+    <code class="w-1/3 mr-3">--way-shadow-medium</code>
+    <span class="w-auto h-10 bg-primary pr-md" />
+  </div>
+  <div class="flex items-center mb-3">
+    <code class="w-1/3 mr-3">--way-shadow-large</code>
+    <span class="w-auto h-10 bg-primary pr-lg" />
+  </div>
+  <div class="flex items-center mb-3">
+    <code class="w-1/3 mr-3">--way-shadow-x-large</code>
+    <span class="w-auto h-10 bg-primary pr-xl" />
+  </div>
+  <div class="flex items-center mb-3">
+    <code class="w-1/3 mr-3">--way-shadow-xx-large</code>
+    <span class="w-auto h-10 bg-primary pr-2xl" />
+  </div>
+  <div class="flex items-center mb-3">
+    <code class="w-1/3 mr-3">--way-shadow-xxx-large</code>
+    <span class="w-auto h-10 bg-primary pr-3xl" />
+  </div>
+  <div class="flex items-center mb-3">
+    <code class="w-1/3 mr-3">--way-shadow-xxxx-large</code>
+    <span class="w-auto h-10 bg-primary pr-4xl" />
   </div>
 </div>
