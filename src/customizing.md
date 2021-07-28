@@ -6,11 +6,46 @@ title: Customizing - Way2Web Design System
 
 [[toc]]
 
-Graphite components can be customized through design tokens. We use them instead of hard-coded values (such as hex values for color or pixel values for font-sizes) in order to maintain a scalable and consistent visual system for UI development.
+Graphite Design System components are built with [CSS Variables](https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_variables) for easy customization of an application. CSS variables allow a value to be stored in one place, then referenced in multiple other places. They also make it possible to change CSS dynamically at runtime (which previously required a CSS preprocessor), useful for a dark theme for example. CSS variables make it easier than ever to override Graphite Design System components to match a brand or theme.
+
+CSS variables can be set globally in an application in the :root selector.
+
+```css
+:root {
+  /* Changes the primary color palette to purple */
+  --way-color-primary: #a855f7;
+  --way-color-primary-rgb: 168, 85, 247;
+  --way-color-primary-contrast: #ffffff;
+  --way-color-primary-contrast-rgb: 255, 255, 255;
+  --way-color-primary-shade: #7e22ce;
+  --way-color-primary-tint: #d8b4fe;
+
+  /* Changes the font family */
+  --way-font-family: -apple-system, BlinkMacSystemFont, 'Helvetica Neue', 'Roboto', sans-serif;
+}
+```
 
 &nbsp;
 
 ## Theme color Tokens
+
+There are nine colors used throughout the Graphite Design System components:
+
+- primary
+- secondary
+- tertiary
+- success
+- warning
+- danger
+- light
+- medium
+- dark
+
+&nbsp;
+
+Each color consists of the following properties: a `base`, `contrast`, `shade`, and `tint`. The `base` and `contrast` colors also require a `rgb` property which is the same color, just in [rgb format](https://developer.mozilla.org/en-US/docs/Glossary/RGB). The Graphite Design System uses colors with an opacity (alpha) in several components. In order for this to work, those properties must be provided in RGB format. When changing any of the properties that have a variation ending in `-rgb`, it is important they are also provided in a comma separated format without parentheses.
+
+&nbsp;
 
 <div class="mb-12">
   <legend class="mb-2 font-bold border-b">
