@@ -150,6 +150,38 @@ Use the `expand="full"` attribute to create a full-width button with square corn
 <way-button expand="full">Full</way-button>
 ```
 
+### Caret
+
+Use the `caret` attribute to add a dropdown indicator when a button will trigger a dropdown, menu, or popover.
+
+<way-button size="small" caret>Small</way-button>
+<way-button size="medium" caret>Medium</way-button>
+<way-button size="large" caret>Large</way-button>
+
+```html
+<way-button size="small" caret>Small</way-button>
+<way-button size="medium" caret>Medium</way-button>
+<way-button size="large" caret>Large</way-button>
+```
+
+### Loading
+
+Use the `loading` attribute to make a button busy. The width will remain the same as before, preventing adjacent elements from moving around. Clicks will be suppressed until the loading state is removed.
+
+<way-button loading>Default</way-button>
+<way-button variant="primary" loading>Primary</way-button>
+<way-button variant="secondary" loading>Secondary</way-button>
+<way-button variant="danger" loading>Danger</way-button>
+<way-button variant="plain" loading>Plain</way-button>
+
+```html
+<way-button loading>Default</way-button>
+<way-button variant="primary" loading>Primary</way-button>
+<way-button variant="secondary" loading>Secondary</way-button>
+<way-button variant="danger" loading>Danger</way-button>
+<way-button variant="plain" loading>Plain</way-button>
+```
+
 ### Disabled
 
 Use the `disabled` attribute to disable a button. Clicks will be suppressed until the disabled state is removed.
@@ -177,6 +209,7 @@ Use the `disabled` attribute to disable a button. Clicks will be suppressed unti
 | `disabled` | `disabled` | If `true`, the user cannot interact with the button.                                                                                                                                   | `boolean` | `false`     |
 | `expand`   | `expand`   | Set to `"block"` for a full-width button or to `"full"` for a full-width button without left and right borders.                                                                        | `"block"  | "full"`     | `undefined` |
 | `href`     | `href`     | Contains a URL or a URL fragment that the hyperlink points to.                                                                                                                         | `string`  | `undefined` |
+| `loading`  | `loading`  | Set to true to draw the button in a loading state.                                                                                                                                     | `boolean` | `false`     |
 | `pill`     | `pill`     | Set to true to draw a pill-style button with rounded edges.                                                                                                                            | `boolean` | `false`     |
 | `rel`      | `rel`      | Specifies the relationship of the target object to the link object. The value is a space-separated list of [link types](https://developer.mozilla.org/en-US/docs/Web/HTML/Link_types). | `string`  | `undefined` |
 | `size`     | `size`     | The button's size.                                                                                                                                                                     | `"large"  | "medium"    | "small"`    | `'medium'` |
@@ -229,3 +262,7 @@ Use the `disabled` attribute to disable a button. Clicks will be suppressed unti
 ### Used by
 
 - [way-tag](/components/tag)
+
+### Depends on
+
+- [way-spinner](/components/spinner)
