@@ -74,7 +74,7 @@ Use the `clearable` attribute to add a clear button to the tag.
 
 <style>
   .tags-clearable way-tag {
-    transition: var(--way-transition-medium) opacity;
+    transition: 300ms opacity;
   }
 </style>
 
@@ -97,7 +97,7 @@ Use the `clearable` attribute to add a clear button to the tag.
 
 <style>
   .tags-clearable way-tag {
-    transition: var(--way-transition-medium) opacity;
+    transition: 300ms opacity;
   }
 </style>
 ```
