@@ -144,3 +144,13 @@ Use the `clearable` attribute to add a clear button to the tag.
 | `--padding-end`        | Right padding of the tag (will be left padding when we support right-to-left direction) |
 | `--padding-start`      | Left padding of the tag (will be right padding when we support right-to-left direction) |
 | `--padding-top`        | Top padding of the tag                                                                  |
+
+## Dependencies
+
+### Used by
+
+- [way-select](/components/select)
+
+### Depends on
+
+- [way-button](/components/button)

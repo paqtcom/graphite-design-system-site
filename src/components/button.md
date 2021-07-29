@@ -150,6 +150,38 @@ Use the `expand="full"` attribute to create a full-width button with square corn
 <way-button expand="full">Full</way-button>
 ```
 
+### Caret
+
+Use the `caret` attribute to add a dropdown indicator when a button will trigger a dropdown, menu, or popover.
+
+<way-button size="small" caret>Small</way-button>
+<way-button size="medium" caret>Medium</way-button>
+<way-button size="large" caret>Large</way-button>
+
+```html
+<way-button size="small" caret>Small</way-button>
+<way-button size="medium" caret>Medium</way-button>
+<way-button size="large" caret>Large</way-button>
+```
+
+### Loading
+
+Use the `loading` attribute to make a button busy. The width will remain the same as before, preventing adjacent elements from moving around. Clicks will be suppressed until the loading state is removed.
+
+<way-button loading>Default</way-button>
+<way-button variant="primary" loading>Primary</way-button>
+<way-button variant="secondary" loading>Secondary</way-button>
+<way-button variant="danger" loading>Danger</way-button>
+<way-button variant="plain" loading>Plain</way-button>
+
+```html
+<way-button loading>Default</way-button>
+<way-button variant="primary" loading>Primary</way-button>
+<way-button variant="secondary" loading>Secondary</way-button>
+<way-button variant="danger" loading>Danger</way-button>
+<way-button variant="plain" loading>Plain</way-button>
+```
+
 ### Disabled
 
 Use the `disabled` attribute to disable a button. Clicks will be suppressed until the disabled state is removed.
@@ -171,16 +203,19 @@ Use the `disabled` attribute to disable a button. Clicks will be suppressed unti
 ## Properties
 
 | Property   | Attribute  | Description                                                                                                                                                                            | Type      | Default     |
-| ---------- | ---------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------- | ----------- | ----------- | ----------- | ------- | ----------- |
+| ---------- | ---------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------- | ----------- | ----------- | ---------- | ------------ | ----------- |
+| `caret`    | `caret`    | Set to true to draw the button with a caret for use with dropdowns, popovers, etc.                                                                                                     | `boolean` | `false`     |
 | `circle`   | `circle`   | Set to true to draw a circle button.                                                                                                                                                   | `boolean` | `false`     |
 | `disabled` | `disabled` | If `true`, the user cannot interact with the button.                                                                                                                                   | `boolean` | `false`     |
 | `expand`   | `expand`   | Set to `"block"` for a full-width button or to `"full"` for a full-width button without left and right borders.                                                                        | `"block"  | "full"`     | `undefined` |
 | `href`     | `href`     | Contains a URL or a URL fragment that the hyperlink points to.                                                                                                                         | `string`  | `undefined` |
+| `loading`  | `loading`  | Set to true to draw the button in a loading state.                                                                                                                                     | `boolean` | `false`     |
+| `pill`     | `pill`     | Set to true to draw a pill-style button with rounded edges.                                                                                                                            | `boolean` | `false`     |
 | `rel`      | `rel`      | Specifies the relationship of the target object to the link object. The value is a space-separated list of [link types](https://developer.mozilla.org/en-US/docs/Web/HTML/Link_types). | `string`  | `undefined` |
-| `size`     | `size`     | The button's size.                                                                                                                                                                     | `"large"  | "medium"    | "small"`    | `'medium'`  |
+| `size`     | `size`     | The button's size.                                                                                                                                                                     | `"large"  | "medium"    | "small"`    | `'medium'` |
 | `target`   | `target`   | Specifies where to display the linked URL. Special keywords: `"_blank"`, `"_self"`, `"_parent"`, `"_top"`.                                                                             | `string`  | `undefined` |
-| `type`     | `type`     | The type of the button.                                                                                                                                                                | `"button" | "reset"     | "submit"`   | `'button'`  |
-| `variant`  | `variant`  | The different variants. The options are: `"default"`, `"primary"`, `"secondary"`, `"danger"`, and `"text"`.                                                                            | `"danger" | "default"   | "primary"   | "secondary" | "text"` | `'default'` |
+| `type`     | `type`     | The type of the button.                                                                                                                                                                | `"button" | "reset"     | "submit"`   | `'button'` |
+| `variant`  | `variant`  | The different variants. The options are: `"default"`, `"primary"`, `"secondary"`, `"danger"`, and `"plain"`.                                                                           | `"danger" | "default"   | "plain"     | "primary"  | "secondary"` | `'default'` |
 
 ## Events
 
@@ -203,17 +238,31 @@ Use the `disabled` attribute to disable a button. Clicks will be suppressed unti
 | Name                   | Description                                                                                |
 | ---------------------- | ------------------------------------------------------------------------------------------ |
 | `--background`         | Background of the button                                                                   |
+| `--background-focus`   | Background of the button on focus                                                          |
 | `--background-hover`   | Background of the button on hover                                                          |
 | `--border-color`       | Border color of the button                                                                 |
-| `--border-color-hover` | Border color of the button when hover                                                      |
+| `--border-color-focus` | Border color of the button on focus                                                        |
+| `--border-color-hover` | Border color of the button on hover                                                        |
 | `--border-radius`      | Border radius of the button                                                                |
 | `--border-style`       | Border style of the button                                                                 |
 | `--border-width`       | Border width of the button                                                                 |
 | `--color`              | Text color of the button                                                                   |
-| `--color-hover`        | Text color of the button when hover                                                        |
+| `--color-focus`        | Text color of the button on focus                                                          |
+| `--color-hover`        | Text color of the button on hover                                                          |
+| `--focus-ring`         | The focus ring style to use when the button receives focus, a `box-shadow` property.       |
 | `--height`             | Height of the button                                                                       |
 | `--padding-bottom`     | Bottom padding of the button                                                               |
 | `--padding-end`        | Right padding of the button (will be left padding when we support right-to-left direction) |
 | `--padding-start`      | Left padding of the button (will be right padding when we support right-to-left direction) |
 | `--padding-top`        | Top padding of the button                                                                  |
 | `--transition`         | Transition of the button                                                                   |
+
+## Dependencies
+
+### Used by
+
+- [way-tag](/components/tag)
+
+### Depends on
+
+- [way-spinner](/components/spinner)
