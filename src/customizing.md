@@ -422,19 +422,19 @@ Each color consists of the following properties: a `base`, `contrast`, `shade`, 
 <div class="mb-12">
   <div class="flex items-center mb-3">
     <code class="w-1/3 mr-3">--way-border-radius-small</code>
-    <span class="flex flex-col w-2/3 h-10 overflow-hidden border rounded-sm" />
+    <span class="flex flex-col w-2/3 h-10 overflow-hidden rounded-sm bg-primary" />
   </div>
   <div class="flex items-center mb-3">
     <code class="w-1/3 mr-3">--way-border-radius-medium</code>
-    <span class="flex flex-col w-2/3 h-10 overflow-hidden border rounded-md" />
+    <span class="flex flex-col w-2/3 h-10 overflow-hidden rounded-md bg-primary" />
   </div>
   <div class="flex items-center mb-3">
     <code class="w-1/3 mr-3">--way-border-radius-large</code>
-    <span class="flex flex-col w-2/3 h-10 overflow-hidden border rounded-lg" />
+    <span class="flex flex-col w-2/3 h-10 overflow-hidden rounded-lg bg-primary" />
   </div>
   <div class="flex items-center mb-3">
     <code class="w-1/3 mr-3">--way-border-radius-x-large</code>
-    <span class="flex flex-col w-2/3 h-10 overflow-hidden border rounded-xl" />
+    <span class="flex flex-col w-2/3 h-10 overflow-hidden bg-primary rounded-xl" />
   </div>
 </div>
 
@@ -487,27 +487,27 @@ Each color consists of the following properties: a `base`, `contrast`, `shade`, 
     <span class="w-auto h-10 bg-primary pr-sm" />
   </div>
   <div class="flex items-center mb-3">
-    <code class="w-1/3 mr-3">--way-shadow-medium</code>
+    <code class="w-1/3 mr-3">--way-spacing-medium</code>
     <span class="w-auto h-10 bg-primary pr-md" />
   </div>
   <div class="flex items-center mb-3">
-    <code class="w-1/3 mr-3">--way-shadow-large</code>
+    <code class="w-1/3 mr-3">--way-spacing-large</code>
     <span class="w-auto h-10 bg-primary pr-lg" />
   </div>
   <div class="flex items-center mb-3">
-    <code class="w-1/3 mr-3">--way-shadow-x-large</code>
+    <code class="w-1/3 mr-3">--way-spacing-x-large</code>
     <span class="w-auto h-10 bg-primary pr-xl" />
   </div>
   <div class="flex items-center mb-3">
-    <code class="w-1/3 mr-3">--way-shadow-xx-large</code>
+    <code class="w-1/3 mr-3">--way-spacing-xx-large</code>
     <span class="w-auto h-10 bg-primary pr-2xl" />
   </div>
   <div class="flex items-center mb-3">
-    <code class="w-1/3 mr-3">--way-shadow-xxx-large</code>
+    <code class="w-1/3 mr-3">--way-spacing-xxx-large</code>
     <span class="w-auto h-10 bg-primary pr-3xl" />
   </div>
   <div class="flex items-center mb-3">
-    <code class="w-1/3 mr-3">--way-shadow-xxxx-large</code>
+    <code class="w-1/3 mr-3">--way-spacing-xxxx-large</code>
     <span class="w-auto h-10 bg-primary pr-4xl" />
   </div>
 </div>
