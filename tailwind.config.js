@@ -14,6 +14,15 @@ module.exports = {
       xl: '1280px',
     },
     extend: {
+      maxHeight: {
+        '(screen-16)': 'calc(100vh - 4rem)',
+      },
+      inset: {
+        16: '4rem',
+      },
+      transitionProperty: {
+        padding: 'padding',
+      },
       colors: {
         primary: 'var(--way-color-primary)',
         'primary-contrast': 'var(--way-color-primary-contrast)',

@@ -6,76 +6,235 @@ title: Components - way-textarea
 
 [[toc]]
 
-Textarea can be used in forms, or anywhere where the user needs to provide information.
-<way-textarea type="text" name="textarea" label="label" rows="5"></way-textarea>
+Textarea can be used in forms, or anywhere where the user needs to provide information. It allows multiple lines of text.
+
+<way-textarea></way-textarea>
 
 ```html
-<way-textarea type="text" name="textarea" label="label" rows="5"></way-textarea>
+<way-textarea></way-textarea>
 ```
 
 ## Examples
 
-### Autofocus
-
-Use the `autofocus` attribute to set automic focus on the textarea.
-
-<way-textarea type="text" name="textarea" label="label" rows="10" autofocus></way-textarea>
-
-```html
-<way-textarea type="text" name="textarea" label="label" rows="10" autofocus></way-textarea>
-```
-
 ### Rows
 
-Use the `rows` attribute to set the amount of rows to use.
+Use the `rows` attribute to change the number of text rows that get shown.
 
-<way-textarea type="text" name="textarea" label="label" rows="5"></way-textarea>
-
-<way-textarea type="text" name="textarea" label="label" rows="10"></way-textarea>
-
-<way-textarea type="text" name="textarea" label="label" rows="15"></way-textarea>
+<way-textarea rows="2"></way-textarea>
 
 ```html
-<way-textarea type="text" name="textarea" label="label" rows="5"></way-textarea>
-<way-textarea type="text" name="textarea" label="label" rows="10"></way-textarea>
-<way-textarea type="text" name="textarea" label="label" rows="15"></way-textarea>
+<way-textarea rows="2"></way-textarea>
+```
+
+### Placeholders
+
+Use the `placeholder` attribute to add a placeholder.
+
+<way-textarea placeholder="Type something"></way-textarea>
+
+```html
+<way-textarea placeholder="Type something"></way-textarea>
 ```
 
 ### Disabled
 
-Use the `disabled` attribute to disable a textarea. Clicks will be suppressed until the disabled state is removed.
+Use the `disabled` attribute to disable an input.
 
-<way-textarea type="text" name="textarea" label="label" rows="10" disabled></way-textarea>
+<way-textarea placeholder="Textarea" disabled></way-textarea>
 
 ```html
-<way-textarea type="text" name="textarea" label="label" rows="10" disabled></way-textarea>
+<way-textarea placeholder="Textarea" disabled></way-textarea>
 ```
 
-### Max characters
+### Sizes
 
-Use the `maxlength` attribute to set max allowed characters.
+Use the `size` attribute to change a textarea's size.
 
-<way-textarea type="text" name="textarea" label="label" rows="10" maxlength="20"></way-textarea>
+<way-textarea placeholder="Small" size="small"></way-textarea>
+<br>
+<way-textarea placeholder="Medium" size="medium"></way-textarea>
+<br>
+<way-textarea placeholder="Large" size="large"></way-textarea>
 
 ```html
-<way-textarea type="text" name="textarea" label="label" rows="10" maxlength="20"></way-textarea>
+<way-textarea placeholder="Small" size="small"></way-textarea>
+<br />
+<way-textarea placeholder="Medium" size="medium"></way-textarea>
+<br />
+<way-textarea placeholder="Large" size="large"></way-textarea>
+```
+
+### Invalid
+
+The textarea can be marked invalid using the `invalid` attribute.
+
+<way-textarea placeholder="Invalid" invalid></way-input>
+
+```html
+<way-textarea placeholder="Invalid" invalid></way-input>
+```
+
+### Labels
+
+Use the `label` attribute to give the textarea an accessible label. For labels that contain HTML, use the `label` slot instead.
+
+<way-textarea label="Comments"></way-textarea>
+
+```html
+<way-textarea label="Comments"></way-textarea>
+```
+
+### Help Text
+
+Add descriptive help text to a textarea with the `help-text` attribute. For help texts that contain HTML, use the `help-text` slot instead.
+
+<way-textarea label="Feedback" help-text="Please tell us what you think."></way-textarea>
+
+```html
+<way-textarea label="Feedback" help-text="Please tell us what you think."></way-textarea>
+```
+
+### Invalid Text
+
+Add descriptive invalid text to a textarea with the `invalid-text` attribute. For invalid texts that contain HTML, use the `invalid-text` slot instead.
+
+When you add the `invalid` attribute, the invalid text will be shown. When a textarea already includes help text, the help text is replaced with invalid text.
+
+<way-textarea label="Feedback" help-text="Please tell us what you think." invalid-text="Tell us what you think" invalid></way-textarea>
+
+```html
+<way-textarea
+  label="Feedback"
+  help-text="Please tell us what you think."
+  invalid-text="Tell us what you think"
+  invalid
+></way-textarea>
+```
+
+### Prevent Resizing
+
+By default, textareas can be resized vertically by the user. To prevent resizing, set the `resize` attribute to `none`.
+
+<way-textarea resize="none"></way-textarea>
+
+```html
+<way-textarea resize="none"></way-textarea>
+```
+
+### Expand with Content
+
+Textareas will automatically resize to expand to fit their content when `resize` is set to `auto`.
+
+<way-textarea resize="auto"></way-textarea>
+
+```html
+<way-textarea resize="auto"></way-textarea>
 ```
 
 ## Properties
 
-| Property    | Attribute   | Description                                                      | Type      | Default     |
-| ----------- | ----------- | ---------------------------------------------------------------- | --------- | ----------- |
-| `autofocus` | `autofocus` | If `true`, the textarea should autofocus.                        | `boolean` | `false`     |
-| `disabled`  | `disabled`  | If `true`, the user cannot interact with the textarea.           | `boolean` | `false`     |
-| `label`     | `label`     | The textarea's label. Alternatively, you can use the label slot. | `string`  | `undefined` |
-| `maxlength` | `maxlength` | Specifies how many characters are allowed.                       | `number`  | `undefined` |
-| `name`      | `name`      | The textarea's name attribute.                                   | `string`  | `undefined` |
-| `rows`      | `rows`      | Specifies how many textarea rows to use.                         | `number`  | `undefined` |
-| `type`      | `type`      | Specifies what type of textarea to use.                          | `string`  | `undefined` |
+| Property         | Attribute        | Description                                                                                                                                                                                               | Type       | Default     |
+| ---------------- | ---------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------- | ----------- | ----------- | ------------ | ---------- | -------- | ------- | ----------- | ----------- |
+| `autocapitalize` | `autocapitalize` | Indicates whether and how the text value should be automatically capitalized as it is entered/edited by the user. Available options: `"off"`, `"none"`, `"on"`, `"sentences"`, `"words"`, `"characters"`. | `string`   | `'off'`     |
+| `autocorrect`    | `autocorrect`    | Whether auto correction should be enabled when the user is entering/editing the text value.                                                                                                               | `"off"     | "on"`       | `'off'`     |
+| `autofocus`      | `autofocus`      | This Boolean attribute lets you specify that a form control should have input focus when the page loads.                                                                                                  | `boolean`  | `false`     |
+| `debounce`       | `debounce`       | Set the amount of time, in milliseconds, to wait to trigger the `way-change` event after each keystroke. This also impacts form bindings such as `ngModel` or `v-model`.                                  | `number`   | `0`         |
+| `disabled`       | `disabled`       | Set to true to disable the textarea.                                                                                                                                                                      | `boolean`  | `false`     |
+| `enterkeyhint`   | `enterkeyhint`   | A hint to the browser for which enter key to display. Possible values: `"enter"`, `"done"`, `"go"`, `"next"`, `"previous"`, `"search"`, and `"send"`.                                                     | `"done"    | "enter"     | "go"        | "next"       | "previous" | "search" | "send"` | `undefined` |
+| `helpText`       | `help-text`      | The textarea's help text. Alternatively, you can use the help-text slot.                                                                                                                                  | `string`   | `''`        |
+| `inputmode`      | `inputmode`      | The textarea's inputmode attribute.                                                                                                                                                                       | `"decimal" | "email"     | "none"      | "numeric"    | "search"   | "tel"    | "text"  | "url"`      | `undefined` |
+| `invalid`        | `invalid`        | Set to true to indicate this field is invalid. Will display the invalid text instead of the help text                                                                                                     | `boolean`  | `false`     |
+| `invalidText`    | `invalid-text`   | The input's invalid text. Alternatively, you can use the invalid-text slot.                                                                                                                               | `string`   | `''`        |
+| `label`          | `label`          | The textarea's label. Alternatively, you can use the label slot.                                                                                                                                          | `string`   | `undefined` |
+| `maxlength`      | `maxlength`      | Specifies how many characters are allowed.                                                                                                                                                                | `number`   | `undefined` |
+| `name`           | `name`           | The textarea's name attribute.                                                                                                                                                                            | `string`   | `''`        |
+| `placeholder`    | `placeholder`    | The textarea's placeholder text.                                                                                                                                                                          | `string`   | `undefined` |
+| `readonly`       | `readonly`       | If `true`, the user cannot modify the value.                                                                                                                                                              | `boolean`  | `false`     |
+| `resize`         | `resize`         | Controls how the textarea can be resized.                                                                                                                                                                 | `"auto"    | "none"      | "vertical"` | `'vertical'` |
+| `rows`           | `rows`           | The number of rows to display by default.                                                                                                                                                                 | `number`   | `4`         |
+| `size`           | `size`           | The textarea's size.                                                                                                                                                                                      | `"large"   | "medium"    | "small"`    | `'medium'`   |
+| `spellcheck`     | `spellcheck`     | If `true`, the element will have its spelling and grammar checked.                                                                                                                                        | `boolean`  | `false`     |
+| `value`          | `value`          | The textarea's value attribute.                                                                                                                                                                           | `string`   | `''`        |
 
 ## Events
 
-| Event       | Description                         | Type                |
-| ----------- | ----------------------------------- | ------------------- |
-| `way-blur`  | Emitted when the input loses focus. | `CustomEvent<void>` |
-| `way-focus` | Emitted when the input has focus.   | `CustomEvent<void>` |
+| Event        | Description                                | Type                |
+| ------------ | ------------------------------------------ | ------------------- |
+| `way-blur`   | Emitted when the textarea loses focus.     | `CustomEvent<void>` |
+| `way-change` | Emitted when the textarea's value changes. | `CustomEvent<void>` |
+| `way-focus`  | Emitted when the textarea has focus.       | `CustomEvent<void>` |
+| `way-input`  | Emitted when the textarea receives input.  | `CustomEvent<void>` |
+
+## Methods
+
+### `removeFocus() => Promise<void>`
+
+Removes focus fromt the textarea.
+
+#### Returns
+
+Type: `Promise<void>`
+
+### `select() => Promise<void>`
+
+Selects all the text in the input.
+
+#### Returns
+
+Type: `Promise<void>`
+
+### `setFocus(options?: FocusOptions) => Promise<void>`
+
+Sets focus on the textarea.
+
+#### Returns
+
+Type: `Promise<void>`
+
+### `setRangeText(replacement: string, start: number, end: number, selectMode?: 'select' | 'start' | 'end' | 'preserve') => Promise<void>`
+
+Replaces a range of text with a new string.
+
+#### Returns
+
+Type: `Promise<void>`
+
+### `setSelectionRange(selectionStart: number, selectionEnd: number, selectionDirection?: 'forward' | 'backward' | 'none') => Promise<void>`
+
+Sets the start and end positions of the text selection (0-based).
+
+#### Returns
+
+Type: `Promise<void>`
+
+## Slots
+
+| Slot             | Description                                                                                       |
+| ---------------- | ------------------------------------------------------------------------------------------------- |
+| `"help-text"`    | Help text that describes how to use the textarea.                                                 |
+| `"invalid-text"` | Invalid text tells a user how to fix the error. Alternatively, you can use the invalid-text prop. |
+| `"label"`        | The textarea's label. Alternatively, you can use the label prop.                                  |
+
+## CSS Custom Properties
+
+| Name                               | Description                                                                                  |
+| ---------------------------------- | -------------------------------------------------------------------------------------------- |
+| `--background-color`               | Background color of the textarea                                                             |
+| `--background-color-focus`         | Background color of the textarea on focus                                                    |
+| `--background-color-hover`         | Background color of the textarea on hover                                                    |
+| `--background-color-invalid`       | Background color of the textarea when invalid                                                |
+| `--background-color-invalid-hover` | Background color of the textarea when invalid on focus                                       |
+| `--border-color`                   | Border color of the textarea                                                                 |
+| `--border-color-focus`             | Border color of the textarea on focus                                                        |
+| `--border-color-hover`             | Border color of the textarea on hover                                                        |
+| `--border-color-invalid`           | Border color of the textarea when invalid                                                    |
+| `--border-color-invalid-hover`     | Border color of the textarea when invalid on focus                                           |
+| `--border-radius`                  | Border radius of the textarea                                                                |
+| `--color`                          | Text color of the textarea                                                                   |
+| `--focus-ring`                     | The focus ring style to use when the textarea receives focus, a `box-shadow` property.       |
+| `--font-size`                      | Font size of the textarea                                                                    |
+| `--font-weight`                    | Font weight of the textarea                                                                  |
+| `--min-height`                     | Minimum height of the textarea                                                               |
+| `--padding-end`                    | Right padding of the textarea (will be left padding when we support right-to-left direction) |
+| `--padding-start`                  | Left padding of the textarea (will be right padding when we support right-to-left direction) |
+| `--placeholder-color`              | Text color of the placeholder                                                                |
