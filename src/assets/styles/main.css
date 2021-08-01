@@ -1,3 +1,31 @@
+.body-dark-mode {
+  @apply bg-dark text-white !important;
+}
+
+.nav-dark-mode {
+  @apply bg-dark-tint text-white border-secondary !important;
+}
+
+.body-dark-mode .main-nav a
+--label-color {
+  @apply text-white !important;
+}
+
+.body-dark-mode .main-nav .active {
+  @apply text-primary !important;
+}
+
+.body-dark-mode .content h1 a,
+.body-dark-mode .content h2 a,
+.body-dark-mode .content h3 a,
+.body-dark-mode .content h4 a {
+  @apply text-white !important;
+}
+
+.body-dark-mode .content code {
+  @apply text-dark !important;
+}
+
 @tailwind base;
 
 a {
@@ -48,7 +76,7 @@ a:hover {
 }
 
 .content table {
-  @apply block overflow-auto border-collapse whitespace-nowrap mb-8 text-sm;
+  @apply block mb-8 overflow-auto text-sm border-collapse whitespace-nowrap;
 }
 
 .content th,
@@ -57,11 +85,11 @@ a:hover {
 }
 
 .content th {
-  @apply w-full text-left font-semibold;
+  @apply w-full font-semibold text-left;
 }
 
 .content code {
-  @apply text-sm bg-light-tint p-1 rounded;
+  @apply p-1 text-sm rounded bg-light-tint;
 }
 
 .content pre code {
@@ -69,18 +97,18 @@ a:hover {
 }
 
 .main-nav a {
-  @apply ml-2 flex items-center px-2 py-2 font-normal text-dark-tint hover:no-underline hover:text-primary hover:bg-opacity-25;
+  @apply flex items-center px-2 py-2 ml-2 font-normal text-dark-tint hover:no-underline hover:text-primary hover:bg-opacity-25;
 }
 
 .main-nav .header {
-  @apply flex items-center px-2 py-2 font-bold uppercase text-xs;
+  @apply flex items-center px-2 py-2 text-xs font-bold uppercase;
 }
 
 .main-nav .active {
-  @apply text-primary rounded;
+  @apply rounded text-primary;
   background-color: rgb(var(--way-color-primary-rgb), 0.1);
 }
 
 .toc-container-header {
-  @apply uppercase text-xs font-bold;
+  @apply text-xs font-bold uppercase;
 }
