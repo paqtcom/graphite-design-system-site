@@ -1,8 +1,10 @@
 ---
-title: Components - gr-input
+title: Input - Graphite Design System
 ---
 
-# gr-input
+# Input
+
+`<gr-input> | GrInput`
 
 [[toc]]
 

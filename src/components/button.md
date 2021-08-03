@@ -1,8 +1,10 @@
 ---
-title: Components - gr-button
+title: Button - Graphite Design System
 ---
 
-# gr-button
+# Button
+
+`<gr-button> | GrButton`
 
 [[toc]]
 
@@ -58,7 +60,10 @@ Use the `size` attribute to change a button's size.
 
 ### Icons
 
-Use the `start` and `end` slots to add icons.
+Use the `start` and `end` slots to add icons (or other content).
+
+We recommend [Ionicons](https://ionic.io/ionicons) (which also supports custom SVG), but you could theoretically use any icon library.
+Use the same icon set throughout your application for consistency.
 
 <gr-button>
   <ion-icon name="settings-outline" slot="start"></ion-icon>

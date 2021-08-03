@@ -1,8 +1,10 @@
 ---
-title: Components - gr-dropdown
+title: Dropdown - Graphite Design System
 ---
 
-# gr-dropdown
+# Dropdown
+
+`<gr-dropdown> | GrDropdown`
 
 [[toc]]
 

@@ -69,6 +69,6 @@
     ]
   },
   "dependencies": {
-    "@graphiteds/core": "^1.0.0"
+    "@graphiteds/core": "^1.0.1"
   }
 }

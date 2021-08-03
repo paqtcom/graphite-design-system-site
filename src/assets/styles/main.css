@@ -68,6 +68,10 @@ a:hover {
   background-color: inherit;
 }
 
+.content ul {
+  @apply list-disc list-inside mb-2;
+}
+
 .main-nav a {
   @apply ml-2 flex items-center px-2 py-2 font-normal text-dark-tint hover:no-underline hover:text-primary hover:bg-opacity-25;
 }

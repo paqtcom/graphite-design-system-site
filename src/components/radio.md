@@ -1,8 +1,10 @@
 ---
-title: Components - gr-radio
+title: Radio - Graphite Design System
 ---
 
-# gr-radio
+# Radio
+
+`<gr-radio> | GrRadio`
 
 [[toc]]
 

@@ -1,8 +1,10 @@
 ---
-title: Components - gr-tag
+title: Tag - Graphite Design System
 ---
 
-# gr-tag
+# Tag
+
+`<gr-tag> | GrTag`
 
 [[toc]]
 

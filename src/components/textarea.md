@@ -1,8 +1,10 @@
 ---
-title: Components - gr-textarea
+title: Textarea - Graphite Design System
 ---
 
-# gr-textarea
+# Textarea
+
+`<gr-textarea> | GrTextarea`
 
 [[toc]]
 

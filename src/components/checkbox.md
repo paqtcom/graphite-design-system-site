@@ -1,12 +1,16 @@
 ---
-title: Components - gr-checkbox
+title: Checkbox - Graphite Design System
 ---
 
-# gr-checkbox
+# Checkbox
+
+`<gr-checkbox> | GrCheckbox`
 
 [[toc]]
 
 Checkboxes allow the user to toggle an option on or off.
+
+Use a [field group](/components/field-group) for vertical or horizontal organization of multiple checkboxes.
 
 <gr-checkbox>Checkbox</gr-checkbox>
 

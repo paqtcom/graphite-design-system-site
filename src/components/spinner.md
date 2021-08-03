@@ -1,8 +1,10 @@
 ---
-title: Components - gr-spinner
+title: Spinner - Graphite Design System
 ---
 
-# gr-spinner
+# Spinner
+
+`<gr-spinner> | GrSpinner`
 
 [[toc]]
 

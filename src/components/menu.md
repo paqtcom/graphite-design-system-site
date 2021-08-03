@@ -1,8 +1,10 @@
 ---
-title: Components - gr-menu
+title: Menu - Graphite Design System
 ---
 
-# gr-menu
+# Menu
+
+`<gr-menu> | GrMenu`
 
 [[toc]]
 
@@ -38,9 +40,9 @@ Menus are intended for system menus (dropdown menus, select menus, context menus
 
 ## Events
 
-| Event       | Description                           | Type                                             |
-| ----------- | ------------------------------------- | ------------------------------------------------ |
-| `gr-select` | Emitted when a menu item is selected. | `CustomEvent<{ item: HTMLWayMenuItemElement; }>` |
+| Event       | Description                           | Type                                            |
+| ----------- | ------------------------------------- | ----------------------------------------------- |
+| `gr-select` | Emitted when a menu item is selected. | `CustomEvent<{ item: HTMLGrMenuItemElement; }>` |
 
 ## Methods
 

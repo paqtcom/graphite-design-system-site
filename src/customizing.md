@@ -41,11 +41,7 @@ There are nine colors used throughout the Graphite Design System components:
 - medium
 - dark
 
-&nbsp;
-
 Each color consists of the following properties: a `base`, `contrast`, `shade`, and `tint`. The `base` and `contrast` colors also require a `rgb` property which is the same color, just in [rgb format](https://developer.mozilla.org/en-US/docs/Glossary/RGB). The Graphite Design System uses colors with an opacity (alpha) in several components. In order for this to work, those properties must be provided in RGB format. When changing any of the properties that have a variation ending in `-rgb`, it is important they are also provided in a comma separated format without parentheses.
-
-&nbsp;
 
 <div class="mb-12">
   <legend class="mb-2 font-bold border-b">

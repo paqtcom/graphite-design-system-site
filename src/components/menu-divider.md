@@ -1,12 +1,14 @@
 ---
-title: Components - gr-menu-divider
+title: Menu Divider - Graphite Design System
 ---
 
-# gr-menu-divider
+# Menu Divider
+
+`<gr-menu-divider> | GrMenuDivider`
 
 [[toc]]
 
-Menu dividers are used to visually group menu items.
+Menu dividers are used to visually group [menu items](/components/menu-item).
 
 <gr-menu style="max-width: 200px; border: solid 1px var(--gr-color-light); border-radius: var(--gr-border-radius-medium);">
   <gr-menu-item value="1">Option 1</gr-menu-item>

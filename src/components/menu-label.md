@@ -1,12 +1,14 @@
 ---
-title: Components - gr-menu-label
+title: Menu Label - Graphite Design System
 ---
 
-# gr-menu-label
+# Menu Label
+
+`<gr-menu-label> | GrMenuLabel`
 
 [[toc]]
 
-Menu labels are used to describe a group of menu items.
+Menu labels are used to describe a group of [menu items](/components/menu-item).
 
 <gr-menu style="max-width: 200px; border: solid 1px var(--gr-color-light); border-radius: var(--gr-border-radius-medium);">
   <gr-menu-label>Fruits</gr-menu-label>

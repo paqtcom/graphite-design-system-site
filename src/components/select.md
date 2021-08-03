@@ -1,12 +1,16 @@
 ---
-title: Components - gr-select
+title: Select - Graphite Design System
 ---
 
-# gr-select
+# Select
+
+`<gr-select> | GrSelect`
 
 [[toc]]
 
 Selects allow you to choose one or more items from a dropdown menu.
+
+You can use [menu items](/components/menu-item), [menu dividers](/components/menu-divider), and [menu labels](/components/menu-label) to compose a menu.
 
 <gr-select>
   <gr-menu-item value="option-1">Option 1</gr-menu-item>
@@ -132,7 +136,7 @@ To allow multiple options to be selected, use the `multiple` attribute. It's a g
 
 ### Grouping Options
 
-Options can be grouped visually using menu labels and menu dividers.
+Options can be grouped visually using [menu labels](/components/menu-label) and [menu dividers](/components/menu-divider).
 
 <gr-select placeholder="Select one">
   <gr-menu-label>Group 1</gr-menu-label>
