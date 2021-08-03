@@ -1,17 +1,19 @@
 ---
-title: Components - way-textarea
+title: Textarea - Graphite Design System
 ---
 
-# way-textarea
+# Textarea
+
+`<gr-textarea> | GrTextarea`
 
 [[toc]]
 
 Textarea can be used in forms, or anywhere where the user needs to provide information. It allows multiple lines of text.
 
-<way-textarea></way-textarea>
+<gr-textarea></gr-textarea>
 
 ```html
-<way-textarea></way-textarea>
+<gr-textarea></gr-textarea>
 ```
 
 ## Examples
@@ -20,78 +22,78 @@ Textarea can be used in forms, or anywhere where the user needs to provide infor
 
 Use the `rows` attribute to change the number of text rows that get shown.
 
-<way-textarea rows="2"></way-textarea>
+<gr-textarea rows="2"></gr-textarea>
 
 ```html
-<way-textarea rows="2"></way-textarea>
+<gr-textarea rows="2"></gr-textarea>
 ```
 
 ### Placeholders
 
 Use the `placeholder` attribute to add a placeholder.
 
-<way-textarea placeholder="Type something"></way-textarea>
+<gr-textarea placeholder="Type something"></gr-textarea>
 
 ```html
-<way-textarea placeholder="Type something"></way-textarea>
+<gr-textarea placeholder="Type something"></gr-textarea>
 ```
 
 ### Disabled
 
 Use the `disabled` attribute to disable an input.
 
-<way-textarea placeholder="Textarea" disabled></way-textarea>
+<gr-textarea placeholder="Textarea" disabled></gr-textarea>
 
 ```html
-<way-textarea placeholder="Textarea" disabled></way-textarea>
+<gr-textarea placeholder="Textarea" disabled></gr-textarea>
 ```
 
 ### Sizes
 
 Use the `size` attribute to change a textarea's size.
 
-<way-textarea placeholder="Small" size="small"></way-textarea>
+<gr-textarea placeholder="Small" size="small"></gr-textarea>
 <br>
-<way-textarea placeholder="Medium" size="medium"></way-textarea>
+<gr-textarea placeholder="Medium" size="medium"></gr-textarea>
 <br>
-<way-textarea placeholder="Large" size="large"></way-textarea>
+<gr-textarea placeholder="Large" size="large"></gr-textarea>
 
 ```html
-<way-textarea placeholder="Small" size="small"></way-textarea>
+<gr-textarea placeholder="Small" size="small"></gr-textarea>
 <br />
-<way-textarea placeholder="Medium" size="medium"></way-textarea>
+<gr-textarea placeholder="Medium" size="medium"></gr-textarea>
 <br />
-<way-textarea placeholder="Large" size="large"></way-textarea>
+<gr-textarea placeholder="Large" size="large"></gr-textarea>
 ```
 
 ### Invalid
 
 The textarea can be marked invalid using the `invalid` attribute.
 
-<way-textarea placeholder="Invalid" invalid></way-input>
+<gr-textarea placeholder="Invalid" invalid></gr-input>
 
 ```html
-<way-textarea placeholder="Invalid" invalid></way-input>
+<gr-textarea placeholder="Invalid" invalid></gr-input>
 ```
 
 ### Labels
 
 Use the `label` attribute to give the textarea an accessible label. For labels that contain HTML, use the `label` slot instead.
 
-<way-textarea label="Comments"></way-textarea>
+<gr-textarea label="Comments"></gr-textarea>
 
 ```html
-<way-textarea label="Comments"></way-textarea>
+<gr-textarea label="Comments"></gr-textarea>
 ```
 
 ### Help Text
 
 Add descriptive help text to a textarea with the `help-text` attribute. For help texts that contain HTML, use the `help-text` slot instead.
 
-<way-textarea label="Feedback" help-text="Please tell us what you think."></way-textarea>
+<gr-textarea label="Feedback" help-text="Please tell us what you think."></gr-textarea>
 
 ```html
-<way-textarea label="Feedback" help-text="Please tell us what you think."></way-textarea>
+<gr-textarea label="Feedback" help-text="Please tell us what you think."></gr-textarea>
 ```
 
 ### Invalid Text
@@ -100,35 +102,35 @@ Add descriptive invalid text to a textarea with the `invalid-text` attribute. Fo
 
 When you add the `invalid` attribute, the invalid text will be shown. When a textarea already includes help text, the help text is replaced with invalid text.
 
-<way-textarea label="Feedback" help-text="Please tell us what you think." invalid-text="Tell us what you think" invalid></way-textarea>
+<gr-textarea label="Feedback" help-text="Please tell us what you think." invalid-text="Tell us what you think" invalid></gr-textarea>
 
 ```html
-<way-textarea
+<gr-textarea
   label="Feedback"
   help-text="Please tell us what you think."
   invalid-text="Tell us what you think"
   invalid
-></way-textarea>
+></gr-textarea>
 ```
 
 ### Prevent Resizing
 
 By default, textareas can be resized vertically by the user. To prevent resizing, set the `resize` attribute to `none`.
 
-<way-textarea resize="none"></way-textarea>
+<gr-textarea resize="none"></gr-textarea>
 
 ```html
-<way-textarea resize="none"></way-textarea>
+<gr-textarea resize="none"></gr-textarea>
 ```
 
 ### Expand with Content
 
 Textareas will automatically resize to expand to fit their content when `resize` is set to `auto`.
 
-<way-textarea resize="auto"></way-textarea>
+<gr-textarea resize="auto"></gr-textarea>
 
 ```html
-<way-textarea resize="auto"></way-textarea>
+<gr-textarea resize="auto"></gr-textarea>
 ```
 
 ## Properties
@@ -138,7 +140,7 @@ Textareas will automatically resize to expand to fit their content when `resize`
 | `autocapitalize` | `autocapitalize` | Indicates whether and how the text value should be automatically capitalized as it is entered/edited by the user. Available options: `"off"`, `"none"`, `"on"`, `"sentences"`, `"words"`, `"characters"`. | `string`   | `'off'`     |
 | `autocorrect`    | `autocorrect`    | Whether auto correction should be enabled when the user is entering/editing the text value.                                                                                                               | `"off"     | "on"`       | `'off'`     |
 | `autofocus`      | `autofocus`      | This Boolean attribute lets you specify that a form control should have input focus when the page loads.                                                                                                  | `boolean`  | `false`     |
-| `debounce`       | `debounce`       | Set the amount of time, in milliseconds, to wait to trigger the `way-change` event after each keystroke. This also impacts form bindings such as `ngModel` or `v-model`.                                  | `number`   | `0`         |
+| `debounce`       | `debounce`       | Set the amount of time, in milliseconds, to wait to trigger the `gr-change` event after each keystroke. This also impacts form bindings such as `ngModel` or `v-model`.                                   | `number`   | `0`         |
 | `disabled`       | `disabled`       | Set to true to disable the textarea.                                                                                                                                                                      | `boolean`  | `false`     |
 | `enterkeyhint`   | `enterkeyhint`   | A hint to the browser for which enter key to display. Possible values: `"enter"`, `"done"`, `"go"`, `"next"`, `"previous"`, `"search"`, and `"send"`.                                                     | `"done"    | "enter"     | "go"        | "next"       | "previous" | "search" | "send"` | `undefined` |
 | `helpText`       | `help-text`      | The textarea's help text. Alternatively, you can use the help-text slot.                                                                                                                                  | `string`   | `''`        |
@@ -158,12 +160,12 @@ Textareas will automatically resize to expand to fit their content when `resize`
 
 ## Events
 
-| Event        | Description                                | Type                |
-| ------------ | ------------------------------------------ | ------------------- |
-| `way-blur`   | Emitted when the textarea loses focus.     | `CustomEvent<void>` |
-| `way-change` | Emitted when the textarea's value changes. | `CustomEvent<void>` |
-| `way-focus`  | Emitted when the textarea has focus.       | `CustomEvent<void>` |
-| `way-input`  | Emitted when the textarea receives input.  | `CustomEvent<void>` |
+| Event       | Description                                | Type                |
+| ----------- | ------------------------------------------ | ------------------- |
+| `gr-blur`   | Emitted when the textarea loses focus.     | `CustomEvent<void>` |
+| `gr-change` | Emitted when the textarea's value changes. | `CustomEvent<void>` |
+| `gr-focus`  | Emitted when the textarea has focus.       | `CustomEvent<void>` |
+| `gr-input`  | Emitted when the textarea receives input.  | `CustomEvent<void>` |
 
 ## Methods
 

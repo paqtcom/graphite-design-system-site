@@ -1,17 +1,21 @@
 ---
-title: Components - way-checkbox
+title: Checkbox - Graphite Design System
 ---
 
-# way-checkbox
+# Checkbox
+
+`<gr-checkbox> | GrCheckbox`
 
 [[toc]]
 
 Checkboxes allow the user to toggle an option on or off.
 
-<way-checkbox>Checkbox</way-checkbox>
+Use a [field group](/components/field-group) for vertical or horizontal organization of multiple checkboxes.
+
+<gr-checkbox>Checkbox</gr-checkbox>
 
 ```html
-<way-checkbox>Checkbox</way-checkbox>
+<gr-checkbox>Checkbox</gr-checkbox>
 ```
 
 ## Examples
@@ -20,40 +24,40 @@ Checkboxes allow the user to toggle an option on or off.
 
 Use the `checked` attribute to activate the checkbox.
 
-<way-checkbox checked>Checked</way-checkbox>
+<gr-checkbox checked>Checked</gr-checkbox>
 
 ```html
-<way-checkbox checked>Checked</way-checkbox>
+<gr-checkbox checked>Checked</gr-checkbox>
 ```
 
 ### Indeterminate
 
 Use the `indeterminate` attribute to make the checkbox indeterminate.
 
-<way-checkbox indeterminate>Indeterminate</way-checkbox>
+<gr-checkbox indeterminate>Indeterminate</gr-checkbox>
 
 ```html
-<way-checkbox indeterminate>Indeterminate</way-checkbox>
+<gr-checkbox indeterminate>Indeterminate</gr-checkbox>
 ```
 
 ### Disabled
 
 Use the `disabled` attribute to disable the checkbox.
 
-<way-checkbox disabled>Disabled</way-checkbox>
+<gr-checkbox disabled>Disabled</gr-checkbox>
 
 ```html
-<way-checkbox disabled>Disabled</way-checkbox>
+<gr-checkbox disabled>Disabled</gr-checkbox>
 ```
 
 ### Invalid
 
 The checkbox can be marked invalid using the `invalid` attribute.
 
-<way-checkbox invalid>Checkbox</way-checkbox>
+<gr-checkbox invalid>Checkbox</gr-checkbox>
 
 ```html
-<way-checkbox invalid>Checkbox</way-checkbox>
+<gr-checkbox invalid>Checkbox</gr-checkbox>
 ```
 
 ## Properties
@@ -69,11 +73,11 @@ The checkbox can be marked invalid using the `invalid` attribute.
 
 ## Events
 
-| Event        | Description                                       | Type                |
-| ------------ | ------------------------------------------------- | ------------------- |
-| `way-blur`   | Emitted when the control loses focus.             | `CustomEvent<void>` |
-| `way-change` | Emitted when the control's checked state changes. | `CustomEvent<void>` |
-| `way-focus`  | Emitted when the control gains focus.             | `CustomEvent<void>` |
+| Event       | Description                                       | Type                |
+| ----------- | ------------------------------------------------- | ------------------- |
+| `gr-blur`   | Emitted when the control loses focus.             | `CustomEvent<void>` |
+| `gr-change` | Emitted when the control's checked state changes. | `CustomEvent<void>` |
+| `gr-focus`  | Emitted when the control gains focus.             | `CustomEvent<void>` |
 
 ## Methods
 

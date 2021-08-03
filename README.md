@@ -1,14 +1,14 @@
-# Way2Web Design System Site
+# Graphite Design System Site
 
-The official [Way2Web Design System documentation](https://w2wds.netlify.app/), built with [Eleventy](https://www.11ty.dev/) using [this starter project](https://github.com/ixartz/Eleventy-Starter-Boilerplate).
+The official [Graphite Design System documentation](https://w2wds.netlify.app/), built with [Eleventy](https://www.11ty.dev/) using [this starter project](https://github.com/ixartz/Eleventy-Starter-Boilerplate).
 
 ## Development
 
 Run the following command on your local environment:
 
 ```bash
-git clone https://github.com/Way2Web/way2web-design-system-site way2web-design-system-site
-cd way2web-design-system-site
+git clone https://github.com/way2web/graphite-design-system-site graphite-design-system-site
+cd graphite-design-system-site
 npm install
 ```
 
@@ -30,7 +30,7 @@ npm run serve
 
 ## Deploy to production
 
-The master branch is automatically deployed to [Netlify](https://www.netlify.com/) on https://way2web-ds.netlify.app (custom domain to be determined).
+The master branch is automatically deployed to [Netlify](https://www.netlify.com/) on https://w2wds.netlify.app (will become https://graphitedesignsystem.com).
 
 Plus, you can automatically preview PR's on Netlify.
 

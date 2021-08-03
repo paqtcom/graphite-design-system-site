@@ -1,33 +1,37 @@
 ---
-title: Components - way-select
+title: Select - Graphite Design System
 ---
 
-# way-select
+# Select
+
+`<gr-select> | GrSelect`
 
 [[toc]]
 
 Selects allow you to choose one or more items from a dropdown menu.
 
-<way-select>
-  <way-menu-item value="option-1">Option 1</way-menu-item>
-  <way-menu-item value="option-2">Option 2</way-menu-item>
-  <way-menu-item value="option-3">Option 3</way-menu-item>
-  <way-menu-divider></way-menu-divider>
-  <way-menu-item value="option-4">Option 4</way-menu-item>
-  <way-menu-item value="option-5">Option 5</way-menu-item>
-  <way-menu-item value="option-6">Option 6</way-menu-item>
-</way-select>
+You can use [menu items](/components/menu-item), [menu dividers](/components/menu-divider), and [menu labels](/components/menu-label) to compose a menu.
+
+<gr-select>
+  <gr-menu-item value="option-1">Option 1</gr-menu-item>
+  <gr-menu-item value="option-2">Option 2</gr-menu-item>
+  <gr-menu-item value="option-3">Option 3</gr-menu-item>
+  <gr-menu-divider></gr-menu-divider>
+  <gr-menu-item value="option-4">Option 4</gr-menu-item>
+  <gr-menu-item value="option-5">Option 5</gr-menu-item>
+  <gr-menu-item value="option-6">Option 6</gr-menu-item>
+</gr-select>
 
 ```html
-<way-select>
-  <way-menu-item value="option-1">Option 1</way-menu-item>
-  <way-menu-item value="option-2">Option 2</way-menu-item>
-  <way-menu-item value="option-3">Option 3</way-menu-item>
-  <way-menu-divider></way-menu-divider>
-  <way-menu-item value="option-4">Option 4</way-menu-item>
-  <way-menu-item value="option-5">Option 5</way-menu-item>
-  <way-menu-item value="option-6">Option 6</way-menu-item>
-</way-select>
+<gr-select>
+  <gr-menu-item value="option-1">Option 1</gr-menu-item>
+  <gr-menu-item value="option-2">Option 2</gr-menu-item>
+  <gr-menu-item value="option-3">Option 3</gr-menu-item>
+  <gr-menu-divider></gr-menu-divider>
+  <gr-menu-item value="option-4">Option 4</gr-menu-item>
+  <gr-menu-item value="option-5">Option 5</gr-menu-item>
+  <gr-menu-item value="option-6">Option 6</gr-menu-item>
+</gr-select>
 ```
 
 ## Examples
@@ -36,178 +40,178 @@ Selects allow you to choose one or more items from a dropdown menu.
 
 Use the `placeholder` attribute to add a placeholder.
 
-<way-select placeholder="Select one">
-  <way-menu-item value="option-1">Option 1</way-menu-item>
-  <way-menu-item value="option-2">Option 2</way-menu-item>
-  <way-menu-item value="option-3">Option 3</way-menu-item>
-</way-select>
+<gr-select placeholder="Select one">
+  <gr-menu-item value="option-1">Option 1</gr-menu-item>
+  <gr-menu-item value="option-2">Option 2</gr-menu-item>
+  <gr-menu-item value="option-3">Option 3</gr-menu-item>
+</gr-select>
 
 ```html
-<way-select placeholder="Select one">
-  <way-menu-item value="option-1">Option 1</way-menu-item>
-  <way-menu-item value="option-2">Option 2</way-menu-item>
-  <way-menu-item value="option-3">Option 3</way-menu-item>
-</way-select>
+<gr-select placeholder="Select one">
+  <gr-menu-item value="option-1">Option 1</gr-menu-item>
+  <gr-menu-item value="option-2">Option 2</gr-menu-item>
+  <gr-menu-item value="option-3">Option 3</gr-menu-item>
+</gr-select>
 ```
 
 ### Clearable
 
 Use the `clearable` attribute to make the control clearable.
 
-<way-select placeholder="Clearable" clearable>
-  <way-menu-item value="option-1">Option 1</way-menu-item>
-  <way-menu-item value="option-2">Option 2</way-menu-item>
-  <way-menu-item value="option-3">Option 3</way-menu-item>
-</way-select>
+<gr-select placeholder="Clearable" clearable>
+  <gr-menu-item value="option-1">Option 1</gr-menu-item>
+  <gr-menu-item value="option-2">Option 2</gr-menu-item>
+  <gr-menu-item value="option-3">Option 3</gr-menu-item>
+</gr-select>
 
 ```html
-<way-select placeholder="Clearable" clearable>
-  <way-menu-item value="option-1">Option 1</way-menu-item>
-  <way-menu-item value="option-2">Option 2</way-menu-item>
-  <way-menu-item value="option-3">Option 3</way-menu-item>
-</way-select>
+<gr-select placeholder="Clearable" clearable>
+  <gr-menu-item value="option-1">Option 1</gr-menu-item>
+  <gr-menu-item value="option-2">Option 2</gr-menu-item>
+  <gr-menu-item value="option-3">Option 3</gr-menu-item>
+</gr-select>
 ```
 
 ### Pill
 
 Use the `pill` attribute to give selects rounded edges.
 
-<way-select pill>
-  <way-menu-item value="option-1">Option 1</way-menu-item>
-  <way-menu-item value="option-2">Option 2</way-menu-item>
-  <way-menu-item value="option-3">Option 3</way-menu-item>
-</way-select>
+<gr-select pill>
+  <gr-menu-item value="option-1">Option 1</gr-menu-item>
+  <gr-menu-item value="option-2">Option 2</gr-menu-item>
+  <gr-menu-item value="option-3">Option 3</gr-menu-item>
+</gr-select>
 
 ```html
-<way-select pill>
-  <way-menu-item value="option-1">Option 1</way-menu-item>
-  <way-menu-item value="option-2">Option 2</way-menu-item>
-  <way-menu-item value="option-3">Option 3</way-menu-item>
-</way-select>
+<gr-select pill>
+  <gr-menu-item value="option-1">Option 1</gr-menu-item>
+  <gr-menu-item value="option-2">Option 2</gr-menu-item>
+  <gr-menu-item value="option-3">Option 3</gr-menu-item>
+</gr-select>
 ```
 
 ### Disabled
 
 Use the `disabled` attribute to disable a select.
 
-<way-select placeholder="Disabled" disabled>
-  <way-menu-item value="option-1">Option 1</way-menu-item>
-  <way-menu-item value="option-2">Option 2</way-menu-item>
-  <way-menu-item value="option-3">Option 3</way-menu-item>
-</way-select>
+<gr-select placeholder="Disabled" disabled>
+  <gr-menu-item value="option-1">Option 1</gr-menu-item>
+  <gr-menu-item value="option-2">Option 2</gr-menu-item>
+  <gr-menu-item value="option-3">Option 3</gr-menu-item>
+</gr-select>
 
 ```html
-<way-select placeholder="Disabled" disabled>
-  <way-menu-item value="option-1">Option 1</way-menu-item>
-  <way-menu-item value="option-2">Option 2</way-menu-item>
-  <way-menu-item value="option-3">Option 3</way-menu-item>
-</way-select>
+<gr-select placeholder="Disabled" disabled>
+  <gr-menu-item value="option-1">Option 1</gr-menu-item>
+  <gr-menu-item value="option-2">Option 2</gr-menu-item>
+  <gr-menu-item value="option-3">Option 3</gr-menu-item>
+</gr-select>
 ```
 
 ### Multiple
 
 To allow multiple options to be selected, use the `multiple` attribute. It's a good practice to use `clearable` when this option is enabled. When using this option, `value` will be an array instead of a string.
 
-<way-select placeholder="Select a few" multiple clearable>
-  <way-menu-item value="option-1">Option 1</way-menu-item>
-  <way-menu-item value="option-2">Option 2</way-menu-item>
-  <way-menu-item value="option-3">Option 3</way-menu-item>
-  <way-menu-divider></way-menu-divider>
-  <way-menu-item value="option-4">Option 4</way-menu-item>
-  <way-menu-item value="option-5">Option 5</way-menu-item>
-  <way-menu-item value="option-6">Option 6</way-menu-item>
-</way-select>
+<gr-select placeholder="Select a few" multiple clearable>
+  <gr-menu-item value="option-1">Option 1</gr-menu-item>
+  <gr-menu-item value="option-2">Option 2</gr-menu-item>
+  <gr-menu-item value="option-3">Option 3</gr-menu-item>
+  <gr-menu-divider></gr-menu-divider>
+  <gr-menu-item value="option-4">Option 4</gr-menu-item>
+  <gr-menu-item value="option-5">Option 5</gr-menu-item>
+  <gr-menu-item value="option-6">Option 6</gr-menu-item>
+</gr-select>
 
 ```html
-<way-select placeholder="Select a few" multiple clearable>
-  <way-menu-item value="option-1">Option 1</way-menu-item>
-  <way-menu-item value="option-2">Option 2</way-menu-item>
-  <way-menu-item value="option-3">Option 3</way-menu-item>
-  <way-menu-divider></way-menu-divider>
-  <way-menu-item value="option-4">Option 4</way-menu-item>
-  <way-menu-item value="option-5">Option 5</way-menu-item>
-  <way-menu-item value="option-6">Option 6</way-menu-item>
-</way-select>
+<gr-select placeholder="Select a few" multiple clearable>
+  <gr-menu-item value="option-1">Option 1</gr-menu-item>
+  <gr-menu-item value="option-2">Option 2</gr-menu-item>
+  <gr-menu-item value="option-3">Option 3</gr-menu-item>
+  <gr-menu-divider></gr-menu-divider>
+  <gr-menu-item value="option-4">Option 4</gr-menu-item>
+  <gr-menu-item value="option-5">Option 5</gr-menu-item>
+  <gr-menu-item value="option-6">Option 6</gr-menu-item>
+</gr-select>
 ```
 
 ### Grouping Options
 
-Options can be grouped visually using menu labels and menu dividers.
+Options can be grouped visually using [menu labels](/components/menu-label) and [menu dividers](/components/menu-divider).
 
-<way-select placeholder="Select one">
-  <way-menu-label>Group 1</way-menu-label>
-  <way-menu-item value="option-1">Option 1</way-menu-item>
-  <way-menu-item value="option-2">Option 2</way-menu-item>
-  <way-menu-item value="option-3">Option 3</way-menu-item>
-  <way-menu-divider></way-menu-divider>
-  <way-menu-label>Group 2</way-menu-label>
-  <way-menu-item value="option-4">Option 4</way-menu-item>
-  <way-menu-item value="option-5">Option 5</way-menu-item>
-  <way-menu-item value="option-6">Option 6</way-menu-item>
-</way-select>
+<gr-select placeholder="Select one">
+  <gr-menu-label>Group 1</gr-menu-label>
+  <gr-menu-item value="option-1">Option 1</gr-menu-item>
+  <gr-menu-item value="option-2">Option 2</gr-menu-item>
+  <gr-menu-item value="option-3">Option 3</gr-menu-item>
+  <gr-menu-divider></gr-menu-divider>
+  <gr-menu-label>Group 2</gr-menu-label>
+  <gr-menu-item value="option-4">Option 4</gr-menu-item>
+  <gr-menu-item value="option-5">Option 5</gr-menu-item>
+  <gr-menu-item value="option-6">Option 6</gr-menu-item>
+</gr-select>
 
 ```html
-<way-select placeholder="Select one">
-  <way-menu-label>Group 1</way-menu-label>
-  <way-menu-item value="option-1">Option 1</way-menu-item>
-  <way-menu-item value="option-2">Option 2</way-menu-item>
-  <way-menu-item value="option-3">Option 3</way-menu-item>
-  <way-menu-divider></way-menu-divider>
-  <way-menu-label>Group 2</way-menu-label>
-  <way-menu-item value="option-4">Option 4</way-menu-item>
-  <way-menu-item value="option-5">Option 5</way-menu-item>
-  <way-menu-item value="option-6">Option 6</way-menu-item>
-</way-select>
+<gr-select placeholder="Select one">
+  <gr-menu-label>Group 1</gr-menu-label>
+  <gr-menu-item value="option-1">Option 1</gr-menu-item>
+  <gr-menu-item value="option-2">Option 2</gr-menu-item>
+  <gr-menu-item value="option-3">Option 3</gr-menu-item>
+  <gr-menu-divider></gr-menu-divider>
+  <gr-menu-label>Group 2</gr-menu-label>
+  <gr-menu-item value="option-4">Option 4</gr-menu-item>
+  <gr-menu-item value="option-5">Option 5</gr-menu-item>
+  <gr-menu-item value="option-6">Option 6</gr-menu-item>
+</gr-select>
 ```
 
 ### Sizes
 
 Use the `size` attribute to change a select's size.
 
-<way-select placeholder="Small" size="small" multiple>
-  <way-menu-item value="option-1">Option 1</way-menu-item>
-  <way-menu-item value="option-2">Option 2</way-menu-item>
-  <way-menu-item value="option-3">Option 3</way-menu-item>
-</way-select>
+<gr-select placeholder="Small" size="small" multiple>
+  <gr-menu-item value="option-1">Option 1</gr-menu-item>
+  <gr-menu-item value="option-2">Option 2</gr-menu-item>
+  <gr-menu-item value="option-3">Option 3</gr-menu-item>
+</gr-select>
 
 <br>
 
-<way-select placeholder="Medium" size="medium" multiple>
-  <way-menu-item value="option-1">Option 1</way-menu-item>
-  <way-menu-item value="option-2">Option 2</way-menu-item>
-  <way-menu-item value="option-3">Option 3</way-menu-item>
-</way-select>
+<gr-select placeholder="Medium" size="medium" multiple>
+  <gr-menu-item value="option-1">Option 1</gr-menu-item>
+  <gr-menu-item value="option-2">Option 2</gr-menu-item>
+  <gr-menu-item value="option-3">Option 3</gr-menu-item>
+</gr-select>
 
 <br>
 
-<way-select placeholder="Large" size="large" multiple>
-  <way-menu-item value="option-1">Option 1</way-menu-item>
-  <way-menu-item value="option-2">Option 2</way-menu-item>
-  <way-menu-item value="option-3">Option 3</way-menu-item>
-</way-select>
+<gr-select placeholder="Large" size="large" multiple>
+  <gr-menu-item value="option-1">Option 1</gr-menu-item>
+  <gr-menu-item value="option-2">Option 2</gr-menu-item>
+  <gr-menu-item value="option-3">Option 3</gr-menu-item>
+</gr-select>
 
 ```html
-<way-select placeholder="Small" size="small" multiple>
-  <way-menu-item value="option-1">Option 1</way-menu-item>
-  <way-menu-item value="option-2">Option 2</way-menu-item>
-  <way-menu-item value="option-3">Option 3</way-menu-item>
-</way-select>
+<gr-select placeholder="Small" size="small" multiple>
+  <gr-menu-item value="option-1">Option 1</gr-menu-item>
+  <gr-menu-item value="option-2">Option 2</gr-menu-item>
+  <gr-menu-item value="option-3">Option 3</gr-menu-item>
+</gr-select>
 
 <br />
 
-<way-select placeholder="Medium" size="medium" multiple>
-  <way-menu-item value="option-1">Option 1</way-menu-item>
-  <way-menu-item value="option-2">Option 2</way-menu-item>
-  <way-menu-item value="option-3">Option 3</way-menu-item>
-</way-select>
+<gr-select placeholder="Medium" size="medium" multiple>
+  <gr-menu-item value="option-1">Option 1</gr-menu-item>
+  <gr-menu-item value="option-2">Option 2</gr-menu-item>
+  <gr-menu-item value="option-3">Option 3</gr-menu-item>
+</gr-select>
 
 <br />
 
-<way-select placeholder="Large" size="large" multiple>
-  <way-menu-item value="option-1">Option 1</way-menu-item>
-  <way-menu-item value="option-2">Option 2</way-menu-item>
-  <way-menu-item value="option-3">Option 3</way-menu-item>
-</way-select>
+<gr-select placeholder="Large" size="large" multiple>
+  <gr-menu-item value="option-1">Option 1</gr-menu-item>
+  <gr-menu-item value="option-2">Option 2</gr-menu-item>
+  <gr-menu-item value="option-3">Option 3</gr-menu-item>
+</gr-select>
 ```
 
 ### Selecting Options Programmatically
@@ -216,25 +220,25 @@ The `value` prop is bound to the current selection. As the selection changes, so
 
 <div class="selecting-example">
 
-<way-select placeholder="">
-  <way-menu-item value="option-1">Option 1</way-menu-item>
-  <way-menu-item value="option-2">Option 2</way-menu-item>
-  <way-menu-item value="option-3">Option 3</way-menu-item>
-</way-select>
+<gr-select placeholder="">
+  <gr-menu-item value="option-1">Option 1</gr-menu-item>
+  <gr-menu-item value="option-2">Option 2</gr-menu-item>
+  <gr-menu-item value="option-3">Option 3</gr-menu-item>
+</gr-select>
 
 <br>
 
-<way-button data-option="option-1">Set 1</way-button>
-<way-button data-option="option-2">Set 2</way-button>
-<way-button data-option="option-3">Set 3</way-button>
+<gr-button data-option="option-1">Set 1</gr-button>
+<gr-button data-option="option-2">Set 2</gr-button>
+<gr-button data-option="option-3">Set 3</gr-button>
 
 </div>
 
 <script>
   const container = document.querySelector('.selecting-example');
-  const select = container.querySelector('way-select');
+  const select = container.querySelector('gr-select');
 
-  [...container.querySelectorAll('way-button')].map(button => {
+  [...container.querySelectorAll('gr-button')].map(button => {
     button.addEventListener('click', () => {
       select.value = button.dataset.option; 
     });
@@ -243,24 +247,24 @@ The `value` prop is bound to the current selection. As the selection changes, so
 
 ```html
 <div class="selecting-example">
-  <way-select placeholder="">
-    <way-menu-item value="option-1">Option 1</way-menu-item>
-    <way-menu-item value="option-2">Option 2</way-menu-item>
-    <way-menu-item value="option-3">Option 3</way-menu-item>
-  </way-select>
+  <gr-select placeholder="">
+    <gr-menu-item value="option-1">Option 1</gr-menu-item>
+    <gr-menu-item value="option-2">Option 2</gr-menu-item>
+    <gr-menu-item value="option-3">Option 3</gr-menu-item>
+  </gr-select>
 
   <br />
 
-  <way-button data-option="option-1">Set 1</way-button>
-  <way-button data-option="option-2">Set 2</way-button>
-  <way-button data-option="option-3">Set 3</way-button>
+  <gr-button data-option="option-1">Set 1</gr-button>
+  <gr-button data-option="option-2">Set 2</gr-button>
+  <gr-button data-option="option-3">Set 3</gr-button>
 </div>
 
 <script>
   const container = document.querySelector('.selecting-example');
-  const select = container.querySelector('way-select');
+  const select = container.querySelector('gr-select');
 
-  [...container.querySelectorAll('way-button')].map((button) => {
+  [...container.querySelectorAll('gr-button')].map((button) => {
     button.addEventListener('click', () => {
       select.value = button.dataset.option;
     });
@@ -272,54 +276,54 @@ The `value` prop is bound to the current selection. As the selection changes, so
 
 The select can be marked invalid using the `invalid` attribute.
 
-<way-select label="Invalid" invalid>
-  <way-menu-item value="option-1">Option 1</way-menu-item>
-  <way-menu-item value="option-2">Option 2</way-menu-item>
-  <way-menu-item value="option-3">Option 3</way-menu-item>
-</way-select>
+<gr-select label="Invalid" invalid>
+  <gr-menu-item value="option-1">Option 1</gr-menu-item>
+  <gr-menu-item value="option-2">Option 2</gr-menu-item>
+  <gr-menu-item value="option-3">Option 3</gr-menu-item>
+</gr-select>
 
 ```html
-<way-select label="Invalid" invalid>
-  <way-menu-item value="option-1">Option 1</way-menu-item>
-  <way-menu-item value="option-2">Option 2</way-menu-item>
-  <way-menu-item value="option-3">Option 3</way-menu-item>
-</way-select>
+<gr-select label="Invalid" invalid>
+  <gr-menu-item value="option-1">Option 1</gr-menu-item>
+  <gr-menu-item value="option-2">Option 2</gr-menu-item>
+  <gr-menu-item value="option-3">Option 3</gr-menu-item>
+</gr-select>
 ```
 
 ### Labels
 
 Use the `label` attribute to give the select an accessible label. For labels that contain HTML, use the `label` slot instead.
 
-<way-select label="Select one">
-  <way-menu-item value="option-1">Option 1</way-menu-item>
-  <way-menu-item value="option-2">Option 2</way-menu-item>
-  <way-menu-item value="option-3">Option 3</way-menu-item>
-</way-select>
+<gr-select label="Select one">
+  <gr-menu-item value="option-1">Option 1</gr-menu-item>
+  <gr-menu-item value="option-2">Option 2</gr-menu-item>
+  <gr-menu-item value="option-3">Option 3</gr-menu-item>
+</gr-select>
 
 ```html
-<way-select label="Select one">
-  <way-menu-item value="option-1">Option 1</way-menu-item>
-  <way-menu-item value="option-2">Option 2</way-menu-item>
-  <way-menu-item value="option-3">Option 3</way-menu-item>
-</way-select>
+<gr-select label="Select one">
+  <gr-menu-item value="option-1">Option 1</gr-menu-item>
+  <gr-menu-item value="option-2">Option 2</gr-menu-item>
+  <gr-menu-item value="option-3">Option 3</gr-menu-item>
+</gr-select>
 ```
 
 ### Help Text
 
 Add descriptive help text to a select with the `help-text` attribute. For help texts that contain HTML, use the `help-text` slot instead.
 
-<way-select label="Experience" help-text="Please tell us your skill level.">
-  <way-menu-item value="option-1">Novice</way-menu-item>
-  <way-menu-item value="option-2">Intermediate</way-menu-item>
-  <way-menu-item value="option-3">Advanced</way-menu-item>
-</way-select>
+<gr-select label="Experience" help-text="Please tell us your skill level.">
+  <gr-menu-item value="option-1">Novice</gr-menu-item>
+  <gr-menu-item value="option-2">Intermediate</gr-menu-item>
+  <gr-menu-item value="option-3">Advanced</gr-menu-item>
+</gr-select>
 
 ```html
-<way-select label="Experience" help-text="Please tell us your skill level.">
-  <way-menu-item value="option-1">Novice</way-menu-item>
-  <way-menu-item value="option-2">Intermediate</way-menu-item>
-  <way-menu-item value="option-3">Advanced</way-menu-item>
-</way-select>
+<gr-select label="Experience" help-text="Please tell us your skill level.">
+  <gr-menu-item value="option-1">Novice</gr-menu-item>
+  <gr-menu-item value="option-2">Intermediate</gr-menu-item>
+  <gr-menu-item value="option-3">Advanced</gr-menu-item>
+</gr-select>
 ```
 
 ### Invalid Text
@@ -328,23 +332,23 @@ Add descriptive invalid text to a select with the `invalid-text` attribute. For 
 
 When you add the `invalid` attribute, the invalid text will be shown. When a select already includes help text, the help text is replaced with invalid text.
 
-<way-select label="Experience" help-text="Please tell us your skill level." invalid-text="Select your skill level" invalid>
-  <way-menu-item value="option-1">Novice</way-menu-item>
-  <way-menu-item value="option-2">Intermediate</way-menu-item>
-  <way-menu-item value="option-3">Advanced</way-menu-item>
-</way-select>
+<gr-select label="Experience" help-text="Please tell us your skill level." invalid-text="Select your skill level" invalid>
+  <gr-menu-item value="option-1">Novice</gr-menu-item>
+  <gr-menu-item value="option-2">Intermediate</gr-menu-item>
+  <gr-menu-item value="option-3">Advanced</gr-menu-item>
+</gr-select>
 
 ```html
-<way-select
+<gr-select
   label="Experience"
   help-text="Please tell us your skill level."
   invalid-text="Select your skill level"
   invalid
 >
-  <way-menu-item value="option-1">Novice</way-menu-item>
-  <way-menu-item value="option-2">Intermediate</way-menu-item>
-  <way-menu-item value="option-3">Advanced</way-menu-item>
-</way-select>
+  <gr-menu-item value="option-1">Novice</gr-menu-item>
+  <gr-menu-item value="option-2">Intermediate</gr-menu-item>
+  <gr-menu-item value="option-3">Advanced</gr-menu-item>
+</gr-select>
 ```
 
 ## Properties
@@ -368,11 +372,11 @@ When you add the `invalid` attribute, the invalid text will be shown. When a sel
 
 ## Events
 
-| Event        | Description                               | Type                |
-| ------------ | ----------------------------------------- | ------------------- |
-| `way-blur`   | Emitted when the control loses focus.     | `CustomEvent<void>` |
-| `way-change` | Emitted when the control's value changes. | `CustomEvent<void>` |
-| `way-focus`  | Emitted when the control gains focus.     | `CustomEvent<void>` |
+| Event       | Description                               | Type                |
+| ----------- | ----------------------------------------- | ------------------- |
+| `gr-blur`   | Emitted when the control loses focus.     | `CustomEvent<void>` |
+| `gr-change` | Emitted when the control's value changes. | `CustomEvent<void>` |
+| `gr-focus`  | Emitted when the control gains focus.     | `CustomEvent<void>` |
 
 ## Slots
 
@@ -416,6 +420,6 @@ When you add the `invalid` attribute, the invalid text will be shown. When a sel
 
 ### Depends on
 
-- [way-tag](/components/tag)
-- [way-dropdown](/components/dropdown)
-- [way-menu](/components/menu)
+- [gr-tag](/components/tag)
+- [gr-dropdown](/components/dropdown)
+- [gr-menu](/components/menu)

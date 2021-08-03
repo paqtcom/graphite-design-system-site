@@ -1,8 +1,10 @@
 ---
-title: Components - way-dropdown
+title: Dropdown - Graphite Design System
 ---
 
-# way-dropdown
+# Dropdown
+
+`<gr-dropdown> | GrDropdown`
 
 [[toc]]
 
@@ -12,48 +14,48 @@ Dropdowns consist of a trigger and a panel. By default, activating the trigger w
 
 Dropdowns are designed to work well with [menus](/components/menu) to provide a list of options the user can select from. However, dropdowns can also be used in lower-level applications (e.g. [select](/components/select)). The API gives you complete control over showing, hiding, and positioning the panel.
 
-<way-dropdown>
-  <way-button slot="trigger" caret>Dropdown</way-button>
-  <way-menu>
-    <way-menu-item>Dropdown Item 1</way-menu-item>
-    <way-menu-item>Dropdown Item 2</way-menu-item>
-    <way-menu-item>Dropdown Item 3</way-menu-item>
-    <way-menu-divider></way-menu-divider>
-    <way-menu-item checked>Checked</way-menu-item>
-    <way-menu-item disabled>Disabled</way-menu-item>
-    <way-menu-divider></way-menu-divider>
-    <way-menu-item>
+<gr-dropdown>
+  <gr-button slot="trigger" caret>Dropdown</gr-button>
+  <gr-menu>
+    <gr-menu-item>Dropdown Item 1</gr-menu-item>
+    <gr-menu-item>Dropdown Item 2</gr-menu-item>
+    <gr-menu-item>Dropdown Item 3</gr-menu-item>
+    <gr-menu-divider></gr-menu-divider>
+    <gr-menu-item checked>Checked</gr-menu-item>
+    <gr-menu-item disabled>Disabled</gr-menu-item>
+    <gr-menu-divider></gr-menu-divider>
+    <gr-menu-item>
       Start Icon
       <ion-icon slot="start" name="gift-outline"></ion-icon>
-    </way-menu-item>
-    <way-menu-item>
+    </gr-menu-item>
+    <gr-menu-item>
       End Icon
       <ion-icon slot="end" name="heart-outline"></ion-icon>
-    </way-menu-item>
-  </way-menu>
-</way-dropdown>
+    </gr-menu-item>
+  </gr-menu>
+</gr-dropdown>
 
 ```html
-<way-dropdown>
-  <way-button slot="trigger" caret>Dropdown</way-button>
-  <way-menu>
-    <way-menu-item>Dropdown Item 1</way-menu-item>
-    <way-menu-item>Dropdown Item 2</way-menu-item>
-    <way-menu-item>Dropdown Item 3</way-menu-item>
-    <way-menu-divider></way-menu-divider>
-    <way-menu-item checked>Checked</way-menu-item>
-    <way-menu-item disabled>Disabled</way-menu-item>
-    <way-menu-divider></way-menu-divider>
-    <way-menu-item>
+<gr-dropdown>
+  <gr-button slot="trigger" caret>Dropdown</gr-button>
+  <gr-menu>
+    <gr-menu-item>Dropdown Item 1</gr-menu-item>
+    <gr-menu-item>Dropdown Item 2</gr-menu-item>
+    <gr-menu-item>Dropdown Item 3</gr-menu-item>
+    <gr-menu-divider></gr-menu-divider>
+    <gr-menu-item checked>Checked</gr-menu-item>
+    <gr-menu-item disabled>Disabled</gr-menu-item>
+    <gr-menu-divider></gr-menu-divider>
+    <gr-menu-item>
       Start Icon
       <ion-icon slot="start" name="gift-outline"></ion-icon>
-    </way-menu-item>
-    <way-menu-item>
+    </gr-menu-item>
+    <gr-menu-item>
       End Icon
       <ion-icon slot="end" name="heart-outline"></ion-icon>
-    </way-menu-item>
-  </way-menu>
-</way-dropdown>
+    </gr-menu-item>
+  </gr-menu>
+</gr-dropdown>
 ```
 
 ## Examples
@@ -62,90 +64,90 @@ Dropdowns are designed to work well with [menus](/components/menu) to provide a 
 
 The preferred placement of the dropdown can be set with the `placement` attribute. Note that the actual position may vary to ensure the panel remains in the viewport.
 
-<way-dropdown placement="top-start">
-  <way-button slot="trigger" caret>Edit</way-button>
-  <way-menu>
-    <way-menu-item>Cut</way-menu-item>
-    <way-menu-item>Copy</way-menu-item>
-    <way-menu-item>Paste</way-menu-item>
-    <way-menu-divider></way-menu-divider>
-    <way-menu-item>Find</way-menu-item>
-    <way-menu-item>Replace</way-menu-item>
-  </way-menu>
-</way-dropdown>
+<gr-dropdown placement="top-start">
+  <gr-button slot="trigger" caret>Edit</gr-button>
+  <gr-menu>
+    <gr-menu-item>Cut</gr-menu-item>
+    <gr-menu-item>Copy</gr-menu-item>
+    <gr-menu-item>Paste</gr-menu-item>
+    <gr-menu-divider></gr-menu-divider>
+    <gr-menu-item>Find</gr-menu-item>
+    <gr-menu-item>Replace</gr-menu-item>
+  </gr-menu>
+</gr-dropdown>
 
 ```html
-<way-dropdown placement="top-start">
-  <way-button slot="trigger" caret>Edit</way-button>
-  <way-menu>
-    <way-menu-item>Cut</way-menu-item>
-    <way-menu-item>Copy</way-menu-item>
-    <way-menu-item>Paste</way-menu-item>
-    <way-menu-divider></way-menu-divider>
-    <way-menu-item>Find</way-menu-item>
-    <way-menu-item>Replace</way-menu-item>
-  </way-menu>
-</way-dropdown>
+<gr-dropdown placement="top-start">
+  <gr-button slot="trigger" caret>Edit</gr-button>
+  <gr-menu>
+    <gr-menu-item>Cut</gr-menu-item>
+    <gr-menu-item>Copy</gr-menu-item>
+    <gr-menu-item>Paste</gr-menu-item>
+    <gr-menu-divider></gr-menu-divider>
+    <gr-menu-item>Find</gr-menu-item>
+    <gr-menu-item>Replace</gr-menu-item>
+  </gr-menu>
+</gr-dropdown>
 ```
 
 ### Distance
 
 The distance from the panel to the trigger can be customized using the `distance` attribute. This value is specified in pixels.
 
-<way-dropdown distance="30">
-  <way-button slot="trigger" caret>Edit</way-button>
-  <way-menu>
-    <way-menu-item>Cut</way-menu-item>
-    <way-menu-item>Copy</way-menu-item>
-    <way-menu-item>Paste</way-menu-item>
-    <way-menu-divider></way-menu-divider>
-    <way-menu-item>Find</way-menu-item>
-    <way-menu-item>Replace</way-menu-item>
-  </way-menu>
-</way-dropdown>
+<gr-dropdown distance="30">
+  <gr-button slot="trigger" caret>Edit</gr-button>
+  <gr-menu>
+    <gr-menu-item>Cut</gr-menu-item>
+    <gr-menu-item>Copy</gr-menu-item>
+    <gr-menu-item>Paste</gr-menu-item>
+    <gr-menu-divider></gr-menu-divider>
+    <gr-menu-item>Find</gr-menu-item>
+    <gr-menu-item>Replace</gr-menu-item>
+  </gr-menu>
+</gr-dropdown>
 
 ```html
-<way-dropdown distance="30">
-  <way-button slot="trigger" caret>Edit</way-button>
-  <way-menu>
-    <way-menu-item>Cut</way-menu-item>
-    <way-menu-item>Copy</way-menu-item>
-    <way-menu-item>Paste</way-menu-item>
-    <way-menu-divider></way-menu-divider>
-    <way-menu-item>Find</way-menu-item>
-    <way-menu-item>Replace</way-menu-item>
-  </way-menu>
-</way-dropdown>
+<gr-dropdown distance="30">
+  <gr-button slot="trigger" caret>Edit</gr-button>
+  <gr-menu>
+    <gr-menu-item>Cut</gr-menu-item>
+    <gr-menu-item>Copy</gr-menu-item>
+    <gr-menu-item>Paste</gr-menu-item>
+    <gr-menu-divider></gr-menu-divider>
+    <gr-menu-item>Find</gr-menu-item>
+    <gr-menu-item>Replace</gr-menu-item>
+  </gr-menu>
+</gr-dropdown>
 ```
 
 ### Skidding
 
 The offset of the panel along the trigger can be customized using the `skidding` attribute. This value is specified in pixels.
 
-<way-dropdown skidding="30">
-  <way-button slot="trigger" caret>Edit</way-button>
-  <way-menu>
-    <way-menu-item>Cut</way-menu-item>
-    <way-menu-item>Copy</way-menu-item>
-    <way-menu-item>Paste</way-menu-item>
-    <way-menu-divider></way-menu-divider>
-    <way-menu-item>Find</way-menu-item>
-    <way-menu-item>Replace</way-menu-item>
-  </way-menu>
-</way-dropdown>
+<gr-dropdown skidding="30">
+  <gr-button slot="trigger" caret>Edit</gr-button>
+  <gr-menu>
+    <gr-menu-item>Cut</gr-menu-item>
+    <gr-menu-item>Copy</gr-menu-item>
+    <gr-menu-item>Paste</gr-menu-item>
+    <gr-menu-divider></gr-menu-divider>
+    <gr-menu-item>Find</gr-menu-item>
+    <gr-menu-item>Replace</gr-menu-item>
+  </gr-menu>
+</gr-dropdown>
 
 ```html
-<way-dropdown skidding="30">
-  <way-button slot="trigger" caret>Edit</way-button>
-  <way-menu>
-    <way-menu-item>Cut</way-menu-item>
-    <way-menu-item>Copy</way-menu-item>
-    <way-menu-item>Paste</way-menu-item>
-    <way-menu-divider></way-menu-divider>
-    <way-menu-item>Find</way-menu-item>
-    <way-menu-item>Replace</way-menu-item>
-  </way-menu>
-</way-dropdown>
+<gr-dropdown skidding="30">
+  <gr-button slot="trigger" caret>Edit</gr-button>
+  <gr-menu>
+    <gr-menu-item>Cut</gr-menu-item>
+    <gr-menu-item>Copy</gr-menu-item>
+    <gr-menu-item>Paste</gr-menu-item>
+    <gr-menu-divider></gr-menu-divider>
+    <gr-menu-item>Find</gr-menu-item>
+    <gr-menu-item>Replace</gr-menu-item>
+  </gr-menu>
+</gr-dropdown>
 ```
 
 ### Hoisting
@@ -153,58 +155,58 @@ The offset of the panel along the trigger can be customized using the `skidding`
 Dropdown panels will be clipped if they're inside a container that has `overflow: auto|hidden`. The `hoist` attribute forces the panel to use a fixed positioning strategy, allowing it to break out of the container. In this case, the panel will be positioned relative to its containing block, which is usually the viewport unless an ancestor uses a `transform`, `perspective`, or `filter`. [Refer to this page](https://developer.mozilla.org/en-US/docs/Web/CSS/position#fixed) for more details.
 
 <div class="dropdown-hoist">
-  <way-dropdown>
-    <way-button slot="trigger" caret>No Hoist</way-button>
-    <way-menu>
-      <way-menu-item>Item 1</way-menu-item>
-      <way-menu-item>Item 2</way-menu-item>
-      <way-menu-item>Item 3</way-menu-item>
-    </way-menu>
-  </way-dropdown>
+  <gr-dropdown>
+    <gr-button slot="trigger" caret>No Hoist</gr-button>
+    <gr-menu>
+      <gr-menu-item>Item 1</gr-menu-item>
+      <gr-menu-item>Item 2</gr-menu-item>
+      <gr-menu-item>Item 3</gr-menu-item>
+    </gr-menu>
+  </gr-dropdown>
 
-  <way-dropdown hoist>
-    <way-button slot="trigger" caret>Hoist</way-button>
-    <way-menu>
-      <way-menu-item>Item 1</way-menu-item>
-      <way-menu-item>Item 2</way-menu-item>
-      <way-menu-item>Item 3</way-menu-item>
-    </way-menu>
-  </way-dropdown>
+  <gr-dropdown hoist>
+    <gr-button slot="trigger" caret>Hoist</gr-button>
+    <gr-menu>
+      <gr-menu-item>Item 1</gr-menu-item>
+      <gr-menu-item>Item 2</gr-menu-item>
+      <gr-menu-item>Item 3</gr-menu-item>
+    </gr-menu>
+  </gr-dropdown>
 </div>
 
 <style>
   .dropdown-hoist {
-    border: solid 2px var(--way-panel-border-color);
-    padding: var(--way-spacing-medium);
+    border: solid 2px var(--gr-panel-border-color);
+    padding: var(--gr-spacing-medium);
     overflow: hidden;
   }
 </style>
 
 ```html
 <div class="dropdown-hoist">
-  <way-dropdown>
-    <way-button slot="trigger" caret>No Hoist</way-button>
-    <way-menu>
-      <way-menu-item>Item 1</way-menu-item>
-      <way-menu-item>Item 2</way-menu-item>
-      <way-menu-item>Item 3</way-menu-item>
-    </way-menu>
-  </way-dropdown>
+  <gr-dropdown>
+    <gr-button slot="trigger" caret>No Hoist</gr-button>
+    <gr-menu>
+      <gr-menu-item>Item 1</gr-menu-item>
+      <gr-menu-item>Item 2</gr-menu-item>
+      <gr-menu-item>Item 3</gr-menu-item>
+    </gr-menu>
+  </gr-dropdown>
 
-  <way-dropdown hoist>
-    <way-button slot="trigger" caret>Hoist</way-button>
-    <way-menu>
-      <way-menu-item>Item 1</way-menu-item>
-      <way-menu-item>Item 2</way-menu-item>
-      <way-menu-item>Item 3</way-menu-item>
-    </way-menu>
-  </way-dropdown>
+  <gr-dropdown hoist>
+    <gr-button slot="trigger" caret>Hoist</gr-button>
+    <gr-menu>
+      <gr-menu-item>Item 1</gr-menu-item>
+      <gr-menu-item>Item 2</gr-menu-item>
+      <gr-menu-item>Item 3</gr-menu-item>
+    </gr-menu>
+  </gr-dropdown>
 </div>
 
 <style>
   .dropdown-hoist {
-    border: solid 2px var(--way-panel-border-color);
-    padding: var(--way-spacing-medium);
+    border: solid 2px var(--gr-panel-border-color);
+    padding: var(--gr-spacing-medium);
     overflow: hidden;
   }
 </style>
@@ -212,24 +214,24 @@ Dropdown panels will be clipped if they're inside a container that has `overflow
 
 ### Getting the Selected Item
 
-When dropdowns are used with [menus](/components/menu), you can listen for the `way-select` event to determine which menu item was selected. The menu item element will be exposed in `event.detail.item`. You can set `value` props to make it easier to identify commands.
+When dropdowns are used with [menus](/components/menu), you can listen for the `gr-select` event to determine which menu item was selected. The menu item element will be exposed in `event.detail.item`. You can set `value` props to make it easier to identify commands.
 
 <div class="dropdown-selection1">
-  <way-dropdown>
-    <way-button slot="trigger" caret>Edit</way-button>
-    <way-menu>
-      <way-menu-item value="cut">Cut</way-menu-item>
-      <way-menu-item value="copy">Copy</way-menu-item>
-      <way-menu-item value="paste">Paste</way-menu-item>
-    </way-menu>
-  </way-dropdown>
+  <gr-dropdown>
+    <gr-button slot="trigger" caret>Edit</gr-button>
+    <gr-menu>
+      <gr-menu-item value="cut">Cut</gr-menu-item>
+      <gr-menu-item value="copy">Copy</gr-menu-item>
+      <gr-menu-item value="paste">Paste</gr-menu-item>
+    </gr-menu>
+  </gr-dropdown>
 </div>
 
 <script>
   const container1 = document.querySelector('.dropdown-selection1');
-  const dropdown1 = container1.querySelector('way-dropdown');
+  const dropdown1 = container1.querySelector('gr-dropdown');
 
-  dropdown1.addEventListener('way-select', event => {
+  dropdown1.addEventListener('gr-select', event => {
     const selectedItem = event.detail.item;
     console.log(selectedItem.value);
   });
@@ -237,21 +239,21 @@ When dropdowns are used with [menus](/components/menu), you can listen for the `
 
 ```html
 <div class="dropdown-selection">
-  <way-dropdown>
-    <way-button slot="trigger" caret>Edit</way-button>
-    <way-menu>
-      <way-menu-item value="cut">Cut</way-menu-item>
-      <way-menu-item value="copy">Copy</way-menu-item>
-      <way-menu-item value="paste">Paste</way-menu-item>
-    </way-menu>
-  </way-dropdown>
+  <gr-dropdown>
+    <gr-button slot="trigger" caret>Edit</gr-button>
+    <gr-menu>
+      <gr-menu-item value="cut">Cut</gr-menu-item>
+      <gr-menu-item value="copy">Copy</gr-menu-item>
+      <gr-menu-item value="paste">Paste</gr-menu-item>
+    </gr-menu>
+  </gr-dropdown>
 </div>
 
 <script>
   const container = document.querySelector('.dropdown-selection');
-  const dropdown = container.querySelector('way-dropdown');
+  const dropdown = container.querySelector('gr-dropdown');
 
-  dropdown.addEventListener('way-select', (event) => {
+  dropdown.addEventListener('gr-select', (event) => {
     const selectedItem = event.detail.item;
     console.log(selectedItem.value);
   });
@@ -261,21 +263,21 @@ When dropdowns are used with [menus](/components/menu), you can listen for the `
 Alternatively, you can listen for the `click` event on individual menu items. Note that, using this approach, disabled menu items will still emit a `click` event.
 
 <div class="dropdown-selection-alt">
-  <way-dropdown>
-    <way-button slot="trigger" caret>Edit</way-button>
-    <way-menu>
-      <way-menu-item value="cut">Cut</way-menu-item>
-      <way-menu-item value="copy">Copy</way-menu-item>
-      <way-menu-item value="paste">Paste</way-menu-item>
-    </way-menu>
-  </way-dropdown>
+  <gr-dropdown>
+    <gr-button slot="trigger" caret>Edit</gr-button>
+    <gr-menu>
+      <gr-menu-item value="cut">Cut</gr-menu-item>
+      <gr-menu-item value="copy">Copy</gr-menu-item>
+      <gr-menu-item value="paste">Paste</gr-menu-item>
+    </gr-menu>
+  </gr-dropdown>
 </div>
 
 <script>
   const container2 = document.querySelector('.dropdown-selection-alt');
-  const cut = container2.querySelector('way-menu-item[value="cut"]');
-  const copy = container2.querySelector('way-menu-item[value="copy"]');
-  const paste = container2.querySelector('way-menu-item[value="paste"]');
+  const cut = container2.querySelector('gr-menu-item[value="cut"]');
+  const copy = container2.querySelector('gr-menu-item[value="copy"]');
+  const paste = container2.querySelector('gr-menu-item[value="paste"]');
 
   cut.addEventListener('click', () => console.log('cut'));
   copy.addEventListener('click', () => console.log('copy'));
@@ -284,21 +286,21 @@ Alternatively, you can listen for the `click` event on individual menu items. No
 
 ```html
 <div class="dropdown-selection-alt">
-  <way-dropdown>
-    <way-button slot="trigger" caret>Edit</way-button>
-    <way-menu>
-      <way-menu-item value="cut">Cut</way-menu-item>
-      <way-menu-item value="copy">Copy</way-menu-item>
-      <way-menu-item value="paste">Paste</way-menu-item>
-    </way-menu>
-  </way-dropdown>
+  <gr-dropdown>
+    <gr-button slot="trigger" caret>Edit</gr-button>
+    <gr-menu>
+      <gr-menu-item value="cut">Cut</gr-menu-item>
+      <gr-menu-item value="copy">Copy</gr-menu-item>
+      <gr-menu-item value="paste">Paste</gr-menu-item>
+    </gr-menu>
+  </gr-dropdown>
 </div>
 
 <script>
   const container = document.querySelector('.dropdown-selection-alt');
-  const cut = container.querySelector('way-menu-item[value="cut"]');
-  const copy = container.querySelector('way-menu-item[value="copy"]');
-  const paste = container.querySelector('way-menu-item[value="paste"]');
+  const cut = container.querySelector('gr-menu-item[value="cut"]');
+  const copy = container.querySelector('gr-menu-item[value="copy"]');
+  const paste = container.querySelector('gr-menu-item[value="paste"]');
 
   cut.addEventListener('click', () => console.log('cut'));
   copy.addEventListener('click', () => console.log('copy'));
@@ -320,12 +322,12 @@ Alternatively, you can listen for the `click` event on individual menu items. No
 
 ## Events
 
-| Event            | Description                                                                                           | Type                |
-| ---------------- | ----------------------------------------------------------------------------------------------------- | ------------------- |
-| `way-after-hide` | Emitted after the dropdown closes and all transitions are complete.                                   | `CustomEvent<void>` |
-| `way-after-show` | Emitted after the dropdown opens and all transitions are complete.                                    | `CustomEvent<void>` |
-| `way-hide`       | Emitted when the dropdown closes. Calling `event.preventDefault()` will prevent it from being closed. | `CustomEvent<void>` |
-| `way-show`       | Emitted when the dropdown opens. Calling `event.preventDefault()` will prevent it from being opened.  | `CustomEvent<void>` |
+| Event           | Description                                                                                           | Type                |
+| --------------- | ----------------------------------------------------------------------------------------------------- | ------------------- |
+| `gr-after-hide` | Emitted after the dropdown closes and all transitions are complete.                                   | `CustomEvent<void>` |
+| `gr-after-show` | Emitted after the dropdown opens and all transitions are complete.                                    | `CustomEvent<void>` |
+| `gr-hide`       | Emitted when the dropdown closes. Calling `event.preventDefault()` will prevent it from being closed. | `CustomEvent<void>` |
+| `gr-show`       | Emitted when the dropdown opens. Calling `event.preventDefault()` will prevent it from being opened.  | `CustomEvent<void>` |
 
 ## Methods
 
@@ -347,10 +349,10 @@ Type: `Promise<void>`
 
 ## Slots
 
-| Slot        | Description                                               |
-| ----------- | --------------------------------------------------------- |
-| `(default)` | The dropdown's content.                                   |
-| `"trigger"` | The dropdown's trigger, usually a `<way-button>` element. |
+| Slot        | Description                                              |
+| ----------- | -------------------------------------------------------- |
+| `(default)` | The dropdown's content.                                  |
+| `"trigger"` | The dropdown's trigger, usually a `<gr-button>` element. |
 
 ## CSS Custom Properties
 
@@ -366,4 +368,4 @@ Type: `Promise<void>`
 
 ### Used by
 
-- [way-select](/components/select)
+- [gr-select](/components/select)
