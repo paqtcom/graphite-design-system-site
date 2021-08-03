@@ -88,3 +88,7 @@ a:hover {
 .toc-container-header {
   @apply uppercase text-xs font-bold;
 }
+
+.table-of-contents ul {
+  @apply list-none;
+}

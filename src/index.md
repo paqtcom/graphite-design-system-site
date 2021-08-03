@@ -2,4 +2,6 @@
 title: Graphite Design System
 ---
 
-## Welcome
+# Graphite Design System
+
+This documentation site is under construction.
