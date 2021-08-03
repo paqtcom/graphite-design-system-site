@@ -1,8 +1,8 @@
 ---
-title: Components - way-radio
+title: Components - gr-radio
 ---
 
-# way-radio
+# gr-radio
 
 [[toc]]
 
@@ -10,18 +10,18 @@ Radios allow the user to select one option from a group of many.
 
 Radios are designed to be used with [radio groups](/components/radio-group). As such, all of the examples on this page utilize them to demonstrate their correct usage.
 
-<way-radio-group label="Select an option" no-fieldset>
-  <way-radio value="1" checked>Option 1</way-radio>
-  <way-radio value="2">Option 2</way-radio>
-  <way-radio value="3">Option 3</way-radio>
-</way-radio-group>
+<gr-radio-group label="Select an option" no-fieldset>
+  <gr-radio value="1" checked>Option 1</gr-radio>
+  <gr-radio value="2">Option 2</gr-radio>
+  <gr-radio value="3">Option 3</gr-radio>
+</gr-radio-group>
 
 ```html
-<way-radio-group label="Select an option" no-fieldset>
-  <way-radio value="1" checked>Option 1</way-radio>
-  <way-radio value="2">Option 2</way-radio>
-  <way-radio value="3">Option 3</way-radio>
-</way-radio-group>
+<gr-radio-group label="Select an option" no-fieldset>
+  <gr-radio value="1" checked>Option 1</gr-radio>
+  <gr-radio value="2">Option 2</gr-radio>
+  <gr-radio value="3">Option 3</gr-radio>
+</gr-radio-group>
 ```
 
 ## Examples
@@ -30,20 +30,20 @@ Radios are designed to be used with [radio groups](/components/radio-group). As 
 
 Use the `disabled` attribute to disable a radio.
 
-<way-radio-group label="Select an option" no-fieldset>
-  <way-radio value="1" checked>Option 1</way-radio>
-  <way-radio value="2">Option 2</way-radio>
-  <way-radio value="3">Option 3</way-radio>
-  <way-radio value="4" disabled>Disabled</way-radio>
-</way-radio-group>
+<gr-radio-group label="Select an option" no-fieldset>
+  <gr-radio value="1" checked>Option 1</gr-radio>
+  <gr-radio value="2">Option 2</gr-radio>
+  <gr-radio value="3">Option 3</gr-radio>
+  <gr-radio value="4" disabled>Disabled</gr-radio>
+</gr-radio-group>
 
 ```html
-<way-radio-group label="Select an option" no-fieldset>
-  <way-radio value="1" checked>Option 1</way-radio>
-  <way-radio value="2">Option 2</way-radio>
-  <way-radio value="3">Option 3</way-radio>
-  <way-radio value="4" disabled>Disabled</way-radio>
-</way-radio-group>
+<gr-radio-group label="Select an option" no-fieldset>
+  <gr-radio value="1" checked>Option 1</gr-radio>
+  <gr-radio value="2">Option 2</gr-radio>
+  <gr-radio value="3">Option 3</gr-radio>
+  <gr-radio value="4" disabled>Disabled</gr-radio>
+</gr-radio-group>
 ```
 
 ## Properties
@@ -56,10 +56,10 @@ Use the `disabled` attribute to disable a radio.
 
 ## Events
 
-| Event       | Description                           | Type               |
-| ----------- | ------------------------------------- | ------------------ |
-| `way-blur`  | Emitted when the control loses focus. | `CustomEvent<any>` |
-| `way-focus` | Emitted when the control gains focus. | `CustomEvent<any>` |
+| Event      | Description                           | Type               |
+| ---------- | ------------------------------------- | ------------------ |
+| `gr-blur`  | Emitted when the control loses focus. | `CustomEvent<any>` |
+| `gr-focus` | Emitted when the control gains focus. | `CustomEvent<any>` |
 
 ## Methods
 

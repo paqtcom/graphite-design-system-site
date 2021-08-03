@@ -1,6 +1,6 @@
-# Way2Web Design System Site
+# Graphite Design System Site
 
-The official [Way2Web Design System documentation](https://w2wds.netlify.app/), built with [Eleventy](https://www.11ty.dev/) using [this starter project](https://github.com/ixartz/Eleventy-Starter-Boilerplate).
+The official [Graphite Design System documentation](https://w2wds.netlify.app/), built with [Eleventy](https://www.11ty.dev/) using [this starter project](https://github.com/ixartz/Eleventy-Starter-Boilerplate).
 
 ## Development
 

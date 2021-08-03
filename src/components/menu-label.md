@@ -1,39 +1,39 @@
 ---
-title: Components - way-menu-label
+title: Components - gr-menu-label
 ---
 
-# way-menu-label
+# gr-menu-label
 
 [[toc]]
 
 Menu labels are used to describe a group of menu items.
 
-<way-menu style="max-width: 200px; border: solid 1px var(--way-color-light); border-radius: var(--way-border-radius-medium);">
-  <way-menu-label>Fruits</way-menu-label>
-  <way-menu-item value="apple">Apple</way-menu-item>
-  <way-menu-item value="banana">Banana</way-menu-item>
-  <way-menu-item value="orange">Orange</way-menu-item>
-  <way-menu-divider></way-menu-divider>
-  <way-menu-label>Vegetables</way-menu-label>
-  <way-menu-item value="broccoli">Broccoli</way-menu-item>
-  <way-menu-item value="carrot">Carrot</way-menu-item>
-  <way-menu-item value="zucchini">Zucchini</way-menu-item>
-</way-menu>
+<gr-menu style="max-width: 200px; border: solid 1px var(--gr-color-light); border-radius: var(--gr-border-radius-medium);">
+  <gr-menu-label>Fruits</gr-menu-label>
+  <gr-menu-item value="apple">Apple</gr-menu-item>
+  <gr-menu-item value="banana">Banana</gr-menu-item>
+  <gr-menu-item value="orange">Orange</gr-menu-item>
+  <gr-menu-divider></gr-menu-divider>
+  <gr-menu-label>Vegetables</gr-menu-label>
+  <gr-menu-item value="broccoli">Broccoli</gr-menu-item>
+  <gr-menu-item value="carrot">Carrot</gr-menu-item>
+  <gr-menu-item value="zucchini">Zucchini</gr-menu-item>
+</gr-menu>
 
 ```html
-<way-menu
-  style="max-width: 200px; border: solid 1px var(--way-color-light); border-radius: var(--way-border-radius-medium);"
+<gr-menu
+  style="max-width: 200px; border: solid 1px var(--gr-color-light); border-radius: var(--gr-border-radius-medium);"
 >
-  <way-menu-label>Fruits</way-menu-label>
-  <way-menu-item value="apple">Apple</way-menu-item>
-  <way-menu-item value="banana">Banana</way-menu-item>
-  <way-menu-item value="orange">Orange</way-menu-item>
-  <way-menu-divider></way-menu-divider>
-  <way-menu-label>Vegetables</way-menu-label>
-  <way-menu-item value="broccoli">Broccoli</way-menu-item>
-  <way-menu-item value="carrot">Carrot</way-menu-item>
-  <way-menu-item value="zucchini">Zucchini</way-menu-item>
-</way-menu>
+  <gr-menu-label>Fruits</gr-menu-label>
+  <gr-menu-item value="apple">Apple</gr-menu-item>
+  <gr-menu-item value="banana">Banana</gr-menu-item>
+  <gr-menu-item value="orange">Orange</gr-menu-item>
+  <gr-menu-divider></gr-menu-divider>
+  <gr-menu-label>Vegetables</gr-menu-label>
+  <gr-menu-item value="broccoli">Broccoli</gr-menu-item>
+  <gr-menu-item value="carrot">Carrot</gr-menu-item>
+  <gr-menu-item value="zucchini">Zucchini</gr-menu-item>
+</gr-menu>
 ```
 
 ## Slots

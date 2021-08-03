@@ -1,25 +1,25 @@
 ---
-title: Components - way-tag
+title: Components - gr-tag
 ---
 
-# way-tag
+# gr-tag
 
 [[toc]]
 
 Tags are used as labels to organize things or to indicate a selection.
 
-<way-tag type="primary">Primary</way-tag>
-<way-tag type="success">Success</way-tag>
-<way-tag type="info">Info</way-tag>
-<way-tag type="warning">Warning</way-tag>
-<way-tag type="danger">Danger</way-tag>
+<gr-tag type="primary">Primary</gr-tag>
+<gr-tag type="success">Success</gr-tag>
+<gr-tag type="info">Info</gr-tag>
+<gr-tag type="warning">Warning</gr-tag>
+<gr-tag type="danger">Danger</gr-tag>
 
 ```html
-<way-tag type="primary">Primary</way-tag>
-<way-tag type="success">Success</way-tag>
-<way-tag type="info">Info</way-tag>
-<way-tag type="warning">Warning</way-tag>
-<way-tag type="danger">Danger</way-tag>
+<gr-tag type="primary">Primary</gr-tag>
+<gr-tag type="success">Success</gr-tag>
+<gr-tag type="info">Info</gr-tag>
+<gr-tag type="warning">Warning</gr-tag>
+<gr-tag type="danger">Danger</gr-tag>
 ```
 
 ## Examples
@@ -28,28 +28,28 @@ Tags are used as labels to organize things or to indicate a selection.
 
 Use the `size` prop to change a tab's size.
 
-<way-tag size="small">Small</way-tag>
-<way-tag size="medium">Medium</way-tag>
-<way-tag size="large">Large</way-tag>
+<gr-tag size="small">Small</gr-tag>
+<gr-tag size="medium">Medium</gr-tag>
+<gr-tag size="large">Large</gr-tag>
 
 ```html
-<way-tag size="small">Small</way-tag>
-<way-tag size="medium">Medium</way-tag>
-<way-tag size="large">Large</way-tag>
+<gr-tag size="small">Small</gr-tag>
+<gr-tag size="medium">Medium</gr-tag>
+<gr-tag size="large">Large</gr-tag>
 ```
 
 ### Pill
 
 Use the `pill` prop to give tabs rounded edges.
 
-<way-tag size="small" pill>Small</way-tag>
-<way-tag size="medium" pill>Medium</way-tag>
-<way-tag size="large" pill>Large</way-tag>
+<gr-tag size="small" pill>Small</gr-tag>
+<gr-tag size="medium" pill>Medium</gr-tag>
+<gr-tag size="large" pill>Large</gr-tag>
 
 ```html
-<way-tag size="small" pill>Small</way-tag>
-<way-tag size="medium" pill>Medium</way-tag>
-<way-tag size="large" pill>Large</way-tag>
+<gr-tag size="small" pill>Small</gr-tag>
+<gr-tag size="medium" pill>Medium</gr-tag>
+<gr-tag size="large" pill>Large</gr-tag>
 ```
 
 ### Clearable
@@ -57,15 +57,15 @@ Use the `pill` prop to give tabs rounded edges.
 Use the `clearable` attribute to add a clear button to the tag.
 
 <div class="tags-clearable">
-  <way-tag size="small" clearable>Small</way-tag>
-  <way-tag size="medium" clearable>Medium</way-tag>
-  <way-tag size="large" clearable>Large</way-tag>
+  <gr-tag size="small" clearable>Small</gr-tag>
+  <gr-tag size="medium" clearable>Medium</gr-tag>
+  <gr-tag size="large" clearable>Large</gr-tag>
 </div>
 
 <script>
   const div = document.querySelector('.tags-clearable');
 
-  div.addEventListener('way-clear', (event) => {
+  div.addEventListener('gr-clear', (event) => {
     const tag = event.target;
     tag.style.opacity = '0';
     setTimeout(() => (tag.style.opacity = '1'), 2000);
@@ -73,22 +73,22 @@ Use the `clearable` attribute to add a clear button to the tag.
 </script>
 
 <style>
-  .tags-clearable way-tag {
+  .tags-clearable gr-tag {
     transition: 300ms opacity;
   }
 </style>
 
 ```html
 <div class="tags-clearable">
-  <way-tag size="small" clearable>Small</way-tag>
-  <way-tag size="medium" clearable>Medium</way-tag>
-  <way-tag size="large" clearable>Large</way-tag>
+  <gr-tag size="small" clearable>Small</gr-tag>
+  <gr-tag size="medium" clearable>Medium</gr-tag>
+  <gr-tag size="large" clearable>Large</gr-tag>
 </div>
 
 <script>
   const div = document.querySelector('.tags-clearable');
 
-  div.addEventListener('way-clear', (event) => {
+  div.addEventListener('gr-clear', (event) => {
     const tag = event.target;
     tag.style.opacity = '0';
     setTimeout(() => (tag.style.opacity = '1'), 2000);
@@ -96,7 +96,7 @@ Use the `clearable` attribute to add a clear button to the tag.
 </script>
 
 <style>
-  .tags-clearable way-tag {
+  .tags-clearable gr-tag {
     transition: 300ms opacity;
   }
 </style>
@@ -113,9 +113,9 @@ Use the `clearable` attribute to add a clear button to the tag.
 
 ## Events
 
-| Event       | Description                                 | Type               |
-| ----------- | ------------------------------------------- | ------------------ |
-| `way-clear` | Emitted when the clear button is activated. | `CustomEvent<any>` |
+| Event      | Description                                 | Type               |
+| ---------- | ------------------------------------------- | ------------------ |
+| `gr-clear` | Emitted when the clear button is activated. | `CustomEvent<any>` |
 
 ## Slots
 
@@ -149,8 +149,8 @@ Use the `clearable` attribute to add a clear button to the tag.
 
 ### Used by
 
-- [way-select](/components/select)
+- [gr-select](/components/select)
 
 ### Depends on
 
-- [way-button](/components/button)
+- [gr-button](/components/button)

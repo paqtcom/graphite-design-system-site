@@ -1,17 +1,17 @@
 ---
-title: Components - way-input
+title: Components - gr-input
 ---
 
-# way-input
+# gr-input
 
 [[toc]]
 
 Inputs can be used in forms, or anywhere where the user needs to provide information.
 
-<way-input></way-input>
+<gr-input></gr-input>
 
 ```html
-<way-input></way-input>
+<gr-input></gr-input>
 ```
 
 ## Examples
@@ -20,104 +20,104 @@ Inputs can be used in forms, or anywhere where the user needs to provide informa
 
 Use the `placeholder` attribute to add a placeholder.
 
-<way-input placeholder="Type something"></way-input>
+<gr-input placeholder="Type something"></gr-input>
 
 ```html
-<way-input placeholder="Type something"></way-input>
+<gr-input placeholder="Type something"></gr-input>
 ```
 
 ### Clearable
 
 Add the `clearable` attribute to add a clear button when the input has content.
 
-<way-input placeholder="Clearable" clearable></way-input>
+<gr-input placeholder="Clearable" clearable></gr-input>
 
 ```html
-<way-input placeholder="Clearable" clearable></way-input>
+<gr-input placeholder="Clearable" clearable></gr-input>
 ```
 
 ### Pill
 
 Use the `pill` attribute to give inputs rounded edges.
 
-<way-input placeholder="Small" size="small" pill></way-input>
+<gr-input placeholder="Small" size="small" pill></gr-input>
 <br>
-<way-input placeholder="Medium" size="medium" pill></way-input>
+<gr-input placeholder="Medium" size="medium" pill></gr-input>
 <br>
-<way-input placeholder="Large" size="large" pill></way-input>
+<gr-input placeholder="Large" size="large" pill></gr-input>
 
 ```html
-<way-input placeholder="Small" size="small" pill></way-input>
+<gr-input placeholder="Small" size="small" pill></gr-input>
 <br />
-<way-input placeholder="Medium" size="medium" pill></way-input>
+<gr-input placeholder="Medium" size="medium" pill></gr-input>
 <br />
-<way-input placeholder="Large" size="large" pill></way-input>
+<gr-input placeholder="Large" size="large" pill></gr-input>
 ```
 
 ### Disabled
 
 Use the `disabled` attribute to disable an input.
 
-<way-input placeholder="Disabled" size="small" disabled></way-input>
+<gr-input placeholder="Disabled" size="small" disabled></gr-input>
 <br>
-<way-input placeholder="Disabled" size="medium" disabled></way-input>
+<gr-input placeholder="Disabled" size="medium" disabled></gr-input>
 <br>
-<way-input placeholder="Disabled" size="large" disabled></way-input>
+<gr-input placeholder="Disabled" size="large" disabled></gr-input>
 
 ```html
-<way-input placeholder="Disabled" size="small" disabled></way-input>
+<gr-input placeholder="Disabled" size="small" disabled></gr-input>
 <br />
-<way-input placeholder="Disabled" size="medium" disabled></way-input>
+<gr-input placeholder="Disabled" size="medium" disabled></gr-input>
 <br />
-<way-input placeholder="Disabled" size="large" disabled></way-input>
+<gr-input placeholder="Disabled" size="large" disabled></gr-input>
 ```
 
 ### Sizes
 
 Use the `size` attribute to change an input's size.
 
-<way-input placeholder="Small" size="small"></way-input>
+<gr-input placeholder="Small" size="small"></gr-input>
 <br>
-<way-input placeholder="Medium" size="medium"></way-input>
+<gr-input placeholder="Medium" size="medium"></gr-input>
 <br>
-<way-input placeholder="Large" size="large"></way-input>
+<gr-input placeholder="Large" size="large"></gr-input>
 
 ```html
-<way-input placeholder="Small" size="small"></way-input>
+<gr-input placeholder="Small" size="small"></gr-input>
 <br />
-<way-input placeholder="Medium" size="medium"></way-input>
+<gr-input placeholder="Medium" size="medium"></gr-input>
 <br />
-<way-input placeholder="Large" size="large"></way-input>
+<gr-input placeholder="Large" size="large"></gr-input>
 ```
 
 ### Invalid
 
 The input can be marked invalid using the `invalid` attribute.
 
-<way-input placeholder="Invalid" invalid></way-input>
+<gr-input placeholder="Invalid" invalid></gr-input>
 
 ```html
-<way-input placeholder="Invalid" invalid></way-input>
+<gr-input placeholder="Invalid" invalid></gr-input>
 ```
 
 ### Labels
 
 Use the `label` attribute to give the input an accessible label. For labels that contain HTML, use the `label` slot instead.
 
-<way-input label="What is your name?"></way-input>
+<gr-input label="What is your name?"></gr-input>
 
 ```html
-<way-input label="What is your name?"></way-input>
+<gr-input label="What is your name?"></gr-input>
 ```
 
 ### Help Text
 
 Add descriptive help text to an input with the `help-text` attribute. For help texts that contain HTML, use the `help-text` slot instead.
 
-<way-input label="Nickname" help-text="What would you like people to call you?"></way-input>
+<gr-input label="Nickname" help-text="What would you like people to call you?"></gr-input>
 
 ```html
-<way-input label="Nickname" help-text="What would you like people to call you?"></way-input>
+<gr-input label="Nickname" help-text="What would you like people to call you?"></gr-input>
 ```
 
 ### Invalid Text
@@ -126,15 +126,15 @@ Add descriptive invalid text to an input with the `invalid-text` attribute. For 
 
 When you add the `invalid` attribute, the invalid text will be shown. When an input already includes help text, the help text is replaced with invalid text.
 
-<way-input label="Nickname" help-text="What would you like people to call you?" invalid-text="Enter what you would like people to call you." invalid></way-input>
+<gr-input label="Nickname" help-text="What would you like people to call you?" invalid-text="Enter what you would like people to call you." invalid></gr-input>
 
 ```html
-<way-input
+<gr-input
   label="Nickname"
   help-text="What would you like people to call you?"
   invalid-text="Enter what you would like people to call you."
   invalid
-></way-input>
+></gr-input>
 ```
 
 ## Properties
@@ -146,7 +146,7 @@ When you add the `invalid` attribute, the invalid text will be shown. When an in
 | `autocorrect`    | `autocorrect`    | Whether auto correction should be enabled when the user is entering/editing the text value.                                                                                                               | `"off"     | "on"`            | `'off'`  |
 | `autofocus`      | `autofocus`      | This Boolean attribute lets you specify that a form control should have input focus when the page loads.                                                                                                  | `boolean`  | `false`          |
 | `clearable`      | `clearable`      | Set to true to add a clear button when the input is populated.                                                                                                                                            | `boolean`  | `false`          |
-| `debounce`       | `debounce`       | Set the amount of time, in milliseconds, to wait to trigger the `way-change` event after each keystroke. This also impacts form bindings such as `ngModel` or `v-model`.                                  | `number`   | `0`              |
+| `debounce`       | `debounce`       | Set the amount of time, in milliseconds, to wait to trigger the `gr-change` event after each keystroke. This also impacts form bindings such as `ngModel` or `v-model`.                                   | `number`   | `0`              |
 | `disabled`       | `disabled`       | Set to true to disable the input control.                                                                                                                                                                 | `boolean`  | `false`          |
 | `enterkeyhint`   | `enterkeyhint`   | A hint to the browser for which enter key to display. Possible values: `"enter"`, `"done"`, `"go"`, `"next"`, `"previous"`, `"search"`, and `"send"`.                                                     | `"done"    | "enter"          | "go"     | "next"     | "previous" | "search"   | "send"`            | `undefined`  |
 | `helpText`       | `help-text`      | The input's help text. Alternatively, you can use the help-text slot.                                                                                                                                     | `string`   | `''`             |
@@ -168,13 +168,13 @@ When you add the `invalid` attribute, the invalid text will be shown. When an in
 
 ## Events
 
-| Event        | Description                                 | Type                |
-| ------------ | ------------------------------------------- | ------------------- |
-| `way-blur`   | Emitted when the control loses focus.       | `CustomEvent<void>` |
-| `way-change` | Emitted when the control's value changes.   | `CustomEvent<void>` |
-| `way-clear`  | Emitted when the clear button is activated. | `CustomEvent<void>` |
-| `way-focus`  | Emitted when the control gains focus.       | `CustomEvent<void>` |
-| `way-input`  | Emitted when the control receives input.    | `CustomEvent<void>` |
+| Event       | Description                                 | Type                |
+| ----------- | ------------------------------------------- | ------------------- |
+| `gr-blur`   | Emitted when the control loses focus.       | `CustomEvent<void>` |
+| `gr-change` | Emitted when the control's value changes.   | `CustomEvent<void>` |
+| `gr-clear`  | Emitted when the clear button is activated. | `CustomEvent<void>` |
+| `gr-focus`  | Emitted when the control gains focus.       | `CustomEvent<void>` |
+| `gr-input`  | Emitted when the control receives input.    | `CustomEvent<void>` |
 
 ## Methods
 

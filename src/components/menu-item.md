@@ -1,51 +1,51 @@
 ---
-title: Components - way-menu-item
+title: Components - gr-menu-item
 ---
 
-# way-menu-item
+# gr-menu-item
 
 [[toc]]
 
 Menu items provide options for the user to pick from in a menu.
 
-<way-menu style="max-width: 200px; border: solid 1px var(--way-color-light); border-radius: var(--way-border-radius-medium);">
-  <way-menu-item>Option 1</way-menu-item>
-  <way-menu-item>Option 2</way-menu-item>
-  <way-menu-item>Option 3</way-menu-item>
-  <way-menu-divider></way-menu-divider>
-  <way-menu-item checked>Checked</way-menu-item>
-  <way-menu-item disabled>Disabled</way-menu-item>
-  <way-menu-divider></way-menu-divider>
-  <way-menu-item>
+<gr-menu style="max-width: 200px; border: solid 1px var(--gr-color-light); border-radius: var(--gr-border-radius-medium);">
+  <gr-menu-item>Option 1</gr-menu-item>
+  <gr-menu-item>Option 2</gr-menu-item>
+  <gr-menu-item>Option 3</gr-menu-item>
+  <gr-menu-divider></gr-menu-divider>
+  <gr-menu-item checked>Checked</gr-menu-item>
+  <gr-menu-item disabled>Disabled</gr-menu-item>
+  <gr-menu-divider></gr-menu-divider>
+  <gr-menu-item>
     Start Icon
     <ion-icon slot="start" name="gift-outline"></ion-icon>
-  </way-menu-item>
-  <way-menu-item>
+  </gr-menu-item>
+  <gr-menu-item>
     End Icon
     <ion-icon slot="end" name="heart-outline"></ion-icon>
-  </way-menu-item>
-</way-menu>
+  </gr-menu-item>
+</gr-menu>
 
 ```html
-<way-menu
-  style="max-width: 200px; border: solid 1px var(--way-color-light); border-radius: var(--way-border-radius-medium);"
+<gr-menu
+  style="max-width: 200px; border: solid 1px var(--gr-color-light); border-radius: var(--gr-border-radius-medium);"
 >
-  <way-menu-item>Option 1</way-menu-item>
-  <way-menu-item>Option 2</way-menu-item>
-  <way-menu-item>Option 3</way-menu-item>
-  <way-menu-divider></way-menu-divider>
-  <way-menu-item checked>Checked</way-menu-item>
-  <way-menu-item disabled>Disabled</way-menu-item>
-  <way-menu-divider></way-menu-divider>
-  <way-menu-item>
+  <gr-menu-item>Option 1</gr-menu-item>
+  <gr-menu-item>Option 2</gr-menu-item>
+  <gr-menu-item>Option 3</gr-menu-item>
+  <gr-menu-divider></gr-menu-divider>
+  <gr-menu-item checked>Checked</gr-menu-item>
+  <gr-menu-item disabled>Disabled</gr-menu-item>
+  <gr-menu-divider></gr-menu-divider>
+  <gr-menu-item>
     Start Icon
     <ion-icon slot="start" name="gift-outline"></ion-icon>
-  </way-menu-item>
-  <way-menu-item>
+  </gr-menu-item>
+  <gr-menu-item>
     End Icon
     <ion-icon slot="end" name="heart-outline"></ion-icon>
-  </way-menu-item>
-</way-menu>
+  </gr-menu-item>
+</gr-menu>
 ```
 
 ## Properties

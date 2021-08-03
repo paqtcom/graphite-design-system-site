@@ -1,37 +1,37 @@
 ---
-title: Components - way-menu-divider
+title: Components - gr-menu-divider
 ---
 
-# way-menu-divider
+# gr-menu-divider
 
 [[toc]]
 
 Menu dividers are used to visually group menu items.
 
-<way-menu style="max-width: 200px; border: solid 1px var(--way-color-light); border-radius: var(--way-border-radius-medium);">
-  <way-menu-item value="1">Option 1</way-menu-item>
-  <way-menu-item value="2">Option 2</way-menu-item>
-  <way-menu-divider></way-menu-divider>
-  <way-menu-item value="3">Option 3</way-menu-item>
-  <way-menu-item value="4">Option 4</way-menu-item>
-  <way-menu-divider></way-menu-divider>
-  <way-menu-item value="5">Option 5</way-menu-item>
-  <way-menu-item value="6">Option 6</way-menu-item>
-</way-menu>
+<gr-menu style="max-width: 200px; border: solid 1px var(--gr-color-light); border-radius: var(--gr-border-radius-medium);">
+  <gr-menu-item value="1">Option 1</gr-menu-item>
+  <gr-menu-item value="2">Option 2</gr-menu-item>
+  <gr-menu-divider></gr-menu-divider>
+  <gr-menu-item value="3">Option 3</gr-menu-item>
+  <gr-menu-item value="4">Option 4</gr-menu-item>
+  <gr-menu-divider></gr-menu-divider>
+  <gr-menu-item value="5">Option 5</gr-menu-item>
+  <gr-menu-item value="6">Option 6</gr-menu-item>
+</gr-menu>
 
 ```html
-<way-menu
-  style="max-width: 200px; border: solid 1px var(--way-color-light); border-radius: var(--way-border-radius-medium);"
+<gr-menu
+  style="max-width: 200px; border: solid 1px var(--gr-color-light); border-radius: var(--gr-border-radius-medium);"
 >
-  <way-menu-item value="1">Option 1</way-menu-item>
-  <way-menu-item value="2">Option 2</way-menu-item>
-  <way-menu-divider></way-menu-divider>
-  <way-menu-item value="3">Option 3</way-menu-item>
-  <way-menu-item value="4">Option 4</way-menu-item>
-  <way-menu-divider></way-menu-divider>
-  <way-menu-item value="5">Option 5</way-menu-item>
-  <way-menu-item value="6">Option 6</way-menu-item>
-</way-menu>
+  <gr-menu-item value="1">Option 1</gr-menu-item>
+  <gr-menu-item value="2">Option 2</gr-menu-item>
+  <gr-menu-divider></gr-menu-divider>
+  <gr-menu-item value="3">Option 3</gr-menu-item>
+  <gr-menu-item value="4">Option 4</gr-menu-item>
+  <gr-menu-divider></gr-menu-divider>
+  <gr-menu-item value="5">Option 5</gr-menu-item>
+  <gr-menu-item value="6">Option 6</gr-menu-item>
+</gr-menu>
 ```
 
 ## CSS Custom Properties

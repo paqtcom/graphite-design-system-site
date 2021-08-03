@@ -1,10 +1,11 @@
 {
-  "name": "way2web-design-system-site",
+  "name": "graphite-design-system-site",
   "version": "0.1.0",
-  "description": "Way2Web Design System site",
+  "description": "Graphite Design System site",
+  "private": true,
   "repository": {
     "type": "git",
-    "url": "https://github.com/Way2Web/way2web-design-system-site.git"
+    "url": "https://github.com/way2web/graphite-design-system-site.git"
   },
   "scripts": {
     "build-dev:webpack": "webpack",
@@ -22,7 +23,7 @@
     "format": "run-s format:*",
     "lint": "eslint --ext .js ."
   },
-  "license": "ISC",
+  "license": "MIT",
   "devDependencies": {
     "@11ty/eleventy": "^0.12.1",
     "@11ty/eleventy-plugin-syntaxhighlight": "^3.1.1",
@@ -68,6 +69,6 @@
     ]
   },
   "dependencies": {
-    "@w2wds/core": "^0.11.0"
+    "@graphiteds/core": "^1.0.0"
   }
 }

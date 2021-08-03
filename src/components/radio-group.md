@@ -1,25 +1,25 @@
 ---
-title: Components - way-radio-group
+title: Components - gr-radio-group
 ---
 
-# way-radio-group
+# gr-radio-group
 
 [[toc]]
 
 Radio Groups are used to group multiple radios so they function as a single control.
 
-<way-radio-group label="Select an item">
-  <way-radio value="1" checked>Item 1</way-radio>
-  <way-radio value="2">Item 2</way-radio>
-  <way-radio value="3">Item 3</way-radio>
-</way-radio-group>
+<gr-radio-group label="Select an item">
+  <gr-radio value="1" checked>Item 1</gr-radio>
+  <gr-radio value="2">Item 2</gr-radio>
+  <gr-radio value="3">Item 3</gr-radio>
+</gr-radio-group>
 
 ```html
-<way-radio-group label="Select an item">
-  <way-radio value="1" checked>Item 1</way-radio>
-  <way-radio value="2">Item 2</way-radio>
-  <way-radio value="3">Item 3</way-radio>
-</way-radio-group>
+<gr-radio-group label="Select an item">
+  <gr-radio value="1" checked>Item 1</gr-radio>
+  <gr-radio value="2">Item 2</gr-radio>
+  <gr-radio value="3">Item 3</gr-radio>
+</gr-radio-group>
 ```
 
 ## Examples
@@ -28,48 +28,48 @@ Radio Groups are used to group multiple radios so they function as a single cont
 
 You can hide the fieldset and legend that wraps the radio group using the `no-fieldset` attribute. In this case, a label is still required for assistive devices to properly identify the control.
 
-<way-radio-group label="Select an item" no-fieldset>
-  <way-radio value="1" checked>Item 1</way-radio>
-  <way-radio value="2">Item 2</way-radio>
-  <way-radio value="3">Item 3</way-radio>
-</way-radio-group>
+<gr-radio-group label="Select an item" no-fieldset>
+  <gr-radio value="1" checked>Item 1</gr-radio>
+  <gr-radio value="2">Item 2</gr-radio>
+  <gr-radio value="3">Item 3</gr-radio>
+</gr-radio-group>
 
 ```html
-<way-radio-group label="Select an item" no-fieldset>
-  <way-radio value="1" checked>Item 1</way-radio>
-  <way-radio value="2">Item 2</way-radio>
-  <way-radio value="3">Item 3</way-radio>
-</way-radio-group>
+<gr-radio-group label="Select an item" no-fieldset>
+  <gr-radio value="1" checked>Item 1</gr-radio>
+  <gr-radio value="2">Item 2</gr-radio>
+  <gr-radio value="3">Item 3</gr-radio>
+</gr-radio-group>
 ```
 
 ### Invalid
 
 The radio group can be marked invalid using the `invalid` attribute.
 
-<way-radio-group label="Select an item" invalid>
-  <way-radio value="1" checked>Item 1</way-radio>
-  <way-radio value="2">Item 2</way-radio>
-  <way-radio value="3">Item 3</way-radio>
-</way-radio-group>
+<gr-radio-group label="Select an item" invalid>
+  <gr-radio value="1" checked>Item 1</gr-radio>
+  <gr-radio value="2">Item 2</gr-radio>
+  <gr-radio value="3">Item 3</gr-radio>
+</gr-radio-group>
 <br>
-<way-radio-group label="Select an item" no-fieldset invalid>
-  <way-radio value="1" checked>Item 1</way-radio>
-  <way-radio value="2">Item 2</way-radio>
-  <way-radio value="3">Item 3</way-radio>
-</way-radio-group>
+<gr-radio-group label="Select an item" no-fieldset invalid>
+  <gr-radio value="1" checked>Item 1</gr-radio>
+  <gr-radio value="2">Item 2</gr-radio>
+  <gr-radio value="3">Item 3</gr-radio>
+</gr-radio-group>
 
 ```html
-<way-radio-group label="Select an item" invalid>
-  <way-radio value="1" checked>Item 1</way-radio>
-  <way-radio value="2">Item 2</way-radio>
-  <way-radio value="3">Item 3</way-radio>
-</way-radio-group>
+<gr-radio-group label="Select an item" invalid>
+  <gr-radio value="1" checked>Item 1</gr-radio>
+  <gr-radio value="2">Item 2</gr-radio>
+  <gr-radio value="3">Item 3</gr-radio>
+</gr-radio-group>
 <br />
-<way-radio-group label="Select an item" no-fieldset invalid>
-  <way-radio value="1" checked>Item 1</way-radio>
-  <way-radio value="2">Item 2</way-radio>
-  <way-radio value="3">Item 3</way-radio>
-</way-radio-group>
+<gr-radio-group label="Select an item" no-fieldset invalid>
+  <gr-radio value="1" checked>Item 1</gr-radio>
+  <gr-radio value="2">Item 2</gr-radio>
+  <gr-radio value="3">Item 3</gr-radio>
+</gr-radio-group>
 ```
 
 ## Properties
@@ -85,9 +85,9 @@ The radio group can be marked invalid using the `invalid` attribute.
 
 ## Events
 
-| Event        | Description                         | Type                                          |
-| ------------ | ----------------------------------- | --------------------------------------------- |
-| `way-change` | Emitted when the value has changed. | `CustomEvent<WayRadioGroupChangeEventDetail>` |
+| Event       | Description                         | Type                                          |
+| ----------- | ----------------------------------- | --------------------------------------------- |
+| `gr-change` | Emitted when the value has changed. | `CustomEvent<WayRadioGroupChangeEventDetail>` |
 
 ## Slots
 
@@ -106,7 +106,7 @@ The radio group can be marked invalid using the `invalid` attribute.
 | `--label-color`               | Color of the label                                                                           |
 | `--label-padding-end`         | Right padding of the label (will be left padding when we support right-to-left direction)    |
 | `--label-padding-start`       | Left padding of the label (will be right padding when we support right-to-left direction)    |
-| `--margin-between-radios`     | Margin between the way-radio children                                                        |
+| `--margin-between-radios`     | Margin between the gr-radio children                                                         |
 | `--padding-bottom`            | Bottom padding of the fieldset                                                               |
 | `--padding-end`               | Right padding of the fieldset (will be left padding when we support right-to-left direction) |
 | `--padding-start`             | Left padding of the fieldset (will be right padding when we support right-to-left direction) |

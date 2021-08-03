@@ -1,5 +1,5 @@
 ---
-title: Way2Web Design System
+title: Graphite Design System
 ---
 
 ## Welcome
