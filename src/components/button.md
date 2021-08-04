@@ -1,17 +1,19 @@
 ---
-title: Components - way-button
+title: Button - Graphite Design System
 ---
 
-# way-button
+# Button
+
+`<gr-button> | GrButton`
 
 [[toc]]
 
 Buttons provide a clickable element, which can be used in forms, or anywhere that needs simple, standard button functionality. They may display text, icons, or both. Buttons can be styled with several attributes to look a specific way.
 
-<way-button>Button</way-button>
+<gr-button>Button</gr-button>
 
 ```html
-<way-button>Button</way-button>
+<gr-button>Button</gr-button>
 ```
 
 ## Examples
@@ -28,176 +30,179 @@ Use the `variant` attribute to set the appropiate button style.
 | `danger`    | Use when the action will delete data or be otherwise difficult to recover from.                                                                                             |
 | `plain`     | Use for less important or less commonly used actions since they’re less prominent.                                                                                          |
 
-<way-button>Default</way-button>
-<way-button variant="primary">Primary</way-button>
-<way-button variant="secondary">Secondary</way-button>
-<way-button variant="danger">Danger</way-button>
-<way-button variant="plain">Plain</way-button>
+<gr-button>Default</gr-button>
+<gr-button variant="primary">Primary</gr-button>
+<gr-button variant="secondary">Secondary</gr-button>
+<gr-button variant="danger">Danger</gr-button>
+<gr-button variant="plain">Plain</gr-button>
 
 ```html
-<way-button>Default</way-button>
-<way-button variant="primary">Primary</way-button>
-<way-button variant="secondary">Secondary</way-button>
-<way-button variant="danger">Danger</way-button>
-<way-button variant="plain">Plain</way-button>
+<gr-button>Default</gr-button>
+<gr-button variant="primary">Primary</gr-button>
+<gr-button variant="secondary">Secondary</gr-button>
+<gr-button variant="danger">Danger</gr-button>
+<gr-button variant="plain">Plain</gr-button>
 ```
 
 ### Sizes
 
 Use the `size` attribute to change a button's size.
 
-<way-button size="small">Small</way-button>
-<way-button>Medium</way-button>
-<way-button size="large">Large</way-button>
+<gr-button size="small">Small</gr-button>
+<gr-button>Medium</gr-button>
+<gr-button size="large">Large</gr-button>
 
 ```html
-<way-button size="small">Small</way-button>
-<way-button>Medium</way-button>
-<way-button size="large">Large</way-button>
+<gr-button size="small">Small</gr-button>
+<gr-button>Medium</gr-button>
+<gr-button size="large">Large</gr-button>
 ```
 
 ### Icons
 
-Use the `start` and `end` slots to add icons.
+Use the `start` and `end` slots to add icons (or other content).
 
-<way-button>
+We recommend [Ionicons](https://ionic.io/ionicons) (which also supports custom SVG), but you could theoretically use any icon library.
+Use the same icon set throughout your application for consistency.
+
+<gr-button>
   <ion-icon name="settings-outline" slot="start"></ion-icon>
   Settings
-</way-button>
-<way-button>
+</gr-button>
+<gr-button>
   <ion-icon name="refresh-outline" slot="end"></ion-icon>
   Refresh
-</way-button>
-<way-button>
+</gr-button>
+<gr-button>
   <ion-icon name="link-outline" slot="start"></ion-icon>
   Open
   <ion-icon name="exit-outline" slot="end"></ion-icon>
-</way-button>
+</gr-button>
 
 ```html
-<way-button>
+<gr-button>
   <ion-icon name="settings-outline" slot="start"></ion-icon>
   Settings
-</way-button>
+</gr-button>
 
-<way-button>
+<gr-button>
   <ion-icon name="refresh-outline" slot="end"></ion-icon>
   Refresh
-</way-button>
+</gr-button>
 
-<way-button>
+<gr-button>
   <ion-icon name="link-outline" slot="start"></ion-icon>
   Open
   <ion-icon name="exit-outline" slot="end"></ion-icon>
-</way-button>
+</gr-button>
 ```
 
 ### Circle Buttons
 
 Use the `circle` attribute in combination with the `icon-only` slot to create circular icon buttons.
 
-<way-button variant="primary" size="small" circle>
+<gr-button variant="primary" size="small" circle>
   <ion-icon name="add-outline" slot="icon-only"></ion-icon>
-</way-button>
-<way-button variant="primary" circle>
+</gr-button>
+<gr-button variant="primary" circle>
   <ion-icon name="add-outline" slot="icon-only"></ion-icon>
-</way-button>
-<way-button variant="primary" size="large" circle>
+</gr-button>
+<gr-button variant="primary" size="large" circle>
   <ion-icon name="add-outline" slot="icon-only"></ion-icon>
-</way-button>
+</gr-button>
 
 ```html
-<way-button variant="primary" size="small" circle>
+<gr-button variant="primary" size="small" circle>
   <ion-icon name="add-outline" slot="icon-only"></ion-icon>
-</way-button>
+</gr-button>
 
-<way-button variant="primary" circle>
+<gr-button variant="primary" circle>
   <ion-icon name="add-outline" slot="icon-only"></ion-icon>
-</way-button>
+</gr-button>
 
-<way-button variant="primary" size="large" circle>
+<gr-button variant="primary" size="large" circle>
   <ion-icon name="add-outline" slot="icon-only"></ion-icon>
-</way-button>
+</gr-button>
 ```
 
 ### Link Buttons
 
 It's often helpful to have a button that works like a link. This is possible by setting the `href` attribute, which will make the component render an `<a>` under the hood. This gives you all the default link behavior the browser provides (e.g. <kbd>CMD/CTRL/SHIFT + CLICK</kbd>) and exposes the `target` attribute.
 
-<way-button href="https://www.way2web.nl" target="_blank">Link</way-button>
+<gr-button href="https://www.way2web.nl" target="_blank">Link</gr-button>
 
 ```html
-<way-button href="https://www.way2web.nl" target="_blank">Link</way-button>
+<gr-button href="https://www.way2web.nl" target="_blank">Link</gr-button>
 ```
 
 ### Block Button
 
 Use the `expand="block"` attribute to create a full-width button with rounded corners.
 
-<way-button expand="block">Block</way-button>
+<gr-button expand="block">Block</gr-button>
 
 ```html
-<way-button expand="block">Block</way-button>
+<gr-button expand="block">Block</gr-button>
 ```
 
 ### Full Button
 
 Use the `expand="full"` attribute to create a full-width button with square corners and no border on the left or right. Useful if you want it to run over the full-width of the viewport or a section (where you don't apply any horizontal margin).
 
-<way-button expand="full">Full</way-button>
+<gr-button expand="full">Full</gr-button>
 
 ```html
-<way-button expand="full">Full</way-button>
+<gr-button expand="full">Full</gr-button>
 ```
 
 ### Caret
 
 Use the `caret` attribute to add a dropdown indicator when a button will trigger a dropdown, menu, or popover.
 
-<way-button size="small" caret>Small</way-button>
-<way-button size="medium" caret>Medium</way-button>
-<way-button size="large" caret>Large</way-button>
+<gr-button size="small" caret>Small</gr-button>
+<gr-button size="medium" caret>Medium</gr-button>
+<gr-button size="large" caret>Large</gr-button>
 
 ```html
-<way-button size="small" caret>Small</way-button>
-<way-button size="medium" caret>Medium</way-button>
-<way-button size="large" caret>Large</way-button>
+<gr-button size="small" caret>Small</gr-button>
+<gr-button size="medium" caret>Medium</gr-button>
+<gr-button size="large" caret>Large</gr-button>
 ```
 
 ### Loading
 
 Use the `loading` attribute to make a button busy. The width will remain the same as before, preventing adjacent elements from moving around. Clicks will be suppressed until the loading state is removed.
 
-<way-button loading>Default</way-button>
-<way-button variant="primary" loading>Primary</way-button>
-<way-button variant="secondary" loading>Secondary</way-button>
-<way-button variant="danger" loading>Danger</way-button>
-<way-button variant="plain" loading>Plain</way-button>
+<gr-button loading>Default</gr-button>
+<gr-button variant="primary" loading>Primary</gr-button>
+<gr-button variant="secondary" loading>Secondary</gr-button>
+<gr-button variant="danger" loading>Danger</gr-button>
+<gr-button variant="plain" loading>Plain</gr-button>
 
 ```html
-<way-button loading>Default</way-button>
-<way-button variant="primary" loading>Primary</way-button>
-<way-button variant="secondary" loading>Secondary</way-button>
-<way-button variant="danger" loading>Danger</way-button>
-<way-button variant="plain" loading>Plain</way-button>
+<gr-button loading>Default</gr-button>
+<gr-button variant="primary" loading>Primary</gr-button>
+<gr-button variant="secondary" loading>Secondary</gr-button>
+<gr-button variant="danger" loading>Danger</gr-button>
+<gr-button variant="plain" loading>Plain</gr-button>
 ```
 
 ### Disabled
 
 Use the `disabled` attribute to disable a button. Clicks will be suppressed until the disabled state is removed.
 
-<way-button disabled>Default</way-button>
-<way-button variant="primary" disabled>Primary</way-button>
-<way-button variant="secondary" disabled>Secondary</way-button>
-<way-button variant="danger" disabled>Danger</way-button>
-<way-button variant="plain" disabled>Plain</way-button>
+<gr-button disabled>Default</gr-button>
+<gr-button variant="primary" disabled>Primary</gr-button>
+<gr-button variant="secondary" disabled>Secondary</gr-button>
+<gr-button variant="danger" disabled>Danger</gr-button>
+<gr-button variant="plain" disabled>Plain</gr-button>
 
 ```html
-<way-button disabled>Default</way-button>
-<way-button variant="primary" disabled>Primary</way-button>
-<way-button variant="secondary" disabled>Secondary</way-button>
-<way-button variant="danger" disabled>Danger</way-button>
-<way-button variant="plain" disabled>Plain</way-button>
+<gr-button disabled>Default</gr-button>
+<gr-button variant="primary" disabled>Primary</gr-button>
+<gr-button variant="secondary" disabled>Secondary</gr-button>
+<gr-button variant="danger" disabled>Danger</gr-button>
+<gr-button variant="plain" disabled>Plain</gr-button>
 ```
 
 ## Properties
@@ -219,10 +224,10 @@ Use the `disabled` attribute to disable a button. Clicks will be suppressed unti
 
 ## Events
 
-| Event       | Description                          | Type                |
-| ----------- | ------------------------------------ | ------------------- |
-| `way-blur`  | Emitted when the button loses focus. | `CustomEvent<void>` |
-| `way-focus` | Emitted when the button has focus.   | `CustomEvent<void>` |
+| Event      | Description                          | Type                |
+| ---------- | ------------------------------------ | ------------------- |
+| `gr-blur`  | Emitted when the button loses focus. | `CustomEvent<void>` |
+| `gr-focus` | Emitted when the button has focus.   | `CustomEvent<void>` |
 
 ## Slots
 
@@ -261,8 +266,8 @@ Use the `disabled` attribute to disable a button. Clicks will be suppressed unti
 
 ### Used by
 
-- [way-tag](/components/tag)
+- [gr-tag](/components/tag)
 
 ### Depends on
 
-- [way-spinner](/components/spinner)
+- [gr-spinner](/components/spinner)

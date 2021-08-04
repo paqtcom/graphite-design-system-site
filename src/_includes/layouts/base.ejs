@@ -3,10 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
-    <link rel="icon" href="/favicon.ico" />
+    <link rel="alternate icon" type="image/png" href="/favicon.png">
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg">
     <title><%= title %></title>
     <meta
       name="description"
@@ -35,10 +33,6 @@
         "url": "<%= `${site.url}${page.url}` %>",
         "publisher": {
           "@type": "Organization",
-          "logo": {
-            "@type": "ImageObject",
-            "url": "<%= `${site.url}/assets/images/logo.png` %>"
-          },
           "name": "<%= site.author %>"
         },
         "headline": "<%= title %>",
@@ -50,20 +44,7 @@
         "@context": "http://schema.org"
       }
     </script>
-    <% } %><%- include('webpack.ejs') %> <% if (page.url == "/") { %>
-    <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
-    <script>
-      if (window.netlifyIdentity) {
-        window.netlifyIdentity.on('init', (user) => {
-          if (!user) {
-            window.netlifyIdentity.on('login', () => {
-              document.location.href = '/admin/';
-            });
-          }
-        });
-      }
-    </script>
-    <% } %>
+    <% } %><%- include('webpack.ejs') %>
   </head>
 
   <body class="antialiased leading-normal bg-white text-dark lg:h-auto lg:overflow-y-auto">
@@ -74,8 +55,8 @@
             <div class="flex items-center pr-4 lg:w-4/5">
               <a
                 href="/"
-                aria-label="Way2Web Logo"
-                class="flex-1 flex-shrink-0 text-xl font-bold nuxt-link-exact-active nuxt-link-active"
+                aria-label="Graphite"
+                class="flex-shrink-0 flex-1 font-bold text-xl nuxt-link-exact-active nuxt-link-active"
                 <%- page.url == '/' ? 'aria-current="page"' : '' %>
               >
                 <%- include('../logo.ejs') %> 
@@ -85,7 +66,7 @@
               <div class="flex items-center">
                 <button onclick="darkMode()">Toggle dark mode</button>
                 <a
-                  href="https://github.com/Way2Web/way2web-design-system"
+                  href="https://github.com/way2web/graphite-design-system"
                   target="_blank"
                   rel="noopener noreferrer"
                   title="Github"

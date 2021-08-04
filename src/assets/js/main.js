@@ -1,4 +1,4 @@
-import '@w2wds/core/dist/core/core.css';
-import { defineCustomElements } from '@w2wds/core/dist/custom-elements';
+import '@graphiteds/core/dist/core/core.css';
+import { defineCustomElements } from '@graphiteds/core/dist/custom-elements';
 
 defineCustomElements();

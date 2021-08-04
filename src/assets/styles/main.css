@@ -96,6 +96,10 @@ a:hover {
   background-color: inherit;
 }
 
+.content ul {
+  @apply list-disc list-inside mb-2;
+}
+
 .main-nav a {
   @apply flex items-center px-2 py-2 ml-2 font-normal text-dark-tint hover:no-underline hover:text-primary hover:bg-opacity-25;
 }
@@ -105,10 +109,14 @@ a:hover {
 }
 
 .main-nav .active {
-  @apply rounded text-primary;
-  background-color: rgb(var(--way-color-primary-rgb), 0.1);
+  @apply text-primary rounded;
+  background-color: rgb(var(--gr-color-primary-rgb), 0.1);
 }
 
 .toc-container-header {
   @apply text-xs font-bold uppercase;
+}
+
+.table-of-contents ul {
+  @apply list-none;
 }

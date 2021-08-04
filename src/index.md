@@ -1,5 +1,7 @@
 ---
-title: Way2Web Design System
+title: Graphite Design System
 ---
 
-## Welcome
+# Graphite Design System
+
+This documentation site is under construction.
