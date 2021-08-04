@@ -1,6 +1,6 @@
 # Graphite Design System Site
 
-The official [Graphite Design System documentation](https://w2wds.netlify.app/), built with [Eleventy](https://www.11ty.dev/) using [this starter project](https://github.com/ixartz/Eleventy-Starter-Boilerplate).
+The official [Graphite Design System documentation](https://graphitedesignsystem.com), built with [Eleventy](https://www.11ty.dev/).
 
 ## Development
 
@@ -30,11 +30,71 @@ npm run serve
 
 ## Deploy to production
 
-The master branch is automatically deployed to [Netlify](https://www.netlify.com/) on https://w2wds.netlify.app (will become https://graphitedesignsystem.com).
+The master branch is automatically deployed to [Netlify](https://www.netlify.com/) on https://graphitedesignsystem.com.
 
 Plus, you can automatically preview PR's on Netlify.
 
 ## Attribution
+
+### Eleventy Starter Boilerplate
+
+We used this [starter project](https://github.com/ixartz/Eleventy-Starter-Boilerplate).
+
+```
+MIT License
+
+Copyright (c) 2020 Rem W.
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+```
+
+### Nuxt Content
+
+The layout is based or inpired on [Nuxt Content](https://content.nuxtjs.org/).
+
+```
+MIT License
+
+Copyright (c) 2020 Nuxt.js with the contributions of:
+- Sebastien Chopin (NuxtJS Company)
+- Alexandre Chopin (NuxtJS Company)
+- Benjamin Canac (NuxtJS Company)
+- Sergey Bedritsky (NuxtJS Company)
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+```
 
 ### Ionic Framework
 
