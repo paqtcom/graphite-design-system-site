@@ -12,9 +12,11 @@ entries.push(path.resolve(__dirname, 'src/assets/styles/prism-atom-dark.css'));
 entries.push(path.resolve(__dirname, 'src/assets/js/main.js'));
 
 let cssFileName = 'styles/[name].css';
+let jsFileName = '[name].js';
 
 if (process.env.NODE_ENV === 'production') {
   cssFileName = 'styles/[name].[contenthash].css';
+  jsFileName = '[name].[contenthash].js';
 }
 
 module.exports = {
@@ -23,6 +25,20 @@ module.exports = {
   output: {
     path: path.resolve(__dirname, '_site/assets'),
     publicPath: '/',
+    filename: jsFileName,
+    clean: true,
+  },
+  optimization: {
+    runtimeChunk: 'single',
+    splitChunks: {
+      cacheGroups: {
+        vendor: {
+          test: /[\\/]node_modules[\\/]/,
+          name: 'vendors',
+          chunks: 'all',
+        },
+      },
+    },
   },
   plugins: [
     new CopyWebpackPlugin({
