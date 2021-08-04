@@ -81,8 +81,8 @@ a:hover {
 }
 
 .main-nav .active {
-  @apply text-primary rounded;
-  background-color: rgb(var(--gr-color-primary-rgb), 0.1);
+  @apply text-primary-shade rounded;
+  background-color: rgb(var(--gr-color-primary-rgb), 0.05);
 }
 
 .toc-container-header {
