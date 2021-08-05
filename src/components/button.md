@@ -127,12 +127,12 @@ Use the `circle` attribute in combination with the `icon-only` slot to create ci
 
 ### Link Buttons
 
-It's often helpful to have a button that works like a link. This is possible by setting the `href` attribute, which will make the component render an `<a>` under the hood. This gives you all the default link behavior the browser provides (e.g. <kbd>CMD/CTRL/SHIFT + CLICK</kbd>) and exposes the `target` attribute.
+It's often helpful to have a button that works like a link. This is possible by setting the `href` attribute, which will make the component render an `<a>` under the hood. This gives you all the default link behavior the browser provides (e.g. <kbd>CMD/CTRL/SHIFT + CLICK</kbd>) and exposes the `target` & `rel` attributes (if you set a target it is recommended to set `rel="noopener noreferrer"` for [security reasons](https://mathiasbynens.github.io/rel-noopener/)).
 
-<gr-button href="https://www.way2web.nl" target="_blank">Link</gr-button>
+<gr-button href="https://www.way2web.nl" target="_blank" rel="noopener noreferrer">Link</gr-button>
 
 ```html
-<gr-button href="https://www.way2web.nl" target="_blank">Link</gr-button>
+<gr-button href="https://www.way2web.nl" target="_blank" rel="noopener noreferrer">Link</gr-button>
 ```
 
 ### Block Button
