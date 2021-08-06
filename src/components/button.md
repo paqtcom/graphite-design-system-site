@@ -60,7 +60,9 @@ Use the `size` attribute to change a button's size.
 
 ### Icons
 
-Use the `start` and `end` slots to add icons (or other content).
+Icons can be used in buttons when additional clarity is required. Icons should not be used for decoration.
+
+Use the `start` and `end` slots to add icons (or other content). As a general rule, a button should not have more than one icon.
 
 We recommend [Ionicons](https://ionic.io/ionicons) (which also supports custom SVG), but you could theoretically use any icon library.
 Use the same icon set throughout your application for consistency.
@@ -73,11 +75,6 @@ Use the same icon set throughout your application for consistency.
   <ion-icon name="refresh-outline" slot="end"></ion-icon>
   Refresh
 </gr-button>
-<gr-button>
-  <ion-icon name="link-outline" slot="start"></ion-icon>
-  Open
-  <ion-icon name="exit-outline" slot="end"></ion-icon>
-</gr-button>
 
 ```html
 <gr-button>
@@ -89,38 +86,36 @@ Use the same icon set throughout your application for consistency.
   <ion-icon name="refresh-outline" slot="end"></ion-icon>
   Refresh
 </gr-button>
-
-<gr-button>
-  <ion-icon name="link-outline" slot="start"></ion-icon>
-  Open
-  <ion-icon name="exit-outline" slot="end"></ion-icon>
-</gr-button>
 ```
 
-### Circle Buttons
+### Circular icon buttons
 
 Use the `circle` attribute in combination with the `icon-only` slot to create circular icon buttons.
 
-<gr-button variant="primary" size="small" circle>
+There are certain instances where an icon will suffice in place of a text label, but use icon buttons cautiously. Be sure that the icon used is easily recognizable.
+
+Setting a `aria-label` attribute is required for accessibility.
+
+<gr-button variant="primary" size="small" aria-label="Add" circle>
   <ion-icon name="add-outline" slot="icon-only"></ion-icon>
 </gr-button>
-<gr-button variant="primary" circle>
+<gr-button variant="primary" aria-label="Add" circle>
   <ion-icon name="add-outline" slot="icon-only"></ion-icon>
 </gr-button>
-<gr-button variant="primary" size="large" circle>
+<gr-button variant="primary" size="large" aria-label="Add" circle>
   <ion-icon name="add-outline" slot="icon-only"></ion-icon>
 </gr-button>
 
 ```html
-<gr-button variant="primary" size="small" circle>
+<gr-button variant="primary" size="small" aria-label="Add" circle>
   <ion-icon name="add-outline" slot="icon-only"></ion-icon>
 </gr-button>
 
-<gr-button variant="primary" circle>
+<gr-button variant="primary" aria-label="Add" circle>
   <ion-icon name="add-outline" slot="icon-only"></ion-icon>
 </gr-button>
 
-<gr-button variant="primary" size="large" circle>
+<gr-button variant="primary" size="large" aria-label="Add" circle>
   <ion-icon name="add-outline" slot="icon-only"></ion-icon>
 </gr-button>
 ```
@@ -173,6 +168,8 @@ Use the `caret` attribute to add a dropdown indicator when a button will trigger
 
 Use the `loading` attribute to make a button busy. The width will remain the same as before, preventing adjacent elements from moving around. Clicks will be suppressed until the loading state is removed.
 
+Set it after the user has clicked the button to prevent double-clicks, and give feedback to the user the click has been registered and is being processed.
+
 <gr-button loading>Default</gr-button>
 <gr-button variant="primary" loading>Primary</gr-button>
 <gr-button variant="secondary" loading>Secondary</gr-button>
@@ -204,6 +201,194 @@ Use the `disabled` attribute to disable a button. Clicks will be suppressed unti
 <gr-button variant="danger" disabled>Danger</gr-button>
 <gr-button variant="plain" disabled>Plain</gr-button>
 ```
+
+## Usage guidelines
+
+### Emphasis
+
+You don’t necessarily need to use the buttons in the order that their labels might imply. For example, you don’t always need to use the secondary button as the second button in your layout. The most important thing is to establish a visual hierarchy between the buttons in your UI. Keep the following best practices in mind.
+
+#### A single, high-emphasis button
+
+As a general rule, a layout should contain a single high-emphasis button (primary) that makes it clear that other buttons have less importance in the hierarchy. This high-emphasis button commands the most attention.
+
+#### Multiple button emphasis
+
+A high-emphasis button can be accompanied by medium- and low-emphasis buttons that perform less important actions. Keep in mind that you should only group together calls to action that have a relationship to one another.
+
+Although secondary buttons have less visual prominence, they are still tonally heavy. If your layout requires multiple actions — as is the case with some data lists and dashboards — low emphasis buttons (default or plain) may be a better choice.
+
+<div class="usage-guidelines usage-guidelines-do">
+
+<ion-icon name="checkmark-circle" class="icon"></ion-icon>
+
+<gr-button>
+  Edit
+</gr-button>
+
+&nbsp;
+
+<gr-button>
+  Edit
+</gr-button>
+
+&nbsp;
+
+<gr-button variant="secondary">
+  Cancel
+</gr-button>
+
+<gr-button variant="primary">
+  Save
+</gr-button>
+
+</div>
+
+<div class="usage-guidelines usage-guidelines-dont">
+
+<ion-icon name="alert-circle" class="icon"></ion-icon>
+
+<gr-button variant="primary">
+  Edit
+</gr-button>
+
+&nbsp;
+
+<gr-button variant="primary">
+  Edit
+</gr-button>
+
+&nbsp;
+
+<gr-button variant="primary">
+  Cancel
+</gr-button>
+
+<gr-button variant="primary">
+  Save
+</gr-button>
+
+</div>
+
+### Be concise
+
+Button text should be concise: 1 or 2 words, no longer than 4 words, with fewer than 20 characters including spaces. Don’t use punctuation marks such as periods or exclamation points.
+
+<div class="usage-guidelines usage-guidelines-do">
+
+<ion-icon name="checkmark-circle" class="icon"></ion-icon>
+
+<gr-button variant="primary">
+  Start experience
+</gr-button>
+
+</div>
+
+<div class="usage-guidelines usage-guidelines-dont">
+
+<ion-icon name="alert-circle" class="icon"></ion-icon>
+
+<gr-button variant="primary">
+  Start the experience now!
+</gr-button>
+
+</div>
+
+### Use clear text
+
+Button texts should be clear about the outcome of the action. Most buttons should start with a verb. For example, use “Agree” instead of “Yes” in a dialog or use “Sign Up” instead of “Submit” in a form.
+
+<div class="usage-guidelines usage-guidelines-do">
+
+<ion-icon name="checkmark-circle" class="icon"></ion-icon>
+
+<gr-button variant="primary">
+  Agree
+</gr-button>
+
+</div>
+
+<div class="usage-guidelines usage-guidelines-dont">
+
+<ion-icon name="alert-circle" class="icon"></ion-icon>
+
+<gr-button variant="primary">
+  Yes
+</gr-button>
+
+</div>
+
+### Use sentence case
+
+Button text should always be in sentence case. Capitalization should never be used to give more prominence to a specific button.
+
+<div class="usage-guidelines usage-guidelines-do">
+
+<ion-icon name="checkmark-circle" class="icon"></ion-icon>
+
+<gr-button variant="primary">
+  Get started
+</gr-button>
+
+</div>
+
+<div class="usage-guidelines usage-guidelines-dont">
+
+<ion-icon name="alert-circle" class="icon"></ion-icon>
+
+<gr-button variant="primary">
+  GET STARTED
+</gr-button>
+
+&nbsp;
+
+<gr-button variant="primary">
+  get started
+</gr-button>
+
+&nbsp;
+
+<gr-button variant="primary">
+  Get Started
+</gr-button>
+
+</div>
+
+### Use icons only when necessary
+
+Icons can be used in buttons when additional clarity is required and the icon is highly relevant to the action. Icons should not be used for decoration.
+
+<div class="usage-guidelines usage-guidelines-do">
+
+<ion-icon name="checkmark-circle" class="icon"></ion-icon>
+
+<gr-button variant="primary">
+  <ion-icon name="share-outline" slot="start"></ion-icon>
+  Share
+</gr-button>
+
+</div>
+
+<div class="usage-guidelines usage-guidelines-dont">
+
+<ion-icon name="alert-circle" class="icon"></ion-icon>
+
+<gr-button variant="secondary">
+  <ion-icon name="ban-outline" slot="start"></ion-icon>
+  Cancel
+</gr-button>
+<br><br>
+<gr-button>
+  <ion-icon name="ellipsis-horizontal" slot="start"></ion-icon>
+  More
+</gr-button>
+<br><br>
+<gr-button variant="primary">
+  <ion-icon name="checkmark-circle" slot="start"></ion-icon>
+  Submit
+</gr-button>
+
+</div>
 
 ## Properties
 
