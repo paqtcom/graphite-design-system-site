@@ -218,7 +218,7 @@ A high-emphasis button can be accompanied by medium- and low-emphasis buttons th
 
 Although secondary buttons have less visual prominence, they are still tonally heavy. If your layout requires multiple actions — as is the case with some data lists and dashboards — low emphasis buttons (default or plain) may be a better choice.
 
-<div class="usage-guidelines usage-guidelines-do">
+<div class="usage-guidelines usage-guidelines-do text-center">
 
 <ion-icon name="checkmark-circle" class="icon"></ion-icon>
 
@@ -244,9 +244,9 @@ Although secondary buttons have less visual prominence, they are still tonally h
 
 </div>
 
-<div class="usage-guidelines usage-guidelines-dont">
+<div class="usage-guidelines usage-guidelines-dont text-center">
 
-<ion-icon name="alert-circle" class="icon"></ion-icon>
+<ion-icon name="close-circle" class="icon"></ion-icon>
 
 <gr-button variant="primary">
   Edit
@@ -274,7 +274,7 @@ Although secondary buttons have less visual prominence, they are still tonally h
 
 Button text should be concise: 1 or 2 words, no longer than 4 words, with fewer than 20 characters including spaces. Don’t use punctuation marks such as periods or exclamation points.
 
-<div class="usage-guidelines usage-guidelines-do">
+<div class="usage-guidelines usage-guidelines-do text-center">
 
 <ion-icon name="checkmark-circle" class="icon"></ion-icon>
 
@@ -284,9 +284,9 @@ Button text should be concise: 1 or 2 words, no longer than 4 words, with fewer 
 
 </div>
 
-<div class="usage-guidelines usage-guidelines-dont">
+<div class="usage-guidelines usage-guidelines-dont text-center">
 
-<ion-icon name="alert-circle" class="icon"></ion-icon>
+<ion-icon name="close-circle" class="icon"></ion-icon>
 
 <gr-button variant="primary">
   Start the experience now!
@@ -298,7 +298,7 @@ Button text should be concise: 1 or 2 words, no longer than 4 words, with fewer 
 
 Button texts should be clear about the outcome of the action. Most buttons should start with a verb. For example, use “Agree” instead of “Yes” in a dialog or use “Sign Up” instead of “Submit” in a form.
 
-<div class="usage-guidelines usage-guidelines-do">
+<div class="usage-guidelines usage-guidelines-do text-center">
 
 <ion-icon name="checkmark-circle" class="icon"></ion-icon>
 
@@ -308,9 +308,9 @@ Button texts should be clear about the outcome of the action. Most buttons shoul
 
 </div>
 
-<div class="usage-guidelines usage-guidelines-dont">
+<div class="usage-guidelines usage-guidelines-dont text-center">
 
-<ion-icon name="alert-circle" class="icon"></ion-icon>
+<ion-icon name="close-circle" class="icon"></ion-icon>
 
 <gr-button variant="primary">
   Yes
@@ -322,7 +322,7 @@ Button texts should be clear about the outcome of the action. Most buttons shoul
 
 Button text should always be in sentence case. Capitalization should never be used to give more prominence to a specific button.
 
-<div class="usage-guidelines usage-guidelines-do">
+<div class="usage-guidelines usage-guidelines-do text-center">
 
 <ion-icon name="checkmark-circle" class="icon"></ion-icon>
 
@@ -332,9 +332,9 @@ Button text should always be in sentence case. Capitalization should never be us
 
 </div>
 
-<div class="usage-guidelines usage-guidelines-dont">
+<div class="usage-guidelines usage-guidelines-dont text-center">
 
-<ion-icon name="alert-circle" class="icon"></ion-icon>
+<ion-icon name="close-circle" class="icon"></ion-icon>
 
 <gr-button variant="primary">
   GET STARTED
@@ -358,7 +358,7 @@ Button text should always be in sentence case. Capitalization should never be us
 
 Icons can be used in buttons when additional clarity is required and the icon is highly relevant to the action. Icons should not be used for decoration.
 
-<div class="usage-guidelines usage-guidelines-do">
+<div class="usage-guidelines usage-guidelines-do text-center">
 
 <ion-icon name="checkmark-circle" class="icon"></ion-icon>
 
@@ -369,9 +369,9 @@ Icons can be used in buttons when additional clarity is required and the icon is
 
 </div>
 
-<div class="usage-guidelines usage-guidelines-dont">
+<div class="usage-guidelines usage-guidelines-dont text-center">
 
-<ion-icon name="alert-circle" class="icon"></ion-icon>
+<ion-icon name="close-circle" class="icon"></ion-icon>
 
 <gr-button variant="secondary">
   <ion-icon name="ban-outline" slot="start"></ion-icon>

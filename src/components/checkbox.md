@@ -12,10 +12,18 @@ Checkboxes allow the user to toggle an option on or off.
 
 Use a [field group](/components/field-group) for vertical or horizontal organization of multiple checkboxes.
 
-<gr-checkbox>Checkbox</gr-checkbox>
+<gr-field-group label="Select options">
+  <gr-checkbox>Option 1</gr-checkbox>
+  <gr-checkbox>Option 2</gr-checkbox>
+  <gr-checkbox>Option 3</gr-checkbox>
+</gr-field-group>
 
 ```html
-<gr-checkbox>Checkbox</gr-checkbox>
+<gr-field-group label="Select options">
+  <gr-checkbox>Option 1</gr-checkbox>
+  <gr-checkbox>Option 2</gr-checkbox>
+  <gr-checkbox>Option 3</gr-checkbox>
+</gr-field-group>
 ```
 
 ## Examples
@@ -59,6 +67,64 @@ The checkbox can be marked invalid using the `invalid` attribute.
 ```html
 <gr-checkbox invalid>Checkbox</gr-checkbox>
 ```
+
+## Usage guidelines
+
+### Checkbox or radio button?
+
+Checkboxes and radio buttons are not interchangeable. A set of checkboxes should be used to select as many options as desired (or none). A set of radio buttons should be used to select only a single option from a list of mutually exclusive options.
+
+<div class="usage-guidelines usage-guidelines-do">
+
+<ion-icon name="checkmark-circle" class="icon"></ion-icon>
+
+<gr-field-group label="Interests">
+  <gr-checkbox checked>Travel</gr-checkbox>
+  <gr-checkbox checked>Music</gr-checkbox>
+  <gr-checkbox>Shopping</gr-checkbox>
+</gr-field-group>
+
+</div>
+
+<div class="usage-guidelines usage-guidelines-dont">
+
+<ion-icon name="close-circle" class="icon"></ion-icon>
+
+<gr-field-group label="Size">
+  <gr-checkbox checked>Small</gr-checkbox>
+  <gr-checkbox checked>Medium</gr-checkbox>
+  <gr-checkbox>Large</gr-checkbox>
+</gr-field-group>
+
+</div>
+
+### Label groups of related checkboxes
+
+Sets of checkboxes should always have a clear label that describes what the list of options represents and guides users what to do. This is important for accessibility, since a screen reader will read the label before each option.
+
+<div class="usage-guidelines usage-guidelines-do">
+
+<ion-icon name="checkmark-circle" class="icon"></ion-icon>
+
+<gr-field-group label="Page(s) to display">
+  <gr-checkbox checked>Homepage</gr-checkbox>
+  <gr-checkbox checked>Galery</gr-checkbox>
+  <gr-checkbox>Contact us</gr-checkbox>
+</gr-field-group>
+
+</div>
+
+<div class="usage-guidelines usage-guidelines-dont">
+
+<ion-icon name="close-circle" class="icon"></ion-icon>
+
+<gr-field-group no-fieldset>
+  <gr-checkbox checked>Tomorrow</gr-checkbox>
+  <gr-checkbox checked>In 3 days</gr-checkbox>
+  <gr-checkbox>Next week</gr-checkbox>
+</gr-field-group>
+
+</div>
 
 ## Properties
 
