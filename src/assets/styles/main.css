@@ -13,11 +13,11 @@ a:hover {
 @tailwind utilities;
 
 .content {
-  @apply text-base leading-8 tracking-wider text-dark;
+  @apply text-base leading-normal tracking-wider text-dark;
 }
 
 .content p {
-  @apply mb-2;
+  @apply mb-5;
 }
 
 .content h1 {
@@ -74,7 +74,7 @@ a:hover {
 
 .content .usage-guidelines {
   --gr-color-light-tint: #fafafa;
-  @apply bg-light-tint p-10 relative mb-3;
+  @apply bg-light-tint p-10 relative mb-3 mt-3;
 }
 
 .content .usage-guidelines ion-icon.icon {
@@ -111,9 +111,9 @@ a:hover {
 }
 
 .toc-container-header {
-  @apply uppercase text-xs font-bold;
+  @apply uppercase text-xs font-bold leading-loose mt-5;
 }
 
 .table-of-contents ul {
-  @apply list-none;
+  @apply list-none mb-5;
 }
