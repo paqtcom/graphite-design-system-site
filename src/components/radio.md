@@ -12,15 +12,15 @@ Radios allow the user to select one option from a group of many.
 
 Radios are designed to be used with [radio groups](/components/radio-group). As such, all of the examples on this page utilize them to demonstrate their correct usage.
 
-<gr-radio-group label="Select an option" no-fieldset>
-  <gr-radio value="1" checked>Option 1</gr-radio>
+<gr-radio-group label="Select an option" value="1" no-fieldset>
+  <gr-radio value="1">Option 1</gr-radio>
   <gr-radio value="2">Option 2</gr-radio>
   <gr-radio value="3">Option 3</gr-radio>
 </gr-radio-group>
 
 ```html
-<gr-radio-group label="Select an option" no-fieldset>
-  <gr-radio value="1" checked>Option 1</gr-radio>
+<gr-radio-group label="Select an option" value="1" no-fieldset>
+  <gr-radio value="1">Option 1</gr-radio>
   <gr-radio value="2">Option 2</gr-radio>
   <gr-radio value="3">Option 3</gr-radio>
 </gr-radio-group>

@@ -17,7 +17,7 @@ Radio Groups are used to group multiple radios so they function as a single cont
 </gr-radio-group>
 
 ```html
-<gr-radio-group label="Select an item">
+<gr-radio-group label="Select an item" value="1">
   <gr-radio value="1">Item 1</gr-radio>
   <gr-radio value="2">Item 2</gr-radio>
   <gr-radio value="3">Item 3</gr-radio>

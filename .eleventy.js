@@ -8,6 +8,10 @@ const markdownItTOC = require('markdown-it-table-of-contents');
 // const hydrate = require('@grapiteds/core/hydrate');
 
 module.exports = function (eleventyConfig) {
+  eleventyConfig.addPassthroughCopy({
+    'node_modules/@graphiteds/core/dist/core': 'assets/graphiteds',
+  });
+
   eleventyConfig.addPlugin(syntaxHighlight);
 
   eleventyConfig.addPlugin(lazyImagesPlugin, {

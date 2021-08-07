@@ -10,6 +10,8 @@ title: Textarea - Graphite Design System
 
 Textarea can be used in forms, or anywhere where the user needs to provide information. It allows multiple lines of text.
 
+Unlike the native textarea element, the Graphite textarea does not support loading its value from the inner content. The textarea value should be set in the value attribute.
+
 <gr-textarea></gr-textarea>
 
 ```html
