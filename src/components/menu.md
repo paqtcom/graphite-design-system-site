@@ -12,7 +12,7 @@ Menus provide a list of options for the user to choose from.
 
 You can use [menu items](/components/menu-item), [menu dividers](/components/menu-divider), and [menu labels](/components/menu-label) to compose a menu.
 
-<gr-menu style="max-width: 200px; border: solid 1px var(--gr-color-light); border-radius: var(--gr-border-radius-medium);">
+<gr-menu style="max-width: 200px; border: solid 1px var(--gr-panel-border-color); border-radius: var(--gr-border-radius-medium);">
   <gr-menu-item value="undo">Undo</gr-menu-item>
   <gr-menu-item value="redo">Redo</gr-menu-item>
   <gr-menu-divider></gr-menu-divider>
@@ -24,7 +24,7 @@ You can use [menu items](/components/menu-item), [menu dividers](/components/men
 
 ```html
 <gr-menu
-  style="max-width: 200px; border: solid 1px var(--gr-color-light); border-radius: var(--gr-border-radius-medium);"
+  style="max-width: 200px; border: solid 1px var(--gr-panel-border-color); border-radius: var(--gr-border-radius-medium);"
 >
   <gr-menu-item value="undo">Undo</gr-menu-item>
   <gr-menu-item value="redo">Redo</gr-menu-item>
