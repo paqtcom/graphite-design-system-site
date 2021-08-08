@@ -12,15 +12,15 @@ Radios allow the user to select one option from a group of many.
 
 Radios are designed to be used with [radio groups](/components/radio-group). As such, all of the examples on this page utilize them to demonstrate their correct usage.
 
-<gr-radio-group label="Select an option" no-fieldset>
-  <gr-radio value="1" checked>Option 1</gr-radio>
+<gr-radio-group label="Select an option" value="1">
+  <gr-radio value="1">Option 1</gr-radio>
   <gr-radio value="2">Option 2</gr-radio>
   <gr-radio value="3">Option 3</gr-radio>
 </gr-radio-group>
 
 ```html
-<gr-radio-group label="Select an option" no-fieldset>
-  <gr-radio value="1" checked>Option 1</gr-radio>
+<gr-radio-group label="Select an option" value="1">
+  <gr-radio value="1">Option 1</gr-radio>
   <gr-radio value="2">Option 2</gr-radio>
   <gr-radio value="3">Option 3</gr-radio>
 </gr-radio-group>
@@ -93,11 +93,15 @@ Type: `Promise<void>`
 | ------------------------------------------ | ----------------------------------------------------- |
 | `--control-background-color`               | Background color of the control                       |
 | `--control-background-color-checked`       | Background color of the control when checked          |
+| `--control-background-color-checked-focus` | Background color of the control when checked on focus |
 | `--control-background-color-checked-hover` | Background color of the control when checked on hover |
+| `--control-background-color-focus`         | Background color of the control on focus              |
 | `--control-background-color-hover`         | Background color of the control on hover              |
 | `--control-border-color`                   | Border color of the control                           |
 | `--control-border-color-checked`           | Border color of the control when checked              |
+| `--control-border-color-checked-focus`     | Border color of the control when checked on focus     |
 | `--control-border-color-checked-hover`     | Border color of the control when checked on hover     |
+| `--control-border-color-focus`             | Border color of the control on focus                  |
 | `--control-border-color-hover`             | Border color of the control on hover                  |
 | `--control-color-checked`                  | Color of the control when checked (the small circle)  |
 | `--control-size`                           | Size of the control                                   |

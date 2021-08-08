@@ -62,10 +62,24 @@ Use the `disabled` attribute to disable the checkbox.
 
 The checkbox can be marked invalid using the `invalid` attribute.
 
-<gr-checkbox invalid>Checkbox</gr-checkbox>
+<gr-checkbox invalid>I agree with the terms</gr-checkbox>
 
 ```html
-<gr-checkbox invalid>Checkbox</gr-checkbox>
+<gr-checkbox invalid>I agree with the terms</gr-checkbox>
+```
+
+### Invalid Text
+
+Add descriptive invalid text to a checkbox with the `invalid-text` attribute. For invalid texts that contain HTML, use the `invalid-text` slot instead.
+
+When you add the `invalid` attribute, the invalid text will be shown.
+
+<gr-checkbox invalid-text="You have to agree with our terms to continue" invalid>I agree with the terms</gr-checkbox>
+
+```html
+<gr-checkbox invalid-text="You have to agree with our terms to continue" invalid>
+  I agree with the terms
+</gr-checkbox>
 ```
 
 ## Usage guidelines
@@ -128,14 +142,15 @@ Sets of checkboxes should always have a clear label that describes what the list
 
 ## Properties
 
-| Property        | Attribute       | Description                                                     | Type      | Default        |
-| --------------- | --------------- | --------------------------------------------------------------- | --------- | -------------- |
-| `checked`       | `checked`       | Set to true to draw the checkbox in a checked state.            | `boolean` | `false`        |
-| `disabled`      | `disabled`      | Set to true to disable the checkbox.                            | `boolean` | `false`        |
-| `indeterminate` | `indeterminate` | Set to true to draw the checkbox in an indeterminate state.     | `boolean` | `false`        |
-| `invalid`       | `invalid`       | Set to true to indicate this field is invalid.                  | `boolean` | `false`        |
-| `name`          | `name`          | The name of the control, which is submitted with the form data. | `string`  | `this.inputId` |
-| `value`         | `value`         | The checkbox's value attribute.                                 | `string`  | `undefined`    |
+| Property        | Attribute       | Description                                                                       | Type      | Default        |
+| --------------- | --------------- | --------------------------------------------------------------------------------- | --------- | -------------- |
+| `checked`       | `checked`       | Set to true to draw the checkbox in a checked state.                              | `boolean` | `false`        |
+| `disabled`      | `disabled`      | Set to true to disable the checkbox.                                              | `boolean` | `false`        |
+| `indeterminate` | `indeterminate` | Set to true to draw the checkbox in an indeterminate state.                       | `boolean` | `false`        |
+| `invalid`       | `invalid`       | Set to true to indicate this field is invalid.                                    | `boolean` | `false`        |
+| `invalidText`   | `invalid-text`  | The radio group's invalid text. Alternatively, you can use the invalid-text slot. | `string`  | `''`           |
+| `name`          | `name`          | The name of the control, which is submitted with the form data.                   | `string`  | `this.inputId` |
+| `value`         | `value`         | The checkbox's value attribute.                                                   | `string`  | `undefined`    |
 
 ## Events
 
@@ -165,9 +180,10 @@ Type: `Promise<void>`
 
 ## Slots
 
-| Slot        | Description           |
-| ----------- | --------------------- |
-| `(default)` | The checkboxes label. |
+| Slot             | Description                                                                                       |
+| ---------------- | ------------------------------------------------------------------------------------------------- |
+| `(default)`      | The checkboxes label.                                                                             |
+| `"invalid-text"` | Invalid text tells a user how to fix the error. Alternatively, you can use the invalid-text prop. |
 
 ## CSS Custom Properties
 

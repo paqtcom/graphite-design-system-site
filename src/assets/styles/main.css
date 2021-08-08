@@ -117,3 +117,17 @@ a:hover {
 .table-of-contents ul {
   @apply list-none mb-5;
 }
+
+gr-button:not(.hydrated),
+gr-checkbox:not(.hydrated),
+gr-dropdown:not(.hydrated),
+gr-fieldgroup:not(.hydrated),
+gr-menu:not(.hydrated),
+gr-menu-item:not(.hydrated),
+gr-menu-label:not(.hydrated),
+gr-radio-group:not(.hydrated),
+gr-radio:not(.hydrated),
+gr-select:not(.hydrated),
+gr-tag:not(.hydrated) {
+  visibility: hidden;
+}
