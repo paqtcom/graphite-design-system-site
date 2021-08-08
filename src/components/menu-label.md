@@ -10,7 +10,7 @@ title: Menu Label - Graphite Design System
 
 Menu labels are used to describe a group of [menu items](/components/menu-item).
 
-<gr-menu style="max-width: 200px; border: solid 1px var(--gr-color-light); border-radius: var(--gr-border-radius-medium);">
+<gr-menu style="max-width: 200px; border: solid 1px var(--gr-panel-border-color); border-radius: var(--gr-border-radius-medium);">
   <gr-menu-label>Fruits</gr-menu-label>
   <gr-menu-item value="apple">Apple</gr-menu-item>
   <gr-menu-item value="banana">Banana</gr-menu-item>
@@ -24,7 +24,7 @@ Menu labels are used to describe a group of [menu items](/components/menu-item).
 
 ```html
 <gr-menu
-  style="max-width: 200px; border: solid 1px var(--gr-color-light); border-radius: var(--gr-border-radius-medium);"
+  style="max-width: 200px; border: solid 1px var(--gr-panel-border-color); border-radius: var(--gr-border-radius-medium);"
 >
   <gr-menu-label>Fruits</gr-menu-label>
   <gr-menu-item value="apple">Apple</gr-menu-item>
