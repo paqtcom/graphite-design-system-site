@@ -332,7 +332,7 @@ Add descriptive invalid text to a select with the `invalid-text` attribute. For 
 
 When you add the `invalid` attribute, the invalid text will be shown. When a select already includes help text, the help text is replaced with invalid text.
 
-<gr-select label="Experience" help-text="Please tell us your skill level." invalid-text="Select your skill level" invalid>
+<gr-select label="Experience" help-text="Please tell us your skill level." invalid-text="Select your skill level." invalid>
   <gr-menu-item value="option-1">Novice</gr-menu-item>
   <gr-menu-item value="option-2">Intermediate</gr-menu-item>
   <gr-menu-item value="option-3">Advanced</gr-menu-item>
@@ -342,7 +342,7 @@ When you add the `invalid` attribute, the invalid text will be shown. When a sel
 <gr-select
   label="Experience"
   help-text="Please tell us your skill level."
-  invalid-text="Select your skill level"
+  invalid-text="Select your skill level."
   invalid
 >
   <gr-menu-item value="option-1">Novice</gr-menu-item>
@@ -350,6 +350,292 @@ When you add the `invalid` attribute, the invalid text will be shown. When a sel
   <gr-menu-item value="option-3">Advanced</gr-menu-item>
 </gr-select>
 ```
+
+## Usage guidelines
+
+### Include a label
+
+Every select should have a label. A field without a label is ambiguous and not accessible.
+
+<div class="usage-guidelines usage-guidelines-do">
+
+<ion-icon name="checkmark-circle" class="icon"></ion-icon>
+
+<gr-select label="Country of birth" value="nl">
+  <gr-menu-item value="nl">Netherlands</gr-menu-item>
+  <gr-menu-item value="us">United States</gr-menu-item>
+</gr-select>
+
+</div>
+
+<div class="usage-guidelines usage-guidelines-dont">
+
+<ion-icon name="close-circle" class="icon"></ion-icon>
+
+<gr-select value="nl">
+  <gr-menu-item value="nl">Netherlands</gr-menu-item>
+  <gr-menu-item value="us">United States</gr-menu-item>
+</gr-select>
+
+</div>
+
+### Keep menu items concise
+
+Keep menu items short and concise so they fit in the width of the select. If you don't have enough space, consider revising the text or use alternative UI patterns that will give your content more space.
+
+<div class="usage-guidelines usage-guidelines-do">
+
+<ion-icon name="checkmark-circle" class="icon"></ion-icon>
+
+<gr-select label="Size" placeholder="Select an option..." style="max-width: 200px">
+  <gr-menu-item value="s">Small</gr-menu-item>
+  <gr-menu-item value="m">Medium</gr-menu-item>
+  <gr-menu-item value="l">Large</gr-menu-item>
+</gr-select>
+
+</div>
+
+<div class="usage-guidelines usage-guidelines-dont">
+
+<ion-icon name="close-circle" class="icon"></ion-icon>
+
+<gr-select label="Size" placeholder="Select an option..." style="max-width: 200px">
+  <gr-menu-item value="s">Small (works best for mobile phones)</gr-menu-item>
+  <gr-menu-item value="m">Medium (all-purpose)</gr-menu-item>
+  <gr-menu-item value="l">Large (select this one for printing)</gr-menu-item>
+</gr-select>
+
+</div>
+
+### Choose an appropriate width
+
+When possible, the select width should be wide enough so that any chosen menu items can be displayed in full.
+
+<div class="usage-guidelines usage-guidelines-do">
+
+<ion-icon name="checkmark-circle" class="icon"></ion-icon>
+
+<gr-select value="us" style="max-width: 250px">
+  <gr-menu-item value="nl">Netherlands</gr-menu-item>
+  <gr-menu-item value="us">United States of America</gr-menu-item>
+</gr-select>
+
+</div>
+
+<div class="usage-guidelines usage-guidelines-dont">
+
+<ion-icon name="close-circle" class="icon"></ion-icon>
+
+<gr-select value="us" style="max-width: 200px">
+  <gr-menu-item value="nl">Netherlands</gr-menu-item>
+  <gr-menu-item value="us">United States of America</gr-menu-item>
+</gr-select>
+
+</div>
+
+### Follow capitalization rules
+
+Field labels, placeholder text, and menu items should be in sentence case.
+
+<div class="usage-guidelines usage-guidelines-do">
+
+<ion-icon name="checkmark-circle" class="icon"></ion-icon>
+
+<gr-select label="Country of birth" placeholder="Select a country...">
+  <gr-menu-item value="nl">Netherlands</gr-menu-item>
+  <gr-menu-item value="us">United States</gr-menu-item>
+</gr-select>
+
+</div>
+
+<div class="usage-guidelines usage-guidelines-dont">
+
+<ion-icon name="close-circle" class="icon"></ion-icon>
+
+<gr-select label="Country of Birth" placeholder="Select a Country">
+  <gr-menu-item value="nl">Netherlands</gr-menu-item>
+  <gr-menu-item value="us">United States</gr-menu-item>
+</gr-select>
+
+</div>
+
+### Mark the minority of fields in a form as optional or required
+
+In a single form, mark only the required fields or only the optional fields, depending on whichever is less frequent in the entire form. If most of the text fields are optional, only the required fields should be give an asterisk or have labels appended with “(required)”. If most of the fields are required, only the optional fields should be appended with “(optional)”. An asterisk should never be used to note that a text field is optional. If you use an asterisk, be sure to include hint text to explain what the asterisk means.
+
+Try to only ask for information that’s required.
+
+<div class="usage-guidelines usage-guidelines-do">
+
+<ion-icon name="checkmark-circle" class="icon"></ion-icon>
+
+<gr-select label="Assignee" placeholder="Select a user...">
+  <gr-menu-item value="example">Example</gr-menu-item>
+</gr-select>
+&nbsp;
+<gr-select label="Reporter" placeholder="Select a user...">
+  <gr-menu-item value="example">Example</gr-menu-item>
+</gr-select>
+&nbsp;
+<gr-select label="Country (optional)" placeholder="Select an option...">
+  <gr-menu-item value="nl">Netherlands</gr-menu-item>
+  <gr-menu-item value="us">United States</gr-menu-item>
+</gr-select>
+
+</div>
+
+<div class="usage-guidelines usage-guidelines-dont">
+
+<ion-icon name="close-circle" class="icon"></ion-icon>
+
+<gr-select label="Assignee (required)" placeholder="Select a user...">
+  <gr-menu-item value="example">Example</gr-menu-item>
+</gr-select>
+&nbsp;
+<gr-select label="Reporter (required)" placeholder="Select a user...">
+  <gr-menu-item value="example">Example</gr-menu-item>
+</gr-select>
+&nbsp;
+<gr-select label="Country" placeholder="Select an option...">
+  <gr-menu-item value="nl">Netherlands</gr-menu-item>
+  <gr-menu-item value="us">United States</gr-menu-item>
+</gr-select>
+
+</div>
+
+### Use help text to show context
+
+The description in the help text can communicate what to select or how to select an option. This includes information such as:
+
+- An overall description of the select options
+- Hints for what kind of information to choose
+- More context for why a user needs to make a selection
+
+The help text’s message should not simply restate the same information in the label in order to prompt someone to interact with a select. Don’t add help text if it isn’t actually relevant or meaningful to a user in order to try to maintain layout continuity with other inputs that require help text.
+
+<div class="usage-guidelines usage-guidelines-do">
+
+<ion-icon name="checkmark-circle" class="icon"></ion-icon>
+
+<gr-select label="Preferred contact method" placeholder="Select contact method..." help-text="Select the best way to contact you in case there's an issue with your account.">
+  <gr-menu-item value="email">Email</gr-menu-item>
+  <gr-menu-item value="phone">Phone</gr-menu-item>
+</gr-select>
+
+</div>
+
+<div class="usage-guidelines usage-guidelines-dont">
+
+<ion-icon name="close-circle" class="icon"></ion-icon>
+
+<gr-select label="Preferred contact method" placeholder="Select contact method..." help-text="Choose your preferred contact method.">
+  <gr-menu-item value="email">Email</gr-menu-item>
+  <gr-menu-item value="phone">Phone</gr-menu-item>
+</gr-select>
+
+</div>
+
+### Validation
+
+We recommend validating the users data before form submission. Use visual cues to guide the user as to where the problem lies within the form. This will help to easily identify the elements that need to be corrected.
+
+The validation should appear when the user has interacted with the select. Once the user corrects the errors within the select, the validation should disappear once the data is rendered as valid.
+
+For Vue, you can use libraries like [Vuelidate](https://vuelidate-next.netlify.app/) & [VeeValidate](https://vee-validate.logaretm.com/) (using Custom Inputs).
+
+Of course, you should still validate server-side (if applicable).
+
+### Always write invalid text when invalid
+
+Don't just mark a select invalid and expect the user to understand why it's invalid. Furthermore, the invalid text displays an icon which is needed for accessibility, and gives more attention to the invalid field.
+
+<div class="usage-guidelines usage-guidelines-do">
+
+<ion-icon name="checkmark-circle" class="icon"></ion-icon>
+
+<gr-select label="Preferred contact method" placeholder="Select contact method..." invalid-text="Select a contact method" invalid>
+  <gr-menu-item value="email">Email</gr-menu-item>
+  <gr-menu-item value="phone">Phone</gr-menu-item>
+</gr-select>
+
+</div>
+
+<div class="usage-guidelines usage-guidelines-dont">
+
+<ion-icon name="close-circle" class="icon"></ion-icon>
+
+<gr-select label="Preferred contact method" placeholder="Select contact method..." invalid>
+  <gr-menu-item value="email">Email</gr-menu-item>
+  <gr-menu-item value="phone">Phone</gr-menu-item>
+</gr-select>
+
+</div>
+
+### Switch help text with invalid text
+
+The help text area also displays an error message. When a select already includes help text and it's marked invalid, the help text is replaced with invalid text. Once it's no longer invalid, the help text description reappears below the field.
+
+Since one gets replaced by the other, the language of the help text and invalid text need to work together to convey the same messaging. Help text explains the requirement or adds supplementary context for how to successfully complete the interaction. Invalid text tells a user how to fix the error by re-stating the selection requirements or describing the necessary interaction. Make sure that the help text and the invalid text include the same essential information so that it isn’t lost if one replaces the other (e.g., minimum requirements).
+
+<div class="usage-guidelines usage-guidelines-do">
+
+<ion-icon name="checkmark-circle" class="icon"></ion-icon>
+
+<gr-select label="Preferred contact method" placeholder="Select contact method..." help-text="Select the best way to contact you in case there's an issue with your account.">
+  <gr-menu-item value="email">Email</gr-menu-item>
+  <gr-menu-item value="phone">Phone</gr-menu-item>
+</gr-select>
+&nbsp;
+<gr-select label="Preferred contact method" placeholder="Select contact method..." help-text="Select the best way to contact you in case there's an issue with your account." invalid-text="Select a contact method" invalid>
+  <gr-menu-item value="email">Email</gr-menu-item>
+  <gr-menu-item value="phone">Phone</gr-menu-item>
+</gr-select>
+
+</div>
+
+<div class="usage-guidelines usage-guidelines-dont">
+
+<ion-icon name="close-circle" class="icon"></ion-icon>
+
+<gr-select label="Preferred contact method" placeholder="Select contact method..." help-text="Select a contact method.">
+  <gr-menu-item value="email">Email</gr-menu-item>
+  <gr-menu-item value="phone">Phone</gr-menu-item>
+</gr-select>
+&nbsp;
+<gr-select label="Preferred contact method" placeholder="Select contact method..." help-text="Select a contact method." invalid-text="Select a contact method." invalid>
+  <gr-menu-item value="email">Email</gr-menu-item>
+  <gr-menu-item value="phone">Phone</gr-menu-item>
+</gr-select>
+
+</div>
+
+### Write invalid text that shows a solution
+
+Write error messaging in a human-centered way by guiding a user and showing them a solution — don’t simply state what’s wrong and then leave them guessing as to how to resolve it. Ambiguous error messages can be frustrating and even shame-inducing for users. Also, keep in mind that something that a system may deem an error may not actually be perceived as an error to a user.
+
+Invalid text should be written in 1-2 short, complete sentences and in a clear and straightforward way. End sentences with a period, and never with an exclamation point. For selects, the nature of the error is often related to something that needs to be fixed for in-line validation, so a helpful tone is most appropriate. For example, if someone were to miss selecting an option to note as their preferred contact method, write the error text like you’re offering a hint or a tip to help guide them to understand what needs to be selected: “Select a contact method.”
+
+<div class="usage-guidelines usage-guidelines-do">
+
+<ion-icon name="checkmark-circle" class="icon"></ion-icon>
+
+<gr-select label="Preferred contact method" placeholder="Select contact method..." invalid-text="Select a contact method." invalid>
+  <gr-menu-item value="email">Email</gr-menu-item>
+  <gr-menu-item value="phone">Phone</gr-menu-item>
+</gr-select>
+
+</div>
+
+<div class="usage-guidelines usage-guidelines-dont">
+
+<ion-icon name="close-circle" class="icon"></ion-icon>
+
+<gr-select label="Preferred contact method" placeholder="Select contact method..."  invalid-text="Invalid field" invalid>
+  <gr-menu-item value="email">Email</gr-menu-item>
+  <gr-menu-item value="phone">Phone</gr-menu-item>
+</gr-select>
+
+</div>
 
 ## Properties
 

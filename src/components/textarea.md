@@ -104,13 +104,13 @@ Add descriptive invalid text to a textarea with the `invalid-text` attribute. Fo
 
 When you add the `invalid` attribute, the invalid text will be shown. When a textarea already includes help text, the help text is replaced with invalid text.
 
-<gr-textarea label="Feedback" help-text="Please tell us what you think." invalid-text="Tell us what you think" invalid></gr-textarea>
+<gr-textarea label="Feedback" help-text="Please tell us what you think." invalid-text="Tell us what you think." invalid></gr-textarea>
 
 ```html
 <gr-textarea
   label="Feedback"
   help-text="Please tell us what you think."
-  invalid-text="Tell us what you think"
+  invalid-text="Tell us what you think."
   invalid
 ></gr-textarea>
 ```
@@ -134,6 +134,208 @@ Textareas will automatically resize to expand to fit their content when `resize`
 ```html
 <gr-textarea resize="auto"></gr-textarea>
 ```
+
+### Usage guidelines
+
+### Include a label
+
+Every textarea should have a label. A textarea without a label is ambiguous and not accessible.
+
+<div class="usage-guidelines usage-guidelines-do">
+
+<ion-icon name="checkmark-circle" class="icon"></ion-icon>
+
+<gr-textarea label="Members" value="Soof"></gr-input>
+
+</div>
+
+<div class="usage-guidelines usage-guidelines-dont">
+
+<ion-icon name="close-circle" class="icon"></ion-icon>
+
+<gr-textarea value="Soof"></gr-input>
+
+</div>
+
+### Follow capitalization rules
+
+Textarea labels and placeholder text should be in sentence case.
+
+<div class="usage-guidelines usage-guidelines-do">
+
+<ion-icon name="checkmark-circle" class="icon"></ion-icon>
+
+<gr-textarea label="Hobbies and interests" value="Photography, gardening"></gr-textarea>
+
+</div>
+
+<div class="usage-guidelines usage-guidelines-dont">
+
+<ion-icon name="close-circle" class="icon"></ion-icon>
+
+<gr-textarea label="Hobbies and Interests" value="Photography, gardening"></gr-textarea>
+
+</div>
+
+### Mark the minority of fields in a form as optional or required
+
+In a single form, mark only the required fields or only the optional fields, depending on whichever is less frequent in the entire form. If most of the text fields are optional, only the required fields should be give an asterisk or have labels appended with “(required)”. If most of the fields are required, only the optional fields should be appended with “(optional)”. An asterisk should never be used to note that a text field is optional. If you use an asterisk, be sure to include hint text to explain what the asterisk means.
+
+Try to only ask for information that’s required.
+
+<div class="usage-guidelines usage-guidelines-do">
+
+<ion-icon name="checkmark-circle" class="icon"></ion-icon>
+
+<gr-input label="Name" value="Sofie van der Grift"></gr-input>
+
+<gr-input label="Nickname" value="Soof"></gr-input>
+
+<gr-textarea label="Interests (optional)" value="Photography"></gr-textarea>
+
+</div>
+
+<div class="usage-guidelines usage-guidelines-dont">
+
+<ion-icon name="close-circle" class="icon"></ion-icon>
+
+<gr-input label="Name (required)" value="Sofie van der Grift"></gr-input>
+
+<gr-input label="Nickname (required)" value="Soof"></gr-input>
+
+<gr-textarea label="Interests" value="Photography"></gr-textarea>
+
+</div>
+
+### Use help text to show hints, formatting, and requirements
+
+The description in the help text is flexible and encompasses a range of guidance. Sometimes this guidance is about what to input, and sometime it’s about how to input. This includes information such as:
+
+- An overall description of the input field
+- Hints for what kind of information needs to be input
+- Specific formatting examples or requirements
+
+The help text’s message should not simply restate the same information in the label in order to prompt someone to interact with it. Don’t add help text if it isn’t actually relevant or meaningful to a user in order to try to maintain layout continuity with other inputs that require help text.
+
+<div class="usage-guidelines usage-guidelines-do">
+
+<ion-icon name="checkmark-circle" class="icon"></ion-icon>
+
+<gr-textarea label="Interests" help-text="Describe the interests you'd like to explore through our tutorials."></gr-textarea>
+
+</div>
+
+<div class="usage-guidelines usage-guidelines-dont">
+
+<ion-icon name="close-circle" class="icon"></ion-icon>
+
+<gr-textarea label="Interests" help-text="Enter your interests."></gr-textarea>
+
+</div>
+
+### Use help text instead of placeholder text
+
+Putting instructions for how to complete an input, requirements, or any other essential information into placeholder text is not accessible, and should be avoided if possible. Once a value is entered, placeholder text is no longer viewable; if someone is using an automatic form filler, they will never get the information in the placeholder text.
+
+Instead of placeholder text, use the help text description to convey requirements or to show any formatting examples that would help user comprehension. If there's placeholder text and help text at the same time, it becomes redundant and distracting, and especially if they're communicating the same thing.
+
+<div class="usage-guidelines usage-guidelines-do">
+
+<ion-icon name="checkmark-circle" class="icon"></ion-icon>
+
+<gr-textarea label="Interests" help-text="Describe the interests you'd like to explore through our tutorials."></gr-textarea>
+
+</div>
+
+<div class="usage-guidelines usage-guidelines-dont">
+
+<ion-icon name="close-circle" class="icon"></ion-icon>
+
+<gr-textarea label="Interests" placeholder="Describe the interests you'd like to explore through our tutorials."></gr-textarea>
+
+</div>
+
+### Validation
+
+We recommend validating the users data before form submission. Use visual cues to guide the user as to where the problem lies within the form. This will help to easily identify the elements that need to be corrected.
+
+The validation should appear when the user has clicked away from the textarea. Once the user corrects the errors within the textarea, the validation should disappear once the data is rendered as valid.
+
+For Vue, you can use libraries like [Vuelidate](https://vuelidate-next.netlify.app/) & [VeeValidate](https://vee-validate.logaretm.com/) (using Custom Inputs).
+
+Of course, you should still validate server-side (if applicable).
+
+### Always write invalid text when invalid
+
+Don't just mark an input invalid and expect the user to understand why it's invalid. Furthermore, the invalid text displays an icon which is needed for accessibility, and gives more attention to the invalid field.
+
+<div class="usage-guidelines usage-guidelines-do">
+
+<ion-icon name="checkmark-circle" class="icon"></ion-icon>
+
+<gr-textarea label="Interests" help-text="Describe the interests you'd like to explore through our tutorials." invalid-text="Enter at least one interest." invalid></gr-textarea>
+
+</div>
+
+<div class="usage-guidelines usage-guidelines-dont">
+
+<ion-icon name="close-circle" class="icon"></ion-icon>
+
+<gr-textarea label="Interests" help-text="Describe the interests you'd like to explore through our tutorials." invalid></gr-textarea>
+
+</div>
+
+### Switch help text with invalid text
+
+The help text area also displays an error message. When a text field already includes help text and it's marked invalid, the help text is replaced with invalid text. Once it's no longer invalid, the help text description reappears below the field.
+
+Since one gets replaced by the other, the language of the help text and invalid text need to work together to convey the same messaging. Help text explains the requirement or adds supplementary context for how to successfully complete the input. Invalid text tells a user how to make it valid by re-stating the input requirements or describing the necessary interaction. Make sure that the help text and the invalid text include the same essential information so that it isn’t lost if one replaces the other (e.g., password requirements).
+
+<div class="usage-guidelines usage-guidelines-do">
+
+<ion-icon name="checkmark-circle" class="icon"></ion-icon>
+
+<gr-textarea label="Interests" help-text="Describe the interests you'd like to explore through our tutorials."></gr-textarea>
+
+&nbsp;
+
+<gr-textarea label="Interests" help-text="Describe the interests you'd like to explore through our tutorials." invalid-text="Enter at least one interest." invalid></gr-textarea>
+
+</div>
+
+<div class="usage-guidelines usage-guidelines-dont">
+
+<ion-icon name="close-circle" class="icon"></ion-icon>
+
+<gr-textarea label="Interests" help-text="Describe the interests you'd like to explore through our tutorials."></gr-textarea>
+
+&nbsp;
+
+<gr-textarea label="Interests" help-text="Describe the interests you'd like to explore through our tutorials." invalid-text="Enter your interests." invalid></gr-textarea>
+
+</div>
+
+### Write invalid text that shows a solution
+
+Write error messaging in a human-centered way by guiding a user and showing them a solution — don’t simply state what’s wrong and then leave them guessing as to how to resolve it. Ambiguous error messages can be frustrating and even shame-inducing for users. Also, keep in mind that something that a system may deem an error may not actually be perceived as an error to a user.
+
+Invalid text should be written in 1-2 short, complete sentences and in a clear and straightforward way. End sentences with a period, and never with an exclamation point. For textareas, the nature of the error is often related to something that needs to be fixed for in-line validation, so a helpful tone is most appropriate. For example, if someone were to miss filling out a required field that asks for their interests, write the invalid text like you’re offering a hint or a tip to help guide them to understand what needs to go in the missing field: “Enter at least one interest.”
+
+<div class="usage-guidelines usage-guidelines-do">
+
+<ion-icon name="checkmark-circle" class="icon"></ion-icon>
+
+<gr-textarea label="Interests" help-text="Describe the interests you'd like to explore through our tutorials." invalid-text="Enter at least one interest." invalid></gr-textarea>
+
+</div>
+
+<div class="usage-guidelines usage-guidelines-dont">
+
+<ion-icon name="close-circle" class="icon"></ion-icon>
+
+<gr-textarea label="Interests" help-text="Describe the interests you'd like to explore through our tutorials." invalid-text="Invalid field" invalid></gr-textarea>
+
+</div>
 
 ## Properties
 

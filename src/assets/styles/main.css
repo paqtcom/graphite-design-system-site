@@ -73,7 +73,6 @@ a:hover {
 }
 
 .content .usage-guidelines {
-  --gr-color-light-tint: #fafafa;
   @apply bg-light-tint p-10 relative mb-3 mt-3;
 }
 
@@ -116,6 +115,10 @@ a:hover {
 
 .table-of-contents ul {
   @apply list-none mb-5;
+}
+
+.table-of-contents li {
+  @apply mb-1;
 }
 
 gr-button:not(.hydrated),

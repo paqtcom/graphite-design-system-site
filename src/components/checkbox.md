@@ -74,10 +74,10 @@ Add descriptive invalid text to a checkbox with the `invalid-text` attribute. Fo
 
 When you add the `invalid` attribute, the invalid text will be shown.
 
-<gr-checkbox invalid-text="You have to agree with our terms to continue" invalid>I agree with the terms</gr-checkbox>
+<gr-checkbox invalid-text="You have to agree with our terms to continue." invalid>I agree with the terms</gr-checkbox>
 
 ```html
-<gr-checkbox invalid-text="You have to agree with our terms to continue" invalid>
+<gr-checkbox invalid-text="You have to agree with our terms to continue." invalid>
   I agree with the terms
 </gr-checkbox>
 ```
@@ -137,6 +137,54 @@ Sets of checkboxes should always have a clear label that describes what the list
   <gr-checkbox checked>In 3 days</gr-checkbox>
   <gr-checkbox>Next week</gr-checkbox>
 </gr-field-group>
+
+</div>
+
+### Always provide invalid text when invalid
+
+Don't just mark a checkbox invalid and expect the user to understand why it's invalid. Furthermore, the invalid text displays an icon which is needed for accessibility, and gives more attention to the invalid field.
+
+<div class="usage-guidelines usage-guidelines-do">
+
+<ion-icon name="checkmark-circle" class="icon"></ion-icon>
+
+<gr-checkbox invalid-text="You have to agree with our terms to continue." invalid>
+  I agree with the terms
+</gr-checkbox>
+
+</div>
+
+<div class="usage-guidelines usage-guidelines-dont">
+
+<ion-icon name="close-circle" class="icon"></ion-icon>
+
+<gr-checkbox invalid>I agree with the terms</gr-checkbox>
+
+</div>
+
+### Write invalid text that shows a solution
+
+Write error messaging in a human-centered way by guiding a user and showing them a solution — don’t simply state what’s wrong and then leave them guessing as to how to resolve it. Ambiguous error messages can be frustrating and even shame-inducing for users. Also, keep in mind that something that a system may deem an error may not actually be perceived as an error to a user.
+
+Invalid text should be written in 1-2 short, complete sentences and in a clear and straightforward way. End sentences with a period, and never with an exclamation point.
+
+<div class="usage-guidelines usage-guidelines-do">
+
+<ion-icon name="checkmark-circle" class="icon"></ion-icon>
+
+<gr-checkbox invalid-text="You have to agree with our terms to continue." invalid>
+  I agree with the terms
+</gr-checkbox>
+
+</div>
+
+<div class="usage-guidelines usage-guidelines-dont">
+
+<ion-icon name="close-circle" class="icon"></ion-icon>
+
+<gr-checkbox invalid-text="Required field" invalid>
+  I agree with the terms
+</gr-checkbox>
 
 </div>
 

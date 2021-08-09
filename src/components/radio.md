@@ -32,7 +32,7 @@ Radios are designed to be used with [radio groups](/components/radio-group). As 
 
 Use the `disabled` attribute to disable a radio.
 
-<gr-radio-group label="Select an option" no-fieldset>
+<gr-radio-group label="Select an option">
   <gr-radio value="1" checked>Option 1</gr-radio>
   <gr-radio value="2">Option 2</gr-radio>
   <gr-radio value="3">Option 3</gr-radio>
@@ -40,13 +40,43 @@ Use the `disabled` attribute to disable a radio.
 </gr-radio-group>
 
 ```html
-<gr-radio-group label="Select an option" no-fieldset>
+<gr-radio-group label="Select an option">
   <gr-radio value="1" checked>Option 1</gr-radio>
   <gr-radio value="2">Option 2</gr-radio>
   <gr-radio value="3">Option 3</gr-radio>
   <gr-radio value="4" disabled>Disabled</gr-radio>
 </gr-radio-group>
 ```
+
+## Usage guidelines
+
+### Use radio buttons for mutually exclusive options
+
+Radio buttons and checkboxes are not interchangeable. Radio buttons are best used for selecting a single option from a list of mutually exclusive options. Checkboxes are best used for selecting as many options as desired (or none).
+
+<div class="usage-guidelines usage-guidelines-do">
+
+<ion-icon name="checkmark-circle" class="icon"></ion-icon>
+
+<gr-radio-group label="Size" value="s">
+  <gr-radio value="s">Small</gr-radio>
+  <gr-radio value="m">Medium</gr-radio>
+  <gr-radio value="l">Large</gr-radio>
+</gr-radio-group>
+
+</div>
+
+<div class="usage-guidelines usage-guidelines-dont">
+
+<ion-icon name="close-circle" class="icon"></ion-icon>
+
+<gr-radio-group label="Interests" value="travel">
+  <gr-radio value="travel">Travel</gr-radio>
+  <gr-radio value="music">Music</gr-radio>
+  <gr-radio value="shopping">Shopping</gr-radio>
+</gr-radio-group>
+
+</div>
 
 ## Properties
 

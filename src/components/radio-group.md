@@ -10,6 +10,8 @@ title: Radio Group - Graphite Design System
 
 Radio Groups are used to group multiple radios so they function as a single control.
 
+Have a default option selected whenever possible.
+
 <gr-radio-group value="1">
   <gr-radio value="1">Item 1</gr-radio>
   <gr-radio value="2">Item 2</gr-radio>
@@ -86,19 +88,107 @@ Add descriptive invalid text to a radio group with the `invalid-text` attribute.
 
 When you add the `invalid` attribute, the invalid text will be shown.
 
-<gr-radio-group label="Select an item" invalid-text="Select an item" invalid>
+<gr-radio-group label="Select an item" invalid-text="Select an item." invalid>
   <gr-radio value="1">Item 1</gr-radio>
   <gr-radio value="2">Item 2</gr-radio>
   <gr-radio value="3">Item 3</gr-radio>
 </gr-radio-group>
 
 ```html
-<gr-radio-group label="Select an item" invalid-text="Select an item" invalid>
+<gr-radio-group label="Select an item" invalid-text="Select an item." invalid>
   <gr-radio value="1">Item 1</gr-radio>
   <gr-radio value="2">Item 2</gr-radio>
   <gr-radio value="3">Item 3</gr-radio>
 </gr-radio-group>
 ```
+
+## Usage guidelines
+
+### Label radio groups
+
+Radio groups should always have a label that clearly describes what the list of options represents. This is important for accessibility, since a screen reader will read the label before each option. Make sure to include a label, and don't assume that the options are self-explanatory without one. Write the label in sentence case.
+
+<div class="usage-guidelines usage-guidelines-do">
+
+<ion-icon name="checkmark-circle" class="icon"></ion-icon>
+
+<gr-radio-group label="Landing page" value="homepage">
+  <gr-radio value="homepage">Homepage</gr-radio>
+  <gr-radio value="gallery">Gallery</gr-radio>
+  <gr-radio value="contact-us">Contact us</gr-radio>
+</gr-radio-group>
+
+</div>
+
+<div class="usage-guidelines usage-guidelines-dont">
+
+<ion-icon name="close-circle" class="icon"></ion-icon>
+
+<gr-radio-group value="tomorrow">
+  <gr-radio value="tomorrow">Tomorrow</gr-radio>
+  <gr-radio value="in-3-days">In 3 days</gr-radio>
+  <gr-radio value="next-week">Next week</gr-radio>
+</gr-radio-group>
+
+</div>
+
+### Always provide invalid text when invalid
+
+Don't just mark a radio group invalid and expect the user to understand why it's invalid. Furthermore, the invalid text displays an icon which is needed for accessibility, and gives more attention to the invalid field.
+
+<div class="usage-guidelines usage-guidelines-do">
+
+<ion-icon name="checkmark-circle" class="icon"></ion-icon>
+
+<gr-radio-group label="Landing page" invalid-text="Select the landing page you want." invalid>
+  <gr-radio value="homepage">Homepage</gr-radio>
+  <gr-radio value="gallery">Gallery</gr-radio>
+  <gr-radio value="contact-us">Contact us</gr-radio>
+</gr-radio-group>
+
+</div>
+
+<div class="usage-guidelines usage-guidelines-dont">
+
+<ion-icon name="close-circle" class="icon"></ion-icon>
+
+<gr-radio-group label="Landing page" invalid>
+  <gr-radio value="homepage">Homepage</gr-radio>
+  <gr-radio value="gallery">Gallery</gr-radio>
+  <gr-radio value="contact-us">Contact us</gr-radio>
+</gr-radio-group>
+
+</div>
+
+### Write invalid text that shows a solution
+
+Write error messaging in a human-centered way by guiding a user and showing them a solution — don’t simply state what’s wrong and then leave them guessing as to how to resolve it. Ambiguous error messages can be frustrating and even shame-inducing for users. Also, keep in mind that something that a system may deem an error may not actually be perceived as an error to a user.
+
+Invalid text should be written in 1-2 short, complete sentences and in a clear and straightforward way. End sentences with a period, and never with an exclamation point.
+
+<div class="usage-guidelines usage-guidelines-do">
+
+<ion-icon name="checkmark-circle" class="icon"></ion-icon>
+
+<gr-radio-group label="Landing page" invalid-text="Select the landing page you want." invalid>
+  <gr-radio value="homepage">Homepage</gr-radio>
+  <gr-radio value="gallery">Gallery</gr-radio>
+  <gr-radio value="contact-us">Contact us</gr-radio>
+</gr-radio-group>
+
+</div>
+
+<div class="usage-guidelines usage-guidelines-dont">
+
+<ion-icon name="close-circle" class="icon"></ion-icon>
+
+<gr-radio-group label="Landing page" invalid-text="Invalid field" invalid>
+  <gr-radio value="homepage">Homepage</gr-radio>
+  <gr-radio value="gallery">Gallery</gr-radio>
+  <gr-radio value="contact-us">Contact us</gr-radio>
+</gr-radio-group>
+
+</div>
 
 ## Properties
 

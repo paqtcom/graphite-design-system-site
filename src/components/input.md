@@ -185,9 +185,9 @@ Field labels and placeholder text should be in sentence case.
 
 </div>
 
-### Mark the minority of text fields in a form as optional or required
+### Mark the minority of fields in a form as optional or required
 
-In a single form, mark only the required fields or only the optional fields, depending on whichever is less frequent in the entire form. If most of the text fields are optional, only the required fields should be give an asterisk or have labels appended with “(required)”. If most of the text fields are required, only the optional fields should be appended with “(optional)”. An asterisk should never be used to note that a text field is optional. If you use an asterisk, be sure to include hint text to explain what the asterisk means.
+In a single form, mark only the required fields or only the optional fields, depending on whichever is less frequent in the entire form. If most of the text fields are optional, only the required fields should be give an asterisk or have labels appended with “(required)”. If most of the fields are required, only the optional fields should be appended with “(optional)”. An asterisk should never be used to note that a text field is optional. If you use an asterisk, be sure to include hint text to explain what the asterisk means.
 
 Try to only ask for information that’s required.
 
@@ -204,6 +204,8 @@ Try to only ask for information that’s required.
 </div>
 
 <div class="usage-guidelines usage-guidelines-dont">
+
+<ion-icon name="close-circle" class="icon"></ion-icon>
 
 <gr-input label="Name (required)" value="Sofie van der Grift"></gr-input>
 
@@ -233,6 +235,8 @@ The help text’s message should not simply restate the same information in the 
 
 <div class="usage-guidelines usage-guidelines-dont">
 
+<ion-icon name="close-circle" class="icon"></ion-icon>
+
 <gr-input label="Email address" help-text="Enter your email address."></gr-input>
 
 </div>
@@ -253,6 +257,8 @@ Instead of placeholder text, use the help text description to convey requirement
 
 <div class="usage-guidelines usage-guidelines-dont">
 
+<ion-icon name="close-circle" class="icon"></ion-icon>
+
 <gr-input label="Email address" placeholder="soof@way2web.com"></gr-input>
 
 </div>
@@ -267,39 +273,61 @@ For Vue, you can use libraries like [Vuelidate](https://vuelidate-next.netlify.a
 
 Of course, you should still validate server-side (if applicable).
 
-#### Switch help text with error text
+### Always write invalid text when invalid
 
-The help text area also displays an error message. When a text field already includes help text and an error is triggered, the help text is replaced with error text. Once the error is resolved, the help text description reappears below the field.
-
-Since one gets replaced by the other, the language of the help text and error text need to work together to convey the same messaging. Help text explains the requirement or adds supplementary context for how to successfully complete the input. Error text tells a user how to fix the error by re-stating the input requirements or describing the necessary interaction. Make sure that the help text and the error text include the same essential information so that it isn’t lost if one replaces the other (e.g., password requirements).
+Don't just mark an input invalid and expect the user to understand why it's invalid. Furthermore, the invalid text displays an icon which is needed for accessibility, and gives more attention to the invalid field.
 
 <div class="usage-guidelines usage-guidelines-do">
 
 <ion-icon name="checkmark-circle" class="icon"></ion-icon>
 
-<gr-input label="Password" help-text="Passwords must be at least 8 characters."></gr-input>
-
-&nbsp;
-
-<gr-input label="Password" help-text="Passwords must be at least 8 characters." invalid-text="Create a password  with at least 8 characters." invalid></gr-input>
+<gr-input label="Credit card number" invalid-text="Enter your credit card number." invalid></gr-input>
 
 </div>
 
 <div class="usage-guidelines usage-guidelines-dont">
 
-<gr-input label="Password" help-text="Passwords must be at least 8 characters."></gr-input>
+<ion-icon name="close-circle" class="icon"></ion-icon>
 
-&nbsp;
-
-<gr-input label="Password" help-text="Passwords must be at least 8 characters." invalid-text="Passwords must be at least 8 characters." invalid></gr-input>
+<gr-input label="Credit card number" invalid></gr-input>
 
 </div>
 
-#### Write error text that shows a solution
+### Switch help text with invalid text
+
+The help text area also displays an error message. When a text field already includes help text and it's marked invalid, the help text is replaced with invalid text. Once it's no longer invalid, the help text description reappears below the field.
+
+Since one gets replaced by the other, the language of the help text and invalid text need to work together to convey the same messaging. Help text explains the requirement or adds supplementary context for how to successfully complete the input. Invalid text tells a user how to make it valid by re-stating the input requirements or describing the necessary interaction. Make sure that the help text and the invalid text include the same essential information so that it isn’t lost if one replaces the other (e.g., password requirements).
+
+<div class="usage-guidelines usage-guidelines-do">
+
+<ion-icon name="checkmark-circle" class="icon"></ion-icon>
+
+<gr-input label="Password" type="password" help-text="Passwords must be at least 8 characters."></gr-input>
+
+&nbsp;
+
+<gr-input label="Password" type="password" value="example" help-text="Passwords must be at least 8 characters." invalid-text="Create a password  with at least 8 characters." invalid></gr-input>
+
+</div>
+
+<div class="usage-guidelines usage-guidelines-dont">
+
+<ion-icon name="close-circle" class="icon"></ion-icon>
+
+<gr-input label="Password" type="password" help-text="Passwords must be at least 8 characters."></gr-input>
+
+&nbsp;
+
+<gr-input label="Password" type="password" value="example" help-text="Passwords must be at least 8 characters." invalid-text="Passwords must be at least 8 characters." invalid></gr-input>
+
+</div>
+
+### Write invalid text that shows a solution
 
 Write error messaging in a human-centered way by guiding a user and showing them a solution — don’t simply state what’s wrong and then leave them guessing as to how to resolve it. Ambiguous error messages can be frustrating and even shame-inducing for users. Also, keep in mind that something that a system may deem an error may not actually be perceived as an error to a user.
 
-Error text should be written in 1-2 short, complete sentences and in a clear and straightforward way. End sentences with a period, and never with an exclamation point. For text fields, the nature of the error is often related to something that needs to be fixed for in-line validation, so a helpful tone is most appropriate. For example, if someone were to miss filling out a required field that asks for their email address, write the error text like you’re offering a hint or a tip to help guide them to understand what needs to go in the missing field: “Enter your email address.”
+Invalid text should be written in 1-2 short, complete sentences and in a clear and straightforward way. End sentences with a period, and never with an exclamation point. For text fields, the nature of the error is often related to something that needs to be fixed for in-line validation, so a helpful tone is most appropriate. For example, if someone were to miss filling out a required field that asks for their email address, write the invalid text like you’re offering a hint or a tip to help guide them to understand what needs to go in the missing field: “Enter your email address.”
 
 <div class="usage-guidelines usage-guidelines-do">
 
@@ -309,17 +337,19 @@ Error text should be written in 1-2 short, complete sentences and in a clear and
 
 &nbsp;
 
-<gr-input label="Password" invalid-text="Create a password  with at least 8 characters." invalid></gr-input>
+<gr-input label="Password" type="password" value="example" invalid-text="Create a password with at least 8 characters." invalid></gr-input>
 
 </div>
 
 <div class="usage-guidelines usage-guidelines-dont">
 
+<ion-icon name="close-circle" class="icon"></ion-icon>
+
 <gr-input label="Credit card number" invalid-text="Invalid field" invalid></gr-input>
 
 &nbsp;
 
-<gr-input label="Password" invalid-text="Password requirements not met!" invalid></gr-input>
+<gr-input label="Password" type="password" value="example" invalid-text="Password requirements not met!" invalid></gr-input>
 
 </div>
 
