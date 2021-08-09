@@ -10,11 +10,13 @@ title: Tag - Graphite Design System
 
 Tags are used as labels to organize things or to indicate a selection.
 
-<gr-tag type="primary">Primary</gr-tag>
-<gr-tag type="success">Success</gr-tag>
-<gr-tag type="info">Info</gr-tag>
-<gr-tag type="warning">Warning</gr-tag>
-<gr-tag type="danger">Danger</gr-tag>
+<div class="example-block">
+  <gr-tag type="primary">Primary</gr-tag>
+  <gr-tag type="success">Success</gr-tag>
+  <gr-tag type="info">Info</gr-tag>
+  <gr-tag type="warning">Warning</gr-tag>
+  <gr-tag type="danger">Danger</gr-tag>
+</div>
 
 ```html
 <gr-tag type="primary">Primary</gr-tag>
@@ -30,9 +32,11 @@ Tags are used as labels to organize things or to indicate a selection.
 
 Use the `size` prop to change a tab's size.
 
-<gr-tag size="small">Small</gr-tag>
-<gr-tag size="medium">Medium</gr-tag>
-<gr-tag size="large">Large</gr-tag>
+<div class="example-block">
+  <gr-tag size="small">Small</gr-tag>
+  <gr-tag size="medium">Medium</gr-tag>
+  <gr-tag size="large">Large</gr-tag>
+</div>
 
 ```html
 <gr-tag size="small">Small</gr-tag>
@@ -44,9 +48,11 @@ Use the `size` prop to change a tab's size.
 
 Use the `pill` prop to give tabs rounded edges.
 
-<gr-tag size="small" pill>Small</gr-tag>
-<gr-tag size="medium" pill>Medium</gr-tag>
-<gr-tag size="large" pill>Large</gr-tag>
+<div class="example-block">
+  <gr-tag size="small" pill>Small</gr-tag>
+  <gr-tag size="medium" pill>Medium</gr-tag>
+  <gr-tag size="large" pill>Large</gr-tag>
+</div>
 
 ```html
 <gr-tag size="small" pill>Small</gr-tag>
@@ -58,7 +64,7 @@ Use the `pill` prop to give tabs rounded edges.
 
 Use the `clearable` attribute to add a clear button to the tag.
 
-<div class="tags-clearable">
+<div class="example-block tags-clearable">
   <gr-tag size="small" clearable>Small</gr-tag>
   <gr-tag size="medium" clearable>Medium</gr-tag>
   <gr-tag size="large" clearable>Large</gr-tag>

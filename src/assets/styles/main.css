@@ -72,8 +72,13 @@ a:hover {
   @apply list-disc list-inside mb-2;
 }
 
-.content .usage-guidelines {
+.content .usage-guidelines,
+.content .example-block {
   @apply bg-light-tint p-10 relative mb-3 mt-3;
+}
+
+.content .example-block.full {
+  @apply pl-0 pr-0;
 }
 
 .content .usage-guidelines ion-icon.icon {

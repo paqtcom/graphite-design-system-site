@@ -10,7 +10,9 @@ title: Button - Graphite Design System
 
 Buttons provide a clickable element, which can be used in forms, or anywhere that needs simple, standard button functionality. They may display text, icons, or both. Buttons can be styled with several attributes to look a specific way.
 
+<div class="example-block">
 <gr-button>Button</gr-button>
+</div>
 
 ```html
 <gr-button>Button</gr-button>
@@ -30,11 +32,13 @@ Use the `variant` attribute to set the appropiate button style.
 | `danger`    | Use when the action will delete data or be otherwise difficult to recover from.                                                                                             |
 | `plain`     | Use for less important or less commonly used actions since they’re less prominent.                                                                                          |
 
+<div class="example-block">
 <gr-button>Default</gr-button>
 <gr-button variant="primary">Primary</gr-button>
 <gr-button variant="secondary">Secondary</gr-button>
 <gr-button variant="danger">Danger</gr-button>
 <gr-button variant="plain">Plain</gr-button>
+</div>
 
 ```html
 <gr-button>Default</gr-button>
@@ -48,9 +52,11 @@ Use the `variant` attribute to set the appropiate button style.
 
 Use the `size` attribute to change a button's size.
 
+<div class="example-block">
 <gr-button size="small">Small</gr-button>
 <gr-button>Medium</gr-button>
 <gr-button size="large">Large</gr-button>
+</div>
 
 ```html
 <gr-button size="small">Small</gr-button>
@@ -67,6 +73,7 @@ Use the `start` and `end` slots to add icons (or other content). As a general ru
 We recommend [Ionicons](https://ionic.io/ionicons) (which also supports custom SVG), but you could theoretically use any icon library.
 Use the same icon set throughout your application for consistency.
 
+<div class="example-block">
 <gr-button>
   <ion-icon name="settings-outline" slot="start"></ion-icon>
   Settings
@@ -75,6 +82,7 @@ Use the same icon set throughout your application for consistency.
   <ion-icon name="refresh-outline" slot="end"></ion-icon>
   Refresh
 </gr-button>
+</div>
 
 ```html
 <gr-button>
@@ -96,6 +104,7 @@ There are certain instances where an icon will suffice in place of a text label,
 
 Setting a `aria-label` attribute is required for accessibility.
 
+<div class="example-block">
 <gr-button variant="primary" size="small" aria-label="Add" circle>
   <ion-icon name="add-outline" slot="icon-only"></ion-icon>
 </gr-button>
@@ -105,6 +114,7 @@ Setting a `aria-label` attribute is required for accessibility.
 <gr-button variant="primary" size="large" aria-label="Add" circle>
   <ion-icon name="add-outline" slot="icon-only"></ion-icon>
 </gr-button>
+</div>
 
 ```html
 <gr-button variant="primary" size="small" aria-label="Add" circle>
@@ -124,7 +134,9 @@ Setting a `aria-label` attribute is required for accessibility.
 
 It's often helpful to have a button that works like a link. This is possible by setting the `href` attribute, which will make the component render an `<a>` under the hood. This gives you all the default link behavior the browser provides (e.g. <kbd>CMD/CTRL/SHIFT + CLICK</kbd>) and exposes the `target` & `rel` attributes (if you set a target it is recommended to set `rel="noopener noreferrer"` for [security reasons](https://mathiasbynens.github.io/rel-noopener/)).
 
+<div class="example-block">
 <gr-button href="https://www.way2web.nl" target="_blank" rel="noopener noreferrer">Link</gr-button>
+</div>
 
 ```html
 <gr-button href="https://www.way2web.nl" target="_blank" rel="noopener noreferrer">Link</gr-button>
@@ -134,7 +146,9 @@ It's often helpful to have a button that works like a link. This is possible by 
 
 Use the `expand="block"` attribute to create a full-width button with rounded corners.
 
-<gr-button expand="block">Block</gr-button>
+<div class="example-block">
+  <gr-button expand="block">Block</gr-button>
+</div>
 
 ```html
 <gr-button expand="block">Block</gr-button>
@@ -142,9 +156,11 @@ Use the `expand="block"` attribute to create a full-width button with rounded co
 
 ### Full Button
 
-Use the `expand="full"` attribute to create a full-width button with square corners and no border on the left or right. Useful if you want it to run over the full-width of the viewport or a section (where you don't apply any horizontal margin).
+Use the `expand="full"` attribute to create a full-width button with square corners and no border on the left or right. Useful if you want it to run over the full-width of the viewport or a section (where you don't apply any horizontal margin/padding).
 
-<gr-button expand="full">Full</gr-button>
+<div class="example-block full">
+  <gr-button expand="full">Full</gr-button>
+</div>
 
 ```html
 <gr-button expand="full">Full</gr-button>
@@ -154,9 +170,11 @@ Use the `expand="full"` attribute to create a full-width button with square corn
 
 Use the `caret` attribute to add a dropdown indicator when a button will trigger a dropdown, menu, or popover.
 
-<gr-button size="small" caret>Small</gr-button>
-<gr-button size="medium" caret>Medium</gr-button>
-<gr-button size="large" caret>Large</gr-button>
+<div class="example-block">
+  <gr-button size="small" caret>Small</gr-button>
+  <gr-button size="medium" caret>Medium</gr-button>
+  <gr-button size="large" caret>Large</gr-button>
+</div>
 
 ```html
 <gr-button size="small" caret>Small</gr-button>
@@ -170,11 +188,13 @@ Use the `loading` attribute to make a button busy. The width will remain the sam
 
 Set it after the user has clicked the button to prevent double-clicks, and give feedback to the user the click has been registered and is being processed.
 
-<gr-button loading>Default</gr-button>
-<gr-button variant="primary" loading>Primary</gr-button>
-<gr-button variant="secondary" loading>Secondary</gr-button>
-<gr-button variant="danger" loading>Danger</gr-button>
-<gr-button variant="plain" loading>Plain</gr-button>
+<div class="example-block">
+  <gr-button loading>Default</gr-button>
+  <gr-button variant="primary" loading>Primary</gr-button>
+  <gr-button variant="secondary" loading>Secondary</gr-button>
+  <gr-button variant="danger" loading>Danger</gr-button>
+  <gr-button variant="plain" loading>Plain</gr-button>
+</div>
 
 ```html
 <gr-button loading>Default</gr-button>
@@ -188,11 +208,13 @@ Set it after the user has clicked the button to prevent double-clicks, and give 
 
 Use the `disabled` attribute to disable a button. Clicks will be suppressed until the disabled state is removed.
 
-<gr-button disabled>Default</gr-button>
-<gr-button variant="primary" disabled>Primary</gr-button>
-<gr-button variant="secondary" disabled>Secondary</gr-button>
-<gr-button variant="danger" disabled>Danger</gr-button>
-<gr-button variant="plain" disabled>Plain</gr-button>
+<div class="example-block">
+  <gr-button disabled>Default</gr-button>
+  <gr-button variant="primary" disabled>Primary</gr-button>
+  <gr-button variant="secondary" disabled>Secondary</gr-button>
+  <gr-button variant="danger" disabled>Danger</gr-button>
+  <gr-button variant="plain" disabled>Plain</gr-button>
+</div>
 
 ```html
 <gr-button disabled>Default</gr-button>
@@ -218,7 +240,7 @@ A high-emphasis button can be accompanied by medium- and low-emphasis buttons th
 
 Although secondary buttons have less visual prominence, they are still tonally heavy. If your layout requires multiple actions — as is the case with some data lists and dashboards — low emphasis buttons (default or plain) may be a better choice.
 
-<div class="usage-guidelines usage-guidelines-do text-center">
+<div class="usage-guidelines usage-guidelines-do">
 
 <ion-icon name="checkmark-circle" class="icon"></ion-icon>
 
@@ -244,7 +266,7 @@ Although secondary buttons have less visual prominence, they are still tonally h
 
 </div>
 
-<div class="usage-guidelines usage-guidelines-dont text-center">
+<div class="usage-guidelines usage-guidelines-dont">
 
 <ion-icon name="close-circle" class="icon"></ion-icon>
 
@@ -274,7 +296,7 @@ Although secondary buttons have less visual prominence, they are still tonally h
 
 Button text should be concise: 1 or 2 words, no longer than 4 words, with fewer than 20 characters including spaces. Don’t use punctuation marks such as periods or exclamation points.
 
-<div class="usage-guidelines usage-guidelines-do text-center">
+<div class="usage-guidelines usage-guidelines-do">
 
 <ion-icon name="checkmark-circle" class="icon"></ion-icon>
 
@@ -284,7 +306,7 @@ Button text should be concise: 1 or 2 words, no longer than 4 words, with fewer 
 
 </div>
 
-<div class="usage-guidelines usage-guidelines-dont text-center">
+<div class="usage-guidelines usage-guidelines-dont">
 
 <ion-icon name="close-circle" class="icon"></ion-icon>
 
@@ -298,7 +320,7 @@ Button text should be concise: 1 or 2 words, no longer than 4 words, with fewer 
 
 Button texts should be clear about the outcome of the action. Most buttons should start with a verb. For example, use “Agree” instead of “Yes” in a dialog or use “Sign Up” instead of “Submit” in a form.
 
-<div class="usage-guidelines usage-guidelines-do text-center">
+<div class="usage-guidelines usage-guidelines-do">
 
 <ion-icon name="checkmark-circle" class="icon"></ion-icon>
 
@@ -308,7 +330,7 @@ Button texts should be clear about the outcome of the action. Most buttons shoul
 
 </div>
 
-<div class="usage-guidelines usage-guidelines-dont text-center">
+<div class="usage-guidelines usage-guidelines-dont">
 
 <ion-icon name="close-circle" class="icon"></ion-icon>
 
@@ -322,7 +344,7 @@ Button texts should be clear about the outcome of the action. Most buttons shoul
 
 Button text should always be in sentence case. Capitalization should never be used to give more prominence to a specific button.
 
-<div class="usage-guidelines usage-guidelines-do text-center">
+<div class="usage-guidelines usage-guidelines-do">
 
 <ion-icon name="checkmark-circle" class="icon"></ion-icon>
 
@@ -332,7 +354,7 @@ Button text should always be in sentence case. Capitalization should never be us
 
 </div>
 
-<div class="usage-guidelines usage-guidelines-dont text-center">
+<div class="usage-guidelines usage-guidelines-dont">
 
 <ion-icon name="close-circle" class="icon"></ion-icon>
 
@@ -358,7 +380,7 @@ Button text should always be in sentence case. Capitalization should never be us
 
 Icons can be used in buttons when additional clarity is required and the icon is highly relevant to the action. Icons should not be used for decoration.
 
-<div class="usage-guidelines usage-guidelines-do text-center">
+<div class="usage-guidelines usage-guidelines-do">
 
 <ion-icon name="checkmark-circle" class="icon"></ion-icon>
 
@@ -369,7 +391,7 @@ Icons can be used in buttons when additional clarity is required and the icon is
 
 </div>
 
-<div class="usage-guidelines usage-guidelines-dont text-center">
+<div class="usage-guidelines usage-guidelines-dont">
 
 <ion-icon name="close-circle" class="icon"></ion-icon>
 

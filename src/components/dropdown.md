@@ -14,26 +14,28 @@ Dropdowns consist of a trigger and a panel. By default, activating the trigger w
 
 Dropdowns are designed to work well with [menus](/components/menu) to provide a list of options the user can select from. However, dropdowns can also be used in lower-level applications (e.g. [select](/components/select)). The API gives you complete control over showing, hiding, and positioning the panel.
 
-<gr-dropdown>
-  <gr-button slot="trigger" caret>Dropdown</gr-button>
-  <gr-menu>
-    <gr-menu-item>Dropdown Item 1</gr-menu-item>
-    <gr-menu-item>Dropdown Item 2</gr-menu-item>
-    <gr-menu-item>Dropdown Item 3</gr-menu-item>
-    <gr-menu-divider></gr-menu-divider>
-    <gr-menu-item checked>Checked</gr-menu-item>
-    <gr-menu-item disabled>Disabled</gr-menu-item>
-    <gr-menu-divider></gr-menu-divider>
-    <gr-menu-item>
-      Start Icon
-      <ion-icon slot="start" name="gift-outline"></ion-icon>
-    </gr-menu-item>
-    <gr-menu-item>
-      End Icon
-      <ion-icon slot="end" name="heart-outline"></ion-icon>
-    </gr-menu-item>
-  </gr-menu>
-</gr-dropdown>
+<div class="example-block">
+  <gr-dropdown>
+    <gr-button slot="trigger" caret>Dropdown</gr-button>
+    <gr-menu>
+      <gr-menu-item>Dropdown Item 1</gr-menu-item>
+      <gr-menu-item>Dropdown Item 2</gr-menu-item>
+      <gr-menu-item>Dropdown Item 3</gr-menu-item>
+      <gr-menu-divider></gr-menu-divider>
+      <gr-menu-item checked>Checked</gr-menu-item>
+      <gr-menu-item disabled>Disabled</gr-menu-item>
+      <gr-menu-divider></gr-menu-divider>
+      <gr-menu-item>
+        Start Icon
+        <ion-icon slot="start" name="gift-outline"></ion-icon>
+      </gr-menu-item>
+      <gr-menu-item>
+        End Icon
+        <ion-icon slot="end" name="heart-outline"></ion-icon>
+      </gr-menu-item>
+    </gr-menu>
+  </gr-dropdown>
+</div>
 
 ```html
 <gr-dropdown>
@@ -64,17 +66,19 @@ Dropdowns are designed to work well with [menus](/components/menu) to provide a 
 
 The preferred placement of the dropdown can be set with the `placement` attribute. Note that the actual position may vary to ensure the panel remains in the viewport.
 
-<gr-dropdown placement="top-start">
-  <gr-button slot="trigger" caret>Edit</gr-button>
-  <gr-menu>
-    <gr-menu-item>Cut</gr-menu-item>
-    <gr-menu-item>Copy</gr-menu-item>
-    <gr-menu-item>Paste</gr-menu-item>
-    <gr-menu-divider></gr-menu-divider>
-    <gr-menu-item>Find</gr-menu-item>
-    <gr-menu-item>Replace</gr-menu-item>
-  </gr-menu>
-</gr-dropdown>
+<div class="example-block">
+  <gr-dropdown placement="top-start">
+    <gr-button slot="trigger" caret>Edit</gr-button>
+    <gr-menu>
+      <gr-menu-item>Cut</gr-menu-item>
+      <gr-menu-item>Copy</gr-menu-item>
+      <gr-menu-item>Paste</gr-menu-item>
+      <gr-menu-divider></gr-menu-divider>
+      <gr-menu-item>Find</gr-menu-item>
+      <gr-menu-item>Replace</gr-menu-item>
+    </gr-menu>
+  </gr-dropdown>
+</div>
 
 ```html
 <gr-dropdown placement="top-start">
@@ -94,17 +98,19 @@ The preferred placement of the dropdown can be set with the `placement` attribut
 
 The distance from the panel to the trigger can be customized using the `distance` attribute. This value is specified in pixels.
 
-<gr-dropdown distance="30">
-  <gr-button slot="trigger" caret>Edit</gr-button>
-  <gr-menu>
-    <gr-menu-item>Cut</gr-menu-item>
-    <gr-menu-item>Copy</gr-menu-item>
-    <gr-menu-item>Paste</gr-menu-item>
-    <gr-menu-divider></gr-menu-divider>
-    <gr-menu-item>Find</gr-menu-item>
-    <gr-menu-item>Replace</gr-menu-item>
-  </gr-menu>
-</gr-dropdown>
+<div class="example-block">
+  <gr-dropdown distance="30">
+    <gr-button slot="trigger" caret>Edit</gr-button>
+    <gr-menu>
+      <gr-menu-item>Cut</gr-menu-item>
+      <gr-menu-item>Copy</gr-menu-item>
+      <gr-menu-item>Paste</gr-menu-item>
+      <gr-menu-divider></gr-menu-divider>
+      <gr-menu-item>Find</gr-menu-item>
+      <gr-menu-item>Replace</gr-menu-item>
+    </gr-menu>
+  </gr-dropdown>
+</div>
 
 ```html
 <gr-dropdown distance="30">
@@ -124,17 +130,19 @@ The distance from the panel to the trigger can be customized using the `distance
 
 The offset of the panel along the trigger can be customized using the `skidding` attribute. This value is specified in pixels.
 
-<gr-dropdown skidding="30">
-  <gr-button slot="trigger" caret>Edit</gr-button>
-  <gr-menu>
-    <gr-menu-item>Cut</gr-menu-item>
-    <gr-menu-item>Copy</gr-menu-item>
-    <gr-menu-item>Paste</gr-menu-item>
-    <gr-menu-divider></gr-menu-divider>
-    <gr-menu-item>Find</gr-menu-item>
-    <gr-menu-item>Replace</gr-menu-item>
-  </gr-menu>
-</gr-dropdown>
+<div class="example-block">
+  <gr-dropdown skidding="30">
+    <gr-button slot="trigger" caret>Edit</gr-button>
+    <gr-menu>
+      <gr-menu-item>Cut</gr-menu-item>
+      <gr-menu-item>Copy</gr-menu-item>
+      <gr-menu-item>Paste</gr-menu-item>
+      <gr-menu-divider></gr-menu-divider>
+      <gr-menu-item>Find</gr-menu-item>
+      <gr-menu-item>Replace</gr-menu-item>
+    </gr-menu>
+  </gr-dropdown>
+</div>
 
 ```html
 <gr-dropdown skidding="30">
@@ -154,7 +162,7 @@ The offset of the panel along the trigger can be customized using the `skidding`
 
 Dropdown panels will be clipped if they're inside a container that has `overflow: auto|hidden`. The `hoist` attribute forces the panel to use a fixed positioning strategy, allowing it to break out of the container. In this case, the panel will be positioned relative to its containing block, which is usually the viewport unless an ancestor uses a `transform`, `perspective`, or `filter`. [Refer to this page](https://developer.mozilla.org/en-US/docs/Web/CSS/position#fixed) for more details.
 
-<div class="dropdown-hoist">
+<div class="example-block dropdown-hoist">
   <gr-dropdown>
     <gr-button slot="trigger" caret>No Hoist</gr-button>
     <gr-menu>
@@ -176,8 +184,6 @@ Dropdown panels will be clipped if they're inside a container that has `overflow
 
 <style>
   .dropdown-hoist {
-    border: solid 2px var(--gr-panel-border-color);
-    padding: var(--gr-spacing-medium);
     overflow: hidden;
   }
 </style>
@@ -216,15 +222,17 @@ Dropdown panels will be clipped if they're inside a container that has `overflow
 
 When dropdowns are used with [menus](/components/menu), you can listen for the `gr-select` event to determine which menu item was selected. The menu item element will be exposed in `event.detail.item`. You can set `value` props to make it easier to identify commands.
 
-<div class="dropdown-selection1">
-  <gr-dropdown>
-    <gr-button slot="trigger" caret>Edit</gr-button>
-    <gr-menu>
-      <gr-menu-item value="cut">Cut</gr-menu-item>
-      <gr-menu-item value="copy">Copy</gr-menu-item>
-      <gr-menu-item value="paste">Paste</gr-menu-item>
-    </gr-menu>
-  </gr-dropdown>
+<div class="example-block">
+  <div class="dropdown-selection1">
+    <gr-dropdown>
+      <gr-button slot="trigger" caret>Edit</gr-button>
+      <gr-menu>
+        <gr-menu-item value="cut">Cut</gr-menu-item>
+        <gr-menu-item value="copy">Copy</gr-menu-item>
+        <gr-menu-item value="paste">Paste</gr-menu-item>
+      </gr-menu>
+    </gr-dropdown>
+  </div>
 </div>
 
 <script>
@@ -262,27 +270,29 @@ When dropdowns are used with [menus](/components/menu), you can listen for the `
 
 Alternatively, you can listen for the `click` event on individual menu items. Note that, using this approach, disabled menu items will still emit a `click` event.
 
-<div class="dropdown-selection-alt">
-  <gr-dropdown>
-    <gr-button slot="trigger" caret>Edit</gr-button>
-    <gr-menu>
-      <gr-menu-item value="cut">Cut</gr-menu-item>
-      <gr-menu-item value="copy">Copy</gr-menu-item>
-      <gr-menu-item value="paste">Paste</gr-menu-item>
-    </gr-menu>
-  </gr-dropdown>
+<div class="example-block">
+  <div class="dropdown-selection-alt">
+    <gr-dropdown>
+      <gr-button slot="trigger" caret>Edit</gr-button>
+      <gr-menu>
+        <gr-menu-item value="cut">Cut</gr-menu-item>
+        <gr-menu-item value="copy">Copy</gr-menu-item>
+        <gr-menu-item value="paste">Paste</gr-menu-item>
+      </gr-menu>
+    </gr-dropdown>
+  </div>
+
+  <script>
+    const container2 = document.querySelector('.dropdown-selection-alt');
+    const cut = container2.querySelector('gr-menu-item[value="cut"]');
+    const copy = container2.querySelector('gr-menu-item[value="copy"]');
+    const paste = container2.querySelector('gr-menu-item[value="paste"]');
+
+    cut.addEventListener('click', () => console.log('cut'));
+    copy.addEventListener('click', () => console.log('copy'));
+    paste.addEventListener('click', () => console.log('paste'));
+  </script>
 </div>
-
-<script>
-  const container2 = document.querySelector('.dropdown-selection-alt');
-  const cut = container2.querySelector('gr-menu-item[value="cut"]');
-  const copy = container2.querySelector('gr-menu-item[value="copy"]');
-  const paste = container2.querySelector('gr-menu-item[value="paste"]');
-
-  cut.addEventListener('click', () => console.log('cut'));
-  copy.addEventListener('click', () => console.log('copy'));
-  paste.addEventListener('click', () => console.log('paste'));
-</script>
 
 ```html
 <div class="dropdown-selection-alt">

@@ -12,15 +12,17 @@ Selects allow you to choose one or more items from a dropdown menu.
 
 You can use [menu items](/components/menu-item), [menu dividers](/components/menu-divider), and [menu labels](/components/menu-label) to compose a menu.
 
-<gr-select>
-  <gr-menu-item value="option-1">Option 1</gr-menu-item>
-  <gr-menu-item value="option-2">Option 2</gr-menu-item>
-  <gr-menu-item value="option-3">Option 3</gr-menu-item>
-  <gr-menu-divider></gr-menu-divider>
-  <gr-menu-item value="option-4">Option 4</gr-menu-item>
-  <gr-menu-item value="option-5">Option 5</gr-menu-item>
-  <gr-menu-item value="option-6">Option 6</gr-menu-item>
-</gr-select>
+<div class="example-block">
+  <gr-select>
+    <gr-menu-item value="option-1">Option 1</gr-menu-item>
+    <gr-menu-item value="option-2">Option 2</gr-menu-item>
+    <gr-menu-item value="option-3">Option 3</gr-menu-item>
+    <gr-menu-divider></gr-menu-divider>
+    <gr-menu-item value="option-4">Option 4</gr-menu-item>
+    <gr-menu-item value="option-5">Option 5</gr-menu-item>
+    <gr-menu-item value="option-6">Option 6</gr-menu-item>
+  </gr-select>
+</div>
 
 ```html
 <gr-select>
@@ -40,14 +42,16 @@ You can use [menu items](/components/menu-item), [menu dividers](/components/men
 
 Use the `placeholder` attribute to add a placeholder.
 
-<gr-select placeholder="Select one">
-  <gr-menu-item value="option-1">Option 1</gr-menu-item>
-  <gr-menu-item value="option-2">Option 2</gr-menu-item>
-  <gr-menu-item value="option-3">Option 3</gr-menu-item>
-</gr-select>
+<div class="example-block">
+  <gr-select placeholder="Select one...">
+    <gr-menu-item value="option-1">Option 1</gr-menu-item>
+    <gr-menu-item value="option-2">Option 2</gr-menu-item>
+    <gr-menu-item value="option-3">Option 3</gr-menu-item>
+  </gr-select>
+</div>
 
 ```html
-<gr-select placeholder="Select one">
+<gr-select placeholder="Select one...">
   <gr-menu-item value="option-1">Option 1</gr-menu-item>
   <gr-menu-item value="option-2">Option 2</gr-menu-item>
   <gr-menu-item value="option-3">Option 3</gr-menu-item>
@@ -58,11 +62,13 @@ Use the `placeholder` attribute to add a placeholder.
 
 Use the `clearable` attribute to make the control clearable.
 
-<gr-select placeholder="Clearable" clearable>
-  <gr-menu-item value="option-1">Option 1</gr-menu-item>
-  <gr-menu-item value="option-2">Option 2</gr-menu-item>
-  <gr-menu-item value="option-3">Option 3</gr-menu-item>
-</gr-select>
+<div class="example-block">
+  <gr-select placeholder="Clearable" clearable>
+    <gr-menu-item value="option-1">Option 1</gr-menu-item>
+    <gr-menu-item value="option-2">Option 2</gr-menu-item>
+    <gr-menu-item value="option-3">Option 3</gr-menu-item>
+  </gr-select>
+</div>
 
 ```html
 <gr-select placeholder="Clearable" clearable>
@@ -76,11 +82,13 @@ Use the `clearable` attribute to make the control clearable.
 
 Use the `pill` attribute to give selects rounded edges.
 
-<gr-select pill>
-  <gr-menu-item value="option-1">Option 1</gr-menu-item>
-  <gr-menu-item value="option-2">Option 2</gr-menu-item>
-  <gr-menu-item value="option-3">Option 3</gr-menu-item>
-</gr-select>
+<div class="example-block">
+  <gr-select pill>
+    <gr-menu-item value="option-1">Option 1</gr-menu-item>
+    <gr-menu-item value="option-2">Option 2</gr-menu-item>
+    <gr-menu-item value="option-3">Option 3</gr-menu-item>
+  </gr-select>
+</div>
 
 ```html
 <gr-select pill>
@@ -94,11 +102,13 @@ Use the `pill` attribute to give selects rounded edges.
 
 Use the `disabled` attribute to disable a select.
 
-<gr-select placeholder="Disabled" disabled>
-  <gr-menu-item value="option-1">Option 1</gr-menu-item>
-  <gr-menu-item value="option-2">Option 2</gr-menu-item>
-  <gr-menu-item value="option-3">Option 3</gr-menu-item>
-</gr-select>
+<div class="example-block">
+  <gr-select placeholder="Disabled" disabled>
+    <gr-menu-item value="option-1">Option 1</gr-menu-item>
+    <gr-menu-item value="option-2">Option 2</gr-menu-item>
+    <gr-menu-item value="option-3">Option 3</gr-menu-item>
+  </gr-select>
+</div>
 
 ```html
 <gr-select placeholder="Disabled" disabled>
@@ -112,15 +122,17 @@ Use the `disabled` attribute to disable a select.
 
 To allow multiple options to be selected, use the `multiple` attribute. It's a good practice to use `clearable` when this option is enabled. When using this option, `value` will be an array instead of a string.
 
-<gr-select placeholder="Select a few" multiple clearable>
-  <gr-menu-item value="option-1">Option 1</gr-menu-item>
-  <gr-menu-item value="option-2">Option 2</gr-menu-item>
-  <gr-menu-item value="option-3">Option 3</gr-menu-item>
-  <gr-menu-divider></gr-menu-divider>
-  <gr-menu-item value="option-4">Option 4</gr-menu-item>
-  <gr-menu-item value="option-5">Option 5</gr-menu-item>
-  <gr-menu-item value="option-6">Option 6</gr-menu-item>
-</gr-select>
+<div class="example-block">
+  <gr-select placeholder="Select a few" multiple clearable>
+    <gr-menu-item value="option-1">Option 1</gr-menu-item>
+    <gr-menu-item value="option-2">Option 2</gr-menu-item>
+    <gr-menu-item value="option-3">Option 3</gr-menu-item>
+    <gr-menu-divider></gr-menu-divider>
+    <gr-menu-item value="option-4">Option 4</gr-menu-item>
+    <gr-menu-item value="option-5">Option 5</gr-menu-item>
+    <gr-menu-item value="option-6">Option 6</gr-menu-item>
+  </gr-select>
+</div>
 
 ```html
 <gr-select placeholder="Select a few" multiple clearable>
@@ -138,17 +150,19 @@ To allow multiple options to be selected, use the `multiple` attribute. It's a g
 
 Options can be grouped visually using [menu labels](/components/menu-label) and [menu dividers](/components/menu-divider).
 
-<gr-select placeholder="Select one">
-  <gr-menu-label>Group 1</gr-menu-label>
-  <gr-menu-item value="option-1">Option 1</gr-menu-item>
-  <gr-menu-item value="option-2">Option 2</gr-menu-item>
-  <gr-menu-item value="option-3">Option 3</gr-menu-item>
-  <gr-menu-divider></gr-menu-divider>
-  <gr-menu-label>Group 2</gr-menu-label>
-  <gr-menu-item value="option-4">Option 4</gr-menu-item>
-  <gr-menu-item value="option-5">Option 5</gr-menu-item>
-  <gr-menu-item value="option-6">Option 6</gr-menu-item>
-</gr-select>
+<div class="example-block">
+  <gr-select placeholder="Select one">
+    <gr-menu-label>Group 1</gr-menu-label>
+    <gr-menu-item value="option-1">Option 1</gr-menu-item>
+    <gr-menu-item value="option-2">Option 2</gr-menu-item>
+    <gr-menu-item value="option-3">Option 3</gr-menu-item>
+    <gr-menu-divider></gr-menu-divider>
+    <gr-menu-label>Group 2</gr-menu-label>
+    <gr-menu-item value="option-4">Option 4</gr-menu-item>
+    <gr-menu-item value="option-5">Option 5</gr-menu-item>
+    <gr-menu-item value="option-6">Option 6</gr-menu-item>
+  </gr-select>
+</div>
 
 ```html
 <gr-select placeholder="Select one">
@@ -168,27 +182,29 @@ Options can be grouped visually using [menu labels](/components/menu-label) and 
 
 Use the `size` attribute to change a select's size.
 
-<gr-select placeholder="Small" size="small" multiple>
-  <gr-menu-item value="option-1">Option 1</gr-menu-item>
-  <gr-menu-item value="option-2">Option 2</gr-menu-item>
-  <gr-menu-item value="option-3">Option 3</gr-menu-item>
-</gr-select>
+<div class="example-block">
+  <gr-select placeholder="Small" size="small" multiple>
+    <gr-menu-item value="option-1">Option 1</gr-menu-item>
+    <gr-menu-item value="option-2">Option 2</gr-menu-item>
+    <gr-menu-item value="option-3">Option 3</gr-menu-item>
+  </gr-select>
 
-<br>
+  <br>
 
-<gr-select placeholder="Medium" size="medium" multiple>
-  <gr-menu-item value="option-1">Option 1</gr-menu-item>
-  <gr-menu-item value="option-2">Option 2</gr-menu-item>
-  <gr-menu-item value="option-3">Option 3</gr-menu-item>
-</gr-select>
+  <gr-select placeholder="Medium" size="medium" multiple>
+    <gr-menu-item value="option-1">Option 1</gr-menu-item>
+    <gr-menu-item value="option-2">Option 2</gr-menu-item>
+    <gr-menu-item value="option-3">Option 3</gr-menu-item>
+  </gr-select>
 
-<br>
+  <br>
 
-<gr-select placeholder="Large" size="large" multiple>
-  <gr-menu-item value="option-1">Option 1</gr-menu-item>
-  <gr-menu-item value="option-2">Option 2</gr-menu-item>
-  <gr-menu-item value="option-3">Option 3</gr-menu-item>
-</gr-select>
+  <gr-select placeholder="Large" size="large" multiple>
+    <gr-menu-item value="option-1">Option 1</gr-menu-item>
+    <gr-menu-item value="option-2">Option 2</gr-menu-item>
+    <gr-menu-item value="option-3">Option 3</gr-menu-item>
+  </gr-select>
+</div>
 
 ```html
 <gr-select placeholder="Small" size="small" multiple>
@@ -218,7 +234,7 @@ Use the `size` attribute to change a select's size.
 
 The `value` prop is bound to the current selection. As the selection changes, so will the value. To programmatically manage the selection, update the `value` property.
 
-<div class="selecting-example">
+<div class="example-block selecting-example">
 
 <gr-select placeholder="">
   <gr-menu-item value="option-1">Option 1</gr-menu-item>
@@ -276,11 +292,13 @@ The `value` prop is bound to the current selection. As the selection changes, so
 
 The select can be marked invalid using the `invalid` attribute.
 
-<gr-select label="Invalid" invalid>
-  <gr-menu-item value="option-1">Option 1</gr-menu-item>
-  <gr-menu-item value="option-2">Option 2</gr-menu-item>
-  <gr-menu-item value="option-3">Option 3</gr-menu-item>
-</gr-select>
+<div class="example-block">
+  <gr-select label="Invalid" invalid>
+    <gr-menu-item value="option-1">Option 1</gr-menu-item>
+    <gr-menu-item value="option-2">Option 2</gr-menu-item>
+    <gr-menu-item value="option-3">Option 3</gr-menu-item>
+  </gr-select>
+</div>
 
 ```html
 <gr-select label="Invalid" invalid>
@@ -294,11 +312,13 @@ The select can be marked invalid using the `invalid` attribute.
 
 Use the `label` attribute to give the select an accessible label. For labels that contain HTML, use the `label` slot instead.
 
-<gr-select label="Select one">
-  <gr-menu-item value="option-1">Option 1</gr-menu-item>
-  <gr-menu-item value="option-2">Option 2</gr-menu-item>
-  <gr-menu-item value="option-3">Option 3</gr-menu-item>
-</gr-select>
+<div class="example-block">
+  <gr-select label="Select one">
+    <gr-menu-item value="option-1">Option 1</gr-menu-item>
+    <gr-menu-item value="option-2">Option 2</gr-menu-item>
+    <gr-menu-item value="option-3">Option 3</gr-menu-item>
+  </gr-select>
+</div>
 
 ```html
 <gr-select label="Select one">
@@ -312,11 +332,13 @@ Use the `label` attribute to give the select an accessible label. For labels tha
 
 Add descriptive help text to a select with the `help-text` attribute. For help texts that contain HTML, use the `help-text` slot instead.
 
-<gr-select label="Experience" help-text="Please tell us your skill level.">
-  <gr-menu-item value="option-1">Novice</gr-menu-item>
-  <gr-menu-item value="option-2">Intermediate</gr-menu-item>
-  <gr-menu-item value="option-3">Advanced</gr-menu-item>
-</gr-select>
+<div class="example-block">
+  <gr-select label="Experience" help-text="Please tell us your skill level.">
+    <gr-menu-item value="option-1">Novice</gr-menu-item>
+    <gr-menu-item value="option-2">Intermediate</gr-menu-item>
+    <gr-menu-item value="option-3">Advanced</gr-menu-item>
+  </gr-select>
+</div>
 
 ```html
 <gr-select label="Experience" help-text="Please tell us your skill level.">
@@ -332,11 +354,13 @@ Add descriptive invalid text to a select with the `invalid-text` attribute. For 
 
 When you add the `invalid` attribute, the invalid text will be shown. When a select already includes help text, the help text is replaced with invalid text.
 
-<gr-select label="Experience" help-text="Please tell us your skill level." invalid-text="Select your skill level." invalid>
-  <gr-menu-item value="option-1">Novice</gr-menu-item>
-  <gr-menu-item value="option-2">Intermediate</gr-menu-item>
-  <gr-menu-item value="option-3">Advanced</gr-menu-item>
-</gr-select>
+<div class="example-block">
+  <gr-select label="Experience" help-text="Please tell us your skill level." invalid-text="Select your skill level." invalid>
+    <gr-menu-item value="option-1">Novice</gr-menu-item>
+    <gr-menu-item value="option-2">Intermediate</gr-menu-item>
+    <gr-menu-item value="option-3">Advanced</gr-menu-item>
+  </gr-select>
+</div>
 
 ```html
 <gr-select

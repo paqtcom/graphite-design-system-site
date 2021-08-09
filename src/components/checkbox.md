@@ -12,11 +12,13 @@ Checkboxes allow the user to toggle an option on or off.
 
 Use a [field group](/components/field-group) for vertical or horizontal organization of multiple checkboxes.
 
-<gr-field-group label="Select options">
-  <gr-checkbox>Option 1</gr-checkbox>
-  <gr-checkbox>Option 2</gr-checkbox>
-  <gr-checkbox>Option 3</gr-checkbox>
-</gr-field-group>
+<div class="example-block">
+  <gr-field-group label="Select options">
+    <gr-checkbox>Option 1</gr-checkbox>
+    <gr-checkbox>Option 2</gr-checkbox>
+    <gr-checkbox>Option 3</gr-checkbox>
+  </gr-field-group>
+</div>
 
 ```html
 <gr-field-group label="Select options">
@@ -32,7 +34,9 @@ Use a [field group](/components/field-group) for vertical or horizontal organiza
 
 Use the `checked` attribute to activate the checkbox.
 
-<gr-checkbox checked>Checked</gr-checkbox>
+<div class="example-block">
+  <gr-checkbox checked>Checked</gr-checkbox>
+</div>
 
 ```html
 <gr-checkbox checked>Checked</gr-checkbox>
@@ -42,7 +46,9 @@ Use the `checked` attribute to activate the checkbox.
 
 Use the `indeterminate` attribute to make the checkbox indeterminate.
 
-<gr-checkbox indeterminate>Indeterminate</gr-checkbox>
+<div class="example-block">
+  <gr-checkbox indeterminate>Indeterminate</gr-checkbox>
+</div>
 
 ```html
 <gr-checkbox indeterminate>Indeterminate</gr-checkbox>
@@ -52,7 +58,9 @@ Use the `indeterminate` attribute to make the checkbox indeterminate.
 
 Use the `disabled` attribute to disable the checkbox.
 
-<gr-checkbox disabled>Disabled</gr-checkbox>
+<div class="example-block">
+  <gr-checkbox disabled>Disabled</gr-checkbox>
+</div>
 
 ```html
 <gr-checkbox disabled>Disabled</gr-checkbox>
@@ -62,7 +70,9 @@ Use the `disabled` attribute to disable the checkbox.
 
 The checkbox can be marked invalid using the `invalid` attribute.
 
-<gr-checkbox invalid>I agree with the terms</gr-checkbox>
+<div class="example-block">
+  <gr-checkbox invalid>I agree with the terms</gr-checkbox>
+</div>
 
 ```html
 <gr-checkbox invalid>I agree with the terms</gr-checkbox>
@@ -74,7 +84,9 @@ Add descriptive invalid text to a checkbox with the `invalid-text` attribute. Fo
 
 When you add the `invalid` attribute, the invalid text will be shown.
 
-<gr-checkbox invalid-text="You have to agree with our terms to continue." invalid>I agree with the terms</gr-checkbox>
+<div class="example-block">
+  <gr-checkbox invalid-text="You have to agree with our terms to continue." invalid>I agree with the terms</gr-checkbox>
+</div>
 
 ```html
 <gr-checkbox invalid-text="You have to agree with our terms to continue." invalid>

@@ -12,11 +12,13 @@ Radio Groups are used to group multiple radios so they function as a single cont
 
 Have a default option selected whenever possible.
 
-<gr-radio-group value="1">
-  <gr-radio value="1">Item 1</gr-radio>
-  <gr-radio value="2">Item 2</gr-radio>
-  <gr-radio value="3">Item 3</gr-radio>
-</gr-radio-group>
+<div class="example-block">
+  <gr-radio-group value="1">
+    <gr-radio value="1">Item 1</gr-radio>
+    <gr-radio value="2">Item 2</gr-radio>
+    <gr-radio value="3">Item 3</gr-radio>
+  </gr-radio-group>
+</div>
 
 ```html
 <gr-radio-group value="1">
@@ -32,11 +34,13 @@ Have a default option selected whenever possible.
 
 You can render the radio items with a horizontal layout using the `horizontal` attribute.
 
-<gr-radio-group value="3" horizontal>
-  <gr-radio value="1">Item 1</gr-radio>
-  <gr-radio value="2">Item 2</gr-radio>
-  <gr-radio value="3">Item 3</gr-radio>
-</gr-radio-group>
+<div class="example-block">
+  <gr-radio-group value="3" horizontal>
+    <gr-radio value="1">Item 1</gr-radio>
+    <gr-radio value="2">Item 2</gr-radio>
+    <gr-radio value="3">Item 3</gr-radio>
+  </gr-radio-group>
+</div>
 
 ```html
 <gr-radio-group value="3" horizontal>
@@ -50,11 +54,13 @@ You can render the radio items with a horizontal layout using the `horizontal` a
 
 The radio group can be marked invalid using the `invalid` attribute.
 
-<gr-radio-group invalid>
-  <gr-radio value="1">Item 1</gr-radio>
-  <gr-radio value="2">Item 2</gr-radio>
-  <gr-radio value="3">Item 3</gr-radio>
-</gr-radio-group>
+<div class="example-block">
+  <gr-radio-group invalid>
+    <gr-radio value="1">Item 1</gr-radio>
+    <gr-radio value="2">Item 2</gr-radio>
+    <gr-radio value="3">Item 3</gr-radio>
+  </gr-radio-group>
+</div>
 
 ```html
 <gr-radio-group invalid>
@@ -68,11 +74,13 @@ The radio group can be marked invalid using the `invalid` attribute.
 
 Use the `label` attribute to give the radio group an accessible label. For labels that contain HTML, use the `label` slot instead.
 
-<gr-radio-group label="Select an item">
-  <gr-radio value="1">Item 1</gr-radio>
-  <gr-radio value="2">Item 2</gr-radio>
-  <gr-radio value="3">Item 3</gr-radio>
-</gr-radio-group>
+<div class="example-block">
+  <gr-radio-group label="Select an item">
+    <gr-radio value="1">Item 1</gr-radio>
+    <gr-radio value="2">Item 2</gr-radio>
+    <gr-radio value="3">Item 3</gr-radio>
+  </gr-radio-group>
+</div>
 
 ```html
 <gr-radio-group label="Select an item">
@@ -88,11 +96,13 @@ Add descriptive invalid text to a radio group with the `invalid-text` attribute.
 
 When you add the `invalid` attribute, the invalid text will be shown.
 
-<gr-radio-group label="Select an item" invalid-text="Select an item." invalid>
-  <gr-radio value="1">Item 1</gr-radio>
-  <gr-radio value="2">Item 2</gr-radio>
-  <gr-radio value="3">Item 3</gr-radio>
-</gr-radio-group>
+<div class="example-block">
+  <gr-radio-group label="Select an item" invalid-text="Select an item." invalid>
+    <gr-radio value="1">Item 1</gr-radio>
+    <gr-radio value="2">Item 2</gr-radio>
+    <gr-radio value="3">Item 3</gr-radio>
+  </gr-radio-group>
+</div>
 
 ```html
 <gr-radio-group label="Select an item" invalid-text="Select an item." invalid>

@@ -10,11 +10,13 @@ title: Field Group - Graphite Design System
 
 Field Groups are used to group multiple fields, usually [checkboxes](/components/checkbox). It can be leveraged for vertical (default) or horizontal organization of the fields that are supplied as its children.
 
-<gr-field-group>
-  <gr-checkbox checked>Option 1</gr-checkbox>
-  <gr-checkbox>Option 2</gr-checkbox>
-  <gr-checkbox>Option 3</gr-checkbox>
-</gr-field-group>
+<div class="example-block">
+  <gr-field-group>
+    <gr-checkbox checked>Option 1</gr-checkbox>
+    <gr-checkbox>Option 2</gr-checkbox>
+    <gr-checkbox>Option 3</gr-checkbox>
+  </gr-field-group>
+</div>
 
 ```html
 <gr-field-group>
@@ -30,11 +32,13 @@ Field Groups are used to group multiple fields, usually [checkboxes](/components
 
 You can render the fields with a horizontal layout using the `horizontal` attribute.
 
-<gr-field-group horizontal>
-  <gr-checkbox checked>Option 1</gr-checkbox>
-  <gr-checkbox>Option 2</gr-checkbox>
-  <gr-checkbox>Option 3</gr-checkbox>
-</gr-field-group>
+<div class="example-block">
+  <gr-field-group horizontal>
+    <gr-checkbox checked>Option 1</gr-checkbox>
+    <gr-checkbox>Option 2</gr-checkbox>
+    <gr-checkbox>Option 3</gr-checkbox>
+  </gr-field-group>
+</div>
 
 ```html
 <gr-field-group horizontal>
@@ -48,11 +52,13 @@ You can render the fields with a horizontal layout using the `horizontal` attrib
 
 Use the `label` attribute to give the field group an accessible label. For labels that contain HTML, use the `label` slot instead.
 
-<gr-field-group label="Select items">
-  <gr-checkbox checked>Option 1</gr-checkbox>
-  <gr-checkbox>Option 2</gr-checkbox>
-  <gr-checkbox>Option 3</gr-checkbox>
-</gr-field-group>
+<div class="example-block">
+  <gr-field-group label="Select items">
+    <gr-checkbox checked>Option 1</gr-checkbox>
+    <gr-checkbox>Option 2</gr-checkbox>
+    <gr-checkbox>Option 3</gr-checkbox>
+  </gr-field-group>
+</div>
 
 ```html
 <gr-field-group label="Select items">

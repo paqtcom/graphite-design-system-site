@@ -10,7 +10,9 @@ title: Input - Graphite Design System
 
 Inputs can be used in forms, or anywhere where the user needs to provide information.
 
-<gr-input></gr-input>
+<div class="example-block">
+  <gr-input></gr-input>
+</div>
 
 ```html
 <gr-input></gr-input>
@@ -26,7 +28,9 @@ The placeholder text, also commonly known as “ghost text,” is temporary and 
 
 Putting instructions for how to complete an input, requirements, or any other essential information into placeholder text is not accessible. Once a value is entered, this text is no longer viewable; if someone is using an automatic form filler, they will never get the information in the placeholder text. [Help text](#help-text) is the preferred way to communicate this information.
 
-<gr-input placeholder="Type something"></gr-input>
+<div class="example-block">
+  <gr-input placeholder="Type something"></gr-input>
+</div>
 
 ```html
 <gr-input placeholder="Type something"></gr-input>
@@ -36,7 +40,9 @@ Putting instructions for how to complete an input, requirements, or any other es
 
 Add the `clearable` attribute to add a clear button when the input has content.
 
-<gr-input placeholder="Clearable" clearable></gr-input>
+<div class="example-block">
+  <gr-input placeholder="Clearable" clearable></gr-input>
+</div>
 
 ```html
 <gr-input placeholder="Clearable" clearable></gr-input>
@@ -46,11 +52,13 @@ Add the `clearable` attribute to add a clear button when the input has content.
 
 Use the `pill` attribute to give inputs rounded edges.
 
-<gr-input placeholder="Small" size="small" pill></gr-input>
-<br>
-<gr-input placeholder="Medium" size="medium" pill></gr-input>
-<br>
-<gr-input placeholder="Large" size="large" pill></gr-input>
+<div class="example-block">
+  <gr-input placeholder="Small" size="small" pill></gr-input>
+  <br>
+  <gr-input placeholder="Medium" size="medium" pill></gr-input>
+  <br>
+  <gr-input placeholder="Large" size="large" pill></gr-input>
+</div>
 
 ```html
 <gr-input placeholder="Small" size="small" pill></gr-input>
@@ -64,11 +72,13 @@ Use the `pill` attribute to give inputs rounded edges.
 
 Use the `disabled` attribute to disable an input.
 
-<gr-input placeholder="Disabled" size="small" disabled></gr-input>
-<br>
-<gr-input placeholder="Disabled" size="medium" disabled></gr-input>
-<br>
-<gr-input placeholder="Disabled" size="large" disabled></gr-input>
+<div class="example-block">
+  <gr-input placeholder="Disabled" size="small" disabled></gr-input>
+  <br>
+  <gr-input placeholder="Disabled" size="medium" disabled></gr-input>
+  <br>
+  <gr-input placeholder="Disabled" size="large" disabled></gr-input>
+</div>
 
 ```html
 <gr-input placeholder="Disabled" size="small" disabled></gr-input>
@@ -82,11 +92,13 @@ Use the `disabled` attribute to disable an input.
 
 Use the `size` attribute to change an input's size.
 
-<gr-input placeholder="Small" size="small"></gr-input>
-<br>
-<gr-input placeholder="Medium" size="medium"></gr-input>
-<br>
-<gr-input placeholder="Large" size="large"></gr-input>
+<div class="example-block">
+  <gr-input placeholder="Small" size="small"></gr-input>
+  <br>
+  <gr-input placeholder="Medium" size="medium"></gr-input>
+  <br>
+  <gr-input placeholder="Large" size="large"></gr-input>
+</div>
 
 ```html
 <gr-input placeholder="Small" size="small"></gr-input>
@@ -100,7 +112,9 @@ Use the `size` attribute to change an input's size.
 
 The input can be marked invalid using the `invalid` attribute.
 
-<gr-input placeholder="Invalid" invalid></gr-input>
+<div class="example-block">
+  <gr-input placeholder="Invalid" invalid></gr-input>
+</div>
 
 ```html
 <gr-input placeholder="Invalid" invalid></gr-input>
@@ -110,7 +124,9 @@ The input can be marked invalid using the `invalid` attribute.
 
 Use the `label` attribute to give the input an accessible label. For labels that contain HTML, use the `label` slot instead.
 
-<gr-input label="What is your name?"></gr-input>
+<div class="example-block">
+  <gr-input label="What is your name?"></gr-input>
+</div>
 
 ```html
 <gr-input label="What is your name?"></gr-input>
@@ -120,7 +136,9 @@ Use the `label` attribute to give the input an accessible label. For labels that
 
 Add descriptive help text to an input with the `help-text` attribute. For help texts that contain HTML, use the `help-text` slot instead.
 
-<gr-input label="Nickname" help-text="What would you like people to call you?"></gr-input>
+<div class="example-block">
+  <gr-input label="Nickname" help-text="What would you like people to call you?"></gr-input>
+</div>
 
 ```html
 <gr-input label="Nickname" help-text="What would you like people to call you?"></gr-input>
@@ -132,7 +150,9 @@ Add descriptive invalid text to an input with the `invalid-text` attribute. For 
 
 When you add the `invalid` attribute, the invalid text will be shown. When an input already includes help text, the help text is replaced with invalid text.
 
-<gr-input label="Nickname" help-text="What would you like people to call you?" invalid-text="Enter what you would like people to call you." invalid></gr-input>
+<div class="example-block">
+  <gr-input label="Nickname" help-text="What would you like people to call you?" invalid-text="Enter what you would like people to call you." invalid></gr-input>
+</div>
 
 ```html
 <gr-input

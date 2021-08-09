@@ -12,11 +12,13 @@ Radios allow the user to select one option from a group of many.
 
 Radios are designed to be used with [radio groups](/components/radio-group). As such, all of the examples on this page utilize them to demonstrate their correct usage.
 
-<gr-radio-group label="Select an option" value="1">
-  <gr-radio value="1">Option 1</gr-radio>
-  <gr-radio value="2">Option 2</gr-radio>
-  <gr-radio value="3">Option 3</gr-radio>
-</gr-radio-group>
+<div class="example-block">
+  <gr-radio-group label="Select an option" value="1">
+    <gr-radio value="1">Option 1</gr-radio>
+    <gr-radio value="2">Option 2</gr-radio>
+    <gr-radio value="3">Option 3</gr-radio>
+  </gr-radio-group>
+</div>
 
 ```html
 <gr-radio-group label="Select an option" value="1">
@@ -32,12 +34,14 @@ Radios are designed to be used with [radio groups](/components/radio-group). As 
 
 Use the `disabled` attribute to disable a radio.
 
-<gr-radio-group label="Select an option">
-  <gr-radio value="1" checked>Option 1</gr-radio>
-  <gr-radio value="2">Option 2</gr-radio>
-  <gr-radio value="3">Option 3</gr-radio>
-  <gr-radio value="4" disabled>Disabled</gr-radio>
-</gr-radio-group>
+<div class="example-block">
+  <gr-radio-group label="Select an option">
+    <gr-radio value="1" checked>Option 1</gr-radio>
+    <gr-radio value="2">Option 2</gr-radio>
+    <gr-radio value="3">Option 3</gr-radio>
+    <gr-radio value="4" disabled>Disabled</gr-radio>
+  </gr-radio-group>
+</div>
 
 ```html
 <gr-radio-group label="Select an option">

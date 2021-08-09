@@ -10,23 +10,25 @@ title: Menu Item - Graphite Design System
 
 Menu items provide options for the user to pick from in a [menu](/components/menu).
 
-<gr-menu style="max-width: 200px; border: solid 1px var(--gr-panel-border-color); border-radius: var(--gr-border-radius-medium);">
-  <gr-menu-item>Option 1</gr-menu-item>
-  <gr-menu-item>Option 2</gr-menu-item>
-  <gr-menu-item>Option 3</gr-menu-item>
-  <gr-menu-divider></gr-menu-divider>
-  <gr-menu-item checked>Checked</gr-menu-item>
-  <gr-menu-item disabled>Disabled</gr-menu-item>
-  <gr-menu-divider></gr-menu-divider>
-  <gr-menu-item>
-    Start Icon
-    <ion-icon slot="start" name="gift-outline"></ion-icon>
-  </gr-menu-item>
-  <gr-menu-item>
-    End Icon
-    <ion-icon slot="end" name="heart-outline"></ion-icon>
-  </gr-menu-item>
-</gr-menu>
+<div class="example-block">
+  <gr-menu style="max-width: 200px; border: solid 1px var(--gr-panel-border-color); border-radius: var(--gr-border-radius-medium);">
+    <gr-menu-item>Option 1</gr-menu-item>
+    <gr-menu-item>Option 2</gr-menu-item>
+    <gr-menu-item>Option 3</gr-menu-item>
+    <gr-menu-divider></gr-menu-divider>
+    <gr-menu-item checked>Checked</gr-menu-item>
+    <gr-menu-item disabled>Disabled</gr-menu-item>
+    <gr-menu-divider></gr-menu-divider>
+    <gr-menu-item>
+      Start Icon
+      <ion-icon slot="start" name="gift-outline"></ion-icon>
+    </gr-menu-item>
+    <gr-menu-item>
+      End Icon
+      <ion-icon slot="end" name="heart-outline"></ion-icon>
+    </gr-menu-item>
+  </gr-menu>
+</div>
 
 ```html
 <gr-menu
@@ -56,9 +58,11 @@ Menu items provide options for the user to pick from in a [menu](/components/men
 
 Use the `checked` attribute to render a checkmark at the start. Used by the [select](/components/select) element to show which items are selected.
 
-<gr-menu style="max-width: 200px; border: solid 1px var(--gr-panel-border-color); border-radius: var(--gr-border-radius-medium);">
-  <gr-menu-item checked>Checked</gr-menu-item>
-</gr-menu>
+<div class="example-block">
+  <gr-menu style="max-width: 200px; border: solid 1px var(--gr-panel-border-color); border-radius: var(--gr-border-radius-medium);">
+    <gr-menu-item checked>Checked</gr-menu-item>
+  </gr-menu>
+</div>
 
 ```html
 <gr-menu
@@ -72,9 +76,11 @@ Use the `checked` attribute to render a checkmark at the start. Used by the [sel
 
 Use the `disabled` attribute to disable the menu item. Clicks will be suppressed until the disabled state is removed.
 
-<gr-menu style="max-width: 200px; border: solid 1px var(--gr-panel-border-color); border-radius: var(--gr-border-radius-medium);">
-  <gr-menu-item disabled>Disabled</gr-menu-item>
-</gr-menu>
+<div class="example-block">
+  <gr-menu style="max-width: 200px; border: solid 1px var(--gr-panel-border-color); border-radius: var(--gr-border-radius-medium);">
+    <gr-menu-item disabled>Disabled</gr-menu-item>
+  </gr-menu>
+</div>
 
 ```html
 <gr-menu
@@ -91,16 +97,18 @@ Use the `start` and `end` slots to add icons (or other content).
 We recommend [Ionicons](https://ionic.io/ionicons) (which also supports custom SVG), but you could theoretically use any icon library.
 Use the same icon set throughout your application for consistency.
 
-<gr-menu style="max-width: 200px; border: solid 1px var(--gr-panel-border-color); border-radius: var(--gr-border-radius-medium);">
-  <gr-menu-item>
-    Start Icon
-    <ion-icon slot="start" name="gift-outline"></ion-icon>
-  </gr-menu-item>
-  <gr-menu-item>
-    End Icon
-    <ion-icon slot="end" name="heart-outline"></ion-icon>
-  </gr-menu-item>
-</gr-menu>
+<div class="example-block">
+  <gr-menu style="max-width: 200px; border: solid 1px var(--gr-panel-border-color); border-radius: var(--gr-border-radius-medium);">
+    <gr-menu-item>
+      Start Icon
+      <ion-icon slot="start" name="gift-outline"></ion-icon>
+    </gr-menu-item>
+    <gr-menu-item>
+      End Icon
+      <ion-icon slot="end" name="heart-outline"></ion-icon>
+    </gr-menu-item>
+  </gr-menu>
+</div>
 
 ```html
 <gr-menu

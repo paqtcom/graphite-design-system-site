@@ -12,7 +12,9 @@ Textarea can be used in forms, or anywhere where the user needs to provide infor
 
 Unlike the native textarea element, the Graphite textarea does not support loading its value from the inner content. The textarea value should be set in the value attribute.
 
-<gr-textarea></gr-textarea>
+<div class="example-block">
+  <gr-textarea></gr-textarea>
+</div>
 
 ```html
 <gr-textarea></gr-textarea>
@@ -24,7 +26,9 @@ Unlike the native textarea element, the Graphite textarea does not support loadi
 
 Use the `rows` attribute to change the number of text rows that get shown.
 
-<gr-textarea rows="2"></gr-textarea>
+<div class="example-block">
+  <gr-textarea rows="2"></gr-textarea>
+</div>
 
 ```html
 <gr-textarea rows="2"></gr-textarea>
@@ -34,7 +38,9 @@ Use the `rows` attribute to change the number of text rows that get shown.
 
 Use the `placeholder` attribute to add a placeholder.
 
-<gr-textarea placeholder="Type something"></gr-textarea>
+<div class="example-block">
+  <gr-textarea placeholder="Type something"></gr-textarea>
+</div>
 
 ```html
 <gr-textarea placeholder="Type something"></gr-textarea>
@@ -44,7 +50,9 @@ Use the `placeholder` attribute to add a placeholder.
 
 Use the `disabled` attribute to disable an input.
 
-<gr-textarea placeholder="Textarea" disabled></gr-textarea>
+<div class="example-block">
+  <gr-textarea placeholder="Textarea" disabled></gr-textarea>
+</div>
 
 ```html
 <gr-textarea placeholder="Textarea" disabled></gr-textarea>
@@ -54,11 +62,13 @@ Use the `disabled` attribute to disable an input.
 
 Use the `size` attribute to change a textarea's size.
 
-<gr-textarea placeholder="Small" size="small"></gr-textarea>
-<br>
-<gr-textarea placeholder="Medium" size="medium"></gr-textarea>
-<br>
-<gr-textarea placeholder="Large" size="large"></gr-textarea>
+<div class="example-block">
+  <gr-textarea placeholder="Small" size="small"></gr-textarea>
+  <br>
+  <gr-textarea placeholder="Medium" size="medium"></gr-textarea>
+  <br>
+  <gr-textarea placeholder="Large" size="large"></gr-textarea>
+</div>
 
 ```html
 <gr-textarea placeholder="Small" size="small"></gr-textarea>
@@ -72,7 +82,9 @@ Use the `size` attribute to change a textarea's size.
 
 The textarea can be marked invalid using the `invalid` attribute.
 
-<gr-textarea placeholder="Invalid" invalid></gr-input>
+<div class="example-block">
+  <gr-textarea placeholder="Invalid" invalid></gr-input>
+</div>
 
 ```html
 <gr-textarea placeholder="Invalid" invalid></gr-input>
@@ -82,7 +94,9 @@ The textarea can be marked invalid using the `invalid` attribute.
 
 Use the `label` attribute to give the textarea an accessible label. For labels that contain HTML, use the `label` slot instead.
 
-<gr-textarea label="Comments"></gr-textarea>
+<div class="example-block">
+  <gr-textarea label="Comments"></gr-textarea>
+</div>
 
 ```html
 <gr-textarea label="Comments"></gr-textarea>
@@ -92,7 +106,9 @@ Use the `label` attribute to give the textarea an accessible label. For labels t
 
 Add descriptive help text to a textarea with the `help-text` attribute. For help texts that contain HTML, use the `help-text` slot instead.
 
-<gr-textarea label="Feedback" help-text="Please tell us what you think."></gr-textarea>
+<div class="example-block">
+  <gr-textarea label="Feedback" help-text="Please tell us what you think."></gr-textarea>
+</div>
 
 ```html
 <gr-textarea label="Feedback" help-text="Please tell us what you think."></gr-textarea>
@@ -104,7 +120,9 @@ Add descriptive invalid text to a textarea with the `invalid-text` attribute. Fo
 
 When you add the `invalid` attribute, the invalid text will be shown. When a textarea already includes help text, the help text is replaced with invalid text.
 
-<gr-textarea label="Feedback" help-text="Please tell us what you think." invalid-text="Tell us what you think." invalid></gr-textarea>
+<div class="example-block">
+  <gr-textarea label="Feedback" help-text="Please tell us what you think." invalid-text="Tell us what you think." invalid></gr-textarea>
+</div>
 
 ```html
 <gr-textarea
@@ -117,9 +135,11 @@ When you add the `invalid` attribute, the invalid text will be shown. When a tex
 
 ### Prevent Resizing
 
-By default, textareas can be resized vertically by the user. To prevent resizing, set the `resize` attribute to `none`.
+By default, textareas can be resized vertically by the user (in desktop browsers). To prevent resizing, set the `resize` attribute to `none`.
 
-<gr-textarea resize="none"></gr-textarea>
+<div class="example-block">
+  <gr-textarea resize="none"></gr-textarea>
+</div>
 
 ```html
 <gr-textarea resize="none"></gr-textarea>
@@ -129,7 +149,9 @@ By default, textareas can be resized vertically by the user. To prevent resizing
 
 Textareas will automatically resize to expand to fit their content when `resize` is set to `auto`.
 
-<gr-textarea resize="auto"></gr-textarea>
+<div class="example-block">
+  <gr-textarea resize="auto"></gr-textarea>
+</div>
 
 ```html
 <gr-textarea resize="auto"></gr-textarea>
