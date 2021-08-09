@@ -287,7 +287,7 @@ Instead of placeholder text, use the help text description to convey requirement
 
 We recommend validating the users data before form submission. Use visual cues to guide the user as to where the problem lies within the form. This will help to easily identify the elements that need to be corrected.
 
-The validation should appear when the user has clicked away from the input. Once the user corrects the errors within the text field, the validation should disappear once the data is rendered as valid.
+The validation should appear when the user has clicked away from the input (not before), or otherwise when the user submits the form. Once the user corrects the errors within the text field, the validation should disappear once the data is rendered as valid.
 
 For Vue, you can use libraries like [Vuelidate](https://vuelidate-next.netlify.app/) & [VeeValidate](https://vee-validate.logaretm.com/) (using Custom Inputs).
 

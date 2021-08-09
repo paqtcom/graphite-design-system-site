@@ -152,6 +152,16 @@ Sets of checkboxes should always have a clear label that describes what the list
 
 </div>
 
+### Validation
+
+We recommend validating the users data before form submission. Use visual cues to guide the user as to where the problem lies within the form. This will help to easily identify the elements that need to be corrected.
+
+The validation should appear when the user has interacted with the checkbox (not before), or otherwise when the user submits the form. Once the user corrects the errors within the checkbox, the validation should disappear once the data is rendered as valid.
+
+For Vue, you can use libraries like [Vuelidate](https://vuelidate-next.netlify.app/) & [VeeValidate](https://vee-validate.logaretm.com/) (using Custom Inputs).
+
+Of course, you should still validate server-side (if applicable).
+
 ### Always provide invalid text when invalid
 
 Don't just mark a checkbox invalid and expect the user to understand why it's invalid. Furthermore, the invalid text displays an icon which is needed for accessibility, and gives more attention to the invalid field.
