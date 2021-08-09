@@ -102,6 +102,28 @@ Use the `label` attribute to give the textarea an accessible label. For labels t
 <gr-textarea label="Comments"></gr-textarea>
 ```
 
+### Required or optional
+
+Textareas can be marked as optional or required, depending on the situation. For required textareas, there are two styling options: a “(required)” label or an asterisk with the `required-indicator` attribute. If you use an asterisk, be sure to include hint text to explain what the asterisk means. Optional textareas are either denoted with text added to the end of the label — “(optional)” — or have no indication at all.
+
+The asterisk used in this component is an icon that has specific spacing from the label text — not part of the label text itself.
+
+<div class="example-block">
+  <gr-textarea label="Interests (required)" value="Photography, gardening"></gr-textarea>
+  <br>
+  <gr-textarea label="Interests (optional)" value="Photography, gardening"></gr-textarea>
+  <br>
+  <gr-textarea label="Interests" value="Photography, gardening" required-indicator></gr-textarea>
+</div>
+
+```html
+<gr-textarea label="Interests (required)" value="Photography, gardening"></gr-textarea>
+<br />
+<gr-textarea label="Interests (optional)" value="Photography, gardening"></gr-textarea>
+<br />
+<gr-textarea label="Interests" value="Photography, gardening" required-indicator></gr-textarea>
+```
+
 ### Help Text
 
 Add descriptive help text to a textarea with the `help-text` attribute. For help texts that contain HTML, use the `help-text` slot instead.
@@ -201,9 +223,11 @@ Textarea labels and placeholder text should be in sentence case.
 
 ### Mark the minority of fields in a form as optional or required
 
-In a single form, mark only the required fields or only the optional fields, depending on whichever is less frequent in the entire form. If most of the text fields are optional, only the required fields should be give an asterisk or have labels appended with “(required)”. If most of the fields are required, only the optional fields should be appended with “(optional)”. An asterisk should never be used to note that a text field is optional. If you use an asterisk, be sure to include hint text to explain what the asterisk means.
+In a single form, mark only the required fields or only the optional fields, depending on whichever is less frequent in the entire form. If most of the fields are optional, only the required fields should be give an asterisk or have labels appended with “(required)”. If most of the fields are required, only the optional fields should be appended with “(optional)”. An asterisk should never be used to note that a field is optional. If you use an asterisk, be sure to include hint text to explain what the asterisk means.
 
 Try to only ask for information that’s required.
+
+For large forms involving sensitive data like checkout processes and long account creation forms, it's better to mark both required fields & optional fields explicitly (required fields with an asterisk, and label appended with “(optional)” for optional fields).
 
 <div class="usage-guidelines usage-guidelines-do">
 
@@ -295,7 +319,7 @@ Don't just mark an input invalid and expect the user to understand why it's inva
 
 <ion-icon name="checkmark-circle" class="icon"></ion-icon>
 
-<gr-textarea label="Interests" help-text="Describe the interests you'd like to explore through our tutorials." invalid-text="Enter at least one interest." invalid></gr-textarea>
+<gr-textarea label="Interests" help-text="Describe the interests you'd like to explore through our tutorials." invalid-text="Enter at least one interest." required-indicator invalid></gr-textarea>
 
 </div>
 
@@ -303,7 +327,7 @@ Don't just mark an input invalid and expect the user to understand why it's inva
 
 <ion-icon name="close-circle" class="icon"></ion-icon>
 
-<gr-textarea label="Interests" help-text="Describe the interests you'd like to explore through our tutorials." invalid></gr-textarea>
+<gr-textarea label="Interests" help-text="Describe the interests you'd like to explore through our tutorials." required-indicator invalid></gr-textarea>
 
 </div>
 
@@ -317,11 +341,11 @@ Since one gets replaced by the other, the language of the help text and invalid 
 
 <ion-icon name="checkmark-circle" class="icon"></ion-icon>
 
-<gr-textarea label="Interests" help-text="Describe the interests you'd like to explore through our tutorials."></gr-textarea>
+<gr-textarea label="Interests" help-text="Describe the interests you'd like to explore through our tutorials." required-indicator></gr-textarea>
 
 &nbsp;
 
-<gr-textarea label="Interests" help-text="Describe the interests you'd like to explore through our tutorials." invalid-text="Enter at least one interest." invalid></gr-textarea>
+<gr-textarea label="Interests" help-text="Describe the interests you'd like to explore through our tutorials." invalid-text="Enter at least one interest." required-indicator invalid></gr-textarea>
 
 </div>
 
@@ -329,11 +353,11 @@ Since one gets replaced by the other, the language of the help text and invalid 
 
 <ion-icon name="close-circle" class="icon"></ion-icon>
 
-<gr-textarea label="Interests" help-text="Describe the interests you'd like to explore through our tutorials."></gr-textarea>
+<gr-textarea label="Interests" help-text="Describe the interests you'd like to explore through our tutorials." required-indicator></gr-textarea>
 
 &nbsp;
 
-<gr-textarea label="Interests" help-text="Describe the interests you'd like to explore through our tutorials." invalid-text="Enter your interests." invalid></gr-textarea>
+<gr-textarea label="Interests" help-text="Describe the interests you'd like to explore through our tutorials." invalid-text="Enter your interests." required-indicator invalid></gr-textarea>
 
 </div>
 
@@ -347,7 +371,7 @@ Invalid text should be written in 1-2 short, complete sentences and in a clear a
 
 <ion-icon name="checkmark-circle" class="icon"></ion-icon>
 
-<gr-textarea label="Interests" help-text="Describe the interests you'd like to explore through our tutorials." invalid-text="Enter at least one interest." invalid></gr-textarea>
+<gr-textarea label="Interests" help-text="Describe the interests you'd like to explore through our tutorials." invalid-text="Enter at least one interest." required-indicator invalid></gr-textarea>
 
 </div>
 
@@ -355,34 +379,35 @@ Invalid text should be written in 1-2 short, complete sentences and in a clear a
 
 <ion-icon name="close-circle" class="icon"></ion-icon>
 
-<gr-textarea label="Interests" help-text="Describe the interests you'd like to explore through our tutorials." invalid-text="Invalid field" invalid></gr-textarea>
+<gr-textarea label="Interests" help-text="Describe the interests you'd like to explore through our tutorials." invalid-text="Invalid field" required-indicator invalid></gr-textarea>
 
 </div>
 
 ## Properties
 
-| Property         | Attribute        | Description                                                                                                                                                                                               | Type       | Default     |
-| ---------------- | ---------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------- | ----------- | ----------- | ------------ | ---------- | -------- | ------- | ----------- | ----------- |
-| `autocapitalize` | `autocapitalize` | Indicates whether and how the text value should be automatically capitalized as it is entered/edited by the user. Available options: `"off"`, `"none"`, `"on"`, `"sentences"`, `"words"`, `"characters"`. | `string`   | `'off'`     |
-| `autocorrect`    | `autocorrect`    | Whether auto correction should be enabled when the user is entering/editing the text value.                                                                                                               | `"off"     | "on"`       | `'off'`     |
-| `autofocus`      | `autofocus`      | This Boolean attribute lets you specify that a form control should have input focus when the page loads.                                                                                                  | `boolean`  | `false`     |
-| `debounce`       | `debounce`       | Set the amount of time, in milliseconds, to wait to trigger the `gr-change` event after each keystroke. This also impacts form bindings such as `ngModel` or `v-model`.                                   | `number`   | `0`         |
-| `disabled`       | `disabled`       | Set to true to disable the textarea.                                                                                                                                                                      | `boolean`  | `false`     |
-| `enterkeyhint`   | `enterkeyhint`   | A hint to the browser for which enter key to display. Possible values: `"enter"`, `"done"`, `"go"`, `"next"`, `"previous"`, `"search"`, and `"send"`.                                                     | `"done"    | "enter"     | "go"        | "next"       | "previous" | "search" | "send"` | `undefined` |
-| `helpText`       | `help-text`      | The textarea's help text. Alternatively, you can use the help-text slot.                                                                                                                                  | `string`   | `''`        |
-| `inputmode`      | `inputmode`      | The textarea's inputmode attribute.                                                                                                                                                                       | `"decimal" | "email"     | "none"      | "numeric"    | "search"   | "tel"    | "text"  | "url"`      | `undefined` |
-| `invalid`        | `invalid`        | Set to true to indicate this field is invalid. Will display the invalid text instead of the help text                                                                                                     | `boolean`  | `false`     |
-| `invalidText`    | `invalid-text`   | The input's invalid text. Alternatively, you can use the invalid-text slot.                                                                                                                               | `string`   | `''`        |
-| `label`          | `label`          | The textarea's label. Alternatively, you can use the label slot.                                                                                                                                          | `string`   | `undefined` |
-| `maxlength`      | `maxlength`      | Specifies how many characters are allowed.                                                                                                                                                                | `number`   | `undefined` |
-| `name`           | `name`           | The textarea's name attribute.                                                                                                                                                                            | `string`   | `''`        |
-| `placeholder`    | `placeholder`    | The textarea's placeholder text.                                                                                                                                                                          | `string`   | `undefined` |
-| `readonly`       | `readonly`       | If `true`, the user cannot modify the value.                                                                                                                                                              | `boolean`  | `false`     |
-| `resize`         | `resize`         | Controls how the textarea can be resized.                                                                                                                                                                 | `"auto"    | "none"      | "vertical"` | `'vertical'` |
-| `rows`           | `rows`           | The number of rows to display by default.                                                                                                                                                                 | `number`   | `4`         |
-| `size`           | `size`           | The textarea's size.                                                                                                                                                                                      | `"large"   | "medium"    | "small"`    | `'medium'`   |
-| `spellcheck`     | `spellcheck`     | If `true`, the element will have its spelling and grammar checked.                                                                                                                                        | `boolean`  | `false`     |
-| `value`          | `value`          | The textarea's value attribute.                                                                                                                                                                           | `string`   | `''`        |
+| Property            | Attribute            | Description                                                                                                                                                                                               | Type       | Default     |
+| ------------------- | -------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------- | ----------- | ----------- | ------------ | ---------- | -------- | ------- | ----------- | ----------- |
+| `autocapitalize`    | `autocapitalize`     | Indicates whether and how the text value should be automatically capitalized as it is entered/edited by the user. Available options: `"off"`, `"none"`, `"on"`, `"sentences"`, `"words"`, `"characters"`. | `string`   | `'off'`     |
+| `autocorrect`       | `autocorrect`        | Whether auto correction should be enabled when the user is entering/editing the text value.                                                                                                               | `"off"     | "on"`       | `'off'`     |
+| `autofocus`         | `autofocus`          | This Boolean attribute lets you specify that a form control should have input focus when the page loads.                                                                                                  | `boolean`  | `false`     |
+| `debounce`          | `debounce`           | Set the amount of time, in milliseconds, to wait to trigger the `gr-change` event after each keystroke. This also impacts form bindings such as `ngModel` or `v-model`.                                   | `number`   | `0`         |
+| `disabled`          | `disabled`           | Set to true to disable the textarea.                                                                                                                                                                      | `boolean`  | `false`     |
+| `enterkeyhint`      | `enterkeyhint`       | A hint to the browser for which enter key to display. Possible values: `"enter"`, `"done"`, `"go"`, `"next"`, `"previous"`, `"search"`, and `"send"`.                                                     | `"done"    | "enter"     | "go"        | "next"       | "previous" | "search" | "send"` | `undefined` |
+| `helpText`          | `help-text`          | The textarea's help text. Alternatively, you can use the help-text slot.                                                                                                                                  | `string`   | `''`        |
+| `inputmode`         | `inputmode`          | The textarea's inputmode attribute.                                                                                                                                                                       | `"decimal" | "email"     | "none"      | "numeric"    | "search"   | "tel"    | "text"  | "url"`      | `undefined` |
+| `invalid`           | `invalid`            | Set to true to indicate this field is invalid. Will display the invalid text instead of the help text                                                                                                     | `boolean`  | `false`     |
+| `invalidText`       | `invalid-text`       | The input's invalid text. Alternatively, you can use the invalid-text slot.                                                                                                                               | `string`   | `''`        |
+| `label`             | `label`              | The textarea's label. Alternatively, you can use the label slot.                                                                                                                                          | `string`   | `undefined` |
+| `maxlength`         | `maxlength`          | Specifies how many characters are allowed.                                                                                                                                                                | `number`   | `undefined` |
+| `name`              | `name`               | The textarea's name attribute.                                                                                                                                                                            | `string`   | `''`        |
+| `placeholder`       | `placeholder`        | The textarea's placeholder text.                                                                                                                                                                          | `string`   | `undefined` |
+| `readonly`          | `readonly`           | If `true`, the user cannot modify the value.                                                                                                                                                              | `boolean`  | `false`     |
+| `requiredIndicator` | `required-indicator` | Set to true to display a required indicator, adds an asterisk to label                                                                                                                                    | `boolean`  | `false`     |
+| `resize`            | `resize`             | Controls how the textarea can be resized.                                                                                                                                                                 | `"auto"    | "none"      | "vertical"` | `'vertical'` |
+| `rows`              | `rows`               | The number of rows to display by default.                                                                                                                                                                 | `number`   | `4`         |
+| `size`              | `size`               | The textarea's size.                                                                                                                                                                                      | `"large"   | "medium"    | "small"`    | `'medium'`   |
+| `spellcheck`        | `spellcheck`         | If `true`, the element will have its spelling and grammar checked.                                                                                                                                        | `boolean`  | `false`     |
+| `value`             | `value`              | The textarea's value attribute.                                                                                                                                                                           | `string`   | `''`        |
 
 ## Events
 

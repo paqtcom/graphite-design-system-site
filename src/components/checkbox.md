@@ -71,11 +71,20 @@ Use the `disabled` attribute to disable the checkbox.
 The checkbox can be marked invalid using the `invalid` attribute.
 
 <div class="example-block">
-  <gr-checkbox invalid>I agree with the terms</gr-checkbox>
+  <gr-checkbox invalid>I agree to the <a href="https://www.termsfeed.com/blog/sample-terms-and-conditions-template/" target="_blank" rel="noopener noreferrer">terms</a></gr-checkbox>
 </div>
 
 ```html
-<gr-checkbox invalid>I agree with the terms</gr-checkbox>
+<gr-checkbox invalid>
+  I agree to the
+  <a
+    href="https://www.termsfeed.com/blog/sample-terms-and-conditions-template/"
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+    terms
+  </a>
+</gr-checkbox>
 ```
 
 ### Invalid Text
@@ -85,12 +94,19 @@ Add descriptive invalid text to a checkbox with the `invalid-text` attribute. Fo
 When you add the `invalid` attribute, the invalid text will be shown.
 
 <div class="example-block">
-  <gr-checkbox invalid-text="You have to agree with our terms to continue." invalid>I agree with the terms</gr-checkbox>
+  <gr-checkbox invalid-text="You have to agree to our terms to continue." invalid>I agree to the <a href="https://www.termsfeed.com/blog/sample-terms-and-conditions-template/" target="_blank" rel="noopener noreferrer">terms</a></gr-checkbox>
 </div>
 
 ```html
-<gr-checkbox invalid-text="You have to agree with our terms to continue." invalid>
-  I agree with the terms
+<gr-checkbox invalid-text="You have to agree to our terms to continue." invalid>
+  I agree to the
+  <a
+    href="https://www.termsfeed.com/blog/sample-terms-and-conditions-template/"
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+    terms
+  </a>
 </gr-checkbox>
 ```
 
@@ -170,8 +186,8 @@ Don't just mark a checkbox invalid and expect the user to understand why it's in
 
 <ion-icon name="checkmark-circle" class="icon"></ion-icon>
 
-<gr-checkbox invalid-text="You have to agree with our terms to continue." invalid>
-  I agree with the terms
+<gr-checkbox invalid-text="You have to agree to our terms to continue." invalid>
+  I agree to the <a href="https://www.termsfeed.com/blog/sample-terms-and-conditions-template/" target="_blank" rel="noopener noreferrer">terms</a>
 </gr-checkbox>
 
 </div>
@@ -180,7 +196,7 @@ Don't just mark a checkbox invalid and expect the user to understand why it's in
 
 <ion-icon name="close-circle" class="icon"></ion-icon>
 
-<gr-checkbox invalid>I agree with the terms</gr-checkbox>
+<gr-checkbox invalid>I agree to the <a href="https://www.termsfeed.com/blog/sample-terms-and-conditions-template/" target="_blank" rel="noopener noreferrer">terms</a></gr-checkbox>
 
 </div>
 
@@ -194,8 +210,8 @@ Invalid text should be written in 1-2 short, complete sentences and in a clear a
 
 <ion-icon name="checkmark-circle" class="icon"></ion-icon>
 
-<gr-checkbox invalid-text="You have to agree with our terms to continue." invalid>
-  I agree with the terms
+<gr-checkbox invalid-text="You have to agree to our terms to continue." invalid>
+  I agree to the <a href="https://www.termsfeed.com/blog/sample-terms-and-conditions-template/" target="_blank" rel="noopener noreferrer">terms</a>
 </gr-checkbox>
 
 </div>
@@ -205,7 +221,7 @@ Invalid text should be written in 1-2 short, complete sentences and in a clear a
 <ion-icon name="close-circle" class="icon"></ion-icon>
 
 <gr-checkbox invalid-text="Required field" invalid>
-  I agree with the terms
+  I agree to the <a href="https://www.termsfeed.com/blog/sample-terms-and-conditions-template/" target="_blank" rel="noopener noreferrer">terms</a>
 </gr-checkbox>
 
 </div>

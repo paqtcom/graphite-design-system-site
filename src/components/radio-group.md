@@ -90,6 +90,52 @@ Use the `label` attribute to give the radio group an accessible label. For label
 </gr-radio-group>
 ```
 
+### Required or optional
+
+Radio groups can be marked as optional or required, depending on the situation. For required radio groups, there are two styling options: a “(required)” label or an asterisk with the `required-indicator` attribute. If you use an asterisk, be sure to include hint text to explain what the asterisk means. Optional radio groups are either denoted with text added to the end of the label — “(optional)” — or have no indication at all.
+
+The asterisk used in this component is an icon that has specific spacing from the label text — not part of the label text itself.
+
+<div class="example-block">
+  <gr-radio-group label="Landing page (required)">
+    <gr-radio value="homepage">Homepage</gr-radio>
+    <gr-radio value="gallery">Gallery</gr-radio>
+    <gr-radio value="contact-us">Contact us</gr-radio>
+  </gr-radio-group>
+  <br>
+  <gr-radio-group label="Landing page (optional)">
+    <gr-radio value="homepage">Homepage</gr-radio>
+    <gr-radio value="gallery">Gallery</gr-radio>
+    <gr-radio value="contact-us">Contact us</gr-radio>
+  </gr-radio-group>
+  <br>
+  <gr-radio-group label="Landing page" required-indicator>
+    <gr-radio value="homepage">Homepage</gr-radio>
+    <gr-radio value="gallery">Gallery</gr-radio>
+    <gr-radio value="contact-us">Contact us</gr-radio>
+  </gr-radio-group>
+</div>
+
+```html
+<gr-radio-group label="Landing page (required)">
+  <gr-radio value="homepage">Homepage</gr-radio>
+  <gr-radio value="gallery">Gallery</gr-radio>
+  <gr-radio value="contact-us">Contact us</gr-radio>
+</gr-radio-group>
+<br />
+<gr-radio-group label="Landing page (optional)">
+  <gr-radio value="homepage">Homepage</gr-radio>
+  <gr-radio value="gallery">Gallery</gr-radio>
+  <gr-radio value="contact-us">Contact us</gr-radio>
+</gr-radio-group>
+<br />
+<gr-radio-group label="Landing page" required-indicator>
+  <gr-radio value="homepage">Homepage</gr-radio>
+  <gr-radio value="gallery">Gallery</gr-radio>
+  <gr-radio value="contact-us">Contact us</gr-radio>
+</gr-radio-group>
+```
+
 ### Invalid Text
 
 Add descriptive invalid text to a radio group with the `invalid-text` attribute. For invalid texts that contain HTML, use the `invalid-text` slot instead.
@@ -142,6 +188,46 @@ Radio groups should always have a label that clearly describes what the list of 
 
 </div>
 
+### Mark the minority of fields in a form as optional or required
+
+In a single form, mark only the required fields or only the optional fields, depending on whichever is less frequent in the entire form. If most of the fields are optional, only the required fields should be give an asterisk or have labels appended with “(required)”. If most of the fields are required, only the optional fields should be appended with “(optional)”. An asterisk should never be used to note that a field is optional. If you use an asterisk, be sure to include hint text to explain what the asterisk means.
+
+Try to only ask for information that’s required.
+
+For large forms involving sensitive data like checkout processes and long account creation forms, it's better to mark both required fields & optional fields explicitly (required fields with an asterisk, and label appended with “(optional)” for optional fields).
+
+<div class="usage-guidelines usage-guidelines-do">
+
+<ion-icon name="checkmark-circle" class="icon"></ion-icon>
+
+<gr-input label="Name" value="Sofie van der Grift"></gr-input>
+<br>
+<gr-radio-group label="Landing page" value="homepage">
+<gr-radio value="homepage">Homepage</gr-radio>
+<gr-radio value="gallery">Gallery</gr-radio>
+<gr-radio value="contact-us">Contact us</gr-radio>
+</gr-radio-group>
+<br>
+<gr-input label="Email address (optional)" value="soof@way2web.com"></gr-input>
+
+</div>
+
+<div class="usage-guidelines usage-guidelines-dont">
+
+<ion-icon name="close-circle" class="icon"></ion-icon>
+
+<gr-input label="Name (required)" value="Sofie van der Grift"></gr-input>
+<br>
+<gr-radio-group label="Landing page (required)" value="homepage">
+<gr-radio value="homepage">Homepage</gr-radio>
+<gr-radio value="gallery">Gallery</gr-radio>
+<gr-radio value="contact-us">Contact us</gr-radio>
+</gr-radio-group>
+<br>
+<gr-input label="Email address" value="soof@way2web.com"></gr-input>
+
+</div>
+
 ### Validation
 
 We recommend validating the users data before form submission. Use visual cues to guide the user as to where the problem lies within the form. This will help to easily identify the elements that need to be corrected.
@@ -160,7 +246,7 @@ Don't just mark a radio group invalid and expect the user to understand why it's
 
 <ion-icon name="checkmark-circle" class="icon"></ion-icon>
 
-<gr-radio-group label="Landing page" invalid-text="Select the landing page you want." invalid>
+<gr-radio-group label="Landing page" invalid-text="Select the landing page you want." required-indicator invalid>
   <gr-radio value="homepage">Homepage</gr-radio>
   <gr-radio value="gallery">Gallery</gr-radio>
   <gr-radio value="contact-us">Contact us</gr-radio>
@@ -172,7 +258,7 @@ Don't just mark a radio group invalid and expect the user to understand why it's
 
 <ion-icon name="close-circle" class="icon"></ion-icon>
 
-<gr-radio-group label="Landing page" invalid>
+<gr-radio-group label="Landing page" required-indicator invalid>
   <gr-radio value="homepage">Homepage</gr-radio>
   <gr-radio value="gallery">Gallery</gr-radio>
   <gr-radio value="contact-us">Contact us</gr-radio>
@@ -190,7 +276,7 @@ Invalid text should be written in 1-2 short, complete sentences and in a clear a
 
 <ion-icon name="checkmark-circle" class="icon"></ion-icon>
 
-<gr-radio-group label="Landing page" invalid-text="Select the landing page you want." invalid>
+<gr-radio-group label="Landing page" invalid-text="Select the landing page you want." required-indicator invalid>
   <gr-radio value="homepage">Homepage</gr-radio>
   <gr-radio value="gallery">Gallery</gr-radio>
   <gr-radio value="contact-us">Contact us</gr-radio>
@@ -202,7 +288,7 @@ Invalid text should be written in 1-2 short, complete sentences and in a clear a
 
 <ion-icon name="close-circle" class="icon"></ion-icon>
 
-<gr-radio-group label="Landing page" invalid-text="Invalid field" invalid>
+<gr-radio-group label="Landing page" invalid-text="Invalid field" required-indicator invalid>
   <gr-radio value="homepage">Homepage</gr-radio>
   <gr-radio value="gallery">Gallery</gr-radio>
   <gr-radio value="contact-us">Contact us</gr-radio>
@@ -220,6 +306,7 @@ Invalid text should be written in 1-2 short, complete sentences and in a clear a
 | `invalidText`         | `invalid-text`          | The radio group's invalid text. Alternatively, you can use the invalid-text slot.                    | `string`  | `''`           |
 | `label`               | `label`                 | The radio group label. Required for proper accessibility. Alternatively, you can use the label slot. | `string`  | `''`           |
 | `name`                | `name`                  | The name of the control, which is submitted with the form data.                                      | `string`  | `this.inputId` |
+| `requiredIndicator`   | `required-indicator`    | Set to true to display a required indicator, adds an asterisk to label                               | `boolean` | `false`        |
 | `value`               | `value`                 | the value of the radio group.                                                                        | `any`     | `undefined`    |
 
 ## Events

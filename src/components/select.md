@@ -293,7 +293,7 @@ The `value` prop is bound to the current selection. As the selection changes, so
 The select can be marked invalid using the `invalid` attribute.
 
 <div class="example-block">
-  <gr-select label="Invalid" invalid>
+  <gr-select invalid>
     <gr-menu-item value="option-1">Option 1</gr-menu-item>
     <gr-menu-item value="option-2">Option 2</gr-menu-item>
     <gr-menu-item value="option-3">Option 3</gr-menu-item>
@@ -301,7 +301,7 @@ The select can be marked invalid using the `invalid` attribute.
 </div>
 
 ```html
-<gr-select label="Invalid" invalid>
+<gr-select invalid>
   <gr-menu-item value="option-1">Option 1</gr-menu-item>
   <gr-menu-item value="option-2">Option 2</gr-menu-item>
   <gr-menu-item value="option-3">Option 3</gr-menu-item>
@@ -325,6 +325,46 @@ Use the `label` attribute to give the select an accessible label. For labels tha
   <gr-menu-item value="option-1">Option 1</gr-menu-item>
   <gr-menu-item value="option-2">Option 2</gr-menu-item>
   <gr-menu-item value="option-3">Option 3</gr-menu-item>
+</gr-select>
+```
+
+### Required or optional
+
+Selects can be marked as optional or required, depending on the situation. For required selects, there are two styling options: a “(required)” label or an asterisk with the `required-indicator` attribute. If you use an asterisk, be sure to include hint text to explain what the asterisk means. Optional selects are either denoted with text added to the end of the label — “(optional)” — or have no indication at all.
+
+The asterisk used in this component is an icon that has specific spacing from the label text — not part of the label text itself.
+
+<div class="example-block">
+  <gr-select label="Country (optional)" placeholder="Select a country...">
+    <gr-menu-item value="nl">Netherlands</gr-menu-item>
+    <gr-menu-item value="us">United States</gr-menu-item>
+  </gr-select>
+  <br>
+  <gr-select label="Country (required)" placeholder="Select a country...">
+    <gr-menu-item value="nl">Netherlands</gr-menu-item>
+    <gr-menu-item value="us">United States</gr-menu-item>
+  </gr-select>
+  <br>
+  <gr-select label="Country" placeholder="Select a country..." required-indicator>
+    <gr-menu-item value="nl">Netherlands</gr-menu-item>
+    <gr-menu-item value="us">United States</gr-menu-item>
+  </gr-select>
+</div>
+
+```html
+<gr-select label="Country (optional)" placeholder="Select a country...">
+  <gr-menu-item value="nl">Netherlands</gr-menu-item>
+  <gr-menu-item value="us">United States</gr-menu-item>
+</gr-select>
+<br />
+<gr-select label="Country (required)" placeholder="Select a country...">
+  <gr-menu-item value="nl">Netherlands</gr-menu-item>
+  <gr-menu-item value="us">United States</gr-menu-item>
+</gr-select>
+<br />
+<gr-select label="Country" placeholder="Select a country..." required-indicator>
+  <gr-menu-item value="nl">Netherlands</gr-menu-item>
+  <gr-menu-item value="us">United States</gr-menu-item>
 </gr-select>
 ```
 
@@ -485,9 +525,11 @@ Field labels, placeholder text, and menu items should be in sentence case.
 
 ### Mark the minority of fields in a form as optional or required
 
-In a single form, mark only the required fields or only the optional fields, depending on whichever is less frequent in the entire form. If most of the text fields are optional, only the required fields should be give an asterisk or have labels appended with “(required)”. If most of the fields are required, only the optional fields should be appended with “(optional)”. An asterisk should never be used to note that a text field is optional. If you use an asterisk, be sure to include hint text to explain what the asterisk means.
+In a single form, mark only the required fields or only the optional fields, depending on whichever is less frequent in the entire form. If most of the fields are optional, only the required fields should be give an asterisk or have labels appended with “(required)”. If most of the fields are required, only the optional fields should be appended with “(optional)”. An asterisk should never be used to note that a field is optional. If you use an asterisk, be sure to include hint text to explain what the asterisk means.
 
 Try to only ask for information that’s required.
+
+For large forms involving sensitive data like checkout processes and long account creation forms, it's better to mark both required fields & optional fields explicitly (required fields with an asterisk, and label appended with “(optional)” for optional fields).
 
 <div class="usage-guidelines usage-guidelines-do">
 
@@ -577,7 +619,7 @@ Don't just mark a select invalid and expect the user to understand why it's inva
 
 <ion-icon name="checkmark-circle" class="icon"></ion-icon>
 
-<gr-select label="Preferred contact method" placeholder="Select contact method..." invalid-text="Select a contact method" invalid>
+<gr-select label="Preferred contact method" placeholder="Select contact method..." invalid-text="Select a contact method" required-indicator invalid>
   <gr-menu-item value="email">Email</gr-menu-item>
   <gr-menu-item value="phone">Phone</gr-menu-item>
 </gr-select>
@@ -588,7 +630,7 @@ Don't just mark a select invalid and expect the user to understand why it's inva
 
 <ion-icon name="close-circle" class="icon"></ion-icon>
 
-<gr-select label="Preferred contact method" placeholder="Select contact method..." invalid>
+<gr-select label="Preferred contact method" placeholder="Select contact method..." required-indicator invalid>
   <gr-menu-item value="email">Email</gr-menu-item>
   <gr-menu-item value="phone">Phone</gr-menu-item>
 </gr-select>
@@ -605,12 +647,12 @@ Since one gets replaced by the other, the language of the help text and invalid 
 
 <ion-icon name="checkmark-circle" class="icon"></ion-icon>
 
-<gr-select label="Preferred contact method" placeholder="Select contact method..." help-text="Select the best way to contact you in case there's an issue with your account.">
+<gr-select label="Preferred contact method" placeholder="Select contact method..." help-text="Select the best way to contact you in case there's an issue with your account." required-indicator>
   <gr-menu-item value="email">Email</gr-menu-item>
   <gr-menu-item value="phone">Phone</gr-menu-item>
 </gr-select>
 &nbsp;
-<gr-select label="Preferred contact method" placeholder="Select contact method..." help-text="Select the best way to contact you in case there's an issue with your account." invalid-text="Select a contact method" invalid>
+<gr-select label="Preferred contact method" placeholder="Select contact method..." help-text="Select the best way to contact you in case there's an issue with your account." invalid-text="Select a contact method" required-indicator invalid>
   <gr-menu-item value="email">Email</gr-menu-item>
   <gr-menu-item value="phone">Phone</gr-menu-item>
 </gr-select>
@@ -621,12 +663,12 @@ Since one gets replaced by the other, the language of the help text and invalid 
 
 <ion-icon name="close-circle" class="icon"></ion-icon>
 
-<gr-select label="Preferred contact method" placeholder="Select contact method..." help-text="Select a contact method.">
+<gr-select label="Preferred contact method" placeholder="Select contact method..." help-text="Select a contact method." required-indicator>
   <gr-menu-item value="email">Email</gr-menu-item>
   <gr-menu-item value="phone">Phone</gr-menu-item>
 </gr-select>
 &nbsp;
-<gr-select label="Preferred contact method" placeholder="Select contact method..." help-text="Select a contact method." invalid-text="Select a contact method." invalid>
+<gr-select label="Preferred contact method" placeholder="Select contact method..." help-text="Select a contact method." invalid-text="Select a contact method." required-indicator invalid>
   <gr-menu-item value="email">Email</gr-menu-item>
   <gr-menu-item value="phone">Phone</gr-menu-item>
 </gr-select>
@@ -643,7 +685,7 @@ Invalid text should be written in 1-2 short, complete sentences and in a clear a
 
 <ion-icon name="checkmark-circle" class="icon"></ion-icon>
 
-<gr-select label="Preferred contact method" placeholder="Select contact method..." invalid-text="Select a contact method." invalid>
+<gr-select label="Preferred contact method" placeholder="Select contact method..." invalid-text="Select a contact method." required-indicator invalid>
   <gr-menu-item value="email">Email</gr-menu-item>
   <gr-menu-item value="phone">Phone</gr-menu-item>
 </gr-select>
@@ -654,7 +696,7 @@ Invalid text should be written in 1-2 short, complete sentences and in a clear a
 
 <ion-icon name="close-circle" class="icon"></ion-icon>
 
-<gr-select label="Preferred contact method" placeholder="Select contact method..."  invalid-text="Invalid field" invalid>
+<gr-select label="Preferred contact method" placeholder="Select contact method..."  invalid-text="Invalid field" required-indicator invalid>
   <gr-menu-item value="email">Email</gr-menu-item>
   <gr-menu-item value="phone">Phone</gr-menu-item>
 </gr-select>
@@ -663,22 +705,23 @@ Invalid text should be written in 1-2 short, complete sentences and in a clear a
 
 ## Properties
 
-| Property         | Attribute          | Description                                                                                                                                                                                    | Type      | Default   |
-| ---------------- | ------------------ | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------- | --------- | -------- | ---------- |
-| `clearable`      | `clearable`        | Set to true to add a clear button when the select is populated.                                                                                                                                | `boolean` | `false`   |
-| `disabled`       | `disabled`         | Set to true to disable the select control.                                                                                                                                                     | `boolean` | `false`   |
-| `helpText`       | `help-text`        | The select's help text. Alternatively, you can use the help-text slot.                                                                                                                         | `string`  | `''`      |
-| `hoist`          | `hoist`            | Enable this option to prevent the panel from being clipped when the component is placed inside a container with `overflow: auto                                                                | scroll`.  | `boolean` | `false`  |
-| `invalid`        | `invalid`          | Set to true to indicate this field is invalid. Will display the invalid text instead of the help text                                                                                          | `boolean` | `false`   |
-| `invalidText`    | `invalid-text`     | The select's invalid text. Alternatively, you can use the invalid-text slot.                                                                                                                   | `string`  | `''`      |
-| `label`          | `label`            | The select's label. Alternatively, you can use the label slot.                                                                                                                                 | `string`  | `''`      |
-| `maxTagsVisible` | `max-tags-visible` | The maximum number of tags to show when `multiple` is true. After the maximum, "+n" will be shown to indicate the number of additional items that are selected. Set to -1 to remove the limit. | `number`  | `3`       |
-| `multiple`       | `multiple`         | Set to true to enable multiselect.                                                                                                                                                             | `boolean` | `false`   |
-| `name`           | `name`             | The select's name.                                                                                                                                                                             | `string`  | `''`      |
-| `pill`           | `pill`             | Set to true to draw a pill-style select with rounded edges.                                                                                                                                    | `boolean` | `false`   |
-| `placeholder`    | `placeholder`      | The select's placeholder text.                                                                                                                                                                 | `string`  | `''`      |
-| `size`           | `size`             | The select's size.                                                                                                                                                                             | `"large"  | "medium"  | "small"` | `'medium'` |
-| `value`          | `value`            | The value of the control. This will be a string or an array depending on `multiple`.                                                                                                           | `string   | string[]` | `''`     |
+| Property            | Attribute            | Description                                                                                                                                                                                    | Type      | Default   |
+| ------------------- | -------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------- | --------- | -------- | ---------- |
+| `clearable`         | `clearable`          | Set to true to add a clear button when the select is populated.                                                                                                                                | `boolean` | `false`   |
+| `disabled`          | `disabled`           | Set to true to disable the select control.                                                                                                                                                     | `boolean` | `false`   |
+| `helpText`          | `help-text`          | The select's help text. Alternatively, you can use the help-text slot.                                                                                                                         | `string`  | `''`      |
+| `hoist`             | `hoist`              | Enable this option to prevent the panel from being clipped when the component is placed inside a container with `overflow: auto                                                                | scroll`.  | `boolean` | `false`  |
+| `invalid`           | `invalid`            | Set to true to indicate this field is invalid. Will display the invalid text instead of the help text                                                                                          | `boolean` | `false`   |
+| `invalidText`       | `invalid-text`       | The select's invalid text. Alternatively, you can use the invalid-text slot.                                                                                                                   | `string`  | `''`      |
+| `label`             | `label`              | The select's label. Alternatively, you can use the label slot.                                                                                                                                 | `string`  | `''`      |
+| `maxTagsVisible`    | `max-tags-visible`   | The maximum number of tags to show when `multiple` is true. After the maximum, "+n" will be shown to indicate the number of additional items that are selected. Set to -1 to remove the limit. | `number`  | `3`       |
+| `multiple`          | `multiple`           | Set to true to enable multiselect.                                                                                                                                                             | `boolean` | `false`   |
+| `name`              | `name`               | The select's name.                                                                                                                                                                             | `string`  | `''`      |
+| `pill`              | `pill`               | Set to true to draw a pill-style select with rounded edges.                                                                                                                                    | `boolean` | `false`   |
+| `placeholder`       | `placeholder`        | The select's placeholder text.                                                                                                                                                                 | `string`  | `''`      |
+| `requiredIndicator` | `required-indicator` | Set to true to display a required indicator, adds an asterisk to label                                                                                                                         | `boolean` | `false`   |
+| `size`              | `size`               | The select's size.                                                                                                                                                                             | `"large"  | "medium"  | "small"` | `'medium'` |
+| `value`             | `value`              | The value of the control. This will be a string or an array depending on `multiple`.                                                                                                           | `string   | string[]` | `''`     |
 
 ## Events
 

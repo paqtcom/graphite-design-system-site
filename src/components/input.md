@@ -132,6 +132,28 @@ Use the `label` attribute to give the input an accessible label. For labels that
 <gr-input label="What is your name?"></gr-input>
 ```
 
+### Required or optional
+
+Inputs can be marked as optional or required, depending on the situation. For required inputs, there are two styling options: a “(required)” label or an asterisk with the `required-indicator` attribute. If you use an asterisk, be sure to include hint text to explain what the asterisk means. Optional inputs are either denoted with text added to the end of the label — “(optional)” — or have no indication at all.
+
+The asterisk used in this component is an icon that has specific spacing from the label text — not part of the label text itself.
+
+<div class="example-block">
+  <gr-input label="Email address (required)" value="soof@way2web.nl"></gr-input>
+  <br>
+  <gr-input label="Email address (optional)" value="soof@way2web.nl"></gr-input>
+  <br>
+  <gr-input label="Email address" value="soof@way2web.nl" required-indicator></gr-input>
+</div>
+
+```html
+<gr-input label="Email address (required)" value="soof@way2web.nl"></gr-input>
+<br />
+<gr-input label="Email address (optional)" value="soof@way2web.nl"></gr-input>
+<br />
+<gr-input label="Email address" value="soof@way2web.nl" required-indicator></gr-input>
+```
+
 ### Help Text
 
 Add descriptive help text to an input with the `help-text` attribute. For help texts that contain HTML, use the `help-text` slot instead.
@@ -207,9 +229,11 @@ Field labels and placeholder text should be in sentence case.
 
 ### Mark the minority of fields in a form as optional or required
 
-In a single form, mark only the required fields or only the optional fields, depending on whichever is less frequent in the entire form. If most of the text fields are optional, only the required fields should be give an asterisk or have labels appended with “(required)”. If most of the fields are required, only the optional fields should be appended with “(optional)”. An asterisk should never be used to note that a text field is optional. If you use an asterisk, be sure to include hint text to explain what the asterisk means.
+In a single form, mark only the required fields or only the optional fields, depending on whichever is less frequent in the entire form. If most of the fields are optional, only the required fields should be give an asterisk or have labels appended with “(required)”. If most of the fields are required, only the optional fields should be appended with “(optional)”. An asterisk should never be used to note that a field is optional. If you use an asterisk, be sure to include hint text to explain what the asterisk means.
 
 Try to only ask for information that’s required.
+
+For large forms involving sensitive data like checkout processes and long account creation forms, it's better to mark both required fields & optional fields explicitly (required fields with an asterisk, and label appended with “(optional)” for optional fields).
 
 <div class="usage-guidelines usage-guidelines-do">
 
@@ -301,7 +325,7 @@ Don't just mark an input invalid and expect the user to understand why it's inva
 
 <ion-icon name="checkmark-circle" class="icon"></ion-icon>
 
-<gr-input label="Credit card number" invalid-text="Enter your credit card number." invalid></gr-input>
+<gr-input label="Credit card number" invalid-text="Enter your credit card number." required-indicator invalid></gr-input>
 
 </div>
 
@@ -309,7 +333,7 @@ Don't just mark an input invalid and expect the user to understand why it's inva
 
 <ion-icon name="close-circle" class="icon"></ion-icon>
 
-<gr-input label="Credit card number" invalid></gr-input>
+<gr-input label="Credit card number" required-indicator invalid></gr-input>
 
 </div>
 
@@ -323,11 +347,11 @@ Since one gets replaced by the other, the language of the help text and invalid 
 
 <ion-icon name="checkmark-circle" class="icon"></ion-icon>
 
-<gr-input label="Password" type="password" help-text="Passwords must be at least 8 characters."></gr-input>
+<gr-input label="Password" type="password" help-text="Passwords must be at least 8 characters." required-indicator></gr-input>
 
 &nbsp;
 
-<gr-input label="Password" type="password" value="example" help-text="Passwords must be at least 8 characters." invalid-text="Create a password  with at least 8 characters." invalid></gr-input>
+<gr-input label="Password" type="password" value="example" help-text="Passwords must be at least 8 characters." invalid-text="Create a password  with at least 8 characters." required-indicator invalid></gr-input>
 
 </div>
 
@@ -335,11 +359,11 @@ Since one gets replaced by the other, the language of the help text and invalid 
 
 <ion-icon name="close-circle" class="icon"></ion-icon>
 
-<gr-input label="Password" type="password" help-text="Passwords must be at least 8 characters."></gr-input>
+<gr-input label="Password" type="password" help-text="Passwords must be at least 8 characters." required-indicator></gr-input>
 
 &nbsp;
 
-<gr-input label="Password" type="password" value="example" help-text="Passwords must be at least 8 characters." invalid-text="Passwords must be at least 8 characters." invalid></gr-input>
+<gr-input label="Password" type="password" value="example" help-text="Passwords must be at least 8 characters." invalid-text="Passwords must be at least 8 characters." required-indicator invalid></gr-input>
 
 </div>
 
@@ -353,11 +377,11 @@ Invalid text should be written in 1-2 short, complete sentences and in a clear a
 
 <ion-icon name="checkmark-circle" class="icon"></ion-icon>
 
-<gr-input label="Credit card number" invalid-text="Enter your credit card number." invalid></gr-input>
+<gr-input label="Credit card number" invalid-text="Enter your credit card number." required-indicator invalid></gr-input>
 
 &nbsp;
 
-<gr-input label="Password" type="password" value="example" invalid-text="Create a password with at least 8 characters." invalid></gr-input>
+<gr-input label="Password" type="password" value="example" invalid-text="Create a password with at least 8 characters." required-indicator invalid></gr-input>
 
 </div>
 
@@ -365,42 +389,43 @@ Invalid text should be written in 1-2 short, complete sentences and in a clear a
 
 <ion-icon name="close-circle" class="icon"></ion-icon>
 
-<gr-input label="Credit card number" invalid-text="Invalid field" invalid></gr-input>
+<gr-input label="Credit card number" invalid-text="Invalid field" required-indicator invalid></gr-input>
 
 &nbsp;
 
-<gr-input label="Password" type="password" value="example" invalid-text="Password requirements not met!" invalid></gr-input>
+<gr-input label="Password" type="password" value="example" invalid-text="Password requirements not met!" required-indicator invalid></gr-input>
 
 </div>
 
 ## Properties
 
-| Property         | Attribute        | Description                                                                                                                                                                                               | Type       | Default          |
-| ---------------- | ---------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------- | ---------------- | -------- | ---------- | ---------- | ---------- | ------------------ | ------------ | ----------------- | ------------- | ------------------ | ---------- | ---------- | -------------- | ------------------ | --------------- | -------------------- | -------------- | ---------------- | --------------- | --------------- | --------------- | ---------------- | ---------------- | ---------------- | ---------------- | --------- | -------------- | ------------- | --------- | --------------- | -------------------- | ---------------- | ----------- | -------- | -------------- | ------------- | -------- | --------- | ---------------------- | -------------------- | ---------- | ------ | ---------- | ------------ | ----------- | ----- | ------------------ | -------------- | --------------- | ----------- | --------------- | ------ | -------- | ------- |
-| `autocapitalize` | `autocapitalize` | Indicates whether and how the text value should be automatically capitalized as it is entered/edited by the user. Available options: `"off"`, `"none"`, `"on"`, `"sentences"`, `"words"`, `"characters"`. | `string`   | `'off'`          |
-| `autocomplete`   | `autocomplete`   | Indicates whether the value of the control can be automatically completed by the browser.                                                                                                                 | `"email"   | "tel"            | "url"    | "off"      | "on"       | "name"     | "honorific-prefix" | "given-name" | "additional-name" | "family-name" | "honorific-suffix" | "nickname" | "username" | "new-password" | "current-password" | "one-time-code" | "organization-title" | "organization" | "street-address" | "address-line1" | "address-line2" | "address-line3" | "address-level4" | "address-level3" | "address-level2" | "address-level1" | "country" | "country-name" | "postal-code" | "cc-name" | "cc-given-name" | "cc-additional-name" | "cc-family-name" | "cc-number" | "cc-exp" | "cc-exp-month" | "cc-exp-year" | "cc-csc" | "cc-type" | "transaction-currency" | "transaction-amount" | "language" | "bday" | "bday-day" | "bday-month" | "bday-year" | "sex" | "tel-country-code" | "tel-national" | "tel-area-code" | "tel-local" | "tel-extension" | "impp" | "photo"` | `'off'` |
-| `autocorrect`    | `autocorrect`    | Whether auto correction should be enabled when the user is entering/editing the text value.                                                                                                               | `"off"     | "on"`            | `'off'`  |
-| `autofocus`      | `autofocus`      | This Boolean attribute lets you specify that a form control should have input focus when the page loads.                                                                                                  | `boolean`  | `false`          |
-| `clearable`      | `clearable`      | Set to true to add a clear button when the input is populated.                                                                                                                                            | `boolean`  | `false`          |
-| `debounce`       | `debounce`       | Set the amount of time, in milliseconds, to wait to trigger the `gr-change` event after each keystroke. This also impacts form bindings such as `ngModel` or `v-model`.                                   | `number`   | `0`              |
-| `disabled`       | `disabled`       | Set to true to disable the input control.                                                                                                                                                                 | `boolean`  | `false`          |
-| `enterkeyhint`   | `enterkeyhint`   | A hint to the browser for which enter key to display. Possible values: `"enter"`, `"done"`, `"go"`, `"next"`, `"previous"`, `"search"`, and `"send"`.                                                     | `"done"    | "enter"          | "go"     | "next"     | "previous" | "search"   | "send"`            | `undefined`  |
-| `helpText`       | `help-text`      | The input's help text. Alternatively, you can use the help-text slot.                                                                                                                                     | `string`   | `''`             |
-| `inputmode`      | `inputmode`      | The input's inputmode attribute.                                                                                                                                                                          | `"decimal" | "email"          | "none"   | "numeric"  | "search"   | "tel"      | "text"             | "url"`       | `undefined`       |
-| `invalid`        | `invalid`        | Set to true to indicate this field is invalid. Will display the invalid text instead of the help text                                                                                                     | `boolean`  | `false`          |
-| `invalidText`    | `invalid-text`   | The input's invalid text. Alternatively, you can use the invalid-text slot.                                                                                                                               | `string`   | `''`             |
-| `label`          | `label`          | The inputs's label. Alternatively, you can use the label slot.                                                                                                                                            | `string`   | `''`             |
-| `max`            | `max`            | The maximum value, which must not be less than its minimum (min attribute) value.                                                                                                                         | `string`   | `undefined`      |
-| `min`            | `min`            | The minimum value, which must not be greater than its maximum (max attribute) value.                                                                                                                      | `string`   | `undefined`      |
-| `name`           | `name`           | The input's name.                                                                                                                                                                                         | `string`   | `''`             |
-| `pill`           | `pill`           | Set to true to draw a pill-style input with rounded edges.                                                                                                                                                | `boolean`  | `false`          |
-| `placeholder`    | `placeholder`    | The input's placeholder text.                                                                                                                                                                             | `string`   | `''`             |
-| `readonly`       | `readonly`       | If `true`, the user cannot modify the value.                                                                                                                                                              | `boolean`  | `false`          |
-| `size`           | `size`           | The input's size.                                                                                                                                                                                         | `"large"   | "medium"         | "small"` | `'medium'` |
-| `spellcheck`     | `spellcheck`     | If `true`, the element will have its spelling and grammar checked.                                                                                                                                        | `boolean`  | `false`          |
-| `step`           | `step`           | Works with the min and max attributes to limit the increments at which a value can be set. Possible values are: `"any"` or a positive floating point number.                                              | `string`   | `undefined`      |
-| `type`           | `type`           | The type of control to display. The default type is text.                                                                                                                                                 | `"date"    | "datetime-local" | "email"  | "month"    | "number"   | "password" | "search"           | "tel"        | "text"            | "time"        | "url"              | "week"`    | `'text'`   |
-| `value`          | `value`          | The input's value attribute.                                                                                                                                                                              | `string`   | `''`             |
+| Property            | Attribute            | Description                                                                                                                                                                                               | Type       | Default          |
+| ------------------- | -------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------- | ---------------- | -------- | ---------- | ---------- | ---------- | ------------------ | ------------ | ----------------- | ------------- | ------------------ | ---------- | ---------- | -------------- | ------------------ | --------------- | -------------------- | -------------- | ---------------- | --------------- | --------------- | --------------- | ---------------- | ---------------- | ---------------- | ---------------- | --------- | -------------- | ------------- | --------- | --------------- | -------------------- | ---------------- | ----------- | -------- | -------------- | ------------- | -------- | --------- | ---------------------- | -------------------- | ---------- | ------ | ---------- | ------------ | ----------- | ----- | ------------------ | -------------- | --------------- | ----------- | --------------- | ------ | -------- | ------- |
+| `autocapitalize`    | `autocapitalize`     | Indicates whether and how the text value should be automatically capitalized as it is entered/edited by the user. Available options: `"off"`, `"none"`, `"on"`, `"sentences"`, `"words"`, `"characters"`. | `string`   | `'off'`          |
+| `autocomplete`      | `autocomplete`       | Indicates whether the value of the control can be automatically completed by the browser.                                                                                                                 | `"email"   | "tel"            | "url"    | "off"      | "on"       | "name"     | "honorific-prefix" | "given-name" | "additional-name" | "family-name" | "honorific-suffix" | "nickname" | "username" | "new-password" | "current-password" | "one-time-code" | "organization-title" | "organization" | "street-address" | "address-line1" | "address-line2" | "address-line3" | "address-level4" | "address-level3" | "address-level2" | "address-level1" | "country" | "country-name" | "postal-code" | "cc-name" | "cc-given-name" | "cc-additional-name" | "cc-family-name" | "cc-number" | "cc-exp" | "cc-exp-month" | "cc-exp-year" | "cc-csc" | "cc-type" | "transaction-currency" | "transaction-amount" | "language" | "bday" | "bday-day" | "bday-month" | "bday-year" | "sex" | "tel-country-code" | "tel-national" | "tel-area-code" | "tel-local" | "tel-extension" | "impp" | "photo"` | `'off'` |
+| `autocorrect`       | `autocorrect`        | Whether auto correction should be enabled when the user is entering/editing the text value.                                                                                                               | `"off"     | "on"`            | `'off'`  |
+| `autofocus`         | `autofocus`          | This Boolean attribute lets you specify that a form control should have input focus when the page loads.                                                                                                  | `boolean`  | `false`          |
+| `clearable`         | `clearable`          | Set to true to add a clear button when the input is populated.                                                                                                                                            | `boolean`  | `false`          |
+| `debounce`          | `debounce`           | Set the amount of time, in milliseconds, to wait to trigger the `gr-change` event after each keystroke. This also impacts form bindings such as `ngModel` or `v-model`.                                   | `number`   | `0`              |
+| `disabled`          | `disabled`           | Set to true to disable the input control.                                                                                                                                                                 | `boolean`  | `false`          |
+| `enterkeyhint`      | `enterkeyhint`       | A hint to the browser for which enter key to display. Possible values: `"enter"`, `"done"`, `"go"`, `"next"`, `"previous"`, `"search"`, and `"send"`.                                                     | `"done"    | "enter"          | "go"     | "next"     | "previous" | "search"   | "send"`            | `undefined`  |
+| `helpText`          | `help-text`          | The input's help text. Alternatively, you can use the help-text slot.                                                                                                                                     | `string`   | `''`             |
+| `inputmode`         | `inputmode`          | The input's inputmode attribute.                                                                                                                                                                          | `"decimal" | "email"          | "none"   | "numeric"  | "search"   | "tel"      | "text"             | "url"`       | `undefined`       |
+| `invalid`           | `invalid`            | Set to true to indicate this field is invalid. Will display the invalid text instead of the help text                                                                                                     | `boolean`  | `false`          |
+| `invalidText`       | `invalid-text`       | The input's invalid text. Alternatively, you can use the invalid-text slot.                                                                                                                               | `string`   | `''`             |
+| `label`             | `label`              | The inputs's label. Alternatively, you can use the label slot.                                                                                                                                            | `string`   | `''`             |
+| `max`               | `max`                | The maximum value, which must not be less than its minimum (min attribute) value.                                                                                                                         | `string`   | `undefined`      |
+| `min`               | `min`                | The minimum value, which must not be greater than its maximum (max attribute) value.                                                                                                                      | `string`   | `undefined`      |
+| `name`              | `name`               | The input's name.                                                                                                                                                                                         | `string`   | `''`             |
+| `pill`              | `pill`               | Set to true to draw a pill-style input with rounded edges.                                                                                                                                                | `boolean`  | `false`          |
+| `placeholder`       | `placeholder`        | The input's placeholder text.                                                                                                                                                                             | `string`   | `''`             |
+| `readonly`          | `readonly`           | If `true`, the user cannot modify the value.                                                                                                                                                              | `boolean`  | `false`          |
+| `requiredIndicator` | `required-indicator` | Set to true to display a required indicator, adds an asterisk to label                                                                                                                                    | `boolean`  | `false`          |
+| `size`              | `size`               | The input's size.                                                                                                                                                                                         | `"large"   | "medium"         | "small"` | `'medium'` |
+| `spellcheck`        | `spellcheck`         | If `true`, the element will have its spelling and grammar checked.                                                                                                                                        | `boolean`  | `false`          |
+| `step`              | `step`               | Works with the min and max attributes to limit the increments at which a value can be set. Possible values are: `"any"` or a positive floating point number.                                              | `string`   | `undefined`      |
+| `type`              | `type`               | The type of control to display. The default type is text.                                                                                                                                                 | `"date"    | "datetime-local" | "email"  | "month"    | "number"   | "password" | "search"           | "tel"        | "text"            | "time"        | "url"              | "week"`    | `'text'`   |
+| `value`             | `value`              | The input's value attribute.                                                                                                                                                                              | `string`   | `''`             |
 
 ## Events
 
