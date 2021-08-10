@@ -26,7 +26,7 @@ Tags are used as labels to organize things or to indicate a selection.
 <gr-tag type="danger">Danger</gr-tag>
 ```
 
-## Examples
+## Options
 
 ### Sizes
 

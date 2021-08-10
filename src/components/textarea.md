@@ -20,7 +20,7 @@ Unlike the native textarea element, the Graphite textarea does not support loadi
 <gr-textarea></gr-textarea>
 ```
 
-## Examples
+## Options
 
 ### Rows
 

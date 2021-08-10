@@ -36,7 +36,7 @@ You can use [menu items](/components/menu-item), [menu dividers](/components/men
 </gr-select>
 ```
 
-## Examples
+## Options
 
 ### Placeholders
 
@@ -619,7 +619,7 @@ Don't just mark a select invalid and expect the user to understand why it's inva
 
 <ion-icon name="checkmark-circle" class="icon"></ion-icon>
 
-<gr-select label="Preferred contact method" placeholder="Select contact method..." invalid-text="Select a contact method" required-indicator invalid>
+<gr-select label="Preferred contact method" placeholder="Select contact method..." invalid-text="Select a contact method." required-indicator invalid>
   <gr-menu-item value="email">Email</gr-menu-item>
   <gr-menu-item value="phone">Phone</gr-menu-item>
 </gr-select>
@@ -652,7 +652,7 @@ Since one gets replaced by the other, the language of the help text and invalid 
   <gr-menu-item value="phone">Phone</gr-menu-item>
 </gr-select>
 &nbsp;
-<gr-select label="Preferred contact method" placeholder="Select contact method..." help-text="Select the best way to contact you in case there's an issue with your account." invalid-text="Select a contact method" required-indicator invalid>
+<gr-select label="Preferred contact method" placeholder="Select contact method..." help-text="Select the best way to contact you in case there's an issue with your account." invalid-text="Select a contact method." required-indicator invalid>
   <gr-menu-item value="email">Email</gr-menu-item>
   <gr-menu-item value="phone">Phone</gr-menu-item>
 </gr-select>

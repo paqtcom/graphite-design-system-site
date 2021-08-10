@@ -60,7 +60,7 @@ Dropdowns are designed to work well with [menus](/components/menu) to provide a 
 </gr-dropdown>
 ```
 
-## Examples
+## Options
 
 ### Placement
 

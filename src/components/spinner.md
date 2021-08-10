@@ -18,7 +18,7 @@ Spinners are used to show the progress of an indeterminate operation.
 <gr-spinner></gr-spinner>
 ```
 
-## Examples
+## Options
 
 ### Size
 

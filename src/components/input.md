@@ -18,7 +18,7 @@ Inputs can be used in forms, or anywhere where the user needs to provide informa
 <gr-input></gr-input>
 ```
 
-## Examples
+## Options
 
 ### Placeholders
 

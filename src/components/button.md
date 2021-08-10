@@ -18,7 +18,7 @@ Buttons provide a clickable element, which can be used in forms, or anywhere tha
 <gr-button>Button</gr-button>
 ```
 
-## Examples
+## Options
 
 ### Variants
 

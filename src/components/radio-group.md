@@ -28,7 +28,7 @@ Have a default option selected whenever possible.
 </gr-radio-group>
 ```
 
-## Examples
+## Options
 
 ### Horizontal
 

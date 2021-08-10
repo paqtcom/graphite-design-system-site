@@ -28,7 +28,7 @@ Radios are designed to be used with [radio groups](/components/radio-group). As 
 </gr-radio-group>
 ```
 
-## Examples
+## Options
 
 ### Disabled
 

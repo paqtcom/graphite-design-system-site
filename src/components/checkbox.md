@@ -28,7 +28,7 @@ Use a [field group](/components/field-group) for vertical or horizontal organiza
 </gr-field-group>
 ```
 
-## Examples
+## Options
 
 ### Checked
 

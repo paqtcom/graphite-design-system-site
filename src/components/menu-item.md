@@ -52,7 +52,7 @@ Menu items provide options for the user to pick from in a [menu](/components/men
 </gr-menu>
 ```
 
-## Examples
+## Options
 
 ### Checked
 
