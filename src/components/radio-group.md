@@ -8,12 +8,12 @@ title: Radio Group - Graphite Design System
 
 [[toc]]
 
-Radio Groups are used to group multiple radios so they function as a single control.
+Radio groups are used to group multiple radios so they function as a single control.
 
 Have a default option selected whenever possible.
 
 <div class="example-block">
-  <gr-radio-group value="1">
+  <gr-radio-group label="Select an option" value="1">
     <gr-radio value="1">Item 1</gr-radio>
     <gr-radio value="2">Item 2</gr-radio>
     <gr-radio value="3">Item 3</gr-radio>
@@ -21,7 +21,7 @@ Have a default option selected whenever possible.
 </div>
 
 ```html
-<gr-radio-group value="1">
+<gr-radio-group label="Select an option" value="1">
   <gr-radio value="1">Item 1</gr-radio>
   <gr-radio value="2">Item 2</gr-radio>
   <gr-radio value="3">Item 3</gr-radio>
@@ -75,7 +75,7 @@ The radio group can be marked invalid using the `invalid` attribute.
 Use the `label` attribute to give the radio group an accessible label. For labels that contain HTML, use the `label` slot instead.
 
 <div class="example-block">
-  <gr-radio-group label="Select an item">
+  <gr-radio-group label="Select an option">
     <gr-radio value="1">Item 1</gr-radio>
     <gr-radio value="2">Item 2</gr-radio>
     <gr-radio value="3">Item 3</gr-radio>
@@ -83,7 +83,7 @@ Use the `label` attribute to give the radio group an accessible label. For label
 </div>
 
 ```html
-<gr-radio-group label="Select an item">
+<gr-radio-group label="Select an option">
   <gr-radio value="1">Item 1</gr-radio>
   <gr-radio value="2">Item 2</gr-radio>
   <gr-radio value="3">Item 3</gr-radio>
@@ -143,7 +143,7 @@ Add descriptive invalid text to a radio group with the `invalid-text` attribute.
 When you add the `invalid` attribute, the invalid text will be shown.
 
 <div class="example-block">
-  <gr-radio-group label="Select an item" invalid-text="Select an item." invalid>
+  <gr-radio-group label="Select an option" invalid-text="Select an option." invalid>
     <gr-radio value="1">Item 1</gr-radio>
     <gr-radio value="2">Item 2</gr-radio>
     <gr-radio value="3">Item 3</gr-radio>
@@ -151,7 +151,7 @@ When you add the `invalid` attribute, the invalid text will be shown.
 </div>
 
 ```html
-<gr-radio-group label="Select an item" invalid-text="Select an item." invalid>
+<gr-radio-group label="Select an option" invalid-text="Select an option." invalid>
   <gr-radio value="1">Item 1</gr-radio>
   <gr-radio value="2">Item 2</gr-radio>
   <gr-radio value="3">Item 3</gr-radio>

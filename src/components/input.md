@@ -11,11 +11,11 @@ title: Input - Graphite Design System
 Inputs can be used in forms, or anywhere where the user needs to provide information.
 
 <div class="example-block">
-  <gr-input></gr-input>
+  <gr-input label="Name"></gr-input>
 </div>
 
 ```html
-<gr-input></gr-input>
+<gr-input label="Name"></gr-input>
 ```
 
 ## Options
@@ -125,11 +125,11 @@ The input can be marked invalid using the `invalid` attribute.
 Use the `label` attribute to give the input an accessible label. For labels that contain HTML, use the `label` slot instead.
 
 <div class="example-block">
-  <gr-input label="What is your name?"></gr-input>
+  <gr-input label="Name"></gr-input>
 </div>
 
 ```html
-<gr-input label="What is your name?"></gr-input>
+<gr-input label="Name"></gr-input>
 ```
 
 ### Required or optional

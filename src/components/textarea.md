@@ -13,11 +13,11 @@ Textarea can be used in forms, or anywhere where the user needs to provide infor
 Unlike the native textarea element, the Graphite textarea does not support loading its value from the inner content. The textarea value should be set in the value attribute.
 
 <div class="example-block">
-  <gr-textarea></gr-textarea>
+  <gr-textarea label="Feedback"></gr-textarea>
 </div>
 
 ```html
-<gr-textarea></gr-textarea>
+<gr-textarea label="Feedback"></gr-textarea>
 ```
 
 ## Options
@@ -37,6 +37,10 @@ Use the `rows` attribute to change the number of text rows that get shown.
 ### Placeholders
 
 Use the `placeholder` attribute to add a placeholder.
+
+The placeholder text, also commonly known as “ghost text,” is temporary and disappears once a user enters text.
+
+Putting instructions for how to complete a textarea, requirements, or any other essential information into placeholder text is not accessible. Once a value is entered, this text is no longer viewable; if someone is using an automatic form filler, they will never get the information in the placeholder text. [Help text](#help-text) is the preferred way to communicate this information.
 
 <div class="example-block">
   <gr-textarea placeholder="Type something"></gr-textarea>

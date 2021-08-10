@@ -13,7 +13,7 @@ Selects allow you to choose one or more items from a dropdown menu.
 You can use [menu items](/components/menu-item), [menu dividers](/components/menu-divider), and [menu labels](/components/menu-label) to compose a menu.
 
 <div class="example-block">
-  <gr-select>
+  <gr-select label="Select one">
     <gr-menu-item value="option-1">Option 1</gr-menu-item>
     <gr-menu-item value="option-2">Option 2</gr-menu-item>
     <gr-menu-item value="option-3">Option 3</gr-menu-item>
@@ -25,7 +25,7 @@ You can use [menu items](/components/menu-item), [menu dividers](/components/men
 </div>
 
 ```html
-<gr-select>
+<gr-select label="Select one">
   <gr-menu-item value="option-1">Option 1</gr-menu-item>
   <gr-menu-item value="option-2">Option 2</gr-menu-item>
   <gr-menu-item value="option-3">Option 3</gr-menu-item>
@@ -41,6 +41,8 @@ You can use [menu items](/components/menu-item), [menu dividers](/components/men
 ### Placeholders
 
 Use the `placeholder` attribute to add a placeholder.
+
+The placeholder text, also commonly known as “ghost text,” prompts a user to select an option from the picker menu. It disappears once a user selects an option.
 
 <div class="example-block">
   <gr-select placeholder="Select one...">
@@ -479,7 +481,7 @@ When possible, the select width should be wide enough so that any chosen menu it
 
 <ion-icon name="checkmark-circle" class="icon"></ion-icon>
 
-<gr-select value="us" style="max-width: 250px">
+<gr-select label="Country" value="us" style="max-width: 250px">
   <gr-menu-item value="nl">Netherlands</gr-menu-item>
   <gr-menu-item value="us">United States of America</gr-menu-item>
 </gr-select>
@@ -490,7 +492,7 @@ When possible, the select width should be wide enough so that any chosen menu it
 
 <ion-icon name="close-circle" class="icon"></ion-icon>
 
-<gr-select value="us" style="max-width: 200px">
+<gr-select label="Country" value="us" style="max-width: 200px">
   <gr-menu-item value="nl">Netherlands</gr-menu-item>
   <gr-menu-item value="us">United States of America</gr-menu-item>
 </gr-select>
