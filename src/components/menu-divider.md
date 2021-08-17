@@ -10,16 +10,18 @@ title: Menu Divider - Graphite Design System
 
 Menu dividers are used to visually group [menu items](/components/menu-item).
 
-<gr-menu style="max-width: 200px; border: solid 1px var(--gr-panel-border-color); border-radius: var(--gr-border-radius-medium);">
-  <gr-menu-item value="1">Option 1</gr-menu-item>
-  <gr-menu-item value="2">Option 2</gr-menu-item>
-  <gr-menu-divider></gr-menu-divider>
-  <gr-menu-item value="3">Option 3</gr-menu-item>
-  <gr-menu-item value="4">Option 4</gr-menu-item>
-  <gr-menu-divider></gr-menu-divider>
-  <gr-menu-item value="5">Option 5</gr-menu-item>
-  <gr-menu-item value="6">Option 6</gr-menu-item>
-</gr-menu>
+<div class="example-block">
+  <gr-menu style="max-width: 200px; border: solid 1px var(--gr-panel-border-color); border-radius: var(--gr-border-radius-medium);">
+    <gr-menu-item value="1">Option 1</gr-menu-item>
+    <gr-menu-item value="2">Option 2</gr-menu-item>
+    <gr-menu-divider></gr-menu-divider>
+    <gr-menu-item value="3">Option 3</gr-menu-item>
+    <gr-menu-item value="4">Option 4</gr-menu-item>
+    <gr-menu-divider></gr-menu-divider>
+    <gr-menu-item value="5">Option 5</gr-menu-item>
+    <gr-menu-item value="6">Option 6</gr-menu-item>
+  </gr-menu>
+</div>
 
 ```html
 <gr-menu

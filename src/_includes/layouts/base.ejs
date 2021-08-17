@@ -22,8 +22,8 @@
       type="module"
       src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.esm.js"
     ></script>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@graphiteds/core@1.1.3/css/core.css" />
-    <script type="module" src="https://cdn.jsdelivr.net/npm/@graphiteds/core@1.1.3/dist/core/core.esm.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@graphiteds/core@1.2.1/css/graphite.bundle.css" />
+    <script type="module" src="https://cdn.jsdelivr.net/npm/@graphiteds/core@1.2.1/dist/core/core.esm.js"></script>
     <% if (locals.tags == "posts") { %>
     <meta property="og:type" content="article" />
     <meta property="article:published_time" content="<%= date.toISOString() %>" />
@@ -65,6 +65,7 @@
               </a>
             </div>
             <div class="lg:w-1/5 flex items-center pr-4 lg:pr-8 justify-end">
+              <span class="font-semibold leading-none text-dark text-base mr-4">v1.2.1</span>
               <div class="flex items-center">
                 <a
                   href="https://github.com/way2web/graphite-design-system"
@@ -72,7 +73,7 @@
                   rel="noopener noreferrer"
                   title="Github"
                   name="Github"
-                  class="text-medium hover:text-primary-500 dark-hover:text-primary-500 p-2 hidden lg:block"
+                  class="text-medium hover:text-primary-500 p-2 hidden lg:block"
                 >
                   <svg
                     xmlns="http://www.w3.org/2000/svg"

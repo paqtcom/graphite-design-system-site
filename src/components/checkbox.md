@@ -12,19 +12,31 @@ Checkboxes allow the user to toggle an option on or off.
 
 Use a [field group](/components/field-group) for vertical or horizontal organization of multiple checkboxes.
 
-<gr-checkbox>Checkbox</gr-checkbox>
+<div class="example-block">
+  <gr-field-group label="Select options">
+    <gr-checkbox>Option 1</gr-checkbox>
+    <gr-checkbox>Option 2</gr-checkbox>
+    <gr-checkbox>Option 3</gr-checkbox>
+  </gr-field-group>
+</div>
 
 ```html
-<gr-checkbox>Checkbox</gr-checkbox>
+<gr-field-group label="Select options">
+  <gr-checkbox>Option 1</gr-checkbox>
+  <gr-checkbox>Option 2</gr-checkbox>
+  <gr-checkbox>Option 3</gr-checkbox>
+</gr-field-group>
 ```
 
-## Examples
+## Options
 
 ### Checked
 
 Use the `checked` attribute to activate the checkbox.
 
-<gr-checkbox checked>Checked</gr-checkbox>
+<div class="example-block">
+  <gr-checkbox checked>Checked</gr-checkbox>
+</div>
 
 ```html
 <gr-checkbox checked>Checked</gr-checkbox>
@@ -34,7 +46,9 @@ Use the `checked` attribute to activate the checkbox.
 
 Use the `indeterminate` attribute to make the checkbox indeterminate.
 
-<gr-checkbox indeterminate>Indeterminate</gr-checkbox>
+<div class="example-block">
+  <gr-checkbox indeterminate>Indeterminate</gr-checkbox>
+</div>
 
 ```html
 <gr-checkbox indeterminate>Indeterminate</gr-checkbox>
@@ -44,7 +58,9 @@ Use the `indeterminate` attribute to make the checkbox indeterminate.
 
 Use the `disabled` attribute to disable the checkbox.
 
-<gr-checkbox disabled>Disabled</gr-checkbox>
+<div class="example-block">
+  <gr-checkbox disabled>Disabled</gr-checkbox>
+</div>
 
 ```html
 <gr-checkbox disabled>Disabled</gr-checkbox>
@@ -54,10 +70,21 @@ Use the `disabled` attribute to disable the checkbox.
 
 The checkbox can be marked invalid using the `invalid` attribute.
 
-<gr-checkbox invalid>I agree with the terms</gr-checkbox>
+<div class="example-block">
+  <gr-checkbox invalid>I agree to the <a href="https://www.termsfeed.com/blog/sample-terms-and-conditions-template/" target="_blank" rel="noopener noreferrer">terms</a></gr-checkbox>
+</div>
 
 ```html
-<gr-checkbox invalid>I agree with the terms</gr-checkbox>
+<gr-checkbox invalid>
+  I agree to the
+  <a
+    href="https://www.termsfeed.com/blog/sample-terms-and-conditions-template/"
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+    terms
+  </a>
+</gr-checkbox>
 ```
 
 ### Invalid Text
@@ -66,13 +93,138 @@ Add descriptive invalid text to a checkbox with the `invalid-text` attribute. Fo
 
 When you add the `invalid` attribute, the invalid text will be shown.
 
-<gr-checkbox invalid-text="You have to agree with our terms to continue" invalid>I agree with the terms</gr-checkbox>
+<div class="example-block">
+  <gr-checkbox invalid-text="You have to agree to our terms to continue." invalid>I agree to the <a href="https://www.termsfeed.com/blog/sample-terms-and-conditions-template/" target="_blank" rel="noopener noreferrer">terms</a></gr-checkbox>
+</div>
 
 ```html
-<gr-checkbox invalid-text="You have to agree with our terms to continue" invalid>
-  I agree with the terms
+<gr-checkbox invalid-text="You have to agree to our terms to continue." invalid>
+  I agree to the
+  <a
+    href="https://www.termsfeed.com/blog/sample-terms-and-conditions-template/"
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+    terms
+  </a>
 </gr-checkbox>
 ```
+
+## Usage guidelines
+
+### Checkbox or radio button?
+
+Checkboxes and radio buttons are not interchangeable. A set of checkboxes should be used to select as many options as desired (or none). A set of radio buttons should be used to select only a single option from a list of mutually exclusive options.
+
+<div class="usage-guidelines usage-guidelines-do">
+
+<ion-icon name="checkmark-circle" class="icon"></ion-icon>
+
+<gr-field-group label="Interests">
+  <gr-checkbox checked>Travel</gr-checkbox>
+  <gr-checkbox checked>Music</gr-checkbox>
+  <gr-checkbox>Shopping</gr-checkbox>
+</gr-field-group>
+
+</div>
+
+<div class="usage-guidelines usage-guidelines-dont">
+
+<ion-icon name="close-circle" class="icon"></ion-icon>
+
+<gr-field-group label="Size">
+  <gr-checkbox checked>Small</gr-checkbox>
+  <gr-checkbox checked>Medium</gr-checkbox>
+  <gr-checkbox>Large</gr-checkbox>
+</gr-field-group>
+
+</div>
+
+### Label groups of related checkboxes
+
+Sets of checkboxes should always have a clear label that describes what the list of options represents and guides users what to do. This is important for accessibility, since a screen reader will read the label before each option.
+
+<div class="usage-guidelines usage-guidelines-do">
+
+<ion-icon name="checkmark-circle" class="icon"></ion-icon>
+
+<gr-field-group label="Page(s) to display">
+  <gr-checkbox checked>Homepage</gr-checkbox>
+  <gr-checkbox checked>Galery</gr-checkbox>
+  <gr-checkbox>Contact us</gr-checkbox>
+</gr-field-group>
+
+</div>
+
+<div class="usage-guidelines usage-guidelines-dont">
+
+<ion-icon name="close-circle" class="icon"></ion-icon>
+
+<gr-field-group no-fieldset>
+  <gr-checkbox checked>Tomorrow</gr-checkbox>
+  <gr-checkbox checked>In 3 days</gr-checkbox>
+  <gr-checkbox>Next week</gr-checkbox>
+</gr-field-group>
+
+</div>
+
+### Validation
+
+We recommend validating the users data before form submission. Use visual cues to guide the user as to where the problem lies within the form. This will help to easily identify the elements that need to be corrected.
+
+The validation should appear when the user has interacted with the checkbox (not before), or otherwise when the user submits the form. Once the user corrects the errors within the checkbox, the validation should disappear once the data is rendered as valid.
+
+For Vue, you can use libraries like [Vuelidate](https://vuelidate-next.netlify.app/) & [VeeValidate](https://vee-validate.logaretm.com/) (using Custom Inputs).
+
+Of course, you should still validate server-side (if applicable).
+
+### Always provide invalid text when invalid
+
+Don't just mark a checkbox invalid and expect the user to understand why it's invalid. Furthermore, the invalid text displays an icon which is needed for accessibility, and gives more attention to the invalid field.
+
+<div class="usage-guidelines usage-guidelines-do">
+
+<ion-icon name="checkmark-circle" class="icon"></ion-icon>
+
+<gr-checkbox invalid-text="You have to agree to our terms to continue." invalid>
+  I agree to the <a href="https://www.termsfeed.com/blog/sample-terms-and-conditions-template/" target="_blank" rel="noopener noreferrer">terms</a>
+</gr-checkbox>
+
+</div>
+
+<div class="usage-guidelines usage-guidelines-dont">
+
+<ion-icon name="close-circle" class="icon"></ion-icon>
+
+<gr-checkbox invalid>I agree to the <a href="https://www.termsfeed.com/blog/sample-terms-and-conditions-template/" target="_blank" rel="noopener noreferrer">terms</a></gr-checkbox>
+
+</div>
+
+### Write invalid text that shows a solution
+
+Write error messaging in a human-centered way by guiding a user and showing them a solution — don’t simply state what’s wrong and then leave them guessing as to how to resolve it. Ambiguous error messages can be frustrating and even shame-inducing for users. Also, keep in mind that something that a system may deem an error may not actually be perceived as an error to a user.
+
+Invalid text should be written in 1-2 short, complete sentences and in a clear and straightforward way. End sentences with a period, and never with an exclamation point.
+
+<div class="usage-guidelines usage-guidelines-do">
+
+<ion-icon name="checkmark-circle" class="icon"></ion-icon>
+
+<gr-checkbox invalid-text="You have to agree to our terms to continue." invalid>
+  I agree to the <a href="https://www.termsfeed.com/blog/sample-terms-and-conditions-template/" target="_blank" rel="noopener noreferrer">terms</a>
+</gr-checkbox>
+
+</div>
+
+<div class="usage-guidelines usage-guidelines-dont">
+
+<ion-icon name="close-circle" class="icon"></ion-icon>
+
+<gr-checkbox invalid-text="Required field" invalid>
+  I agree to the <a href="https://www.termsfeed.com/blog/sample-terms-and-conditions-template/" target="_blank" rel="noopener noreferrer">terms</a>
+</gr-checkbox>
+
+</div>
 
 ## Properties
 

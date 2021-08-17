@@ -103,3 +103,11 @@ Some documentation is based or inspired on the [Ionic Framework](https://ionicfr
 ### Shoelace
 
 Some documentation is based or inspired on [Shoelace](https://shoelace.style/).
+
+### Adobe Spectrum
+
+Some documentation is based or inspired on [Adobe Spectrum](https://spectrum.adobe.com/).
+
+### Carbon Design System
+
+Some documentation is based or inspired on the [Carbon Design System](https://www.carbondesignsystem.com/).

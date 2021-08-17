@@ -106,7 +106,6 @@ module.exports = {
         lg: 'var(--gr-shadow-large)',
         xl: 'var(--gr-shadow-x-large)',
       },
-
       spacing: {
         '3xs': 'var(--gr-spacing-xxx-small)',
         '2xs': 'var(--gr-spacing-xx-small)',
@@ -118,6 +117,11 @@ module.exports = {
         '2xl': 'var(--gr-spacing-xx-large)',
         '3xl': 'var(--gr-spacing-xxx-large)',
         '4xl': 'var(--gr-spacing-xxxx-large)',
+      },
+      leading: {
+        snug: 'var(--gr-line-height-dense)',
+        normal: 'var(--gr-line-height-normal)',
+        loose: 'var(--gr-line-height-loose)',
       },
     },
     fontFamily: {

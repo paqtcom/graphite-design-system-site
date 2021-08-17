@@ -10,17 +10,19 @@ title: Menu Label - Graphite Design System
 
 Menu labels are used to describe a group of [menu items](/components/menu-item).
 
-<gr-menu style="max-width: 200px; border: solid 1px var(--gr-panel-border-color); border-radius: var(--gr-border-radius-medium);">
-  <gr-menu-label>Fruits</gr-menu-label>
-  <gr-menu-item value="apple">Apple</gr-menu-item>
-  <gr-menu-item value="banana">Banana</gr-menu-item>
-  <gr-menu-item value="orange">Orange</gr-menu-item>
-  <gr-menu-divider></gr-menu-divider>
-  <gr-menu-label>Vegetables</gr-menu-label>
-  <gr-menu-item value="broccoli">Broccoli</gr-menu-item>
-  <gr-menu-item value="carrot">Carrot</gr-menu-item>
-  <gr-menu-item value="zucchini">Zucchini</gr-menu-item>
-</gr-menu>
+<div class="example-block">
+  <gr-menu style="max-width: 200px; border: solid 1px var(--gr-panel-border-color); border-radius: var(--gr-border-radius-medium);">
+    <gr-menu-label>Fruits</gr-menu-label>
+    <gr-menu-item value="apple">Apple</gr-menu-item>
+    <gr-menu-item value="banana">Banana</gr-menu-item>
+    <gr-menu-item value="orange">Orange</gr-menu-item>
+    <gr-menu-divider></gr-menu-divider>
+    <gr-menu-label>Vegetables</gr-menu-label>
+    <gr-menu-item value="broccoli">Broccoli</gr-menu-item>
+    <gr-menu-item value="carrot">Carrot</gr-menu-item>
+    <gr-menu-item value="zucchini">Zucchini</gr-menu-item>
+  </gr-menu>
+</div>
 
 ```html
 <gr-menu

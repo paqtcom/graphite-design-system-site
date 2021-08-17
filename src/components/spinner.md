@@ -10,21 +10,25 @@ title: Spinner - Graphite Design System
 
 Spinners are used to show the progress of an indeterminate operation.
 
-<gr-spinner></gr-spinner>
+<div class="example-block">
+  <gr-spinner></gr-spinner>
+</div>
 
 ```html
 <gr-spinner></gr-spinner>
 ```
 
-## Examples
+## Options
 
 ### Size
 
 Spinners are sized relative to the current font size. To change their size, set the `font-size` property on the spinner itself or on a parent element as shown below.
 
-<gr-spinner></gr-spinner>
-<gr-spinner style="font-size: 2rem;"></gr-spinner>
-<gr-spinner style="font-size: 3rem;"></gr-spinner>
+<div class="example-block">
+  <gr-spinner></gr-spinner>
+  <gr-spinner style="font-size: 2rem;"></gr-spinner>
+  <gr-spinner style="font-size: 3rem;"></gr-spinner>
+</div>
 
 ```html
 <gr-spinner></gr-spinner>
@@ -36,7 +40,9 @@ Spinners are sized relative to the current font size. To change their size, set 
 
 The width of the spinner can be changed by setting the `--stroke-width` custom property.
 
-<gr-spinner style="font-size: 2rem; --stroke-width: 6px;"></gr-spinner>
+<div class="example-block">
+  <gr-spinner style="font-size: 2rem; --stroke-width: 6px;"></gr-spinner>
+</div>
 
 ```html
 <gr-spinner style="font-size: 2rem; --stroke-width: 6px;"></gr-spinner>
@@ -46,7 +52,9 @@ The width of the spinner can be changed by setting the `--stroke-width` custom p
 
 The spinner's colors can be changed by setting the `--indicator-color` and `--track-color` custom properties.
 
-<gr-spinner style="font-size: 2rem; --indicator-color: tomato;"></gr-spinner>
+<div class="example-block">
+  <gr-spinner style="font-size: 2rem; --indicator-color: tomato;"></gr-spinner>
+</div>
 
 ```html
 <gr-spinner style="font-size: 2rem; --indicator-color: tomato;"></gr-spinner>

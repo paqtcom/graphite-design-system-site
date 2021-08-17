@@ -13,27 +13,35 @@ a:hover {
 @tailwind utilities;
 
 .content {
-  @apply text-base leading-8 tracking-wider;
+  @apply text-base leading-normal tracking-wider text-dark;
 }
 
 .content p {
-  @apply mb-2;
+  @apply mb-5;
 }
 
 .content h1 {
-  @apply mb-8 text-2xl font-bold leading-10;
+  @apply mb-4 mt-4 text-2xl font-bold leading-10;
 }
 
 .content h2 {
-  @apply mb-8 text-xl font-bold;
+  @apply mb-4 mt-4 text-xl font-bold;
 }
 
 .content h3 {
-  @apply mb-5 text-lg font-bold;
+  @apply mb-4 mt-4 text-lg font-bold;
 }
 
 .content h4 {
-  @apply mb-5 text-base font-bold;
+  @apply mb-4 mt-4 text-base font-bold;
+}
+
+.content h1,
+.content h2,
+.content h3,
+.content h4 {
+  @apply focus:outline-none;
+  scroll-margin-top: 6rem;
 }
 
 .content h1 a,
@@ -72,12 +80,41 @@ a:hover {
   @apply list-disc list-inside mb-2;
 }
 
+.content .usage-guidelines,
+.content .example-block {
+  @apply bg-light-tint p-10 relative mb-3 mt-3;
+}
+
+.content .example-block.full {
+  @apply pl-0 pr-0;
+}
+
+.content .usage-guidelines ion-icon.icon {
+  @apply text-left absolute left-3 top-3 text-xl;
+}
+
+.content .usage-guidelines-dont {
+  @apply border-l-2 border-danger;
+}
+
+.content .usage-guidelines-dont ion-icon.icon {
+  @apply text-danger;
+}
+
+.content .usage-guidelines-do {
+  @apply border-l-2 border-success;
+}
+
+.content .usage-guidelines-do ion-icon.icon {
+  @apply text-success;
+}
+
 .main-nav a {
-  @apply ml-2 flex items-center px-2 py-2 font-normal text-dark-tint hover:no-underline hover:text-primary hover:bg-opacity-25;
+  @apply ml-2 flex items-center px-2 py-2 font-normal text-dark hover:no-underline hover:text-primary hover:bg-opacity-25;
 }
 
 .main-nav .header {
-  @apply flex items-center px-2 py-2 font-bold uppercase text-xs;
+  @apply flex items-center px-2 py-2 font-bold uppercase text-xs text-dark;
 }
 
 .main-nav .active {
@@ -86,11 +123,15 @@ a:hover {
 }
 
 .toc-container-header {
-  @apply uppercase text-xs font-bold;
+  @apply uppercase text-xs font-bold leading-loose mt-5;
 }
 
 .table-of-contents ul {
-  @apply list-none;
+  @apply list-none mb-5;
+}
+
+.table-of-contents li {
+  @apply mb-1;
 }
 
 gr-button:not(.hydrated),
