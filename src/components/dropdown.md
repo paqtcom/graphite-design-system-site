@@ -8,7 +8,7 @@ title: Dropdown - Graphite Design System
 
 [[toc]]
 
-Dropdowns expose additional content that "drops down" in a panel.
+<p class="intro">Dropdowns expose additional content that "drops down" in a panel.</p>
 
 Dropdowns consist of a trigger and a panel. By default, activating the trigger will expose the panel and interacting outside of the panel will close it.
 
@@ -364,7 +364,7 @@ Type: `Promise<void>`
 | `(default)` | The dropdown's content.                                  |
 | `"trigger"` | The dropdown's trigger, usually a `<gr-button>` element. |
 
-## CSS Custom Properties
+## CSS custom properties
 
 | Name                       | Description                            |
 | -------------------------- | -------------------------------------- |

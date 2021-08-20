@@ -8,7 +8,7 @@ title: Tag - Graphite Design System
 
 [[toc]]
 
-Tags are used as labels to organize things or to indicate a selection.
+<p class="intro">Tags are used as labels to organize things or to indicate a selection.</p>
 
 <div class="example-block">
   <gr-tag type="primary">Primary</gr-tag>
@@ -131,7 +131,7 @@ Use the `clearable` attribute to add a clear button to the tag.
 | ----------- | ------------------ |
 | `(default)` | The tag's content. |
 
-## CSS Custom Properties
+## CSS custom properties
 
 | Name                   | Description                                                                             |
 | ---------------------- | --------------------------------------------------------------------------------------- |

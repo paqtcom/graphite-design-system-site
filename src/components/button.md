@@ -8,7 +8,7 @@ title: Button - Graphite Design System
 
 [[toc]]
 
-Buttons provide a clickable element, which can be used in forms, or anywhere that needs simple, standard button functionality. They may display text, icons, or both. Buttons can be styled with several attributes to look a specific way.
+<p class="intro">Buttons provide a clickable element, which can be used in forms, or anywhere that needs simple, standard button functionality. They may display text, icons, or both. Buttons can be styled with several attributes to look a specific way.</p>
 
 <div class="example-block">
 <gr-button>Button</gr-button>
@@ -445,7 +445,7 @@ Icons can be used in buttons when additional clarity is required and the icon is
 | `"icon-only"` | Should be used on an icon in a button that has no text.                                                         |
 | `"start"`     | Content is placed to the left of the button text (will be to the right when we support right-to-left direction) |
 
-## CSS Custom Properties
+## CSS custom properties
 
 | Name                   | Description                                                                                |
 | ---------------------- | ------------------------------------------------------------------------------------------ |

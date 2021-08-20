@@ -66,7 +66,7 @@ SOFTWARE.
 
 ### Nuxt Content
 
-The layout is based or inpired on [Nuxt Content](https://content.nuxtjs.org/).
+The layout is based or inspired on [Nuxt Content](https://content.nuxtjs.org/).
 
 ```
 MIT License
@@ -104,10 +104,14 @@ Some documentation is based or inspired on the [Ionic Framework](https://ionicfr
 
 Some documentation is based or inspired on [Shoelace](https://shoelace.style/).
 
-### Adobe Spectrum
+### Spectrum Design System
 
-Some documentation is based or inspired on [Adobe Spectrum](https://spectrum.adobe.com/).
+Some documentation is based or inspired on the [Spectrum Design System](https://spectrum.adobe.com/).
 
 ### Carbon Design System
 
 Some documentation is based or inspired on the [Carbon Design System](https://www.carbondesignsystem.com/).
+
+### Polaris Design System
+
+Some documentation is based or inspired on the [Polaris Design System](https://polaris.shopify.com/).

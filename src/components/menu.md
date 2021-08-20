@@ -8,7 +8,7 @@ title: Menu - Graphite Design System
 
 [[toc]]
 
-Menus provide a list of options for the user to choose from.
+<p class="intro">Menus provide a list of options for the user to choose from.</p>
 
 You can use [menu items](/components/menu-item), [menu dividers](/components/menu-divider), and [menu labels](/components/menu-label) to compose a menu.
 
@@ -65,7 +65,7 @@ Type: `Promise<void>`
 | ----------- | ------------------------------------------------------------------------- |
 | `(default)` | The menu's content, including menu items, menu dividers, and menu labels. |
 
-## CSS Custom Properties
+## CSS custom properties
 
 | Name               | Description                |
 | ------------------ | -------------------------- |

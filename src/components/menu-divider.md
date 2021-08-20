@@ -8,7 +8,7 @@ title: Menu Divider - Graphite Design System
 
 [[toc]]
 
-Menu dividers are used to visually group [menu items](/components/menu-item).
+<p class="intro">Menu dividers are used to visually group <a href="/components/menu-item">menu items</a>.</p>
 
 <div class="example-block">
   <gr-menu style="max-width: 200px; border: solid 1px var(--gr-panel-border-color); border-radius: var(--gr-border-radius-medium);">
@@ -38,7 +38,7 @@ Menu dividers are used to visually group [menu items](/components/menu-item).
 </gr-menu>
 ```
 
-## CSS Custom Properties
+## CSS custom properties
 
 | Name              | Description                            |
 | ----------------- | -------------------------------------- |
