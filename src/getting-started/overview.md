@@ -24,9 +24,7 @@ It's available under the terms of the [MIT license](https://github.com/Way2Web/g
 
 Graphite is mainly targeted at browser/desktop applications.
 
-We make sure our components are usable on mobile browsers with touch input. But for mobile apps we recommend using [Ionic](https://ionicframework.com/) (with [Capacitor](https://capacitorjs.com/)) instead of Graphite. Because of their [adaptive styling](https://ionicframework.com/docs/theming/platform-styles), Ionic apps look and feel at home on every device following the device guidelines while still offering some customization for branding. There are design kits available for [Sketch](https://ionicsketch.com/) & [Figma](https://ionicfigma.com/).
-
-But using [Capacitor](https://capacitorjs.com/), you can still use Graphite components for mobile apps if you want to, and even combine it with [Ionic](https://ionicframework.com/).
+We make sure our components are usable on mobile browsers with touch input. Still, we don't recommend using them for mobile apps because they don't adhere to the [iOS Human Interface Guidelines](https://developer.apple.com/design/human-interface-guidelines/ios/) & [Android Material Design guidelines](https://developer.android.com/design).
 
 ## Accessibility
 
