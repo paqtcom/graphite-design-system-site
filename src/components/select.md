@@ -8,7 +8,7 @@ title: Select - Graphite Design System
 
 [[toc]]
 
-Selects allow you to choose one or more items from a dropdown menu.
+<p class="intro">Selects allow you to choose one or more items from a dropdown menu.</p>
 
 You can use [menu items](/components/menu-item), [menu dividers](/components/menu-divider), and [menu labels](/components/menu-label) to compose a menu.
 
@@ -234,7 +234,7 @@ Use the `size` attribute to change a select's size.
 
 ### Selecting Options Programmatically
 
-The `value` prop is bound to the current selection. As the selection changes, so will the value. To programmatically manage the selection, update the `value` property.
+The `value` property is bound to the current selection. As the selection changes, so will the value. To programmatically manage the selection, update the `value` property.
 
 <div class="example-block selecting-example">
 
@@ -742,7 +742,7 @@ Invalid text should be written in 1-2 short, complete sentences and in a clear a
 | `"invalid-text"` | Invalid text tells a user how to fix the error. Alternatively, you can use the invalid-text prop. |
 | `"label"`        | The select's label. Alternatively, you can use the label prop.                                    |
 
-## CSS Custom Properties
+## CSS custom properties
 
 | Name                               | Description                                                                                  |
 | ---------------------------------- | -------------------------------------------------------------------------------------------- |

@@ -8,7 +8,7 @@ title: Checkbox - Graphite Design System
 
 [[toc]]
 
-Checkboxes allow the user to toggle an option on or off.
+<p class="intro">Checkboxes allow the user to toggle an option on or off.</p>
 
 Use a [field group](/components/field-group) for vertical or horizontal organization of multiple checkboxes.
 
@@ -271,7 +271,7 @@ Type: `Promise<void>`
 | `(default)`      | The checkboxes label.                                                                             |
 | `"invalid-text"` | Invalid text tells a user how to fix the error. Alternatively, you can use the invalid-text prop. |
 
-## CSS Custom Properties
+## CSS custom properties
 
 | Name                                       | Description                                            |
 | ------------------------------------------ | ------------------------------------------------------ |

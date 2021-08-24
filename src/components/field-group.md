@@ -8,7 +8,7 @@ title: Field Group - Graphite Design System
 
 [[toc]]
 
-Field groups are used to group multiple fields, usually [checkboxes](/components/checkbox). It can be leveraged for vertical (default) or horizontal organization of the fields that are supplied as its children.
+<p class="intro">Field groups are used to group multiple fields, usually <a href="/components/checkbox">checkboxes</a>. It can be leveraged for vertical (default) or horizontal organization of the fields that are supplied as its children.</p>
 
 <div class="example-block">
   <gr-field-group label="Select items">
@@ -82,7 +82,7 @@ Use the `label` attribute to give the field group an accessible label. For label
 | `(default)` | The default slot where fields are placed.                                                               |
 | `"label"`   | The field group label. Recommended for proper accessibility. Alternatively, you can use the label prop. |
 
-## CSS Custom Properties
+## CSS custom properties
 
 | Name                                 | Description                                           |
 | ------------------------------------ | ----------------------------------------------------- |

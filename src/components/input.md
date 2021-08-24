@@ -8,7 +8,7 @@ title: Input - Graphite Design System
 
 [[toc]]
 
-Inputs can be used in forms, or anywhere where the user needs to provide information.
+<p class="intro">Inputs can be used in forms, or anywhere where the user needs to provide information.</p>
 
 <div class="example-block">
   <gr-input label="Name"></gr-input>
@@ -487,7 +487,7 @@ Type: `Promise<void>`
 | `"invalid-text"` | Invalid text tells a user how to fix the error. Alternatively, you can use the invalid-text prop. |
 | `"label"`        | The input's label. Alternatively, you can use the label prop.                                     |
 
-## CSS Custom Properties
+## CSS custom properties
 
 | Name                               | Description                                                                                  |
 | ---------------------------------- | -------------------------------------------------------------------------------------------- |

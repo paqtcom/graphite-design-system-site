@@ -8,7 +8,7 @@ title: Radio Group - Graphite Design System
 
 [[toc]]
 
-Radio groups are used to group multiple radios so they function as a single control.
+<p class="intro">Radio groups are used to group multiple radios so they function as a single control.</p>
 
 Have a default option selected whenever possible.
 
@@ -323,7 +323,7 @@ Invalid text should be written in 1-2 short, complete sentences and in a clear a
 | `"invalid-text"` | Invalid text tells a user how to fix the error. Alternatively, you can use the invalid-text prop.    |
 | `"label"`        | The radio group label. Required for proper accessibility. Alternatively, you can use the label prop. |
 
-## CSS Custom Properties
+## CSS custom properties
 
 | Name                                 | Description                                                    |
 | ------------------------------------ | -------------------------------------------------------------- |

@@ -8,7 +8,7 @@ title: Radio - Graphite Design System
 
 [[toc]]
 
-Radios allow the user to select one option from a group of many.
+<p class="intro">Radios allow the user to select one option from a group of many.</p>
 
 Radios are designed to be used with [radio groups](/components/radio-group). As such, all of the examples on this page utilize them to demonstrate their correct usage.
 
@@ -121,7 +121,7 @@ Type: `Promise<void>`
 | ----------- | ------------------ |
 | `(default)` | The radio's label. |
 
-## CSS Custom Properties
+## CSS custom properties
 
 | Name                                       | Description                                           |
 | ------------------------------------------ | ----------------------------------------------------- |

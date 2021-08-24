@@ -8,7 +8,7 @@ title: Menu Item - Graphite Design System
 
 [[toc]]
 
-Menu items provide options for the user to pick from in a [menu](/components/menu).
+<p class="intro">Menu items provide options for the user to pick from in a <a href="/components/menu">menu</a>.</p>
 
 <div class="example-block">
   <gr-menu style="max-width: 200px; border: solid 1px var(--gr-panel-border-color); border-radius: var(--gr-border-radius-medium);">
@@ -159,7 +159,7 @@ Type: `Promise<void>`
 | `"end"`     | Content is placed to the right of the menu item's label (will be to the left when we support right-to-left direction) |
 | `"start"`   | Content is placed to the left of the menu item's label (will be to the right when we support right-to-left direction) |
 
-## CSS Custom Properties
+## CSS custom properties
 
 | Name                         | Description                                                                                   |
 | ---------------------------- | --------------------------------------------------------------------------------------------- |

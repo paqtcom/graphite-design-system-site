@@ -8,7 +8,7 @@ title: Textarea - Graphite Design System
 
 [[toc]]
 
-Textarea can be used in forms, or anywhere where the user needs to provide information. It allows multiple lines of text.
+<p class="intro">Textarea can be used in forms, or anywhere where the user needs to provide information. It allows multiple lines of text.</p>
 
 Unlike the native textarea element, the Graphite textarea does not support loading its value from the inner content. The textarea value should be set in the value attribute.
 
@@ -472,7 +472,7 @@ Type: `Promise<void>`
 | `"invalid-text"` | Invalid text tells a user how to fix the error. Alternatively, you can use the invalid-text prop. |
 | `"label"`        | The textarea's label. Alternatively, you can use the label prop.                                  |
 
-## CSS Custom Properties
+## CSS custom properties
 
 | Name                               | Description                                                                                  |
 | ---------------------------------- | -------------------------------------------------------------------------------------------- |

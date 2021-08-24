@@ -8,7 +8,7 @@ title: Tag - Graphite Design System
 
 [[toc]]
 
-Tags are used as labels to organize things or to indicate a selection.
+<p class="intro">Tags are used as labels to organize things or to indicate a selection.</p>
 
 <div class="example-block">
   <gr-tag type="primary">Primary</gr-tag>
@@ -30,7 +30,7 @@ Tags are used as labels to organize things or to indicate a selection.
 
 ### Sizes
 
-Use the `size` prop to change a tab's size.
+Use the `size` attribute to change a tag's size.
 
 <div class="example-block">
   <gr-tag size="small">Small</gr-tag>
@@ -46,7 +46,7 @@ Use the `size` prop to change a tab's size.
 
 ### Pill
 
-Use the `pill` prop to give tabs rounded edges.
+Use the `pill` attribute to give tags rounded edges.
 
 <div class="example-block">
   <gr-tag size="small" pill>Small</gr-tag>
@@ -131,7 +131,7 @@ Use the `clearable` attribute to add a clear button to the tag.
 | ----------- | ------------------ |
 | `(default)` | The tag's content. |
 
-## CSS Custom Properties
+## CSS custom properties
 
 | Name                   | Description                                                                             |
 | ---------------------- | --------------------------------------------------------------------------------------- |

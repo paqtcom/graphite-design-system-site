@@ -8,7 +8,7 @@ title: Menu Label - Graphite Design System
 
 [[toc]]
 
-Menu labels are used to describe a group of [menu items](/components/menu-item).
+<p class="intro">Menu labels are used to describe a group of <a href="/components/menu-item">menu items</a>.</p>
 
 <div class="example-block">
   <gr-menu style="max-width: 200px; border: solid 1px var(--gr-panel-border-color); border-radius: var(--gr-border-radius-medium);">
@@ -46,7 +46,7 @@ Menu labels are used to describe a group of [menu items](/components/menu-item).
 | ----------- | ------------------------- |
 | `(default)` | The menu label's content. |
 
-## CSS Custom Properties
+## CSS custom properties
 
 | Name                 | Description                                                                                         |
 | -------------------- | --------------------------------------------------------------------------------------------------- |

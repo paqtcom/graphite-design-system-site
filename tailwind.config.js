@@ -69,7 +69,6 @@ module.exports = {
         'dark-shade': 'var(--gr-color-dark-shade)',
         'dark-tint': 'var(--gr-color-dark-tint)',
       },
-
       fontSize: {
         '2xs': 'var(--gr-font-size-xx-small)',
         xs: 'var(--gr-font-size-x-small)',
@@ -81,7 +80,6 @@ module.exports = {
         '3xl': 'var(--gr-font-size-xxx-large)',
         '4xl': 'var(--gr-font-size-xxxx-large)',
       },
-
       fontWeight: {
         thin: 'var(--gr-font-weight-thin)',
         extralight: 'var(--gr-font-weight-extra-light)',
@@ -119,13 +117,19 @@ module.exports = {
         '4xl': 'var(--gr-spacing-xxxx-large)',
       },
       leading: {
-        snug: 'var(--gr-line-height-dense)',
+        dense: 'var(--gr-line-height-dense)',
         normal: 'var(--gr-line-height-normal)',
         loose: 'var(--gr-line-height-loose)',
+      },
+      letterSpacing: {
+        dense: '-0.015em',
+        normal: '0',
+        loose: '0.075em',
       },
     },
     fontFamily: {
       sans: ['var(--gr-font-family)'],
+      display: ['Inter', 'var(--gr-font-family)'],
     },
   },
   variants: {

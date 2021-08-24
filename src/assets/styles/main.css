@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@700&display=swap');
+
 @tailwind base;
 
 a {
@@ -20,8 +22,12 @@ a:hover {
   @apply mb-5;
 }
 
+.content p.intro {
+  @apply text-medium text-lg;
+}
+
 .content h1 {
-  @apply mb-4 mt-4 text-2xl font-bold leading-10;
+  @apply mb-4 mt-4 text-2xl font-bold leading-10 font-display;
 }
 
 .content h2 {
@@ -56,19 +62,30 @@ a:hover {
 }
 
 .content table {
-  @apply block overflow-auto border-collapse whitespace-nowrap mb-8 text-sm;
+  display: block;
+  max-width: 100%;
+  overflow: auto;
+  width: 100%;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
 }
 
 .content th,
 .content td {
-  @apply px-4 py-2 border;
+  border: 1px solid var(--gr-color-light-shade);
+  padding: 6px 13px;
 }
 
 .content th {
-  @apply w-full text-left font-semibold;
+  font-weight: 600;
 }
 
-.content code {
+.content tr {
+  border-top: 1px solid var(--gr-color-light-shade);
+}
+
+.content :not(pre) > code {
   @apply text-sm bg-light-tint p-1 rounded;
 }
 
@@ -134,16 +151,10 @@ a:hover {
   @apply mb-1;
 }
 
-gr-button:not(.hydrated),
-gr-checkbox:not(.hydrated),
-gr-dropdown:not(.hydrated),
-gr-fieldgroup:not(.hydrated),
-gr-menu:not(.hydrated),
-gr-menu-item:not(.hydrated),
-gr-menu-label:not(.hydrated),
-gr-radio-group:not(.hydrated),
-gr-radio:not(.hydrated),
-gr-select:not(.hydrated),
-gr-tag:not(.hydrated) {
-  visibility: hidden;
+.banner {
+  @apply text-center p-3 lg:text-left lg:p-0;
+}
+
+.banner p {
+  @apply text-lg text-medium;
 }

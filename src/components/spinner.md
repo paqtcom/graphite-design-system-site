@@ -8,7 +8,7 @@ title: Spinner - Graphite Design System
 
 [[toc]]
 
-Spinners are used to show the progress of an indeterminate operation.
+<p class="intro">Spinners are used to show the progress of an indeterminate operation.</p>
 
 <div class="example-block">
   <gr-spinner></gr-spinner>
@@ -60,7 +60,7 @@ The spinner's colors can be changed by setting the `--indicator-color` and `--tr
 <gr-spinner style="font-size: 2rem; --indicator-color: tomato;"></gr-spinner>
 ```
 
-## CSS Custom Properties
+## CSS custom properties
 
 | Name                | Description                           |
 | ------------------- | ------------------------------------- |
