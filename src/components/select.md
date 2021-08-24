@@ -234,7 +234,7 @@ Use the `size` attribute to change a select's size.
 
 ### Selecting Options Programmatically
 
-The `value` prop is bound to the current selection. As the selection changes, so will the value. To programmatically manage the selection, update the `value` property.
+The `value` property is bound to the current selection. As the selection changes, so will the value. To programmatically manage the selection, update the `value` property.
 
 <div class="example-block selecting-example">
 

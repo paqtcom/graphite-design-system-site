@@ -30,7 +30,7 @@ title: Tag - Graphite Design System
 
 ### Sizes
 
-Use the `size` prop to change a tab's size.
+Use the `size` attribute to change a tag's size.
 
 <div class="example-block">
   <gr-tag size="small">Small</gr-tag>
@@ -46,7 +46,7 @@ Use the `size` prop to change a tab's size.
 
 ### Pill
 
-Use the `pill` prop to give tabs rounded edges.
+Use the `pill` attribute to give tags rounded edges.
 
 <div class="example-block">
   <gr-tag size="small" pill>Small</gr-tag>

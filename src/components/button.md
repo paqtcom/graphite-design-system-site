@@ -11,7 +11,7 @@ title: Button - Graphite Design System
 <p class="intro">Buttons provide a clickable element, which can be used in forms, or anywhere that needs simple, standard button functionality. They may display text, icons, or both. Buttons can be styled with several attributes to look a specific way.</p>
 
 <div class="example-block">
-<gr-button>Button</gr-button>
+  <gr-button>Button</gr-button>
 </div>
 
 ```html
@@ -33,11 +33,11 @@ Use the `variant` attribute to set the appropiate button style.
 | `plain`     | Use for less important or less commonly used actions since they’re less prominent.                                                                                          |
 
 <div class="example-block">
-<gr-button>Default</gr-button>
-<gr-button variant="primary">Primary</gr-button>
-<gr-button variant="secondary">Secondary</gr-button>
-<gr-button variant="danger">Danger</gr-button>
-<gr-button variant="plain">Plain</gr-button>
+  <gr-button>Default</gr-button>
+  <gr-button variant="primary">Primary</gr-button>
+  <gr-button variant="secondary">Secondary</gr-button>
+  <gr-button variant="danger">Danger</gr-button>
+  <gr-button variant="plain">Plain</gr-button>
 </div>
 
 ```html
@@ -53,15 +53,31 @@ Use the `variant` attribute to set the appropiate button style.
 Use the `size` attribute to change a button's size.
 
 <div class="example-block">
-<gr-button size="small">Small</gr-button>
-<gr-button>Medium</gr-button>
-<gr-button size="large">Large</gr-button>
+  <gr-button size="small">Small</gr-button>
+  <gr-button>Medium</gr-button>
+  <gr-button size="large">Large</gr-button>
 </div>
 
 ```html
 <gr-button size="small">Small</gr-button>
 <gr-button>Medium</gr-button>
 <gr-button size="large">Large</gr-button>
+```
+
+### Pill
+
+Use the `pill` attribute to give buttons rounded edges.
+
+<div class="example-block">
+  <gr-button size="small" pill>Small</gr-button>
+  <gr-button size="medium" pill>Medium</gr-button>
+  <gr-button size="large" pill>Large</gr-button>
+</div>
+
+```html
+<gr-button size="small" pill>Small</gr-button>
+<gr-button size="medium" pill>Medium</gr-button>
+<gr-button size="large" pill>Large</gr-button>
 ```
 
 ### Icons
@@ -74,14 +90,14 @@ We recommend [Ionicons](https://ionic.io/ionicons) (which also supports custom S
 Use the same icon set throughout your application for consistency.
 
 <div class="example-block">
-<gr-button>
-  <ion-icon name="settings-outline" slot="start"></ion-icon>
-  Settings
-</gr-button>
-<gr-button>
-  <ion-icon name="refresh-outline" slot="end"></ion-icon>
-  Refresh
-</gr-button>
+  <gr-button>
+    <ion-icon name="settings-outline" slot="start"></ion-icon>
+    Settings
+  </gr-button>
+  <gr-button>
+    <ion-icon name="refresh-outline" slot="end"></ion-icon>
+    Refresh
+  </gr-button>
 </div>
 
 ```html
@@ -105,15 +121,15 @@ There are certain instances where an icon will suffice in place of a text label,
 Setting a `aria-label` attribute is required for accessibility.
 
 <div class="example-block">
-<gr-button variant="primary" size="small" aria-label="Add" circle>
-  <ion-icon name="add-outline" slot="icon-only"></ion-icon>
-</gr-button>
-<gr-button variant="primary" aria-label="Add" circle>
-  <ion-icon name="add-outline" slot="icon-only"></ion-icon>
-</gr-button>
-<gr-button variant="primary" size="large" aria-label="Add" circle>
-  <ion-icon name="add-outline" slot="icon-only"></ion-icon>
-</gr-button>
+  <gr-button variant="primary" size="small" aria-label="Add" circle>
+    <ion-icon name="add-outline" slot="icon-only"></ion-icon>
+  </gr-button>
+  <gr-button variant="primary" aria-label="Add" circle>
+    <ion-icon name="add-outline" slot="icon-only"></ion-icon>
+  </gr-button>
+  <gr-button variant="primary" size="large" aria-label="Add" circle>
+    <ion-icon name="add-outline" slot="icon-only"></ion-icon>
+  </gr-button>
 </div>
 
 ```html
