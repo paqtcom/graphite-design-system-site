@@ -10,9 +10,9 @@ title: Typography tokens - Graphite Design System
 
 ## Font family
 
-| Token              | Value                                                                                                 | Example                                                                    |
-| :----------------- | :---------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------- |
-| `--gr-font-family` | -apple-system, system-ui, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif | <div class="font-sans">The quick brown fox jumped over the lazy dog.</div> |
+| Token              | Value                                                                                                 | Example                                                                   |
+| :----------------- | :---------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------- |
+| `--gr-font-family` | -apple-system, system-ui, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif | <div class="font-sans">The quick brown fox jumps over the lazy dog.</div> |
 
 ## Font size
 
@@ -30,34 +30,34 @@ title: Typography tokens - Graphite Design System
 
 ## Font weight
 
-| Token                          | Value | Example                                                                          |
-| :----------------------------- | :---- | -------------------------------------------------------------------------------- |
-| `--gr-font-weight-thin`        | 100   | <div class="font-thin">The quick brown fox jumped over the lazy dog.</div>       |
-| `--gr-font-weight-extra-light` | 200   | <div class="font-extralight">The quick brown fox jumped over the lazy dog.</div> |
-| `--gr-font-weight-light`       | 300   | <div class="font-light">The quick brown fox jumped over the lazy dog.</div>      |
-| `--gr-font-weight-normal`      | 400   | <div class="font-normal">The quick brown fox jumped over the lazy dog.</div>     |
-| `--gr-font-weight-medium`      | 500   | <div class="font-medium">The quick brown fox jumped over the lazy dog.</div>     |
-| `--gr-font-weight-semi-bold`   | 600   | <div class="font-semibold">The quick brown fox jumped over the lazy dog.</div>   |
-| `--gr-font-weight-bold`        | 700   | <div class="font-bold">The quick brown fox jumped over the lazy dog.</div>       |
-| `--gr-font-weight-extra-bold`  | 800   | <div class="font-extrabold">The quick brown fox jumped over the lazy dog.</div>  |
-| `--gr-font-weight-black`       | 900   | <div class="font-black">The quick brown fox jumped over the lazy dog.</div>      |
+| Token                          | Value | Example                                                                         |
+| :----------------------------- | :---- | ------------------------------------------------------------------------------- |
+| `--gr-font-weight-thin`        | 100   | <div class="font-thin">The quick brown fox jumps over the lazy dog.</div>       |
+| `--gr-font-weight-extra-light` | 200   | <div class="font-extralight">The quick brown fox jumps over the lazy dog.</div> |
+| `--gr-font-weight-light`       | 300   | <div class="font-light">The quick brown fox jumps over the lazy dog.</div>      |
+| `--gr-font-weight-normal`      | 400   | <div class="font-normal">The quick brown fox jumps over the lazy dog.</div>     |
+| `--gr-font-weight-medium`      | 500   | <div class="font-medium">The quick brown fox jumps over the lazy dog.</div>     |
+| `--gr-font-weight-semi-bold`   | 600   | <div class="font-semibold">The quick brown fox jumps over the lazy dog.</div>   |
+| `--gr-font-weight-bold`        | 700   | <div class="font-bold">The quick brown fox jumps over the lazy dog.</div>       |
+| `--gr-font-weight-extra-bold`  | 800   | <div class="font-extrabold">The quick brown fox jumps over the lazy dog.</div>  |
+| `--gr-font-weight-black`       | 900   | <div class="font-black">The quick brown fox jumps over the lazy dog.</div>      |
 
 ## Letter spacing
 
 Also called "tracking".
 
-| Token                        | Value    | Example                                                                          |
-| :--------------------------- | :------- | -------------------------------------------------------------------------------- |
-| `--gr-letter-spacing-dense`  | -0.015em | <div class="tracking-dense">The quick brown fox jumped over the lazy dog.</div>  |
-| `--gr-letter-spacing-normal` | normal   | <div class="tracking-normal">The quick brown fox jumped over the lazy dog.</div> |
-| `--gr-letter-spacing-loose`  | 0.075em  | <div class="tracking-loose">The quick brown fox jumped over the lazy dog.</div>  |
+| Token                        | Value    | Example                                                                         |
+| :--------------------------- | :------- | ------------------------------------------------------------------------------- |
+| `--gr-letter-spacing-dense`  | -0.015em | <div class="tracking-dense">The quick brown fox jumps over the lazy dog.</div>  |
+| `--gr-letter-spacing-normal` | normal   | <div class="tracking-normal">The quick brown fox jumps over the lazy dog.</div> |
+| `--gr-letter-spacing-loose`  | 0.075em  | <div class="tracking-loose">The quick brown fox jumps over the lazy dog.</div>  |
 
 ## Line height
 
 Also called "leading".
 
-| Token                     | Value | Example                                                                                                                                                                           |
-| :------------------------ | :---- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `--gr-line-height-dense`  | 1.4   | <div class="leading-dense">The quick brown fox jumped over the lazy dog.<br>The quick brown fox jumped over the lazy dog.<br>The quick brown fox jumped over the lazy dog.</div>  |
-| `--gr-line-height-normal` | 1.8   | <div class="leading-normal">The quick brown fox jumped over the lazy dog.<br>The quick brown fox jumped over the lazy dog.<br>The quick brown fox jumped over the lazy dog.</div> |
-| `--gr-line-height-loose`  | 2.2   | <div class="leading-loose">The quick brown fox jumped over the lazy dog.<br>The quick brown fox jumped over the lazy dog.<br>The quick brown fox jumped over the lazy dog.</div>  |
+| Token                     | Value | Example                                                                                                                                                                        |
+| :------------------------ | :---- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| `--gr-line-height-dense`  | 1.4   | <div class="leading-dense">The quick brown fox jumps over the lazy dog.<br>The quick brown fox jumps over the lazy dog.<br>The quick brown fox jumps over the lazy dog.</div>  |
+| `--gr-line-height-normal` | 1.8   | <div class="leading-normal">The quick brown fox jumps over the lazy dog.<br>The quick brown fox jumps over the lazy dog.<br>The quick brown fox jumps over the lazy dog.</div> |
+| `--gr-line-height-loose`  | 2.2   | <div class="leading-loose">The quick brown fox jumps over the lazy dog.<br>The quick brown fox jumps over the lazy dog.<br>The quick brown fox jumps over the lazy dog.</div>  |

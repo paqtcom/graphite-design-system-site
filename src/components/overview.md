@@ -7,7 +7,7 @@ title: Components - Graphite Design System
 [Button](/components/button)
 
 <div class="example-block">
-<gr-button>Button</gr-button>
+  <gr-button>Button</gr-button>
 </div>
 
 [Checkbox](/components/checkbox) & [field group](/components/field-group)

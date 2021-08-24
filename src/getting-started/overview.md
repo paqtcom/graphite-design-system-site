@@ -46,14 +46,14 @@ We welcome your feedback on how we might improve. For any specific questions or 
 - Components are built with [Stencil](https://stenciljs.com/)
 - The documentation site is built with [Eleventy](https://www.11ty.dev/) using this [starter project](https://github.com/ixartz/Eleventy-Starter-Boilerplate)
 - The documentation site is hosted on [Netlify](https://netlify.app/)
-- The layout of the documentation site is based/inspired on [Nuxt Content](https://content.nuxtjs.org/).
+- The layout of the documentation site is based on or inspired by [Nuxt Content](https://content.nuxtjs.org/).
 - CDN services are provided by [jsDelivr](https://www.jsdelivr.com/)
 - Icons are courtesy of [Ionicons](https://ionic.io/ionicons)
 - We used the asterisk icon from [Elusive Icons](http://elusiveicons.com/) by [Team Redux](http://reduxframework.com/)
 - Positioning of menus, tooltips, et al is handled by [Popper.js](https://popper.js.org/)
 - The Graphite logo was designed by [Elwin van Eede](https://elwinvaneede.com)
-- Some component code is based/inspired on the [Ionic Framework](https://ionicframework.com/) and [Shoelace](https://shoelace.style/) components
-- Some documentation is based/inspired on the [Ionic Framework](https://ionicframework.com/), [Shoelace](https://shoelace.style/), the [Spectrum Design System](https://spectrum.adobe.com/), the [Carbon Design System](https://www.carbondesignsystem.com/), and the [Polaris Design System](https://polaris.shopify.com/)
+- Some component code is based on or inspired by the [Ionic Framework](https://ionicframework.com/) and [Shoelace](https://shoelace.style/) components
+- Some documentation is based on or inspired by the [Ionic Framework](https://ionicframework.com/), [Shoelace](https://shoelace.style/), the [Spectrum Design System](https://spectrum.adobe.com/), the [Carbon Design System](https://www.carbondesignsystem.com/), and the [Polaris Design System](https://polaris.shopify.com/)
 
 ## Contact us
 
