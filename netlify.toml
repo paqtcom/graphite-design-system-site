@@ -7,6 +7,6 @@
   [headers.values]
     Referrer-Policy = "strict-origin-when-cross-origin"
     X-Frame-Options = "SAMEORIGIN"
-    X-XSS-Protection = "0"
+    X-XSS-Protection = "1; mode=block"
     X-Content-Type-Options = "nosniff"
     Content-Security-Policy = "default-src 'self'; style-src 'self' 'unsafe-inline' jsdelivr.net *.jsdelivr.net googleapis.com *.googleapis.com; style-src-elem 'self' 'unsafe-inline' jsdelivr.net *.jsdelivr.net googleapis.com *.googleapis.com; form-action 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval' unpkg.com *.unpkg.com jsdelivr.net *.jsdelivr.net; script-src-elem 'self' 'unsafe-inline' unpkg.com *.unpkg.com jsdelivr.net *.jsdelivr.net blob:; font-src 'unsafe-inline' gstatic.com *.gstatic.com; connect-src 'self' unpkg.com *.unpkg.com; img-src 'self'; base-uri 'self';"
