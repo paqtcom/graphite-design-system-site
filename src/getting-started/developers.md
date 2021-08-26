@@ -15,11 +15,15 @@ Add the following code to your page:
 ```html
 <link
   rel="stylesheet"
-  href="https://cdn.jsdelivr.net/npm/@graphiteds/core@1/css/graphite.bundle.css"
+  href="https://cdn.jsdelivr.net/npm/@graphiteds/core@1.2.3/css/graphite.bundle.css"
+  integrity="sha256-TpcVLd8Ifzcv6mn0/rXl6XifvbXPUzuEep5Rkur6Ieg="
+  crossorigin="anonymous"
 />
 <script
   type="module"
-  src="https://cdn.jsdelivr.net/npm/@graphiteds/core@1/dist/core/core.esm.js"
+  src="https://cdn.jsdelivr.net/npm/@graphiteds/core@1.2.3/dist/core/core.esm.js"
+  integrity="sha256-FKP2iXgedKu3AnY7wYQHU0s4sc1s7RbKXMsvaSzaj7s="
+  crossorigin="anonymous"
 ></script>
 ```
 

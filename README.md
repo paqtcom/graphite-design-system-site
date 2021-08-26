@@ -20,6 +20,12 @@ npm run dev
 
 Open http://localhost:8080 with your favorite browser.
 
+## Update to latest `@graphiteds/core` version
+
+To update to the latest Graphite release use [this tool](https://www.jsdelivr.com/package/npm/@graphiteds/core?tab=collection) to generate the correct `integrity` hash (but make sure you use `type="module"` for the script tag). [Check the MDN docs](https://developer.mozilla.org/en-US/docs/Web/Security/Subresource_Integrity) for more info about this.
+
+Note: don't forget to change the version number in the the top right of the site.
+
 ## Preview production mode
 
 You can see the results locally in production mode with:
