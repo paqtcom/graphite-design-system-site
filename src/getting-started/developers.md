@@ -33,7 +33,11 @@ Now you have access to all of Graphite's components! Try adding a button:
 <gr-button>Click me</gr-button>
 ```
 
+[See a working example of this setup (CodeSandbox)](https://codesandbox.io/s/graphiteds-script-tag-example-9foz6)
+
 See the [components usage](/guidelines/components-usage) guidelines for more details and other ways to install Graphite.
+
+## Further reading
 
 For an up-to-date list of components included and their respective documentations, see the [components overview page](/components/overview).
 

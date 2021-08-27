@@ -4,7 +4,7 @@ title: Getting started - Graphite Design System
 
 # Getting started
 
-<p class="intro">Welcome to Graphite! Graphite is Way2Web’s open-source white-label design system for digital products and experiences.</p>
+<p class="intro">Welcome to Graphite! Graphite is Way2Web’s white-label design system for digital products and experiences.</p>
 
 Get started by following the guide for [designers](/getting-started/designers) or [developers](/getting-started/developers).
 

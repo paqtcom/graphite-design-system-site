@@ -47,7 +47,7 @@ For example:
 <gr-button href="https://www.way2web.nl">Way2Web</gr-button>
 ```
 
-[An example of this setup](https://codesandbox.io/s/graphiteds-script-tag-example-9foz6)
+[See a working example of this setup (CodeSandbox)](https://codesandbox.io/s/graphiteds-script-tag-example-9foz6)
 
 ## Usage with bundlers
 
@@ -174,7 +174,7 @@ Use it in your template as any Vue component:
 
 We recommend using kebab-case for our components and PascalCase for your own Vue components to make them visible distinct.
 
-[An example of this setup using vue-cli v4](https://codesandbox.io/s/graphiteds-vue3-example-jhk03)
+[See a working example of this setup (CodeSandbox) using vue-cli v4](https://codesandbox.io/s/graphiteds-vue3-example-jhk03)
 
 ### Recommended editors
 
@@ -233,7 +233,7 @@ The components should then be available in any of the Vue components:
 
 Vue provides several different ways to install and use the framework in an application. The above technique has been tested on a Vue 2 application that was created using the vue-cli. A similar technique should work if the application was generated using other options.
 
-[An example of this setup](https://codesandbox.io/s/graphiteds-vue2-example-q7o2c)
+[See a working example of this setup (CodeSandbox)](https://codesandbox.io/s/graphiteds-vue2-example-q7o2c)
 
 Note: All components are part of your bundle, but only lazy-loaded by the browser when needed. Alternately, [cherry-pick components](#cherry-pick-components) for optimal bundle size. Or if you use some other bundler than webpack (because of [this issue](https://github.com/ionic-team/stencil/issues/2827)).
 
@@ -346,7 +346,7 @@ The instructions above about [Binding Complex Data](#binding-complex-data), [Two
 
 All components are part of your bundle but only lazy-loaded by the browser when needed. Alternately, [cherry-pick components](#cherry-pick-components) for optimal bundle size. Or if you use some other bundler than webpack (because of [this issue](https://github.com/ionic-team/stencil/issues/2827)).
 
-[An example of this setup](https://codesandbox.io/s/graphiteds-nuxt2-example-jyvc9)
+[See a working example of this setup (CodeSandbox)](https://codesandbox.io/s/graphiteds-nuxt2-example-jyvc9)
 
 ## Usage with React
 
@@ -380,7 +380,7 @@ Use it in your JSX as any React component:
 <GrButton href="https://www.way2web.nl">Way2Web</GrButton>
 ```
 
-[An example of this setup](https://codesandbox.io/s/graphiteds-react-example-yhr9p)
+[See a working example of this setup (CodeSandbox)](https://codesandbox.io/s/graphiteds-react-example-yhr9p)
 
 ## Usage with Angular
 
@@ -431,7 +431,7 @@ Once included, components can be used in your HTML markup as in the following ex
 <gr-button variant="primary">Send</gr-button>
 ```
 
-[An example of this setup](https://codesandbox.io/s/graphiteds-angular-example-e4gju)
+[See a working example of this setup (CodeSandbox)](https://codesandbox.io/s/graphiteds-angular-example-e4gju)
 
 ## Usage with Livewire
 

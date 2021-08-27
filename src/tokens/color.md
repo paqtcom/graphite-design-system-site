@@ -62,25 +62,25 @@ Please use [this contrast checker](https://webaim.org/resources/contrastchecker/
 
 ## Success
 
-| Token                                | Value          | Example                                                |
-| :----------------------------------- | :------------- | :----------------------------------------------------- |
-| `--gr-color-success`                 | `#0fbe78`      | <div class="h-8 border rounded bg-success" />          |
-| `--gr-color-success-rgb`             | `15, 190, 120` | <div class="h-8 border rounded bg-success" />          |
-| `--gr-color-success-contrast` \*     | `#000000`      | <div class="h-8 border rounded bg-success-contrast" /> |
-| `--gr-color-success-contrast-rgb` \* | `0, 0, 0`      | <div class="h-8 border rounded bg-success-contrast" /> |
-| `--gr-color-success-shade`           | `#057f4e`      | <div class="h-8 border rounded bg-success-shade" />    |
-| `--gr-color-success-tint`            | `#12e28f`      | <div class="h-8 border rounded bg-success-tint" />     |
+| Token                             | Value          | Example                                                |
+| :-------------------------------- | :------------- | :----------------------------------------------------- |
+| `--gr-color-success`              | `#0fbe78`      | <div class="h-8 border rounded bg-success" />          |
+| `--gr-color-success-rgb`          | `15, 190, 120` | <div class="h-8 border rounded bg-success" />          |
+| `--gr-color-success-contrast`     | `#000000`      | <div class="h-8 border rounded bg-success-contrast" /> |
+| `--gr-color-success-contrast-rgb` | `0, 0, 0`      | <div class="h-8 border rounded bg-success-contrast" /> |
+| `--gr-color-success-shade` \*     | `#057f4e`      | <div class="h-8 border rounded bg-success-shade" />    |
+| `--gr-color-success-tint`         | `#12e28f`      | <div class="h-8 border rounded bg-success-tint" />     |
 
 ## Warning
 
-| Token                                | Value          | Example                                                |
-| :----------------------------------- | :------------- | :----------------------------------------------------- |
-| `--gr-color-warning`                 | `#fbbc4e`      | <div class="h-8 border rounded bg-warning" />          |
-| `--gr-color-warning-rgb`             | `251, 188, 78` | <div class="h-8 border rounded bg-warning" />          |
-| `--gr-color-warning-contrast` \*     | `#051f2c`      | <div class="h-8 border rounded bg-warning-contrast" /> |
-| `--gr-color-warning-contrast-rgb` \* | `5, 31, 44`    | <div class="h-8 border rounded bg-warning-contrast" /> |
-| `--gr-color-warning-shade`           | `#9e6400`      | <div class="h-8 border rounded bg-warning-shade" />    |
-| `--gr-color-warning-tint`            | `#fdd187`      | <div class="h-8 border rounded bg-warning-tint" />     |
+| Token                             | Value          | Example                                                |
+| :-------------------------------- | :------------- | :----------------------------------------------------- |
+| `--gr-color-warning`              | `#fbbc4e`      | <div class="h-8 border rounded bg-warning" />          |
+| `--gr-color-warning-rgb`          | `251, 188, 78` | <div class="h-8 border rounded bg-warning" />          |
+| `--gr-color-warning-contrast`     | `#051f2c`      | <div class="h-8 border rounded bg-warning-contrast" /> |
+| `--gr-color-warning-contrast-rgb` | `5, 31, 44`    | <div class="h-8 border rounded bg-warning-contrast" /> |
+| `--gr-color-warning-shade` \*     | `#9e6400`      | <div class="h-8 border rounded bg-warning-shade" />    |
+| `--gr-color-warning-tint`         | `#fdd187`      | <div class="h-8 border rounded bg-warning-tint" />     |
 
 ## Danger
 

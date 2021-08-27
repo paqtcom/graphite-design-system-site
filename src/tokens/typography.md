@@ -10,6 +10,8 @@ title: Typography tokens - Graphite Design System
 
 ## Font family
 
+The default font family is the system font family of the user's device. This is the most performant and is generally a font family of high quality. This way, the text looks native to the user. Using the system font family is recommended in most situations unless the branding requires a specific font for the body text.
+
 | Token              | Value                                                                                                 | Example                                                                   |
 | :----------------- | :---------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------- |
 | `--gr-font-family` | -apple-system, system-ui, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif | <div class="font-sans">The quick brown fox jumps over the lazy dog.</div> |
