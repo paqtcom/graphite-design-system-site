@@ -27,14 +27,14 @@ Just add the following tags to your page.
 ```html
 <link
   rel="stylesheet"
-  href="https://cdn.jsdelivr.net/npm/@graphiteds/core@1.3.0/css/graphite.bundle.css"
+  href="https://cdn.jsdelivr.net/npm/@graphiteds/core@1.3.1/css/graphite.bundle.css"
   integrity="sha256-Maq0H86dB7RsnWif+qVcjQTCDWf91cqcF+kokcsZ8m0="
   crossorigin="anonymous"
 />
 <script
   type="module"
-  src="https://cdn.jsdelivr.net/npm/@graphiteds/core@1.3.0/dist/core/core.esm.js"
-  integrity="sha256-NrjIfTJu9PD39IgVamIs81brasXpGpL93f+2ywRu0Ps="
+  src="https://cdn.jsdelivr.net/npm/@graphiteds/core@1.3.1/dist/core/core.esm.js"
+  integrity="sha256-FFuRO4UKVks0ei0+PDztJT5edb4k5VRIdmskBqkeJxA="
   crossorigin="anonymous"
 ></script>
 ```
@@ -440,14 +440,14 @@ Just add the following tags to your page.
 ```html
 <link
   rel="stylesheet"
-  href="https://cdn.jsdelivr.net/npm/@graphiteds/core@1.3.0/css/graphite.bundle.css"
+  href="https://cdn.jsdelivr.net/npm/@graphiteds/core@1.3.1/css/graphite.bundle.css"
   integrity="sha256-Maq0H86dB7RsnWif+qVcjQTCDWf91cqcF+kokcsZ8m0="
   crossorigin="anonymous"
 />
 <script
   type="module"
-  src="https://cdn.jsdelivr.net/npm/@graphiteds/core@1.3.0/dist/core/core.esm.js"
-  integrity="sha256-NrjIfTJu9PD39IgVamIs81brasXpGpL93f+2ywRu0Ps="
+  src="https://cdn.jsdelivr.net/npm/@graphiteds/core@1.3.1/dist/core/core.esm.js"
+  integrity="sha256-FFuRO4UKVks0ei0+PDztJT5edb4k5VRIdmskBqkeJxA="
   crossorigin="anonymous"
 ></script>
 ```
