@@ -21,11 +21,11 @@ title: Menu Item - Graphite Design System
     <gr-menu-divider></gr-menu-divider>
     <gr-menu-item>
       Start Icon
-      <ion-icon slot="start" name="gift-outline"></ion-icon>
+      <ion-icon slot="start" name="gift-outline" aria-hidden="true"></ion-icon>
     </gr-menu-item>
     <gr-menu-item>
       End Icon
-      <ion-icon slot="end" name="heart-outline"></ion-icon>
+      <ion-icon slot="end" name="heart-outline" aria-hidden="true"></ion-icon>
     </gr-menu-item>
   </gr-menu>
 </div>
@@ -43,11 +43,11 @@ title: Menu Item - Graphite Design System
   <gr-menu-divider></gr-menu-divider>
   <gr-menu-item>
     Start Icon
-    <ion-icon slot="start" name="gift-outline"></ion-icon>
+    <ion-icon slot="start" name="gift-outline" aria-hidden="true"></ion-icon>
   </gr-menu-item>
   <gr-menu-item>
     End Icon
-    <ion-icon slot="end" name="heart-outline"></ion-icon>
+    <ion-icon slot="end" name="heart-outline" aria-hidden="true"></ion-icon>
   </gr-menu-item>
 </gr-menu>
 ```
@@ -92,7 +92,9 @@ Use the `disabled` attribute to disable the menu item. Clicks will be suppressed
 
 ### Icons
 
-Use the `start` and `end` slots to add icons (or other content).
+Icons can be used in menu items when additional clarity is required. Icons should not be used for decoration.
+
+Use the `start` and `end` slots to add icons (or other content). As a general rule, a menu item should not have more than one icon.
 
 We recommend [Ionicons](https://ionic.io/ionicons) (which also supports custom SVG), but you could theoretically use any icon library.
 Use the same icon set throughout your application for consistency.
@@ -101,11 +103,11 @@ Use the same icon set throughout your application for consistency.
   <gr-menu style="max-width: 200px; border: solid 1px var(--gr-panel-border-color); border-radius: var(--gr-border-radius-medium);">
     <gr-menu-item>
       Start Icon
-      <ion-icon slot="start" name="gift-outline"></ion-icon>
+      <ion-icon slot="start" name="gift-outline" aria-hidden="true"></ion-icon>
     </gr-menu-item>
     <gr-menu-item>
       End Icon
-      <ion-icon slot="end" name="heart-outline"></ion-icon>
+      <ion-icon slot="end" name="heart-outline" aria-hidden="true"></ion-icon>
     </gr-menu-item>
   </gr-menu>
 </div>
@@ -116,11 +118,11 @@ Use the same icon set throughout your application for consistency.
 >
   <gr-menu-item>
     Start Icon
-    <ion-icon slot="start" name="gift-outline"></ion-icon>
+    <ion-icon slot="start" name="gift-outline" aria-hidden="true"></ion-icon>
   </gr-menu-item>
   <gr-menu-item>
     End Icon
-    <ion-icon slot="end" name="heart-outline"></ion-icon>
+    <ion-icon slot="end" name="heart-outline" aria-hidden="true"></ion-icon>
   </gr-menu-item>
 </gr-menu>
 ```

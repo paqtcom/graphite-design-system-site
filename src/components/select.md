@@ -425,7 +425,7 @@ Every select should have a label. A field without a label is ambiguous and not a
 
 <div class="usage-guidelines usage-guidelines-do">
 
-<ion-icon name="checkmark-circle" class="icon"></ion-icon>
+<ion-icon name="checkmark-circle" class="icon" aria-label="do"></ion-icon>
 
 <gr-select label="Country of birth" value="nl">
   <gr-menu-item value="nl">Netherlands</gr-menu-item>
@@ -436,7 +436,7 @@ Every select should have a label. A field without a label is ambiguous and not a
 
 <div class="usage-guidelines usage-guidelines-dont">
 
-<ion-icon name="close-circle" class="icon"></ion-icon>
+<ion-icon name="close-circle" class="icon" aria-label="do not"></ion-icon>
 
 <gr-select value="nl">
   <gr-menu-item value="nl">Netherlands</gr-menu-item>
@@ -451,7 +451,7 @@ Keep menu items short and concise so they fit in the width of the select. If you
 
 <div class="usage-guidelines usage-guidelines-do">
 
-<ion-icon name="checkmark-circle" class="icon"></ion-icon>
+<ion-icon name="checkmark-circle" class="icon" aria-label="do"></ion-icon>
 
 <gr-select label="Size" placeholder="Select an option..." style="max-width: 200px">
   <gr-menu-item value="s">Small</gr-menu-item>
@@ -463,7 +463,7 @@ Keep menu items short and concise so they fit in the width of the select. If you
 
 <div class="usage-guidelines usage-guidelines-dont">
 
-<ion-icon name="close-circle" class="icon"></ion-icon>
+<ion-icon name="close-circle" class="icon" aria-label="do not"></ion-icon>
 
 <gr-select label="Size" placeholder="Select an option..." style="max-width: 200px">
   <gr-menu-item value="s">Small (works best for mobile phones)</gr-menu-item>
@@ -479,7 +479,7 @@ When possible, the select width should be wide enough so that any chosen menu it
 
 <div class="usage-guidelines usage-guidelines-do">
 
-<ion-icon name="checkmark-circle" class="icon"></ion-icon>
+<ion-icon name="checkmark-circle" class="icon" aria-label="do"></ion-icon>
 
 <gr-select label="Country" value="us" style="max-width: 250px">
   <gr-menu-item value="nl">Netherlands</gr-menu-item>
@@ -490,7 +490,7 @@ When possible, the select width should be wide enough so that any chosen menu it
 
 <div class="usage-guidelines usage-guidelines-dont">
 
-<ion-icon name="close-circle" class="icon"></ion-icon>
+<ion-icon name="close-circle" class="icon" aria-label="do not"></ion-icon>
 
 <gr-select label="Country" value="us" style="max-width: 200px">
   <gr-menu-item value="nl">Netherlands</gr-menu-item>
@@ -505,7 +505,7 @@ Field labels, placeholder text, and menu items should be in sentence case.
 
 <div class="usage-guidelines usage-guidelines-do">
 
-<ion-icon name="checkmark-circle" class="icon"></ion-icon>
+<ion-icon name="checkmark-circle" class="icon" aria-label="do"></ion-icon>
 
 <gr-select label="Country of birth" placeholder="Select a country...">
   <gr-menu-item value="nl">Netherlands</gr-menu-item>
@@ -516,7 +516,7 @@ Field labels, placeholder text, and menu items should be in sentence case.
 
 <div class="usage-guidelines usage-guidelines-dont">
 
-<ion-icon name="close-circle" class="icon"></ion-icon>
+<ion-icon name="close-circle" class="icon" aria-label="do not"></ion-icon>
 
 <gr-select label="Country of Birth" placeholder="Select a Country">
   <gr-menu-item value="nl">Netherlands</gr-menu-item>
@@ -535,7 +535,7 @@ For large forms involving sensitive data like checkout processes and long accoun
 
 <div class="usage-guidelines usage-guidelines-do">
 
-<ion-icon name="checkmark-circle" class="icon"></ion-icon>
+<ion-icon name="checkmark-circle" class="icon" aria-label="do"></ion-icon>
 
 <gr-select label="Assignee" placeholder="Select a user...">
   <gr-menu-item value="example">Example</gr-menu-item>
@@ -554,7 +554,7 @@ For large forms involving sensitive data like checkout processes and long accoun
 
 <div class="usage-guidelines usage-guidelines-dont">
 
-<ion-icon name="close-circle" class="icon"></ion-icon>
+<ion-icon name="close-circle" class="icon" aria-label="do not"></ion-icon>
 
 <gr-select label="Assignee (required)" placeholder="Select a user...">
   <gr-menu-item value="example">Example</gr-menu-item>
@@ -583,7 +583,7 @@ The help text’s message should not simply restate the same information in the 
 
 <div class="usage-guidelines usage-guidelines-do">
 
-<ion-icon name="checkmark-circle" class="icon"></ion-icon>
+<ion-icon name="checkmark-circle" class="icon" aria-label="do"></ion-icon>
 
 <gr-select label="Preferred contact method" placeholder="Select contact method..." help-text="Select the best way to contact you in case there's an issue with your account.">
   <gr-menu-item value="email">Email</gr-menu-item>
@@ -594,7 +594,7 @@ The help text’s message should not simply restate the same information in the 
 
 <div class="usage-guidelines usage-guidelines-dont">
 
-<ion-icon name="close-circle" class="icon"></ion-icon>
+<ion-icon name="close-circle" class="icon" aria-label="do not"></ion-icon>
 
 <gr-select label="Preferred contact method" placeholder="Select contact method..." help-text="Choose your preferred contact method.">
   <gr-menu-item value="email">Email</gr-menu-item>
@@ -619,7 +619,7 @@ Don't just mark a select invalid and expect the user to understand why it's inva
 
 <div class="usage-guidelines usage-guidelines-do">
 
-<ion-icon name="checkmark-circle" class="icon"></ion-icon>
+<ion-icon name="checkmark-circle" class="icon" aria-label="do"></ion-icon>
 
 <gr-select label="Preferred contact method" placeholder="Select contact method..." invalid-text="Select a contact method." required-indicator invalid>
   <gr-menu-item value="email">Email</gr-menu-item>
@@ -630,7 +630,7 @@ Don't just mark a select invalid and expect the user to understand why it's inva
 
 <div class="usage-guidelines usage-guidelines-dont">
 
-<ion-icon name="close-circle" class="icon"></ion-icon>
+<ion-icon name="close-circle" class="icon" aria-label="do not"></ion-icon>
 
 <gr-select label="Preferred contact method" placeholder="Select contact method..." required-indicator invalid>
   <gr-menu-item value="email">Email</gr-menu-item>
@@ -647,7 +647,7 @@ Since one gets replaced by the other, the language of the help text and invalid 
 
 <div class="usage-guidelines usage-guidelines-do">
 
-<ion-icon name="checkmark-circle" class="icon"></ion-icon>
+<ion-icon name="checkmark-circle" class="icon" aria-label="do"></ion-icon>
 
 <gr-select label="Preferred contact method" placeholder="Select contact method..." help-text="Select the best way to contact you in case there's an issue with your account." required-indicator>
   <gr-menu-item value="email">Email</gr-menu-item>
@@ -663,7 +663,7 @@ Since one gets replaced by the other, the language of the help text and invalid 
 
 <div class="usage-guidelines usage-guidelines-dont">
 
-<ion-icon name="close-circle" class="icon"></ion-icon>
+<ion-icon name="close-circle" class="icon" aria-label="do not"></ion-icon>
 
 <gr-select label="Preferred contact method" placeholder="Select contact method..." help-text="Select a contact method." required-indicator>
   <gr-menu-item value="email">Email</gr-menu-item>
@@ -685,7 +685,7 @@ Invalid text should be written in 1-2 short, complete sentences and in a clear a
 
 <div class="usage-guidelines usage-guidelines-do">
 
-<ion-icon name="checkmark-circle" class="icon"></ion-icon>
+<ion-icon name="checkmark-circle" class="icon" aria-label="do"></ion-icon>
 
 <gr-select label="Preferred contact method" placeholder="Select contact method..." invalid-text="Select a contact method." required-indicator invalid>
   <gr-menu-item value="email">Email</gr-menu-item>
@@ -696,7 +696,7 @@ Invalid text should be written in 1-2 short, complete sentences and in a clear a
 
 <div class="usage-guidelines usage-guidelines-dont">
 
-<ion-icon name="close-circle" class="icon"></ion-icon>
+<ion-icon name="close-circle" class="icon" aria-label="do not"></ion-icon>
 
 <gr-select label="Preferred contact method" placeholder="Select contact method..."  invalid-text="Invalid field" required-indicator invalid>
   <gr-menu-item value="email">Email</gr-menu-item>

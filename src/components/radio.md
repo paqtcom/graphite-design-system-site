@@ -60,7 +60,7 @@ Radio buttons and checkboxes are not interchangeable. Radio buttons are best use
 
 <div class="usage-guidelines usage-guidelines-do">
 
-<ion-icon name="checkmark-circle" class="icon"></ion-icon>
+<ion-icon name="checkmark-circle" class="icon" aria-label="do"></ion-icon>
 
 <gr-radio-group label="Size" value="s">
   <gr-radio value="s">Small</gr-radio>
@@ -72,7 +72,7 @@ Radio buttons and checkboxes are not interchangeable. Radio buttons are best use
 
 <div class="usage-guidelines usage-guidelines-dont">
 
-<ion-icon name="close-circle" class="icon"></ion-icon>
+<ion-icon name="close-circle" class="icon" aria-label="do not"></ion-icon>
 
 <gr-radio-group label="Interests" value="travel">
   <gr-radio value="travel">Travel</gr-radio>

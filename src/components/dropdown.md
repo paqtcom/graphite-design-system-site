@@ -27,11 +27,11 @@ Dropdowns are designed to work well with [menus](/components/menu) to provide a 
       <gr-menu-divider></gr-menu-divider>
       <gr-menu-item>
         Start Icon
-        <ion-icon slot="start" name="gift-outline"></ion-icon>
+        <ion-icon slot="start" name="gift-outline" aria-hidden="true"></ion-icon>
       </gr-menu-item>
       <gr-menu-item>
         End Icon
-        <ion-icon slot="end" name="heart-outline"></ion-icon>
+        <ion-icon slot="end" name="heart-outline" aria-hidden="true"></ion-icon>
       </gr-menu-item>
     </gr-menu>
   </gr-dropdown>
@@ -50,11 +50,11 @@ Dropdowns are designed to work well with [menus](/components/menu) to provide a 
     <gr-menu-divider></gr-menu-divider>
     <gr-menu-item>
       Start Icon
-      <ion-icon slot="start" name="gift-outline"></ion-icon>
+      <ion-icon slot="start" name="gift-outline" aria-hidden="true"></ion-icon>
     </gr-menu-item>
     <gr-menu-item>
       End Icon
-      <ion-icon slot="end" name="heart-outline"></ion-icon>
+      <ion-icon slot="end" name="heart-outline" aria-hidden="true"></ion-icon>
     </gr-menu-item>
   </gr-menu>
 </gr-dropdown>
