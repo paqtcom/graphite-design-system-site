@@ -193,7 +193,7 @@ Every input should have a label. A field without a label is ambiguous and not ac
 
 <div class="usage-guidelines usage-guidelines-do">
 
-<ion-icon name="checkmark-circle" class="icon"></ion-icon>
+<ion-icon name="checkmark-circle" class="icon" aria-label="do"></ion-icon>
 
 <gr-input label="Name" value="Soof"></gr-input>
 
@@ -201,7 +201,7 @@ Every input should have a label. A field without a label is ambiguous and not ac
 
 <div class="usage-guidelines usage-guidelines-dont">
 
-<ion-icon name="close-circle" class="icon"></ion-icon>
+<ion-icon name="close-circle" class="icon" aria-label="do not"></ion-icon>
 
 <gr-input value="Soof"></gr-input>
 
@@ -213,7 +213,7 @@ Field labels and placeholder text should be in sentence case.
 
 <div class="usage-guidelines usage-guidelines-do">
 
-<ion-icon name="checkmark-circle" class="icon"></ion-icon>
+<ion-icon name="checkmark-circle" class="icon" aria-label="do"></ion-icon>
 
 <gr-input label="Email address" value="soof@way2web.nl"></gr-input>
 
@@ -221,7 +221,7 @@ Field labels and placeholder text should be in sentence case.
 
 <div class="usage-guidelines usage-guidelines-dont">
 
-<ion-icon name="close-circle" class="icon"></ion-icon>
+<ion-icon name="close-circle" class="icon" aria-label="do not"></ion-icon>
 
 <gr-input label="Email Address" value="soof@way2web.nl"></gr-input>
 
@@ -237,7 +237,7 @@ For large forms involving sensitive data like checkout processes and long accoun
 
 <div class="usage-guidelines usage-guidelines-do">
 
-<ion-icon name="checkmark-circle" class="icon"></ion-icon>
+<ion-icon name="checkmark-circle" class="icon" aria-label="do"></ion-icon>
 
 <gr-input label="Name" value="Sofie van der Grift"></gr-input>
 
@@ -249,7 +249,7 @@ For large forms involving sensitive data like checkout processes and long accoun
 
 <div class="usage-guidelines usage-guidelines-dont">
 
-<ion-icon name="close-circle" class="icon"></ion-icon>
+<ion-icon name="close-circle" class="icon" aria-label="do not"></ion-icon>
 
 <gr-input label="Name (required)" value="Sofie van der Grift"></gr-input>
 
@@ -271,7 +271,7 @@ The help text’s message should not simply restate the same information in the 
 
 <div class="usage-guidelines usage-guidelines-do">
 
-<ion-icon name="checkmark-circle" class="icon"></ion-icon>
+<ion-icon name="checkmark-circle" class="icon" aria-label="do"></ion-icon>
 
 <gr-input label="Email address" help-text="soof@way2web.com"></gr-input>
 
@@ -279,7 +279,7 @@ The help text’s message should not simply restate the same information in the 
 
 <div class="usage-guidelines usage-guidelines-dont">
 
-<ion-icon name="close-circle" class="icon"></ion-icon>
+<ion-icon name="close-circle" class="icon" aria-label="do not"></ion-icon>
 
 <gr-input label="Email address" help-text="Enter your email address."></gr-input>
 
@@ -293,7 +293,7 @@ Instead of placeholder text, use the help text description to convey requirement
 
 <div class="usage-guidelines usage-guidelines-do">
 
-<ion-icon name="checkmark-circle" class="icon"></ion-icon>
+<ion-icon name="checkmark-circle" class="icon" aria-label="do"></ion-icon>
 
 <gr-input label="Email address" help-text="soof@way2web.com"></gr-input>
 
@@ -301,7 +301,7 @@ Instead of placeholder text, use the help text description to convey requirement
 
 <div class="usage-guidelines usage-guidelines-dont">
 
-<ion-icon name="close-circle" class="icon"></ion-icon>
+<ion-icon name="close-circle" class="icon" aria-label="do not"></ion-icon>
 
 <gr-input label="Email address" placeholder="soof@way2web.com"></gr-input>
 
@@ -323,7 +323,7 @@ Don't just mark an input invalid and expect the user to understand why it's inva
 
 <div class="usage-guidelines usage-guidelines-do">
 
-<ion-icon name="checkmark-circle" class="icon"></ion-icon>
+<ion-icon name="checkmark-circle" class="icon" aria-label="do"></ion-icon>
 
 <gr-input label="Credit card number" invalid-text="Enter your credit card number." required-indicator invalid></gr-input>
 
@@ -331,7 +331,7 @@ Don't just mark an input invalid and expect the user to understand why it's inva
 
 <div class="usage-guidelines usage-guidelines-dont">
 
-<ion-icon name="close-circle" class="icon"></ion-icon>
+<ion-icon name="close-circle" class="icon" aria-label="do not"></ion-icon>
 
 <gr-input label="Credit card number" required-indicator invalid></gr-input>
 
@@ -345,7 +345,7 @@ Since one gets replaced by the other, the language of the help text and invalid 
 
 <div class="usage-guidelines usage-guidelines-do">
 
-<ion-icon name="checkmark-circle" class="icon"></ion-icon>
+<ion-icon name="checkmark-circle" class="icon" aria-label="do"></ion-icon>
 
 <gr-input label="Password" type="password" help-text="Passwords must be at least 8 characters." required-indicator></gr-input>
 
@@ -357,7 +357,7 @@ Since one gets replaced by the other, the language of the help text and invalid 
 
 <div class="usage-guidelines usage-guidelines-dont">
 
-<ion-icon name="close-circle" class="icon"></ion-icon>
+<ion-icon name="close-circle" class="icon" aria-label="do not"></ion-icon>
 
 <gr-input label="Password" type="password" help-text="Passwords must be at least 8 characters." required-indicator></gr-input>
 
@@ -375,7 +375,7 @@ Invalid text should be written in 1-2 short, complete sentences and in a clear a
 
 <div class="usage-guidelines usage-guidelines-do">
 
-<ion-icon name="checkmark-circle" class="icon"></ion-icon>
+<ion-icon name="checkmark-circle" class="icon" aria-label="do"></ion-icon>
 
 <gr-input label="Credit card number" invalid-text="Enter your credit card number." required-indicator invalid></gr-input>
 
@@ -387,7 +387,7 @@ Invalid text should be written in 1-2 short, complete sentences and in a clear a
 
 <div class="usage-guidelines usage-guidelines-dont">
 
-<ion-icon name="close-circle" class="icon"></ion-icon>
+<ion-icon name="close-circle" class="icon" aria-label="do not"></ion-icon>
 
 <gr-input label="Credit card number" invalid-text="Invalid field" required-indicator invalid></gr-input>
 

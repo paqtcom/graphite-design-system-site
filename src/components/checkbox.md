@@ -118,7 +118,7 @@ Checkboxes and radio buttons are not interchangeable. A set of checkboxes should
 
 <div class="usage-guidelines usage-guidelines-do">
 
-<ion-icon name="checkmark-circle" class="icon"></ion-icon>
+<ion-icon name="checkmark-circle" class="icon" aria-label="do"></ion-icon>
 
 <gr-field-group label="Interests">
   <gr-checkbox checked>Travel</gr-checkbox>
@@ -130,7 +130,7 @@ Checkboxes and radio buttons are not interchangeable. A set of checkboxes should
 
 <div class="usage-guidelines usage-guidelines-dont">
 
-<ion-icon name="close-circle" class="icon"></ion-icon>
+<ion-icon name="close-circle" class="icon" aria-label="do not"></ion-icon>
 
 <gr-field-group label="Size">
   <gr-checkbox checked>Small</gr-checkbox>
@@ -146,7 +146,7 @@ Sets of checkboxes should always have a clear label that describes what the list
 
 <div class="usage-guidelines usage-guidelines-do">
 
-<ion-icon name="checkmark-circle" class="icon"></ion-icon>
+<ion-icon name="checkmark-circle" class="icon" aria-label="do"></ion-icon>
 
 <gr-field-group label="Page(s) to display">
   <gr-checkbox checked>Homepage</gr-checkbox>
@@ -158,7 +158,7 @@ Sets of checkboxes should always have a clear label that describes what the list
 
 <div class="usage-guidelines usage-guidelines-dont">
 
-<ion-icon name="close-circle" class="icon"></ion-icon>
+<ion-icon name="close-circle" class="icon" aria-label="do not"></ion-icon>
 
 <gr-field-group no-fieldset>
   <gr-checkbox checked>Tomorrow</gr-checkbox>
@@ -184,7 +184,7 @@ Don't just mark a checkbox invalid and expect the user to understand why it's in
 
 <div class="usage-guidelines usage-guidelines-do">
 
-<ion-icon name="checkmark-circle" class="icon"></ion-icon>
+<ion-icon name="checkmark-circle" class="icon" aria-label="do"></ion-icon>
 
 <gr-checkbox invalid-text="You have to agree to our terms to continue." invalid>
   I agree to the <a href="https://www.termsfeed.com/blog/sample-terms-and-conditions-template/" target="_blank" rel="noopener noreferrer">terms</a>
@@ -194,7 +194,7 @@ Don't just mark a checkbox invalid and expect the user to understand why it's in
 
 <div class="usage-guidelines usage-guidelines-dont">
 
-<ion-icon name="close-circle" class="icon"></ion-icon>
+<ion-icon name="close-circle" class="icon" aria-label="do not"></ion-icon>
 
 <gr-checkbox invalid>I agree to the <a href="https://www.termsfeed.com/blog/sample-terms-and-conditions-template/" target="_blank" rel="noopener noreferrer">terms</a></gr-checkbox>
 
@@ -208,7 +208,7 @@ Invalid text should be written in 1-2 short, complete sentences and in a clear a
 
 <div class="usage-guidelines usage-guidelines-do">
 
-<ion-icon name="checkmark-circle" class="icon"></ion-icon>
+<ion-icon name="checkmark-circle" class="icon" aria-label="do"></ion-icon>
 
 <gr-checkbox invalid-text="You have to agree to our terms to continue." invalid>
   I agree to the <a href="https://www.termsfeed.com/blog/sample-terms-and-conditions-template/" target="_blank" rel="noopener noreferrer">terms</a>
@@ -218,7 +218,7 @@ Invalid text should be written in 1-2 short, complete sentences and in a clear a
 
 <div class="usage-guidelines usage-guidelines-dont">
 
-<ion-icon name="close-circle" class="icon"></ion-icon>
+<ion-icon name="close-circle" class="icon" aria-label="do not"></ion-icon>
 
 <gr-checkbox invalid-text="Required field" invalid>
   I agree to the <a href="https://www.termsfeed.com/blog/sample-terms-and-conditions-template/" target="_blank" rel="noopener noreferrer">terms</a>

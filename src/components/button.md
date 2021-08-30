@@ -91,23 +91,23 @@ Use the same icon set throughout your application for consistency.
 
 <div class="example-block">
   <gr-button>
-    <ion-icon name="settings-outline" slot="start"></ion-icon>
+    <ion-icon name="settings-outline" slot="start" aria-hidden="true"></ion-icon>
     Settings
   </gr-button>
   <gr-button>
-    <ion-icon name="refresh-outline" slot="end"></ion-icon>
+    <ion-icon name="refresh-outline" slot="end" aria-hidden="true"></ion-icon>
     Refresh
   </gr-button>
 </div>
 
 ```html
 <gr-button>
-  <ion-icon name="settings-outline" slot="start"></ion-icon>
+  <ion-icon name="settings-outline" slot="start" aria-hidden="true"></ion-icon>
   Settings
 </gr-button>
 
 <gr-button>
-  <ion-icon name="refresh-outline" slot="end"></ion-icon>
+  <ion-icon name="refresh-outline" slot="end" aria-hidden="true"></ion-icon>
   Refresh
 </gr-button>
 ```
@@ -258,7 +258,7 @@ Although secondary buttons have less visual prominence, they are still tonally h
 
 <div class="usage-guidelines usage-guidelines-do">
 
-<ion-icon name="checkmark-circle" class="icon"></ion-icon>
+<ion-icon name="checkmark-circle" class="icon" aria-label="do"></ion-icon>
 
 <gr-button>
   Edit
@@ -284,7 +284,7 @@ Although secondary buttons have less visual prominence, they are still tonally h
 
 <div class="usage-guidelines usage-guidelines-dont">
 
-<ion-icon name="close-circle" class="icon"></ion-icon>
+<ion-icon name="close-circle" class="icon" aria-label="do not"></ion-icon>
 
 <gr-button variant="primary">
   Edit
@@ -314,7 +314,7 @@ Button text should be concise: 1 or 2 words, no longer than 4 words, with fewer 
 
 <div class="usage-guidelines usage-guidelines-do">
 
-<ion-icon name="checkmark-circle" class="icon"></ion-icon>
+<ion-icon name="checkmark-circle" class="icon" aria-label="do"></ion-icon>
 
 <gr-button variant="primary">
   Start experience
@@ -324,7 +324,7 @@ Button text should be concise: 1 or 2 words, no longer than 4 words, with fewer 
 
 <div class="usage-guidelines usage-guidelines-dont">
 
-<ion-icon name="close-circle" class="icon"></ion-icon>
+<ion-icon name="close-circle" class="icon" aria-label="do not"></ion-icon>
 
 <gr-button variant="primary">
   Start the experience now!
@@ -338,7 +338,7 @@ Button texts should be clear about the outcome of the action. Most buttons shoul
 
 <div class="usage-guidelines usage-guidelines-do">
 
-<ion-icon name="checkmark-circle" class="icon"></ion-icon>
+<ion-icon name="checkmark-circle" class="icon" aria-label="do"></ion-icon>
 
 <gr-button variant="primary">
   Agree
@@ -348,7 +348,7 @@ Button texts should be clear about the outcome of the action. Most buttons shoul
 
 <div class="usage-guidelines usage-guidelines-dont">
 
-<ion-icon name="close-circle" class="icon"></ion-icon>
+<ion-icon name="close-circle" class="icon" aria-label="do not"></ion-icon>
 
 <gr-button variant="primary">
   Yes
@@ -362,7 +362,7 @@ Button text should always be in sentence case. Capitalization should never be us
 
 <div class="usage-guidelines usage-guidelines-do">
 
-<ion-icon name="checkmark-circle" class="icon"></ion-icon>
+<ion-icon name="checkmark-circle" class="icon" aria-label="do"></ion-icon>
 
 <gr-button variant="primary">
   Get started
@@ -372,7 +372,7 @@ Button text should always be in sentence case. Capitalization should never be us
 
 <div class="usage-guidelines usage-guidelines-dont">
 
-<ion-icon name="close-circle" class="icon"></ion-icon>
+<ion-icon name="close-circle" class="icon" aria-label="do not"></ion-icon>
 
 <gr-button variant="primary">
   GET STARTED
@@ -398,7 +398,7 @@ Icons can be used in buttons when additional clarity is required and the icon is
 
 <div class="usage-guidelines usage-guidelines-do">
 
-<ion-icon name="checkmark-circle" class="icon"></ion-icon>
+<ion-icon name="checkmark-circle" class="icon" aria-label="do"></ion-icon>
 
 <gr-button variant="primary">
   <ion-icon name="share-outline" slot="start"></ion-icon>
@@ -409,7 +409,7 @@ Icons can be used in buttons when additional clarity is required and the icon is
 
 <div class="usage-guidelines usage-guidelines-dont">
 
-<ion-icon name="close-circle" class="icon"></ion-icon>
+<ion-icon name="close-circle" class="icon" aria-label="do not"></ion-icon>
 
 <gr-button variant="secondary">
   <ion-icon name="ban-outline" slot="start"></ion-icon>

@@ -166,7 +166,7 @@ Radio groups should always have a label that clearly describes what the list of 
 
 <div class="usage-guidelines usage-guidelines-do">
 
-<ion-icon name="checkmark-circle" class="icon"></ion-icon>
+<ion-icon name="checkmark-circle" class="icon" aria-label="do"></ion-icon>
 
 <gr-radio-group label="Landing page" value="homepage">
   <gr-radio value="homepage">Homepage</gr-radio>
@@ -178,7 +178,7 @@ Radio groups should always have a label that clearly describes what the list of 
 
 <div class="usage-guidelines usage-guidelines-dont">
 
-<ion-icon name="close-circle" class="icon"></ion-icon>
+<ion-icon name="close-circle" class="icon" aria-label="do not"></ion-icon>
 
 <gr-radio-group value="tomorrow">
   <gr-radio value="tomorrow">Tomorrow</gr-radio>
@@ -198,7 +198,7 @@ For large forms involving sensitive data like checkout processes and long accoun
 
 <div class="usage-guidelines usage-guidelines-do">
 
-<ion-icon name="checkmark-circle" class="icon"></ion-icon>
+<ion-icon name="checkmark-circle" class="icon" aria-label="do"></ion-icon>
 
 <gr-input label="Name" value="Sofie van der Grift"></gr-input>
 <br>
@@ -214,7 +214,7 @@ For large forms involving sensitive data like checkout processes and long accoun
 
 <div class="usage-guidelines usage-guidelines-dont">
 
-<ion-icon name="close-circle" class="icon"></ion-icon>
+<ion-icon name="close-circle" class="icon" aria-label="do not"></ion-icon>
 
 <gr-input label="Name (required)" value="Sofie van der Grift"></gr-input>
 <br>
@@ -244,7 +244,7 @@ Don't just mark a radio group invalid and expect the user to understand why it's
 
 <div class="usage-guidelines usage-guidelines-do">
 
-<ion-icon name="checkmark-circle" class="icon"></ion-icon>
+<ion-icon name="checkmark-circle" class="icon" aria-label="do"></ion-icon>
 
 <gr-radio-group label="Landing page" invalid-text="Select the landing page you want." required-indicator invalid>
   <gr-radio value="homepage">Homepage</gr-radio>
@@ -256,7 +256,7 @@ Don't just mark a radio group invalid and expect the user to understand why it's
 
 <div class="usage-guidelines usage-guidelines-dont">
 
-<ion-icon name="close-circle" class="icon"></ion-icon>
+<ion-icon name="close-circle" class="icon" aria-label="do not"></ion-icon>
 
 <gr-radio-group label="Landing page" required-indicator invalid>
   <gr-radio value="homepage">Homepage</gr-radio>
@@ -274,7 +274,7 @@ Invalid text should be written in 1-2 short, complete sentences and in a clear a
 
 <div class="usage-guidelines usage-guidelines-do">
 
-<ion-icon name="checkmark-circle" class="icon"></ion-icon>
+<ion-icon name="checkmark-circle" class="icon" aria-label="do"></ion-icon>
 
 <gr-radio-group label="Landing page" invalid-text="Select the landing page you want." required-indicator invalid>
   <gr-radio value="homepage">Homepage</gr-radio>
@@ -286,7 +286,7 @@ Invalid text should be written in 1-2 short, complete sentences and in a clear a
 
 <div class="usage-guidelines usage-guidelines-dont">
 
-<ion-icon name="close-circle" class="icon"></ion-icon>
+<ion-icon name="close-circle" class="icon" aria-label="do not"></ion-icon>
 
 <gr-radio-group label="Landing page" invalid-text="Invalid field" required-indicator invalid>
   <gr-radio value="homepage">Homepage</gr-radio>

@@ -191,7 +191,7 @@ Every textarea should have a label. A textarea without a label is ambiguous and 
 
 <div class="usage-guidelines usage-guidelines-do">
 
-<ion-icon name="checkmark-circle" class="icon"></ion-icon>
+<ion-icon name="checkmark-circle" class="icon" aria-label="do"></ion-icon>
 
 <gr-textarea label="Members" value="Soof"></gr-input>
 
@@ -199,7 +199,7 @@ Every textarea should have a label. A textarea without a label is ambiguous and 
 
 <div class="usage-guidelines usage-guidelines-dont">
 
-<ion-icon name="close-circle" class="icon"></ion-icon>
+<ion-icon name="close-circle" class="icon" aria-label="do not"></ion-icon>
 
 <gr-textarea value="Soof"></gr-input>
 
@@ -211,7 +211,7 @@ Textarea labels and placeholder text should be in sentence case.
 
 <div class="usage-guidelines usage-guidelines-do">
 
-<ion-icon name="checkmark-circle" class="icon"></ion-icon>
+<ion-icon name="checkmark-circle" class="icon" aria-label="do"></ion-icon>
 
 <gr-textarea label="Hobbies and interests" value="Photography, gardening"></gr-textarea>
 
@@ -219,7 +219,7 @@ Textarea labels and placeholder text should be in sentence case.
 
 <div class="usage-guidelines usage-guidelines-dont">
 
-<ion-icon name="close-circle" class="icon"></ion-icon>
+<ion-icon name="close-circle" class="icon" aria-label="do not"></ion-icon>
 
 <gr-textarea label="Hobbies and Interests" value="Photography, gardening"></gr-textarea>
 
@@ -235,7 +235,7 @@ For large forms involving sensitive data like checkout processes and long accoun
 
 <div class="usage-guidelines usage-guidelines-do">
 
-<ion-icon name="checkmark-circle" class="icon"></ion-icon>
+<ion-icon name="checkmark-circle" class="icon" aria-label="do"></ion-icon>
 
 <gr-input label="Name" value="Sofie van der Grift"></gr-input>
 
@@ -247,7 +247,7 @@ For large forms involving sensitive data like checkout processes and long accoun
 
 <div class="usage-guidelines usage-guidelines-dont">
 
-<ion-icon name="close-circle" class="icon"></ion-icon>
+<ion-icon name="close-circle" class="icon" aria-label="do not"></ion-icon>
 
 <gr-input label="Name (required)" value="Sofie van der Grift"></gr-input>
 
@@ -269,7 +269,7 @@ The help text’s message should not simply restate the same information in the 
 
 <div class="usage-guidelines usage-guidelines-do">
 
-<ion-icon name="checkmark-circle" class="icon"></ion-icon>
+<ion-icon name="checkmark-circle" class="icon" aria-label="do"></ion-icon>
 
 <gr-textarea label="Interests" help-text="Describe the interests you'd like to explore through our tutorials."></gr-textarea>
 
@@ -277,7 +277,7 @@ The help text’s message should not simply restate the same information in the 
 
 <div class="usage-guidelines usage-guidelines-dont">
 
-<ion-icon name="close-circle" class="icon"></ion-icon>
+<ion-icon name="close-circle" class="icon" aria-label="do not"></ion-icon>
 
 <gr-textarea label="Interests" help-text="Enter your interests."></gr-textarea>
 
@@ -291,7 +291,7 @@ Instead of placeholder text, use the help text description to convey requirement
 
 <div class="usage-guidelines usage-guidelines-do">
 
-<ion-icon name="checkmark-circle" class="icon"></ion-icon>
+<ion-icon name="checkmark-circle" class="icon" aria-label="do"></ion-icon>
 
 <gr-textarea label="Interests" help-text="Describe the interests you'd like to explore through our tutorials."></gr-textarea>
 
@@ -299,7 +299,7 @@ Instead of placeholder text, use the help text description to convey requirement
 
 <div class="usage-guidelines usage-guidelines-dont">
 
-<ion-icon name="close-circle" class="icon"></ion-icon>
+<ion-icon name="close-circle" class="icon" aria-label="do not"></ion-icon>
 
 <gr-textarea label="Interests" placeholder="Describe the interests you'd like to explore through our tutorials."></gr-textarea>
 
@@ -321,7 +321,7 @@ Don't just mark an input invalid and expect the user to understand why it's inva
 
 <div class="usage-guidelines usage-guidelines-do">
 
-<ion-icon name="checkmark-circle" class="icon"></ion-icon>
+<ion-icon name="checkmark-circle" class="icon" aria-label="do"></ion-icon>
 
 <gr-textarea label="Interests" help-text="Describe the interests you'd like to explore through our tutorials." invalid-text="Enter at least one interest." required-indicator invalid></gr-textarea>
 
@@ -329,7 +329,7 @@ Don't just mark an input invalid and expect the user to understand why it's inva
 
 <div class="usage-guidelines usage-guidelines-dont">
 
-<ion-icon name="close-circle" class="icon"></ion-icon>
+<ion-icon name="close-circle" class="icon" aria-label="do not"></ion-icon>
 
 <gr-textarea label="Interests" help-text="Describe the interests you'd like to explore through our tutorials." required-indicator invalid></gr-textarea>
 
@@ -343,7 +343,7 @@ Since one gets replaced by the other, the language of the help text and invalid 
 
 <div class="usage-guidelines usage-guidelines-do">
 
-<ion-icon name="checkmark-circle" class="icon"></ion-icon>
+<ion-icon name="checkmark-circle" class="icon" aria-label="do"></ion-icon>
 
 <gr-textarea label="Interests" help-text="Describe the interests you'd like to explore through our tutorials." required-indicator></gr-textarea>
 
@@ -355,7 +355,7 @@ Since one gets replaced by the other, the language of the help text and invalid 
 
 <div class="usage-guidelines usage-guidelines-dont">
 
-<ion-icon name="close-circle" class="icon"></ion-icon>
+<ion-icon name="close-circle" class="icon" aria-label="do not"></ion-icon>
 
 <gr-textarea label="Interests" help-text="Describe the interests you'd like to explore through our tutorials." required-indicator></gr-textarea>
 
@@ -373,7 +373,7 @@ Invalid text should be written in 1-2 short, complete sentences and in a clear a
 
 <div class="usage-guidelines usage-guidelines-do">
 
-<ion-icon name="checkmark-circle" class="icon"></ion-icon>
+<ion-icon name="checkmark-circle" class="icon" aria-label="do"></ion-icon>
 
 <gr-textarea label="Interests" help-text="Describe the interests you'd like to explore through our tutorials." invalid-text="Enter at least one interest." required-indicator invalid></gr-textarea>
 
@@ -381,7 +381,7 @@ Invalid text should be written in 1-2 short, complete sentences and in a clear a
 
 <div class="usage-guidelines usage-guidelines-dont">
 
-<ion-icon name="close-circle" class="icon"></ion-icon>
+<ion-icon name="close-circle" class="icon" aria-label="do not"></ion-icon>
 
 <gr-textarea label="Interests" help-text="Describe the interests you'd like to explore through our tutorials." invalid-text="Invalid field" required-indicator invalid></gr-textarea>
 
