@@ -48,6 +48,26 @@ Add the `clearable` attribute to add a clear button when the input has content.
 <gr-input placeholder="Clearable" clearable></gr-input>
 ```
 
+### Toggle password
+
+Add the `toggle-password` attribute to add a toggle button that will show the password when activated.
+
+<div class="example-block">
+  <gr-input type="password" placeholder="Password Toggle" size="small" toggle-password></gr-input>
+  <br>
+  <gr-input type="password" placeholder="Password Toggle" size="medium" toggle-password></gr-input>
+  <br>
+  <gr-input type="password" placeholder="Password Toggle" size="large" toggle-password></gr-input>
+</div>
+
+```html
+<gr-input type="password" placeholder="Password Toggle" size="small" toggle-password></gr-input>
+<br />
+<gr-input type="password" placeholder="Password Toggle" size="medium" toggle-password></gr-input>
+<br />
+<gr-input type="password" placeholder="Password Toggle" size="large" toggle-password></gr-input>
+```
+
 ### Pill
 
 Use the `pill` attribute to give inputs rounded edges.
@@ -106,6 +126,44 @@ Use the `size` attribute to change an input's size.
 <gr-input placeholder="Medium" size="medium"></gr-input>
 <br />
 <gr-input placeholder="Large" size="large"></gr-input>
+```
+
+### Icons
+
+Use the `start` and `end` slots to add icons.
+
+<div class="example-block">
+  <gr-input placeholder="Medium" size="small">
+    <ion-icon name="search-outline" slot="start"></ion-icon>
+    <ion-icon name="chatbubble-outline" slot="end"></ion-icon>
+  </gr-input>
+  <br />
+  <gr-input placeholder="Medium" size="medium">
+    <ion-icon name="search-outline" slot="start"></ion-icon>
+    <ion-icon name="chatbubble-outline" slot="end"></ion-icon>
+  </gr-input>
+  <br />
+  <gr-input placeholder="Medium" size="large">
+    <ion-icon name="search-outline" slot="start"></ion-icon>
+    <ion-icon name="chatbubble-outline" slot="end"></ion-icon>
+  </gr-input>
+</div>
+
+```html
+<gr-input placeholder="Medium" size="small">
+  <ion-icon name="search-outline" slot="start"></ion-icon>
+  <ion-icon name="chatbubble-outline" slot="end"></ion-icon>
+</gr-input>
+<br />
+<gr-input placeholder="Medium" size="medium">
+  <ion-icon name="search-outline" slot="start"></ion-icon>
+  <ion-icon name="chatbubble-outline" slot="end"></ion-icon>
+</gr-input>
+<br />
+<gr-input placeholder="Medium" size="large">
+  <ion-icon name="search-outline" slot="start"></ion-icon>
+  <ion-icon name="chatbubble-outline" slot="end"></ion-icon>
+</gr-input>
 ```
 
 ### Invalid
@@ -204,6 +262,20 @@ Every input should have a label. A field without a label is ambiguous and not ac
 <ion-icon name="close-circle" class="icon" aria-label="do not"></ion-icon>
 
 <gr-input value="Soof"></gr-input>
+
+</div>
+
+### Review label-less designs
+
+In rare cases where context is sufficient and a label could be absent, make sure to have the design reviewed and approved by an accessibility expert. These should still include an `aria-label` in HTML.
+
+<div class="usage-guidelines usage-guidelines-do">
+
+<ion-icon name="checkmark-circle" class="icon" aria-label="do"></ion-icon>
+
+<gr-input aria-label="Search" pill>
+  <ion-icon name="search-outline" slot="start">
+</gr-input>
 
 </div>
 
