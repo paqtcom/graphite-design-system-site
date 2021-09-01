@@ -197,19 +197,19 @@ Inputs can be marked as optional or required, depending on the situation. For re
 The asterisk used in this component is an icon that has specific spacing from the label text — not part of the label text itself.
 
 <div class="example-block">
-  <gr-input label="Email address (required)" value="soof@way2web.nl"></gr-input>
+  <gr-input label="Email address (required)" value="soof@paqt.com"></gr-input>
   <br>
-  <gr-input label="Email address (optional)" value="soof@way2web.nl"></gr-input>
+  <gr-input label="Email address (optional)" value="soof@paqt.com"></gr-input>
   <br>
-  <gr-input label="Email address" value="soof@way2web.nl" required-indicator></gr-input>
+  <gr-input label="Email address" value="soof@paqt.com" required-indicator></gr-input>
 </div>
 
 ```html
-<gr-input label="Email address (required)" value="soof@way2web.nl"></gr-input>
+<gr-input label="Email address (required)" value="soof@paqt.com"></gr-input>
 <br />
-<gr-input label="Email address (optional)" value="soof@way2web.nl"></gr-input>
+<gr-input label="Email address (optional)" value="soof@paqt.com"></gr-input>
 <br />
-<gr-input label="Email address" value="soof@way2web.nl" required-indicator></gr-input>
+<gr-input label="Email address" value="soof@paqt.com" required-indicator></gr-input>
 ```
 
 ### Help Text
@@ -287,7 +287,7 @@ Field labels and placeholder text should be in sentence case.
 
 <ion-icon name="checkmark-circle" class="icon" aria-label="do"></ion-icon>
 
-<gr-input label="Email address" value="soof@way2web.nl"></gr-input>
+<gr-input label="Email address" value="soof@paqt.com"></gr-input>
 
 </div>
 
@@ -295,7 +295,7 @@ Field labels and placeholder text should be in sentence case.
 
 <ion-icon name="close-circle" class="icon" aria-label="do not"></ion-icon>
 
-<gr-input label="Email Address" value="soof@way2web.nl"></gr-input>
+<gr-input label="Email Address" value="soof@paqt.com"></gr-input>
 
 </div>
 
@@ -315,7 +315,7 @@ For large forms involving sensitive data like checkout processes and long accoun
 
 <gr-input label="Nickname" value="Soof"></gr-input>
 
-<gr-input label="Email address (optional)" value="soof@way2web.com"></gr-input>
+<gr-input label="Email address (optional)" value="soof@paqt.com"></gr-input>
 
 </div>
 
@@ -327,7 +327,7 @@ For large forms involving sensitive data like checkout processes and long accoun
 
 <gr-input label="Nickname (required)" value="Soof"></gr-input>
 
-<gr-input label="Email address" value="soof@way2web.com"></gr-input>
+<gr-input label="Email address" value="soof@paqt.com"></gr-input>
 
 </div>
 
@@ -345,7 +345,7 @@ The help text’s message should not simply restate the same information in the 
 
 <ion-icon name="checkmark-circle" class="icon" aria-label="do"></ion-icon>
 
-<gr-input label="Email address" help-text="soof@way2web.com"></gr-input>
+<gr-input label="Email address" help-text="soof@paqt.com"></gr-input>
 
 </div>
 
@@ -367,7 +367,7 @@ Instead of placeholder text, use the help text description to convey requirement
 
 <ion-icon name="checkmark-circle" class="icon" aria-label="do"></ion-icon>
 
-<gr-input label="Email address" help-text="soof@way2web.com"></gr-input>
+<gr-input label="Email address" help-text="soof@paqt.com"></gr-input>
 
 </div>
 
@@ -375,7 +375,7 @@ Instead of placeholder text, use the help text description to convey requirement
 
 <ion-icon name="close-circle" class="icon" aria-label="do not"></ion-icon>
 
-<gr-input label="Email address" placeholder="soof@way2web.com"></gr-input>
+<gr-input label="Email address" placeholder="soof@paqt.com"></gr-input>
 
 </div>
 
