@@ -4,7 +4,7 @@ title: Getting started - Graphite Design System
 
 # Getting started
 
-<p class="intro">Welcome to Graphite! Graphite is Way2Web’s white-label design system for digital products and experiences.</p>
+<p class="intro">Welcome to Graphite! Graphite is PAQT's white-label design system for digital products and experiences.</p>
 
 Get started by following the guide for [designers](/getting-started/designers) or [developers](/getting-started/developers).
 
@@ -16,7 +16,7 @@ Basically, it's a big box of UI Lego pieces, both in design assets & coded compo
 
 ## Graphite is open source
 
-Graphite is funded and built by [Way2Web](https://www.way2web.nl), which means we build for the company’s business needs, but we’ve made it open source for anyone to use and contribute back to.
+Graphite is funded and built by [PAQT](https://paqt.com), which means we build for the company’s business needs, but we’ve made it open source for anyone to use and contribute back to.
 
 It's available under the terms of the [MIT license](https://github.com/Way2Web/graphite-design-system/blob/master/LICENSE).
 

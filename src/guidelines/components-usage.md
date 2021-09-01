@@ -44,7 +44,7 @@ Then you can use the elements anywhere in your template, JSX, html etc.
 For example:
 
 ```html
-<gr-button href="https://www.way2web.nl">Way2Web</gr-button>
+<gr-button href="https://paqt.com">PAQT</gr-button>
 ```
 
 [See a working example of this setup (CodeSandbox)](https://codesandbox.io/s/graphiteds-script-tag-example-9foz6)
@@ -166,10 +166,10 @@ Use it in your template as any Vue component:
 
 ```html
 // In kebab-case
-<gr-button href="https://www.way2web.nl">Way2Web</gr-button>
+<gr-button href="https://paqt.com">PAQT</gr-button>
 
 // Or PascalCase
-<GrButton href="https://www.way2web.nl">Way2Web</GrButton>
+<GrButton href="https://paqt.com">PAQT</GrButton>
 ```
 
 We recommend using kebab-case for our components and PascalCase for your own Vue components to make them visible distinct.
@@ -227,7 +227,7 @@ The components should then be available in any of the Vue components:
 
 ```html
 <template>
-  <gr-button href="https://www.way2web.nl">Way2Web</gr-button>
+  <gr-button href="https://paqt.com">PAQT</gr-button>
 </template>
 ```
 
@@ -338,7 +338,7 @@ The components should then be available in any of the Nuxt pages & components:
 
 ```html
 <template>
-  <gr-button href="https://www.way2web.nl">Way2Web</gr-button>
+  <gr-button href="https://paqt.com">PAQT</gr-button>
 </template>
 ```
 
@@ -377,7 +377,7 @@ import { GrButton } from '@graphiteds/react';
 Use it in your JSX as any React component:
 
 ```html
-<GrButton href="https://www.way2web.nl">Way2Web</GrButton>
+<GrButton href="https://paqt.com">PAQT</GrButton>
 ```
 
 [See a working example of this setup (CodeSandbox)](https://codesandbox.io/s/graphiteds-react-example-yhr9p)

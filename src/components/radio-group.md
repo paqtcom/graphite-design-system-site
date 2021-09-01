@@ -208,7 +208,7 @@ For large forms involving sensitive data like checkout processes and long accoun
 <gr-radio value="contact-us">Contact us</gr-radio>
 </gr-radio-group>
 <br>
-<gr-input label="Email address (optional)" value="soof@way2web.com"></gr-input>
+<gr-input label="Email address (optional)" value="soof@paqt.com"></gr-input>
 
 </div>
 
@@ -224,7 +224,7 @@ For large forms involving sensitive data like checkout processes and long accoun
 <gr-radio value="contact-us">Contact us</gr-radio>
 </gr-radio-group>
 <br>
-<gr-input label="Email address" value="soof@way2web.com"></gr-input>
+<gr-input label="Email address" value="soof@paqt.com"></gr-input>
 
 </div>
 

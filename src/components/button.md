@@ -151,11 +151,11 @@ Setting a `aria-label` attribute is required for accessibility.
 It's often helpful to have a button that works like a link. This is possible by setting the `href` attribute, which will make the component render an `<a>` under the hood. This gives you all the default link behavior the browser provides (e.g. <kbd>CMD/CTRL/SHIFT + CLICK</kbd>) and exposes the `target` & `rel` attributes (if you set a target it is recommended to set `rel="noopener noreferrer"` for [security reasons](https://mathiasbynens.github.io/rel-noopener/)).
 
 <div class="example-block">
-<gr-button href="https://www.way2web.nl" target="_blank" rel="noopener noreferrer">Link</gr-button>
+  <gr-button href="https://paqt.com" target="_blank" rel="noopener noreferrer">Link</gr-button>
 </div>
 
 ```html
-<gr-button href="https://www.way2web.nl" target="_blank" rel="noopener noreferrer">Link</gr-button>
+<gr-button href="https://paqt.com" target="_blank" rel="noopener noreferrer">Link</gr-button>
 ```
 
 ### Block Button

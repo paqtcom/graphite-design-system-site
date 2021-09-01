@@ -24,10 +24,10 @@ If you have a specific fix or a contribution, you can generate a pull request in
 
 ## Slack channel
 
-For internal Way2Web users only. The Graphite team maintains the following channels and will provide support as time permits.
+For internal PAQT users only. The Graphite team maintains the following channels and will provide support as time permits.
 
 [#graphite-design-system](https://way2websoftware.slack.com/archives/C02BVNWCXNH)
 
 ## Email
 
-You could also send a message to [care@way2web.nl](mailto:care@way2web.nl).
+You could also send a message to [care@paqt.com](mailto:care@paqt.com).
