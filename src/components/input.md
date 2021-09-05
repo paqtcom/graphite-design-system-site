@@ -133,7 +133,7 @@ Use the `size` attribute to change an input's size.
 Use the `start` and `end` slots to add icons.
 
 <div class="example-block">
-  <gr-input placeholder="Medium" size="small">
+  <gr-input placeholder="Small" size="small">
     <ion-icon name="search-outline" slot="start"></ion-icon>
     <ion-icon name="chatbubble-outline" slot="end"></ion-icon>
   </gr-input>
@@ -143,7 +143,7 @@ Use the `start` and `end` slots to add icons.
     <ion-icon name="chatbubble-outline" slot="end"></ion-icon>
   </gr-input>
   <br />
-  <gr-input placeholder="Medium" size="large">
+  <gr-input placeholder="Large" size="large">
     <ion-icon name="search-outline" slot="start"></ion-icon>
     <ion-icon name="chatbubble-outline" slot="end"></ion-icon>
   </gr-input>
@@ -385,7 +385,7 @@ We recommend validating the users data before form submission. Use visual cues t
 
 The validation should appear when the user has clicked away from the input (not before), or otherwise when the user submits the form. Once the user corrects the errors within the text field, the validation should disappear once the data is rendered as valid.
 
-For Vue, you can use libraries like [Vuelidate](https://vuelidate-next.netlify.app/) & [VeeValidate](https://vee-validate.logaretm.com/) (using Custom Inputs).
+For Vue, we recommend [Vuelidate](https://vuelidate-next.netlify.app/) to implement this behavior. [See a working example (CodeSandbox)](https://codesandbox.io/s/graphiteds-vue3-vuelidate-example-x6moc?file=/src/App.vue).
 
 Of course, you should still validate server-side (if applicable).
 

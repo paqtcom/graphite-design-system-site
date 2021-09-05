@@ -232,9 +232,9 @@ For large forms involving sensitive data like checkout processes and long accoun
 
 We recommend validating the users data before form submission. Use visual cues to guide the user as to where the problem lies within the form. This will help to easily identify the elements that need to be corrected.
 
-The validation should appear when the user has interacted with the radio group (not before), or otherwise when the user submits the form. Once the user corrects the errors within the radio group, the validation should disappear once the data is rendered as valid.
+The validation should appear when the user has clicked away from the radio group (not before), or otherwise when the user submits the form. Once the user corrects the errors within the radio group, the validation should disappear once the data is rendered as valid.
 
-For Vue, you can use libraries like [Vuelidate](https://vuelidate-next.netlify.app/) & [VeeValidate](https://vee-validate.logaretm.com/) (using Custom Inputs).
+For Vue, we recommend [Vuelidate](https://vuelidate-next.netlify.app/) to implement this behavior. [See a working example (CodeSandbox)](https://codesandbox.io/s/graphiteds-vue3-vuelidate-example-x6moc?file=/src/App.vue).
 
 Of course, you should still validate server-side (if applicable).
 
