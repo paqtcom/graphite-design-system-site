@@ -5,7 +5,7 @@
   "private": true,
   "repository": {
     "type": "git",
-    "url": "https://github.com/way2web/graphite-design-system-site.git"
+    "url": "https://github.com/paqtcom/graphite-design-system-site.git"
   },
   "scripts": {
     "build-dev:webpack": "webpack",

@@ -16,11 +16,11 @@ The Graphite team provides support for users of the design system. Find the use 
 
 ### GitHub issues
 
-If you have a bug report, suggestion, or general feedback, please create a GitHub issue in the appropriate Graphite repo: [graphite-design-system](https://github.com/Way2Web/graphite-design-system) or [graphite-design-system-site](https://github.com/Way2Web/graphite-design-system-site).
+If you have a bug report, suggestion, or general feedback, please create a GitHub issue in the appropriate Graphite repo: [graphite-design-system](https://github.com/paqtcom/graphite-design-system) or [graphite-design-system-site](https://github.com/paqtcom/graphite-design-system-site).
 
 ### GitHub pull requests
 
-If you have a specific fix or a contribution, you can generate a pull request in the appropriate Graphite repo: [graphite-design-system](https://github.com/Way2Web/graphite-design-system) or [graphite-design-system-site](https://github.com/Way2Web/graphite-design-system-site).
+If you have a specific fix or a contribution, you can generate a pull request in the appropriate Graphite repo: [graphite-design-system](https://github.com/paqtcom/graphite-design-system) or [graphite-design-system-site](https://github.com/paqtcom/graphite-design-system-site).
 
 ## Slack channel
 
@@ -30,4 +30,4 @@ For internal PAQT users only. The Graphite team maintains the following channels
 
 ## Email
 
-You could also send a message to [care@paqt.com](mailto:care@paqt.com).
+Messages to [graphite@paqt.com](mailto:graphite@paqt.com) will be addressed by the Graphite team as quickly as possible.

@@ -35,7 +35,7 @@ To customize a design token, simply override it in your stylesheet using a `:roo
 }
 ```
 
-Many design tokens are described [further along in this documentation](/tokens/overview/). For a complete list, refer to [core.css](https://github.com/Way2Web/graphite-design-system/blob/master/packages/core/src/css/core.scss) in the project's source code.
+Many design tokens are described [further along in this documentation](/tokens/overview/). For a complete list, refer to [core.css](https://github.com/paqtcom/graphite-design-system/blob/master/packages/core/src/css/core.scss) in the project's source code.
 
 Tip: you can use these tokens in your own custom components, to align them with the Graphite components. For example:
 
