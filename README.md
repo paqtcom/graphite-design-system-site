@@ -7,7 +7,7 @@ The official [Graphite Design System documentation](https://graphitedesignsystem
 Run the following command on your local environment:
 
 ```bash
-git clone https://github.com/way2web/graphite-design-system-site graphite-design-system-site
+git clone https://github.com/paqtcom/graphite-design-system-site graphite-design-system-site
 cd graphite-design-system-site
 npm install
 ```

@@ -18,7 +18,7 @@ Basically, it's a big box of UI Lego pieces, both in design assets & coded compo
 
 Graphite is funded and built by [PAQT](https://paqt.com), which means we build for the company’s business needs, but we’ve made it open source for anyone to use and contribute back to.
 
-It's available under the terms of the [MIT license](https://github.com/Way2Web/graphite-design-system/blob/master/LICENSE).
+It's available under the terms of the [MIT license](https://github.com/paqtcom/graphite-design-system/blob/master/LICENSE).
 
 ## Target platform
 
