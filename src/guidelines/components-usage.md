@@ -25,16 +25,15 @@ The CDN is optimized for performance by using caching, HTTP/2, etc.
 Just add the following tags to your page.
 
 ```html
-<link
+<link 
   rel="stylesheet"
-  href="https://cdn.jsdelivr.net/npm/@graphiteds/core@1.3.6/css/graphite.bundle.css"
+  href="https://cdn.jsdelivr.net/npm/@graphiteds/core@1.3.7/css/graphite.bundle.css"
   integrity="sha256-Maq0H86dB7RsnWif+qVcjQTCDWf91cqcF+kokcsZ8m0="
   crossorigin="anonymous"
 />
-<script
-  type="module"
-  src="https://cdn.jsdelivr.net/npm/@graphiteds/core@1.3.6/dist/core/core.esm.js"
-  integrity="sha256-/dakq8OJOgdiDQkJUlPSiPuLBWrlZ+5zr230SEYNiyQ="
+<script 
+  type="module" 
+  src="https://cdn.jsdelivr.net/npm/@graphiteds/core@1.3.7/dist/core/core.esm.js" integrity="sha256-SelkLRHBACBw4qVsc8QpiW7o0ipgw77IA8Lc/InsIf0=" 
   crossorigin="anonymous"
 ></script>
 ```
@@ -438,16 +437,15 @@ Once included, components can be used in your HTML markup as in the following ex
 Just add the following tags to your page.
 
 ```html
-<link
+<link 
   rel="stylesheet"
-  href="https://cdn.jsdelivr.net/npm/@graphiteds/core@1.3.6/css/graphite.bundle.css"
+  href="https://cdn.jsdelivr.net/npm/@graphiteds/core@1.3.7/css/graphite.bundle.css"
   integrity="sha256-Maq0H86dB7RsnWif+qVcjQTCDWf91cqcF+kokcsZ8m0="
   crossorigin="anonymous"
 />
-<script
-  type="module"
-  src="https://cdn.jsdelivr.net/npm/@graphiteds/core@1.3.6/dist/core/core.esm.js"
-  integrity="sha256-/dakq8OJOgdiDQkJUlPSiPuLBWrlZ+5zr230SEYNiyQ="
+<script 
+  type="module" 
+  src="https://cdn.jsdelivr.net/npm/@graphiteds/core@1.3.7/dist/core/core.esm.js" integrity="sha256-SelkLRHBACBw4qVsc8QpiW7o0ipgw77IA8Lc/InsIf0=" 
   crossorigin="anonymous"
 ></script>
 ```
