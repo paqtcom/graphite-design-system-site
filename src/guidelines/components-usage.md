@@ -432,7 +432,7 @@ Once included, components can be used in your HTML markup as in the following ex
 
 [See a working example of this setup (CodeSandbox)](https://codesandbox.io/s/graphiteds-angular-example-e4gju)
 
-## Usage with Livewire
+## Usage with Livewire & AlpineJS
 
 Just add the following tags to your page.
 
@@ -450,7 +450,7 @@ Just add the following tags to your page.
 ></script>
 ```
 
-Then you can use the elements anywhere in your blade templates, but you have to use `wire:ignore`
+Then you can use the elements anywhere in your blade templates, but you have to use `wire:ignore`.
 
 For example:
 
@@ -459,6 +459,34 @@ For example:
   <div slot="icon-only">+</div>
 </gr-button>
 ```
+
+Because of this, you can't use dynamic php variables in attributes, for example to show error messages as `invalid-text`. To work around this, you have to use AlpineJS.
+
+Add `<script src="https://cdn.jsdelivr.net/npm/alpinejs@2.8.2/dist/alpine.min.js" defer></script>` to the head.
+
+Add a `x-data` attribute to your form, and set `errors` to the `$errors` php variable:
+
+```php
+<form wire:submit.prevent="submit" x-data="{ 'errors': {{ $errors }} }">
+```
+
+Use the AlpineJS `errors` variable in `x-bind` attributes, for example:
+
+```php
+<gr-input
+    label="Naam"
+    x-bind:invalid="errors.hasOwnProperty('name')"
+    x-bind:invalid-text="errors.hasOwnProperty('name') ? errors.name[0] : ''"
+    wire:model.debounce.500ms="name"
+    wire:gr-blur="touch('name')"
+    wire:ignore
+    required-indicator
+></gr-input>
+```
+
+Note: `wire:model` only works with `gr-input` & `gr-textarea`, because they emit `input` events.
+
+For other form elements, like `gr-radio-group`, you have to utilize the `gr-change` event, like this: `wire:gr-change="$set('exampleProperty', $event.target.value)"`.
 
 ## Usage with other frameworks
 
