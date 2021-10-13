@@ -22,18 +22,19 @@ The easiest way to install Graphite components is with the CDN. A lightweight lo
 
 The CDN is optimized for performance by using caching, HTTP/2, etc.
 
-Just add the following tags to your page.
+Just add the following tags to the head of your page.
 
 ```html
 <link 
   rel="stylesheet"
-  href="https://cdn.jsdelivr.net/npm/@graphiteds/core@1.3.7/css/graphite.bundle.css"
+  href="https://cdn.jsdelivr.net/npm/@graphiteds/core@1.4.1/css/graphite.bundle.css"
   integrity="sha256-Maq0H86dB7RsnWif+qVcjQTCDWf91cqcF+kokcsZ8m0="
   crossorigin="anonymous"
 />
 <script 
   type="module" 
-  src="https://cdn.jsdelivr.net/npm/@graphiteds/core@1.3.7/dist/core/core.esm.js" integrity="sha256-SelkLRHBACBw4qVsc8QpiW7o0ipgw77IA8Lc/InsIf0=" 
+  src="https://cdn.jsdelivr.net/npm/@graphiteds/core@1.4.1/dist/core/core.esm.js"
+  integrity="sha256-1V1ykJc+1nJljZ6ndF1tq8Ty/AmtLaFj/KllLrXGD4o=" 
   crossorigin="anonymous"
 ></script>
 ```
@@ -46,11 +47,13 @@ For example:
 <gr-button href="https://paqt.com">PAQT</gr-button>
 ```
 
+Note: All components are only lazy-loaded by the browser when needed. This can introduce some Cumulative Layout Shift (CLS). To reduce this, you can move the components below the fold (outside the visible viewport of the user, or use a bundler with [cherry-picked components](#cherry-pick-components).
+
 [See a working example of this setup (CodeSandbox)](https://codesandbox.io/s/graphiteds-script-tag-example-9foz6)
 
 ## Usage with bundlers
 
-Follow these instructions if you use a bundler such as webpack, vite, or rollup.
+Follow these instructions if you use a bundler such as webpack, vite, or rollup (specific instructions for Vue, React, and Angular are documented further on).
 
 ### Self lazy-loading components
 
@@ -69,16 +72,16 @@ import { defineCustomElements } from '@graphiteds/core/loader';
 // Core CSS required for Graphite components to work properly
 import '@graphiteds/core/css/core.css';
 
-// Optional CSS to prevent Flash Of Unstyled Content (FOUC)
+// Optional CSS to prevent Flash Of Unstyled Content (FOUC) because of the lazy loading
 import '@graphiteds/core/css/prevent-fouc.css';
 
 // Register Graphite components
 defineCustomElements(window);
 ```
 
-Note: All components are part of your bundle, but only lazy-loaded by the browser when needed. Alternately, [cherry-pick components](#cherry-pick-components) for optimal bundle size. Or if you use some other bundler than webpack (because of [this issue](https://github.com/ionic-team/stencil/issues/2827)).
+Note: All components are part of your bundle, but only lazy-loaded by the browser when needed. This can introduce some Cumulative Layout Shift (CLS). Alternately, [cherry-pick components](#cherry-pick-components) for optimal bundle size, and to reduce Cumulative Layout Shift (CLS). Or if you want to use some other bundler than webpack (because of [this issue](https://github.com/ionic-team/stencil/issues/2827)).
 
-### Preload all components
+### Cherry-pick components
 
 Run:
 
@@ -89,46 +92,20 @@ npm install @graphiteds/core
 Add this code to your main JS/TS file:
 
 ```js
-// Import Graphite components
-import { defineCustomElements } from '@graphiteds/core/dist/custom-elements';
-
 // Core CSS required for Graphite components to work properly
 import '@graphiteds/core/css/core.css';
-
-// Register Graphite components
-defineCustomElements(window);
 ```
 
-Warning: Don't `import '@graphiteds/core/css/prevent-fouc.css'`, this is only needed for the lazy-loading components, and will result in invisible components.
-
-Note: This is not recommended for production unless you use all Gaphite components in your project. If you only use a few, the following solution is recommended. Although a bit more work.
-
-### Cherry-pick components
-
-Run:
-
-```shell
-npm install @graphiteds/core
-```
-
-Add code like this to your main JS/TS file, depending on the components you use:
+Add code like this to the files where you want to use the components, depending on the components you use:
 
 ```js
-import { GrButton } from '@graphiteds/core/components/gr-button';
-import { GrSpinner } from '@graphiteds/core/components/gr-spinner';
-
-// Core CSS required for Graphite components to work properly
-import '@graphiteds/core/css/core.css';
-
-customElements.define('gr-button', GrButton);
-customElements.define('gr-spinner', GrSpinner);
+// Import & register gr-button component
+import "@graphiteds/core/components/gr-button.js";
 ```
 
-Warning: Don't `import '@graphiteds/core/css/prevent-fouc.css'`, this is only needed for the lazy-loading components, and will result in invisible components.
+This automatically defines the custom element, and imports any components it depends upon.
 
 This enables the bundler to remove unused Graphite components from your bundle (tree-shaking). If you use Webpack, we recommend to use Webpack 5 to make the most out of this improvement.
-
-Note: components may depend on other components to work correctly. Always check the dependencies in the documentation. For example, the `gr-button` depends on `gr-spinner` for the `loading` attribute. So you need to define them both as custom elements.
 
 ## Usage with Vue 3
 
@@ -206,7 +183,7 @@ import { defineCustomElements } from '@graphiteds/core/loader';
 // Core CSS required for Graphite components to work properly
 import '@graphiteds/core/css/core.css';
 
-// Optional CSS to prevent Flash Of Unstyled Content (FOUC)
+// Optional CSS to prevent Flash Of Unstyled Content (FOUC) because of the lazy loading
 import '@graphiteds/core/css/prevent-fouc.css';
 
 // ...
@@ -235,6 +212,8 @@ Vue provides several different ways to install and use the framework in an appli
 [See a working example of this setup (CodeSandbox)](https://codesandbox.io/s/graphiteds-vue2-example-q7o2c)
 
 Note: All components are part of your bundle, but only lazy-loaded by the browser when needed. Alternately, [cherry-pick components](#cherry-pick-components) for optimal bundle size. Or if you use some other bundler than webpack (because of [this issue](https://github.com/ionic-team/stencil/issues/2827)).
+
+Note: All components are part of your bundle, but only lazy-loaded by the browser when needed. This can introduce some Cumulative Layout Shift (CLS). Alternately, [cherry-pick components](#cherry-pick-components) for optimal bundle size, and to reduce Cumulative Layout Shift (CLS). Or if you want to use some other bundler than webpack (because of [this issue](https://github.com/ionic-team/stencil/issues/2827)).
 
 ### Binding Complex Data
 
@@ -315,7 +294,7 @@ import { defineCustomElements } from '@graphiteds/core/loader';
 // Core CSS required for Graphite components to work properly
 import '@graphiteds/core/css/core.css';
 
-// Optional CSS to prevent Flash Of Unstyled Content (FOUC)
+// Optional CSS to prevent Flash Of Unstyled Content (FOUC) because of the lazy loading
 import '@graphiteds/core/css/prevent-fouc.css';
 
 export default function () {
@@ -343,7 +322,7 @@ The components should then be available in any of the Nuxt pages & components:
 
 The instructions above about [Binding Complex Data](#binding-complex-data), [Two-way Binding](#two-way-binding), and [Using a Custom Directive](#using-a-custom-directive) also apply here (except you need to do the `Vue.use(GraphiteModelDirective)` in the `graphiteds.js` plugin).
 
-All components are part of your bundle but only lazy-loaded by the browser when needed. Alternately, [cherry-pick components](#cherry-pick-components) for optimal bundle size. Or if you use some other bundler than webpack (because of [this issue](https://github.com/ionic-team/stencil/issues/2827)).
+Note: All components are part of your bundle, but only lazy-loaded by the browser when needed. This can introduce some Cumulative Layout Shift (CLS). Alternately, [cherry-pick components](#cherry-pick-components) for optimal bundle size, and to reduce Cumulative Layout Shift (CLS). Or if you want to use some other bundler than webpack (because of [this issue](https://github.com/ionic-team/stencil/issues/2827)).
 
 [See a working example of this setup (CodeSandbox)](https://codesandbox.io/s/graphiteds-nuxt2-example-jyvc9)
 
@@ -363,7 +342,7 @@ In your `index.js` or `index.ts` add the following code:
 // Core CSS required for Graphite components to work properly
 import '@graphiteds/react/css/core.css';
 
-// Optional CSS to prevent Flash Of Unstyled Content (FOUC)
+// Optional CSS to prevent Flash Of Unstyled Content (FOUC) because of the lazy loading
 import '@graphiteds/react/css/prevent-fouc.css';
 ```
 
@@ -378,6 +357,8 @@ Use it in your JSX as any React component:
 ```html
 <GrButton href="https://paqt.com">PAQT</GrButton>
 ```
+
+Note: All components are part of your bundle, but only lazy-loaded by the browser when needed. This can introduce some Cumulative Layout Shift (CLS). Alternately, [cherry-pick components](#cherry-pick-components) for optimal bundle size, and to reduce Cumulative Layout Shift (CLS). Or if you want to use some other bundler than webpack (because of [this issue](https://github.com/ionic-team/stencil/issues/2827)).
 
 [See a working example of this setup (CodeSandbox)](https://codesandbox.io/s/graphiteds-react-example-yhr9p)
 
@@ -415,7 +396,7 @@ import { defineCustomElements } from '@graphiteds/core/loader';
 // Core CSS required for Graphite components to work properly
 import '@graphiteds/core/css/core.css';
 
-// Optional CSS to prevent Flash Of Unstyled Content (FOUC)
+// Optional CSS to prevent Flash Of Unstyled Content (FOUC) because of the lazy loading
 import '@graphiteds/core/css/prevent-fouc.css';
 
 // ...
@@ -430,27 +411,30 @@ Once included, components can be used in your HTML markup as in the following ex
 <gr-button variant="primary">Send</gr-button>
 ```
 
+Note: All components are part of your bundle, but only lazy-loaded by the browser when needed. This can introduce some Cumulative Layout Shift (CLS). Alternately, [cherry-pick components](#cherry-pick-components) for optimal bundle size, and to reduce Cumulative Layout Shift (CLS). Or if you want to use some other bundler than webpack (because of [this issue](https://github.com/ionic-team/stencil/issues/2827)).
+
 [See a working example of this setup (CodeSandbox)](https://codesandbox.io/s/graphiteds-angular-example-e4gju)
 
 ## Usage with Livewire
 
-Just add the following tags to your page.
+Just add the following tags to the head of your page.
 
 ```html
 <link 
   rel="stylesheet"
-  href="https://cdn.jsdelivr.net/npm/@graphiteds/core@1.3.7/css/graphite.bundle.css"
+  href="https://cdn.jsdelivr.net/npm/@graphiteds/core@1.4.1/css/graphite.bundle.css"
   integrity="sha256-Maq0H86dB7RsnWif+qVcjQTCDWf91cqcF+kokcsZ8m0="
   crossorigin="anonymous"
 />
 <script 
   type="module" 
-  src="https://cdn.jsdelivr.net/npm/@graphiteds/core@1.3.7/dist/core/core.esm.js" integrity="sha256-SelkLRHBACBw4qVsc8QpiW7o0ipgw77IA8Lc/InsIf0=" 
+  src="https://cdn.jsdelivr.net/npm/@graphiteds/core@1.4.1/dist/core/core.esm.js"
+  integrity="sha256-1V1ykJc+1nJljZ6ndF1tq8Ty/AmtLaFj/KllLrXGD4o=" 
   crossorigin="anonymous"
 ></script>
 ```
 
-Then you can use the elements anywhere in your blade templates, but you have to use `wire:ignore`
+Then you can use the elements anywhere in your blade templates, but you have to use `wire:ignore`.
 
 For example:
 
@@ -459,6 +443,40 @@ For example:
   <div slot="icon-only">+</div>
 </gr-button>
 ```
+
+Note: All components are only lazy-loaded by the browser when needed. This can introduce some Cumulative Layout Shift (CLS). To reduce this, you can move the components below the fold (outside the visible viewport of the user, or use a bundler with [cherry-picked components](#cherry-pick-components).
+
+You can't use dynamic php variables in attributes because of the `wire:ignore`. For example, to show error messages as `invalid-text`. To work around this, you have to use AlpineJS.
+
+Add the following code to the head of your page:
+
+```html
+<script src="https://cdn.jsdelivr.net/npm/alpinejs@2.8.2/dist/alpine.min.js" defer></script>
+```
+
+Add a `x-data` attribute to your form, and set `errors` to the `$errors` php variable:
+
+```html
+<form wire:submit.prevent="submit" x-data="{ 'errors': {{ $errors }} }">
+```
+
+Use the AlpineJS `errors` variable in `x-bind` attributes, for example:
+
+```html
+<gr-input
+    label="Naam"
+    x-bind:invalid="errors.hasOwnProperty('name')"
+    x-bind:invalid-text="errors.hasOwnProperty('name') ? errors.name[0] : ''"
+    wire:model.debounce.500ms="name"
+    wire:gr-blur="touch('name')"
+    wire:ignore
+    required-indicator
+></gr-input>
+```
+
+Note: `wire:model` only works with `gr-input` & `gr-textarea`. For other form elements, like `gr-radio-group`, you have to utilize the `gr-change` event, like this: `wire:gr-change="$set('exampleProperty', $event.target.value)"`.
+
+Note: All components are only lazy-loaded by the browser when needed. This can introduce some Cumulative Layout Shift (CLS). To reduce this, you can move the components below the fold (outside the visible viewport of the user, or use a bundler with [cherry-picked components](#cherry-pick-components).
 
 ## Usage with other frameworks
 
