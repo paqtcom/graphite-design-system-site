@@ -10,18 +10,19 @@ Graphite makes it easy to implement and use its [components](/components/overvie
 
 ## Quick start
 
-Add the following code to your page:
+Add the following code to the head of your page:
 
 ```html
 <link 
   rel="stylesheet"
-  href="https://cdn.jsdelivr.net/npm/@graphiteds/core@1.3.7/css/graphite.bundle.css"
+  href="https://cdn.jsdelivr.net/npm/@graphiteds/core@1.4.1/css/graphite.bundle.css"
   integrity="sha256-Maq0H86dB7RsnWif+qVcjQTCDWf91cqcF+kokcsZ8m0="
   crossorigin="anonymous"
 />
 <script 
   type="module" 
-  src="https://cdn.jsdelivr.net/npm/@graphiteds/core@1.3.7/dist/core/core.esm.js" integrity="sha256-SelkLRHBACBw4qVsc8QpiW7o0ipgw77IA8Lc/InsIf0=" 
+  src="https://cdn.jsdelivr.net/npm/@graphiteds/core@1.4.1/dist/core/core.esm.js"
+  integrity="sha256-1V1ykJc+1nJljZ6ndF1tq8Ty/AmtLaFj/KllLrXGD4o=" 
   crossorigin="anonymous"
 ></script>
 ```
