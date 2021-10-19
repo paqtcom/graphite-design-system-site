@@ -27,14 +27,14 @@ Just add the following tags to the head of your page.
 ```html
 <link 
   rel="stylesheet"
-  href="https://cdn.jsdelivr.net/npm/@graphiteds/core@1.4.1/css/graphite.bundle.css"
+  href="https://cdn.jsdelivr.net/npm/@graphiteds/core@1.4.2/css/graphite.bundle.css"
   integrity="sha256-Maq0H86dB7RsnWif+qVcjQTCDWf91cqcF+kokcsZ8m0="
   crossorigin="anonymous"
 />
 <script 
   type="module" 
-  src="https://cdn.jsdelivr.net/npm/@graphiteds/core@1.4.1/dist/core/core.esm.js"
-  integrity="sha256-1V1ykJc+1nJljZ6ndF1tq8Ty/AmtLaFj/KllLrXGD4o=" 
+  src="https://cdn.jsdelivr.net/npm/@graphiteds/core@1.4.2/dist/core/core.esm.js"
+  integrity="sha256-XmPE2rf2yMabjKCW6q46zd+P19uUaYdrzJVo1AD5tn8=" 
   crossorigin="anonymous"
 ></script>
 ```
@@ -422,14 +422,14 @@ Just add the following tags to the head of your page.
 ```html
 <link 
   rel="stylesheet"
-  href="https://cdn.jsdelivr.net/npm/@graphiteds/core@1.4.1/css/graphite.bundle.css"
+  href="https://cdn.jsdelivr.net/npm/@graphiteds/core@1.4.2/css/graphite.bundle.css"
   integrity="sha256-Maq0H86dB7RsnWif+qVcjQTCDWf91cqcF+kokcsZ8m0="
   crossorigin="anonymous"
 />
 <script 
   type="module" 
-  src="https://cdn.jsdelivr.net/npm/@graphiteds/core@1.4.1/dist/core/core.esm.js"
-  integrity="sha256-1V1ykJc+1nJljZ6ndF1tq8Ty/AmtLaFj/KllLrXGD4o=" 
+  src="https://cdn.jsdelivr.net/npm/@graphiteds/core@1.4.2/dist/core/core.esm.js"
+  integrity="sha256-XmPE2rf2yMabjKCW6q46zd+P19uUaYdrzJVo1AD5tn8=" 
   crossorigin="anonymous"
 ></script>
 ```
