@@ -13,16 +13,16 @@ Graphite makes it easy to implement and use its [components](/components/overvie
 Add the following code to the head of your page:
 
 ```html
-<link 
+<link
   rel="stylesheet"
-  href="https://cdn.jsdelivr.net/npm/@graphiteds/core@1.4.2/css/graphite.bundle.css"
+  href="https://cdn.jsdelivr.net/npm/@graphiteds/core@1.4.3/css/graphite.bundle.css"
   integrity="sha256-Maq0H86dB7RsnWif+qVcjQTCDWf91cqcF+kokcsZ8m0="
   crossorigin="anonymous"
 />
-<script 
-  type="module" 
-  src="https://cdn.jsdelivr.net/npm/@graphiteds/core@1.4.2/dist/core/core.esm.js"
-  integrity="sha256-XmPE2rf2yMabjKCW6q46zd+P19uUaYdrzJVo1AD5tn8=" 
+<script
+  type="module"
+  src="https://cdn.jsdelivr.net/npm/@graphiteds/core@1.4.3/dist/core/core.esm.js"
+  integrity="sha256-ER4/ydlNaVwSlOSAobaaoUbhtylJUx6KmncmBo9bD/E="
   crossorigin="anonymous"
 ></script>
 ```

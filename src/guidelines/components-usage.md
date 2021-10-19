@@ -25,16 +25,16 @@ The CDN is optimized for performance by using caching, HTTP/2, etc.
 Just add the following tags to the head of your page.
 
 ```html
-<link 
+<link
   rel="stylesheet"
-  href="https://cdn.jsdelivr.net/npm/@graphiteds/core@1.4.2/css/graphite.bundle.css"
+  href="https://cdn.jsdelivr.net/npm/@graphiteds/core@1.4.3/css/graphite.bundle.css"
   integrity="sha256-Maq0H86dB7RsnWif+qVcjQTCDWf91cqcF+kokcsZ8m0="
   crossorigin="anonymous"
 />
-<script 
-  type="module" 
-  src="https://cdn.jsdelivr.net/npm/@graphiteds/core@1.4.2/dist/core/core.esm.js"
-  integrity="sha256-XmPE2rf2yMabjKCW6q46zd+P19uUaYdrzJVo1AD5tn8=" 
+<script
+  type="module"
+  src="https://cdn.jsdelivr.net/npm/@graphiteds/core@1.4.3/dist/core/core.esm.js"
+  integrity="sha256-ER4/ydlNaVwSlOSAobaaoUbhtylJUx6KmncmBo9bD/E="
   crossorigin="anonymous"
 ></script>
 ```
@@ -100,7 +100,7 @@ Add code like this to the files where you want to use the components, depending 
 
 ```js
 // Import & register gr-button component
-import "@graphiteds/core/components/gr-button.js";
+import '@graphiteds/core/components/gr-button.js';
 ```
 
 This automatically defines the custom element, and imports any components it depends upon.
@@ -420,16 +420,16 @@ Note: All components are part of your bundle, but only lazy-loaded by the browse
 Just add the following tags to the head of your page.
 
 ```html
-<link 
+<link
   rel="stylesheet"
-  href="https://cdn.jsdelivr.net/npm/@graphiteds/core@1.4.2/css/graphite.bundle.css"
+  href="https://cdn.jsdelivr.net/npm/@graphiteds/core@1.4.3/css/graphite.bundle.css"
   integrity="sha256-Maq0H86dB7RsnWif+qVcjQTCDWf91cqcF+kokcsZ8m0="
   crossorigin="anonymous"
 />
-<script 
-  type="module" 
-  src="https://cdn.jsdelivr.net/npm/@graphiteds/core@1.4.2/dist/core/core.esm.js"
-  integrity="sha256-XmPE2rf2yMabjKCW6q46zd+P19uUaYdrzJVo1AD5tn8=" 
+<script
+  type="module"
+  src="https://cdn.jsdelivr.net/npm/@graphiteds/core@1.4.3/dist/core/core.esm.js"
+  integrity="sha256-ER4/ydlNaVwSlOSAobaaoUbhtylJUx6KmncmBo9bD/E="
   crossorigin="anonymous"
 ></script>
 ```
@@ -457,20 +457,20 @@ Add the following code to the head of your page:
 Add a `x-data` attribute to your form, and set `errors` to the `$errors` php variable:
 
 ```html
-<form wire:submit.prevent="submit" x-data="{ 'errors': {{ $errors }} }">
+<form wire:submit.prevent="submit" x-data="{ 'errors': {{ $errors }} }"></form>
 ```
 
 Use the AlpineJS `errors` variable in `x-bind` attributes, for example:
 
 ```html
 <gr-input
-    label="Naam"
-    x-bind:invalid="errors.hasOwnProperty('name')"
-    x-bind:invalid-text="errors.hasOwnProperty('name') ? errors.name[0] : ''"
-    wire:model.debounce.500ms="name"
-    wire:gr-blur="touch('name')"
-    wire:ignore
-    required-indicator
+  label="Naam"
+  x-bind:invalid="errors.hasOwnProperty('name')"
+  x-bind:invalid-text="errors.hasOwnProperty('name') ? errors.name[0] : ''"
+  wire:model.debounce.500ms="name"
+  wire:gr-blur="touch('name')"
+  wire:ignore
+  required-indicator
 ></gr-input>
 ```
 

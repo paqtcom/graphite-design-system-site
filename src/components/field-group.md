@@ -84,7 +84,8 @@ Use the `label` attribute to give the field group an accessible label. For label
 
 ## CSS custom properties
 
-| Name                                 | Description                                           |
-| ------------------------------------ | ----------------------------------------------------- |
-| `--margin-between-fields`            | Margin between the children                           |
-| `--margin-between-fields-horizontal` | Margin between the children when layout is horizontal |
+| Name                                 | Description                                                          |
+| ------------------------------------ | -------------------------------------------------------------------- |
+| `--align-fields`                     | Alignment of fields on cross-axis, an `align-items` Flexbox property |
+| `--margin-between-fields`            | Margin between the children                                          |
+| `--margin-between-fields-horizontal` | Margin between the children when layout is horizontal                |

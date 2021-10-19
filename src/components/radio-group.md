@@ -325,7 +325,8 @@ Invalid text should be written in 1-2 short, complete sentences and in a clear a
 
 ## CSS custom properties
 
-| Name                                 | Description                                                    |
-| ------------------------------------ | -------------------------------------------------------------- |
-| `--margin-between-radios`            | Margin between the gr-radio children                           |
-| `--margin-between-radios-horizontal` | Margin between the gr-radio children when layout is horizontal |
+| Name                                 | Description                                                          |
+| ------------------------------------ | -------------------------------------------------------------------- |
+| `--align-fields`                     | Alignment of fields on cross-axis, an `align-items` Flexbox property |
+| `--margin-between-radios`            | Margin between the gr-radio children                                 |
+| `--margin-between-radios-horizontal` | Margin between the gr-radio children when layout is horizontal       |
