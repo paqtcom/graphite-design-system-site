@@ -478,6 +478,28 @@ Note: `wire:model` only works with `gr-input` & `gr-textarea`. For other form el
 
 Note: All components are only lazy-loaded by the browser when needed. This can introduce some Cumulative Layout Shift (CLS). To reduce this, you can move the components below the fold (outside the visible viewport of the user, or use a bundler with [cherry-picked components](#cherry-pick-components).
 
+## Usage with Inertia.js
+
+Follow the instructions above for your client-side framework of choice.
+
+You can use links like this:
+
+```html
+<inertia-link as="gr-button" variant="primary" :href="route('organizations.create')">
+  Create organization
+</inertia-link>
+```
+
+Or like this:
+
+```html
+<gr-button variant="primary" @click="$inertia.visit(route('organizations.create'))">
+  Create organization
+</gr-button>
+```
+
+The above examples are using Vue 2. For other frameworks it might differ slightly. Refer to the [Links](https://inertiajs.com/links) and [Manual visits](https://inertiajs.com/manual-visits) pages in the Inertia.js docs for more help.
+
 ## Usage with other frameworks
 
 You can either use the `@graphiteds/core` package directly or load the components [from our CDN](#usage-with-basic-html). Please see [Custom Elements Everywhere](https://custom-elements-everywhere.com/) for more details about wider support in Frameworks like Preact, Svelte, Solid, Riot.js and similar.
