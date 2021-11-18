@@ -27,14 +27,14 @@ Just add the following tags to the head of your page.
 ```html
 <link
   rel="stylesheet"
-  href="https://cdn.jsdelivr.net/npm/@graphiteds/core@1.4.4/css/graphite.bundle.css"
+  href="https://cdn.jsdelivr.net/npm/@graphiteds/core@1.5.0/css/graphite.bundle.css"
   integrity="sha256-Maq0H86dB7RsnWif+qVcjQTCDWf91cqcF+kokcsZ8m0="
   crossorigin="anonymous"
 />
 <script
   type="module"
-  src="https://cdn.jsdelivr.net/npm/@graphiteds/core@1.4.4/dist/core/core.esm.js"
-  integrity="sha256-dahAvhuXaNMLmux9Q1clkae4SB1B/mJKBRLy1Wh5VIs="
+  src="https://cdn.jsdelivr.net/npm/@graphiteds/core@1.5.0/dist/core/core.esm.js"
+  integrity="sha256-sRpDQUl1aW1TrTM6jm1unu6wgrUawtjMBZaI6B/KXM0="
   crossorigin="anonymous"
 ></script>
 ```
@@ -109,7 +109,7 @@ This enables the bundler to remove unused Graphite components from your bundle (
 
 ## Usage with Vue 3
 
-We offer [Vue 3](https://v3.vuejs.org/) specific building blocks on top of `@graphiteds/core` components for optimal DX (typings, v-model support, out of the box tree-shaking, etc.).
+We offer [Vue 3](https://v3.vuejs.org/) wrappers on top of `@graphiteds/core` components for optimal DX (typings, v-model support, out of the box tree-shaking, etc.).
 
 We recommend using [vite](https://vitejs.dev/) or otherwise [vue-cli v5](https://next.cli.vuejs.org/) (with Webpack 5) for the best bundle sizes (due to tree-shaking). If you want to migrate from vue-cli v4 to v5: [follow this guide](https://next.cli.vuejs.org/migrations/migrate-from-v4.html).
 
@@ -328,7 +328,7 @@ Note: All components are part of your bundle, but only lazy-loaded by the browse
 
 ## Usage with React
 
-We offer React specific building blocks on top of `@graphiteds/core` components, because React [does not play nice](https://custom-elements-everywhere.com/#react) with custom elements.
+We offer React wrappers on top of `@graphiteds/core` components, because React [does not play nice](https://custom-elements-everywhere.com/#react) with custom elements, and to offer optimal DX (typings, out of the box tree-shaking, etc.).
 
 Run:
 
@@ -341,9 +341,6 @@ In your `index.js` or `index.ts` add the following code:
 ```js
 // Core CSS required for Graphite components to work properly
 import '@graphiteds/react/css/core.css';
-
-// Optional CSS to prevent Flash Of Unstyled Content (FOUC) because of the lazy loading
-import '@graphiteds/react/css/prevent-fouc.css';
 ```
 
 Import the component(s) you want to use:
@@ -358,13 +355,11 @@ Use it in your JSX as any React component:
 <GrButton href="https://paqt.com">PAQT</GrButton>
 ```
 
-Note: All components are part of your bundle, but only lazy-loaded by the browser when needed. This can introduce some Cumulative Layout Shift (CLS). Alternately, [cherry-pick components](#cherry-pick-components) for optimal bundle size, and to reduce Cumulative Layout Shift (CLS). Or if you want to use some other bundler than webpack (because of [this issue](https://github.com/ionic-team/stencil/issues/2827)).
-
 [See a working example of this setup (CodeSandbox)](https://codesandbox.io/s/graphiteds-react-example-yhr9p)
 
 ## Usage with Angular
 
-Angular bindings are possible for optimal DX (typings, ngModel & reactive forms support, etc.). Please let us know if you would like them, and we will consider them.
+Angular wrappers are possible for optimal DX (typings, ngModel & reactive forms support, etc.). Please let us know if you would like them, and we will consider them.
 
 Otherwise, to use our web components directly within an Angular CLI project, run:
 
@@ -422,14 +417,14 @@ Just add the following tags to the head of your page.
 ```html
 <link
   rel="stylesheet"
-  href="https://cdn.jsdelivr.net/npm/@graphiteds/core@1.4.4/css/graphite.bundle.css"
+  href="https://cdn.jsdelivr.net/npm/@graphiteds/core@1.5.0/css/graphite.bundle.css"
   integrity="sha256-Maq0H86dB7RsnWif+qVcjQTCDWf91cqcF+kokcsZ8m0="
   crossorigin="anonymous"
 />
 <script
   type="module"
-  src="https://cdn.jsdelivr.net/npm/@graphiteds/core@1.4.4/dist/core/core.esm.js"
-  integrity="sha256-dahAvhuXaNMLmux9Q1clkae4SB1B/mJKBRLy1Wh5VIs="
+  src="https://cdn.jsdelivr.net/npm/@graphiteds/core@1.5.0/dist/core/core.esm.js"
+  integrity="sha256-sRpDQUl1aW1TrTM6jm1unu6wgrUawtjMBZaI6B/KXM0="
   crossorigin="anonymous"
 ></script>
 ```
