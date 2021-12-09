@@ -53,6 +53,7 @@ We welcome your feedback on how we might improve. For any specific questions or 
 - Positioning of menus, tooltips, et al is handled by [Popper.js](https://popper.js.org/)
 - The Graphite logo was designed by [Elwin van Eede](https://elwinvaneede.com)
 - Some component code is based on or inspired by the [Ionic Framework](https://ionicframework.com/) and [Shoelace](https://shoelace.style/) components
+- Our date picker is a wrapper around the open-source [Duet Date Picker](https://github.com/duetds/date-picker).
 - Some documentation is based on or inspired by the [Ionic Framework](https://ionicframework.com/), [Shoelace](https://shoelace.style/), the [Spectrum Design System](https://spectrum.adobe.com/), the [Carbon Design System](https://www.carbondesignsystem.com/), and the [Polaris Design System](https://polaris.shopify.com/)
 
 ## Contact us
