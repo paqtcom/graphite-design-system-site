@@ -20,6 +20,12 @@ title: Components - Graphite Design System
   </gr-field-group>
 </div>
 
+[Date picker](/components/date-picker)
+
+<div class="example-block">
+  <gr-date-picker label="Date"></gr-date-picker>
+</div>
+
 [Dropdown](/components/dropdown)
 
 <div class="example-block">
