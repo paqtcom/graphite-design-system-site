@@ -132,12 +132,6 @@ module.exports = {
       display: ['Inter', 'var(--gr-font-family)'],
     },
   },
-  variants: {
-    textColor: ['responsive', 'hover', 'focus', 'group-hover'],
-    fill: ['responsive', 'hover', 'focus'],
-    backgroundColor: ['responsive', 'hover', 'focus', 'group-hover'],
-    borderWidth: ['responsive', 'hover', 'focus'],
-  },
   plugins: [],
-  purge: ['./src/**/*.ejs', './src/**/*.md'],
+  content: ['./src/**/*.ejs', './src/**/*.md'],
 };

@@ -451,9 +451,13 @@ Add the following code to the head of your page:
 
 Add a `x-data` attribute to your form, and set `errors` to the `$errors` php variable:
 
+{% raw %}
+
 ```html
 <form wire:submit.prevent="submit" x-data="{ 'errors': {{ $errors }} }"></form>
 ```
+
+{% endraw %}
 
 Use the AlpineJS `errors` variable in `x-bind` attributes, for example:
 
