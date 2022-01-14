@@ -4,6 +4,8 @@ The official [Graphite Design System documentation](https://graphitedesignsystem
 
 ## Development
 
+Make sure you are using Node v16 (with npm v8). If you use `nvm`, you can run `nvm use`.
+
 Run the following command on your local environment:
 
 ```bash
