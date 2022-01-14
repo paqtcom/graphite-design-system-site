@@ -27,14 +27,14 @@ Just add the following tags to the head of your page.
 ```html
 <link
   rel="stylesheet"
-  href="https://cdn.jsdelivr.net/npm/@graphiteds/core@1.6.1/css/graphite.bundle.css"
+  href="https://cdn.jsdelivr.net/npm/@graphiteds/core@1.6.2/css/graphite.bundle.css"
   integrity="sha256-Maq0H86dB7RsnWif+qVcjQTCDWf91cqcF+kokcsZ8m0="
   crossorigin="anonymous"
 />
 <script
   type="module"
-  src="https://cdn.jsdelivr.net/npm/@graphiteds/core@1.6.1/dist/core/core.esm.js"
-  integrity="sha256-f4aoq5qfHHDnUo5g1261wQY8e6mZbpiqHb8lTokCmGc="
+  src="https://cdn.jsdelivr.net/npm/@graphiteds/core@1.6.2/dist/core/core.esm.js"
+  integrity="sha256-0SvU77pafSoafyjVboMbuaDGRXp2gEZ9yoURl97/gA8="
   crossorigin="anonymous"
 ></script>
 ```
@@ -417,14 +417,14 @@ Just add the following tags to the head of your page.
 ```html
 <link
   rel="stylesheet"
-  href="https://cdn.jsdelivr.net/npm/@graphiteds/core@1.6.1/css/graphite.bundle.css"
+  href="https://cdn.jsdelivr.net/npm/@graphiteds/core@1.6.2/css/graphite.bundle.css"
   integrity="sha256-Maq0H86dB7RsnWif+qVcjQTCDWf91cqcF+kokcsZ8m0="
   crossorigin="anonymous"
 />
 <script
   type="module"
-  src="https://cdn.jsdelivr.net/npm/@graphiteds/core@1.6.1/dist/core/core.esm.js"
-  integrity="sha256-f4aoq5qfHHDnUo5g1261wQY8e6mZbpiqHb8lTokCmGc="
+  src="https://cdn.jsdelivr.net/npm/@graphiteds/core@1.6.2/dist/core/core.esm.js"
+  integrity="sha256-0SvU77pafSoafyjVboMbuaDGRXp2gEZ9yoURl97/gA8="
   crossorigin="anonymous"
 ></script>
 ```
@@ -451,9 +451,13 @@ Add the following code to the head of your page:
 
 Add a `x-data` attribute to your form, and set `errors` to the `$errors` php variable:
 
+{% raw %}
+
 ```html
 <form wire:submit.prevent="submit" x-data="{ 'errors': {{ $errors }} }"></form>
 ```
+
+{% endraw %}
 
 Use the AlpineJS `errors` variable in `x-bind` attributes, for example:
 
