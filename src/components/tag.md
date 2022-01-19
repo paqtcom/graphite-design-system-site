@@ -112,12 +112,12 @@ Use the `clearable` attribute to add a clear button to the tag.
 
 ## Properties
 
-| Property    | Attribute   | Description                                              | Type      | Default  |
-| ----------- | ----------- | -------------------------------------------------------- | --------- | -------- | --------- | ---------- | ---------- | ----------- |
-| `clearable` | `clearable` | Set to true to make the tag clearable.                   | `boolean` | `false`  |
-| `pill`      | `pill`      | Set to true to draw a pill-style tag with rounded edges. | `boolean` | `false`  |
-| `size`      | `size`      | The tag's size.                                          | `"large"  | "medium" | "small"`  | `'medium'` |
-| `type`      | `type`      | The tag's type.                                          | `"danger" | "info"   | "primary" | "success"  | "warning"` | `'primary'` |
+| Property    | Attribute   | Description                                              | Type                                                        | Default     |
+| ----------- | ----------- | -------------------------------------------------------- | ----------------------------------------------------------- | ----------- |
+| `clearable` | `clearable` | Set to true to make the tag clearable.                   | `boolean`                                                   | `false`     |
+| `pill`      | `pill`      | Set to true to draw a pill-style tag with rounded edges. | `boolean`                                                   | `false`     |
+| `size`      | `size`      | The tag's size.                                          | `"large" \| "medium" \| "small"`                            | `'medium'`  |
+| `type`      | `type`      | The tag's type.                                          | `"danger" \| "info" \| "primary" \| "success" \| "warning"` | `'primary'` |
 
 ## Events
 
