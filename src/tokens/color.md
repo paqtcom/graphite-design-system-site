@@ -112,8 +112,8 @@ Please use [this contrast checker](https://webaim.org/resources/contrastchecker/
 | `--gr-color-medium-rgb` \*       | `94, 108, 120`  | <div class="h-8 border rounded bg-medium" />          |
 | `--gr-color-medium-contrast`     | `#ffffff`       | <div class="h-8 border rounded bg-medium-contrast" /> |
 | `--gr-color-medium-contrast-rgb` | `255, 255, 255` | <div class="h-8 border rounded bg-medium-contrast" /> |
-| `--gr-color-medium-shade`        | `#000000`       | <div class="h-8 border rounded bg-medium-shade" />    |
-| `--gr-color-medium-tint`         | `#222428`       | <div class="h-8 border rounded bg-medium-tint" />     |
+| `--gr-color-medium-shade`        | `#48535b`       | <div class="h-8 border rounded bg-medium-shade" />    |
+| `--gr-color-medium-tint`         | `#81909c`       | <div class="h-8 border rounded bg-medium-tint" />     |
 
 ## Dark
 
