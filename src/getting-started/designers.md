@@ -10,6 +10,8 @@ title: Designers - Graphite Design System
 
 In the near future we will have Design Kits available for Figma and maybe Sketch.
 
+{% animated-image "./src/assets/images/graphite-design-kit-figma-preview.webp", "Preview of the Figma Design Kit", "(min-width: 64em) 75vw, 100vw" %}
+
 These kits come with Graphite components so you don’t have to build them. By using the kits you automatically get any updates made by the Graphite team so you don’t need to go back and change any designs to match the latest release. And when handing off to your developers there won’t be confusion about the component and its behaviors.
 
 In the meantime you have to build them yourself, based on the [components](/components/overview) documentation.
