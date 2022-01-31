@@ -7,6 +7,29 @@ const markdownItAnchor = require('markdown-it-anchor');
 const markdownItTOC = require('markdown-it-table-of-contents');
 // const hydrate = require('@grapiteds/core/hydrate');
 
+const Image = require('@11ty/eleventy-img');
+
+async function animatedImageShortcode(src, alt, sizes) {
+  let metadata = await Image(src, {
+    widths: [500, 1000],
+    formats: ['webp'],
+    outputDir: './_site/img/',
+    sharpOptions: {
+      animated: true,
+    },
+  });
+
+  let imageAttributes = {
+    alt,
+    sizes,
+    loading: 'lazy',
+    decoding: 'async',
+  };
+
+  // You bet we throw an error on missing alt in `imageAttributes` (alt="" works okay)
+  return Image.generateHTML(metadata, imageAttributes);
+}
+
 module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy({
     'node_modules/@graphiteds/core/dist/core': 'assets/graphiteds',
@@ -81,6 +104,10 @@ module.exports = function (eleventyConfig) {
 
     return content;
   });
+
+  eleventyConfig.addNunjucksAsyncShortcode('animated-image', animatedImageShortcode);
+  eleventyConfig.addLiquidShortcode('animated-image', animatedImageShortcode);
+  eleventyConfig.addJavaScriptFunction('animated-image', animatedImageShortcode);
 
   return {
     dir: { input: 'src', output: '_site', data: '_data' },
