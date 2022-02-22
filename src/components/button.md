@@ -430,8 +430,6 @@ Icons can be used in buttons when additional clarity is required and the icon is
 
 ## Properties
 
-## Properties
-
 | Property   | Attribute  | Description                                                                                                                                                                            | Type                                                           | Default     |
 | ---------- | ---------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------- | ----------- |
 | `caret`    | `caret`    | Set to true to draw the button with a caret for use with dropdowns, popovers, etc.                                                                                                     | `boolean`                                                      | `false`     |
