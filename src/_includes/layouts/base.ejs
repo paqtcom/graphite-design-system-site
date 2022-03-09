@@ -18,6 +18,7 @@
     />
     <meta property="og:locale" content="<%= site.locale %>" />
     <meta property="og:site_name" content="<%= site.site_name %>" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@algolia/algoliasearch-netlify-frontend@1/dist/algoliasearchNetlify.css" />
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/@graphiteds/core@1.7.0/css/graphite.bundle.css"
@@ -60,15 +61,19 @@
       <nav class="fixed top-0 z-40 w-full border-b bg-white">
         <div class="container mx-auto flex-1 px-4 lg:px-8">
           <div class="flex items-center justify-between h-16">
-            <div class="lg:w-4/5 flex items-center pr-4">
+            <div class="lg:w-1/5 flex items-center pr-4">
               <a
                 href="/"
                 aria-label="Graphite"
-                class="shrink-0 flex-1 font-bold text-xl nuxt-link-exact-active nuxt-link-active"
+                class="flex-shrink-0 flex-1 font-bold text-xl"
                 <%- page.url == '/' ? 'aria-current="page"' : '' %>
               >
                 <%- include('../logo.ejs') %> 
               </a>
+            </div>
+            <div class="flex-1 flex justify-start w-4/6">
+              <div id="autocomplete-0-label" class="hidden">Hallo</div>
+              <div id="search" class="lg:w-full"></div>
             </div>
             <div class="lg:w-1/5 flex items-center pr-4 lg:pr-8 justify-end">
               <span class="font-semibold leading-none text-dark text-base mr-4">v1.7.0</span>
@@ -204,5 +209,24 @@
       integrity="sha384-xK1UWIBr4owfX2pXIO/ElRBj/nWGR+woU/2HlMLCUjwdl/4PZIroSf5NQ11p6DaZ"
       crossorigin="anonymous"
     ></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@algolia/algoliasearch-netlify-frontend@1/dist/algoliasearchNetlify.js"></script>
+    <script type="text/javascript">
+      algoliasearchNetlify({
+        appId: 'GQFDW64RWE',
+        apiKey: 'ea36b0b64197916f9a7e6f624e4f35fe',
+        siteId: 'b2822e5c-6264-4b50-bcae-0642b936ccc9',
+        branch: 'master',
+        selector: 'div#search',
+        theme: {
+          mark: '#02131b',           // Color of the matching content
+          background: '#ffffff',     // Background Color of the input and the panel
+          selected: '#f4f5f8',       // Background Color of the selected item
+          text: '#02131b',           // Color of the title of the items
+          colorSourceIcon: '#5e6c78' // Color of the icon on the left of results
+        },
+        detached: true,
+      });
+    </script>
   </body>
 </html>
+  

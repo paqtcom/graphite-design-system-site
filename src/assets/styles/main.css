@@ -163,3 +163,13 @@ a:hover {
 .banner p {
   @apply text-lg text-medium;
 }
+
+.aa-Detached nav.fixed {
+  z-index: 0;
+}
+
+:root {
+  --aa-muted-color-rgb: var(--gr-color-medium-rgb);
+  --aa-muted-color-alpha: 1;
+  --aa-primary-color-rgb: var(--gr-color-primary-rgb);
+}
