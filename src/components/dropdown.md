@@ -341,6 +341,14 @@ Alternatively, you can listen for the `click` event on individual menu items. No
 
 ## Methods
 
+### `focusOnTrigger() => Promise<void>`
+
+Sets focus on the trigger.
+
+#### Returns
+
+Type: `Promise<void>`
+
 ### `hide() => Promise<void>`
 
 Hides the dropdown panel
