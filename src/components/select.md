@@ -733,6 +733,16 @@ Invalid text should be written in 1-2 short, complete sentences and in a clear a
 | `gr-change` | Emitted when the control's value changes. | `CustomEvent<void>` |
 | `gr-focus`  | Emitted when the control gains focus.     | `CustomEvent<void>` |
 
+## Methods
+
+### `setFocus() => Promise<void>`
+
+Sets focus on the select.
+
+#### Returns
+
+Type: `Promise<void>`
+
 ## Slots
 
 | Slot             | Description                                                                                       |

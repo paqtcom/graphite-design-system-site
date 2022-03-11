@@ -461,6 +461,24 @@ Icons can be used in buttons when additional clarity is required and the icon is
 | `"icon-only"` | Should be used on an icon in a button that has no text.                                                         |
 | `"start"`     | Content is placed to the left of the button text (will be to the right when we support right-to-left direction) |
 
+## Methods
+
+### `removeFocus() => Promise<void>`
+
+Removes focus from the button.
+
+#### Returns
+
+Type: `Promise<void>`
+
+### `setFocus(options?: FocusOptions) => Promise<void>`
+
+Sets focus on the button.
+
+#### Returns
+
+Type: `Promise<void>`
+
 ## CSS custom properties
 
 | Name                   | Description                                                                                                     |
