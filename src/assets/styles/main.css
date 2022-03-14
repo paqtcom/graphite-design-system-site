@@ -191,6 +191,10 @@ a:hover {
     width: 0;
     overflow: hidden;
   }
+
+  .aa-Input {
+    --height: 30px;
+  }
 }
 
 :root {
