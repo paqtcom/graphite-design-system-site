@@ -57,8 +57,11 @@ gr-button {
   --color: #222;
 }
 
-/* Set the background on a gr-button with the .fancy-button class */
-gr-button.fancy-button {
+/* 
+ * Set the background on a gr-button with a `fancy` class: 
+ *`<gr-button class="fancy"></gr-button>`
+ */
+gr-button.fancy {
   --background: #00ff00;
 }
 ```
