@@ -429,7 +429,9 @@ Just add the following tags to the head of your page.
 ></script>
 ```
 
-Then you can use the elements anywhere in your blade templates, but you have to use `wire:ignore`.
+Then you can use the elements anywhere in your blade templates, but **you have to use `wire:ignore`**.
+
+This is because Livewire's DOM diffing doesn't play nice with Web Components which can set attributes on their host element (like a class for styling or aria attributes for accessibility). If you don't add `wire:ignore`, we can't guarantee the components work correctly and are accessible.
 
 For example:
 
@@ -439,22 +441,20 @@ For example:
 </gr-button>
 ```
 
-Note: All components are only lazy-loaded by the browser when needed. This can introduce some Cumulative Layout Shift (CLS). To reduce this, you can move the components below the fold (outside the visible viewport of the user, or use a bundler with [cherry-picked components](#cherry-pick-components).
-
-You can't use dynamic php variables in attributes because of the `wire:ignore`. For example, to show error messages as `invalid-text`. To work around this, you have to use AlpineJS.
+Warning: You can't use dynamic php variables in attributes because of the required `wire:ignore`. For example, to show error messages as `invalid-text`. To work around this, you have to use AlpineJS.
 
 Add the following code to the head of your page:
 
 ```html
-<script src="https://cdn.jsdelivr.net/npm/alpinejs@2.8.2/dist/alpine.min.js" defer></script>
+<script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3/dist/cdn.min.js"></script>
 ```
 
-Add a `x-data` attribute to your form, and set `errors` to the `$errors` php variable:
+Add `x-data` & `x-init` attributes to a wrapper around your form elements, and set `errors` to the `$errors` php variable:
 
 {% raw %}
 
 ```html
-<form wire:submit.prevent="submit" x-data="{ 'errors': {{ $errors }} }"></form>
+<div x-data="{ 'errors': [] }" x-init="errors = {{ $errors }}"></div>
 ```
 
 {% endraw %}
@@ -473,7 +473,7 @@ Use the AlpineJS `errors` variable in `x-bind` attributes, for example:
 ></gr-input>
 ```
 
-Note: `wire:model` only works with `gr-input` & `gr-textarea`. For other form elements, like `gr-radio-group`, you have to utilize the `gr-change` event, like this: `wire:gr-change="$set('exampleProperty', $event.target.value)"`.
+Warning: `wire:model` only works with `gr-input` & `gr-textarea`. For other form elements, like `gr-radio-group`, you have to utilize the `gr-change` event, like this: `wire:gr-change="$set('exampleProperty', $event.target.value)"`.
 
 Note: All components are only lazy-loaded by the browser when needed. This can introduce some Cumulative Layout Shift (CLS). To reduce this, you can move the components below the fold (outside the visible viewport of the user, or use a bundler with [cherry-picked components](#cherry-pick-components).
 
