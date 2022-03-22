@@ -8,7 +8,7 @@ title: Spacing tokens - Graphite Design System
 
 | Token                     | Value          | Example                                |
 | :------------------------ | :------------- | -------------------------------------- |
-| `--gr-spacing-xxx-small`  | 0.125rem (2px) | <div class="h-3sx w-3xs bg-primary" /> |
+| `--gr-spacing-xxx-small`  | 0.125rem (2px) | <div class="h-3xs w-3xs bg-primary" /> |
 | `--gr-spacing-xx-small`   | 0.25rem (4px)  | <div class="h-2xs w-2xs bg-primary" /> |
 | `--gr-spacing-x-small`    | 0.5rem (8px)   | <div class="h-xs w-xs bg-primary" />   |
 | `--gr-spacing-small`      | 0.75rem (12px) | <div class="h-sm w-sm bg-primary" />   |
