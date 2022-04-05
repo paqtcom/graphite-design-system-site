@@ -60,7 +60,7 @@ title: Components - Graphite Design System
 [Menu](/components/menu), [menu item](/components/menu-item), [menu label](/components/menu-label), and [menu divider](/components/menu-divider)
 
 <div class="example-block">
-  <gr-menu style="max-width: 200px; border: solid 1px var(--gr-panel-border-color); border-radius: var(--gr-border-radius-medium);">
+  <gr-menu style="max-width: 200px; background: var(--gr-color-white); border: solid 1px var(--gr-panel-border-color); border-radius: var(--gr-border-radius-medium);">
     <gr-menu-label>Fruits</gr-menu-label>
     <gr-menu-item value="apple">Apple</gr-menu-item>
     <gr-menu-item value="banana">Banana</gr-menu-item>
