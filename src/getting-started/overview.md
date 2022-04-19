@@ -38,7 +38,6 @@ We welcome your feedback on how we might improve. For any specific questions or 
 
 ## The Graphite team
 
-- [Elwin van Eede](https://elwinvaneede.com) - Design System Architect
 - Tom Stemerding - Frontend Developer
 
 ## Attribution
