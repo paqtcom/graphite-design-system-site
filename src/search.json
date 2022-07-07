@@ -1,0 +1,3478 @@
+[
+   
+   {
+      "title":"TypeScript utility types: Pick and Omit",
+      "url":"/posts/typescript-utility-types-pick-and-omit/"
+   },
+   
+   {
+      "title":"TypeScript utility types: Partial and Required",
+      "url":"/posts/typescript-utility-types-partial-and-required/"
+   },
+   
+   {
+      "title":"TypeScript types and interfaces",
+      "url":"/posts/typescript-types-and-interfaces/"
+   },
+   
+   {
+      "title":"The types in TypeScript",
+      "url":"/posts/the-types-in-typescript/"
+   },
+   
+   {
+      "title":"How TypeScript can change your life",
+      "url":"/posts/how-typescript-can-change-your-life/"
+   },
+   
+   {
+      "title":"Never stop learning",
+      "url":"/posts/never-stop-learning/"
+   },
+   
+   {
+      "title":"React Query as a persistent state manager",
+      "url":"/posts/react-query-as-a-persistent-state-manager/"
+   },
+   
+   {
+      "title":"React Query leveraging placeholder data",
+      "url":"/posts/react-query-leveraging-placeholder-data/"
+   },
+   
+   {
+      "title":"Dependent queries in React Query",
+      "url":"/posts/dependant-queries-in-react-query/"
+   },
+   
+   {
+      "title":"React Query and optimistic updates",
+      "url":"/posts/react-query-and-optimistic-updates/"
+   },
+   
+   {
+      "title":"React Query mutating data",
+      "url":"/posts/react-query-mutating-data/"
+   },
+   
+   {
+      "title":"Infinite scrolling and React Infinite Query tutorial",
+      "url":"/posts/infinite-scrolling-and-react-infinite-query-tutorial/"
+   },
+   
+   {
+      "title":"Infinite loading with React Query",
+      "url":"/posts/infinite-loading-with-react-query/"
+   },
+   
+   {
+      "title":"Automatically refetching with React Query",
+      "url":"/posts/automatically-refetching-with-react-query/"
+   },
+   
+   {
+      "title":"Make your life easier with React Query DevTools",
+      "url":"/posts/make-your-life-easier-with-react-query-devtools/"
+   },
+   
+   {
+      "title":"A first look at React Query",
+      "url":"/posts/a-first-look-at-react-query/"
+   },
+   
+   {
+      "title":"Tailwind CSS drop shadow effect for PNG images",
+      "url":"/posts/tailwind-css-drop-shadow-effect-for-png-images/"
+   },
+   
+   {
+      "title":"Adding code highlighting to markdown code blocks",
+      "url":"/posts/adding-code-highlighting-to-markdown-code-blocks/"
+   },
+   
+   {
+      "title":"Creating different tailwind headers",
+      "url":"/posts/creating-different-tailwind-headers/"
+   },
+   
+   {
+      "title":"Creating a Markdown Blog Powered by Next.js in Under an Hour",
+      "url":"/posts/creating-a-markdown-blog-powered-by-nextjs-in-under-an-hour/"
+   },
+   
+   {
+      "title":"Creating a sidebar layout in Next.js with Tailwind",
+      "url":"/posts/creating-a-sidebar-layout-in-nextjs-with-tailwind/"
+   },
+   
+   {
+      "title":"JavaScript paste text from the clipboard",
+      "url":"/posts/javascript-paste-text-from-the-clipboard/"
+   },
+   
+   {
+      "title":"JavaScript recurring timers with setInterval",
+      "url":"/posts/javascript-recurring-timers-with-setinterval/"
+   },
+   
+   {
+      "title":"Using setTimeout in JavaScript",
+      "url":"/posts/using-settimeout-in-javascript/"
+   },
+   
+   {
+      "title":"JavaScript check if array contains a value",
+      "url":"/posts/javascript-check-if-array-contains-a-value/"
+   },
+   
+   {
+      "title":"Upgrading Tailwind v2 to v3",
+      "url":"/posts/upgrading-tailwind-v2-to-v3/"
+   },
+   
+   {
+      "title":"CSS Pseudo-classes: Other states",
+      "url":"/posts/css-pseudo-classes-other-states/"
+   },
+   
+   {
+      "title":"CSS Pseudo-classes: Element states",
+      "url":"/posts/css-pseudo-classes-element-states/"
+   },
+   
+   {
+      "title":"CSS Pseudo-classes: Forms",
+      "url":"/posts/css-pseudo-classes-forms/"
+   },
+   
+   {
+      "title":"CSS Pseudo-classes: Links",
+      "url":"/posts/css-pseudo-classes-links/"
+   },
+   
+   {
+      "title":"Chrome DevTools: Recorder",
+      "url":"/posts/chrome-devtools-recorder/"
+   },
+   
+   {
+      "title":"Tailwind CSS Pseudo-elements",
+      "url":"/posts/tailwind-css-pseudo-elements/"
+   },
+   
+   {
+      "title":"CRUD operations with Prisma and Fastify",
+      "url":"/posts/crud-operations-with-prisma-and-fastify/"
+   },
+   
+   {
+      "title":"Step by step guide to minting your Git commit as an NFT",
+      "url":"/posts/step-by-step-guide-to-minting-your-git-commit-as-an-nft/"
+   },
+   
+   {
+      "title":"Setting up a basic TypeORM starter",
+      "url":"/posts/setting-up-a-basic-typeorm-starter/"
+   },
+   
+   {
+      "title":"A first look at Prisma Studio",
+      "url":"/posts/a-first-look-at-prisma-studio/"
+   },
+   
+   {
+      "title":"Managing migrations in Prisma (Add/Rename columns)",
+      "url":"/posts/managing-migrations-in-prisma-add-rename-columns/"
+   },
+   
+   {
+      "title":"Set up a local Prisma instance",
+      "url":"/posts/set-up-a-local-prisma-instance/"
+   },
+   
+   {
+      "title":"Hashnode is taking over the world",
+      "url":"/posts/hashnode-is-taking-over-the-world/"
+   },
+   
+   {
+      "title":"Installing PostgreSQL on a Mac with Homebrew",
+      "url":"/posts/installing-postgresql-on-a-mac-with-homebrew/"
+   },
+   
+   {
+      "title":"Creating a discord auto threading system",
+      "url":"/posts/creating-a-discord-auto-threading-system/"
+   },
+   
+   {
+      "title":"Hosting a discord bot on Railway",
+      "url":"/posts/hosting-a-discord-bot-on-railway/"
+   },
+   
+   {
+      "title":"Show and hide a header based on scroll direction",
+      "url":"/posts/show-and-hide-a-header-based-on-scroll-direction/"
+   },
+   
+   {
+      "title":"Creating a Discord slash command bot",
+      "url":"/posts/creating-a-discord-slash-command-bot/"
+   },
+   
+   {
+      "title":"Building a Fastify NodeJS server",
+      "url":"/posts/building-a-fastify-nodejs-server/"
+   },
+   
+   {
+      "title":"I received a letter from myself",
+      "url":"/posts/i-received-a-letter-from-myself/"
+   },
+   
+   {
+      "title":"10 coding challenges you have to try out",
+      "url":"/posts/10-coding-challenges-you-have-to-try-out/"
+   },
+   
+   {
+      "title":"5 reasons why I love coding challenges",
+      "url":"/posts/5-reasons-why-i-love-coding-challenges/"
+   },
+   
+   {
+      "title":"Public Solving: Find the missing presents",
+      "url":"/posts/public-solving-find-the-missing-presents/"
+   },
+   
+   {
+      "title":"Public Solving: Caesar decipher in JavaScript",
+      "url":"/posts/public-solving-caesar-decipher-in-javascript/"
+   },
+   
+   {
+      "title":"How I spend my 19% free time",
+      "url":"/posts/how-i-spend-my-19-percent-free-time/"
+   },
+   
+   {
+      "title":"Public Solving: Creating a song with JavaScript",
+      "url":"/posts/public-solving-creating-a-song-with-javascript/"
+   },
+   
+   {
+      "title":"Public Solving: Checking the sleighs automatically",
+      "url":"/posts/public-solving-checking-the-sleighs-automatically/"
+   },
+   
+   {
+      "title":"Public Solving: Let it snow",
+      "url":"/posts/public-solving-let-it-snow/"
+   },
+   
+   {
+      "title":"Public Solving: Calculating the wind chill",
+      "url":"/posts/public-solving-calculating-the-wind-chill/"
+   },
+   
+   {
+      "title":"Public Solving: Hacking Santas password",
+      "url":"/posts/public-solving-hacking-santas-password/"
+   },
+   
+   {
+      "title":"Public Solving: Making an autopilot navigator",
+      "url":"/posts/public-solving-making-an-autopilot-navigator/"
+   },
+   
+   {
+      "title":"Public Solving: Earth, Fire, Snow game",
+      "url":"/posts/public-solving-earth-fire-snow-game/"
+   },
+   
+   {
+      "title":"Public Solving: Converting Roman numerals to Arabic",
+      "url":"/posts/public-solving-converting-roman-numerals-to-arabic/"
+   },
+   
+   {
+      "title":"Public Solving: Making a CSS art Christmas tree",
+      "url":"/posts/public-solving-making-a-css-art-christmas-tree/"
+   },
+   
+   {
+      "title":"Public Solving: Generating secure password",
+      "url":"/posts/public-solving-generating-secure-password/"
+   },
+   
+   {
+      "title":"Public Solving: Linked List and a train",
+      "url":"/posts/public-solving-linked-list-and-a-train/"
+   },
+   
+   {
+      "title":"Public Solving: Decoding a secret message",
+      "url":"/posts/public-solving-decoding-a-secret-message/"
+   },
+   
+   {
+      "title":"Public Solving: Secret Santa in JavaScript",
+      "url":"/posts/public-solving-secret-santa-in-javascript/"
+   },
+   
+   {
+      "title":"Public Solving: Matching smudged names",
+      "url":"/posts/public-solving-matching-smudged-names/"
+   },
+   
+   {
+      "title":"Public Solving: Nice or Naughty list",
+      "url":"/posts/public-solving-nice-or-naughty-list/"
+   },
+   
+   {
+      "title":"Public Solving: Creating random candy bags",
+      "url":"/posts/public-solving-creating-random-candy-bags/"
+   },
+   
+   {
+      "title":"Public Solving: Elf Post Service package calculator",
+      "url":"/posts/public-solving-elf-post-service-package-calculator/"
+   },
+   
+   {
+      "title":"Public Solving: Elf Coffee Shop API system",
+      "url":"/posts/public-solving-elf-coffee-shop-api-system/"
+   },
+   
+   {
+      "title":"Public Solving: Elf Coffee Shop menu",
+      "url":"/posts/public-solving-elf-coffee-shop-menu/"
+   },
+   
+   {
+      "title":"Supabase automatically create user profiles on sign up",
+      "url":"/posts/supabase-automatically-create-user-profiles-on-sign-up/"
+   },
+   
+   {
+      "title":"Next.js Supabase adding a GitHub login",
+      "url":"/posts/nextjs-supabase-adding-a-github-login/"
+   },
+   
+   {
+      "title":"Add a loading state to our Next.js Supabase app",
+      "url":"/posts/add-a-loading-state-to-our-nextjs-supabase-app/"
+   },
+   
+   {
+      "title":"Adding a user profile to our Supabase user",
+      "url":"/posts/adding-a-user-profile-to-our-supabase-user/"
+   },
+   
+   {
+      "title":"Authenticating Next.js with Supabase auth magic links",
+      "url":"/posts/authenticating-nextjs-with-supabase-auth-magic-links/"
+   },
+   
+   {
+      "title":"Deleting records from a Supabase database",
+      "url":"/posts/deleting-records-from-a-supabase-database/"
+   },
+   
+   {
+      "title":"Adding new records to a Supabase database",
+      "url":"/posts/adding-new-records-to-a-supabase-database/"
+   },
+   
+   {
+      "title":"Adding Supabase to a Next.js application",
+      "url":"/posts/adding-supabase-to-a-nextjs-application/"
+   },
+   
+   {
+      "title":"Creating a Pac-Man themed divider in CSS",
+      "url":"/posts/creating-a-pac-man-themes-divider-in-css/"
+   },
+   
+   {
+      "title":"Thank you, Apple, for hijacking port 5000 😣",
+      "url":"/posts/thank-you-apple-for-hijacking-port-5000/"
+   },
+   
+   {
+      "title":"Animating a gradient border in CSS",
+      "url":"/posts/animating-a-gradient-border-in-css/"
+   },
+   
+   {
+      "title":"JavaScript startsWith and multiple conditions",
+      "url":"/posts/javascript-startswith-and-multiple-conditions/"
+   },
+   
+   {
+      "title":"Chrome DevTools: CSS Overview",
+      "url":"/posts/chrome-devtools-css-overview/"
+   },
+   
+   {
+      "title":"Typewriter effect CSS",
+      "url":"/posts/typewriter-effect-css/"
+   },
+   
+   {
+      "title":"My tailwind automation setup",
+      "url":"/posts/my-tailwind-automation-setup/"
+   },
+   
+   {
+      "title":"A look at the ch CSS unit",
+      "url":"/posts/a-look-at-the-ch-css-unit/"
+   },
+   
+   {
+      "title":"My honest opinion on Tailwind CSS",
+      "url":"/posts/my-honest-opinion-on-tailwind-css/"
+   },
+   
+   {
+      "title":"Streaming desktop sound and microphone on Mac with Streamlabs",
+      "url":"/posts/streaming-desktop-sound-and-microphone-on-mac-with-streamlabs/"
+   },
+   
+   {
+      "title":"5 Things you need to know about screenshots on a Mac",
+      "url":"/posts/5-things-you-need-to-know-about-screenshots-on-a-mac/"
+   },
+   
+   {
+      "title":"GitHub basics: What are actions?",
+      "url":"/posts/github-basics-what-are-actions/"
+   },
+   
+   {
+      "title":"Git basics: Help my case-sensitive filename changes don&#39;t commit",
+      "url":"/posts/git-basics-help-my-case-sensitive-filename-changes-dont-commit/"
+   },
+   
+   {
+      "title":"I made my website rank by accident",
+      "url":"/posts/i-made-my-website-rank-by-accident/"
+   },
+   
+   {
+      "title":"Git basics: Conventional commits",
+      "url":"/posts/git-basics-conventional-commits/"
+   },
+   
+   {
+      "title":"Adding reading time to Astro (the easy way)",
+      "url":"/posts/adding-reading-time-to-astro-the-easy-way/"
+   },
+   
+   {
+      "title":"Mac quick action to convert images to JPG",
+      "url":"/posts/mac-quick-action-to-convert-images-to-jpg/"
+   },
+   
+   {
+      "title":"My 5 step plan to deal with inspiration overload",
+      "url":"/posts/my-5-step-plan-to-deal-with-inspiration-overload/"
+   },
+   
+   {
+      "title":"I decreased my average load time by 381ms",
+      "url":"/posts/i-decreased-my-average-load-time-by-381ms/"
+   },
+   
+   {
+      "title":"Make your life easy with the Tailwind typography plugin",
+      "url":"/posts/make-your-life-easy-with-the-tailwind-typography-plugin/"
+   },
+   
+   {
+      "title":"Creating an empty branch on an existing git repo",
+      "url":"/posts/creating-an-empty-branch-on-an-existing-git-repo/"
+   },
+   
+   {
+      "title":"Blog posts beat Twitter threads",
+      "url":"/posts/blog-posts-beat-twitter-threads/"
+   },
+   
+   {
+      "title":"Netlify&#39;s super easy static forms",
+      "url":"/posts/netlifys-super-easy-static-forms/"
+   },
+   
+   {
+      "title":"How to fix background scroll issues in CSS",
+      "url":"/posts/how-to-fix-background-scroll-issues-in-css/"
+   },
+   
+   {
+      "title":"Removing a .env file from Git history",
+      "url":"/posts/removing-a-env-file-from-git-history/"
+   },
+   
+   {
+      "title":"Git basics: Contributing to open source",
+      "url":"/posts/git-basics-contributing-to-open-source/"
+   },
+   
+   {
+      "title":"Git basics: Your first pull request",
+      "url":"/posts/git-basics-your-first-pull-request/"
+   },
+   
+   {
+      "title":"Git basics: Branches and strategies",
+      "url":"/posts/git-basics-branches-and-strategies/"
+   },
+   
+   {
+      "title":"Git basics: Ignore files from being committed",
+      "url":"/posts/git-basics-ignore-files-from-being-committed/"
+   },
+   
+   {
+      "title":"Git basics: Your first commit to GitHub",
+      "url":"/posts/git-basics-your-first-commit-to-github/"
+   },
+   
+   {
+      "title":"Git basics: What is GitHub?",
+      "url":"/posts/git-basics-what-is-github/"
+   },
+   
+   {
+      "title":"Git basics: What is Git?",
+      "url":"/posts/git-basics-what-is-git/"
+   },
+   
+   {
+      "title":"Reusable modal component in Astro",
+      "url":"/posts/reusable-modal-component-in-astro/"
+   },
+   
+   {
+      "title":"Are online editors the future?",
+      "url":"/posts/are-online-editors-the-future/"
+   },
+   
+   {
+      "title":"My first month as a software engineer at daily.dev",
+      "url":"/posts/my-first-month-as-a-software-engineer-at-daily-dev/"
+   },
+   
+   {
+      "title":"Prisma creating a upvotes one-to-many relation",
+      "url":"/posts/prisma-creating-a-upvotes-one-to-many-relation/"
+   },
+   
+   {
+      "title":"Static playlist website with Next.js and Prisma",
+      "url":"/posts/static-playlist-website-with-nextjs-and-prisma/"
+   },
+   
+   {
+      "title":"How to perform non updating upserts in Prisma",
+      "url":"/posts/how-to-perform-non-updating-upserts-in-prisma/"
+   },
+   
+   {
+      "title":"Next.js posting data to Postgres through Prisma",
+      "url":"/posts/nextjs-posting-data-to-postgres-through-prisma/"
+   },
+   
+   {
+      "title":"Retrieving a persons Spotify playlist in Next.js",
+      "url":"/posts/retrieving-a-persons-spotify-playlist-in-nextjs/"
+   },
+   
+   {
+      "title":"Adding email authentication to NextAuth.js",
+      "url":"/posts/adding-email-authentication-to-nextauth/"
+   },
+   
+   {
+      "title":"Seeding a Prisma database in Next.js",
+      "url":"/posts/seeding-a-prisma-database-in-nextjs/"
+   },
+   
+   {
+      "title":"Adding Prisma to a Next.js project",
+      "url":"/posts/adding-prisma-to-a-nextjs-project/"
+   },
+   
+   {
+      "title":"Setting up a free PostgreSQL database on Heroku",
+      "url":"/posts/setting-up-a-free-postgresql-database-on-heroku/"
+   },
+   
+   {
+      "title":"NextAuth.js the easiest authentication for Next.js",
+      "url":"/posts/nextauth-the-easiest-authentication-for-nextjs/"
+   },
+   
+   {
+      "title":"Using Bootstrap in Next.js + free starter",
+      "url":"/posts/using-bootstrap-in-nextjs-free-starter/"
+   },
+   
+   {
+      "title":"React basics: creating a custom media query hook",
+      "url":"/posts/react-basics-creating-a-custom-media-query-hook/"
+   },
+   
+   {
+      "title":"Building an Astro website with WordPress as a headless CMS",
+      "url":"/posts/building-an-astro-website-with-wordpress-as-a-headless-cms/"
+   },
+   
+   {
+      "title":"React basics: explaining the useContext hook",
+      "url":"/posts/react-basics-explaining-the-usecontext-hook/"
+   },
+   
+   {
+      "title":"React basics: explaining the useEffect hook",
+      "url":"/posts/react-basics-explaining-the-useeffect-hook/"
+   },
+   
+   {
+      "title":"React basics: explaining the useState hook",
+      "url":"/posts/react-basics-explaining-the-usestate-hook/"
+   },
+   
+   {
+      "title":"React basics: Passing data between components",
+      "url":"/posts/react-basics-passsing-data-between-components/"
+   },
+   
+   {
+      "title":"React basics: Looping a list",
+      "url":"/posts/react-basics-looping-a-list/"
+   },
+   
+   {
+      "title":"React basics: Creating our first React app",
+      "url":"/posts/react-basics-creating-our-first-react-app/"
+   },
+   
+   {
+      "title":"Develop a local WordPress theme using Docker",
+      "url":"/posts/develop-a-local-wordpress-theme-using-docker/"
+   },
+   
+   {
+      "title":"How I created a stack guessing tool using Next.js",
+      "url":"/posts/how-i-created-a-stack-guessing-tool-using-nextjs/"
+   },
+   
+   {
+      "title":"How to use forms in Next.js",
+      "url":"/posts/using-forms-in-nextjs/"
+   },
+   
+   {
+      "title":"Adding Typesense search to an Astro static generated website",
+      "url":"/posts/adding-typesense-search-to-an-astro-static-generated-website/"
+   },
+   
+   {
+      "title":"8 Non-technical ways to contribute to open-source",
+      "url":"/posts/8-non-technical-ways-to-contribute-to-open-source/"
+   },
+   
+   {
+      "title":"Render a JSON page in Astro",
+      "url":"/posts/render-a-json-page-in-astro/"
+   },
+   
+   {
+      "title":"How to use React icons in Next.js",
+      "url":"/posts/how-to-use-react-icons-in-nextjs/"
+   },
+   
+   {
+      "title":"Next.js toggle between grid and list view",
+      "url":"/posts/nextjs-toggle-between-grid-and-list-view/"
+   },
+   
+   {
+      "title":"Next.js static HTML export",
+      "url":"/posts/nextjs-static-html-export/"
+   },
+   
+   {
+      "title":"Deploying a Next.js application on Vercel",
+      "url":"/posts/deploying-a-nextjs-application-on-vercel/"
+   },
+   
+   {
+      "title":"How I landed a job at Daily.dev",
+      "url":"/posts/how-i-landed-a-job-at-daily-dev/"
+   },
+   
+   {
+      "title":"Custom error pages in Next.js",
+      "url":"/posts/custom-error-pages-in-nextjs/"
+   },
+   
+   {
+      "title":"Detect active links in Next.js",
+      "url":"/posts/detect-active-links-in-nextjs/"
+   },
+   
+   {
+      "title":"Creating a reusable layout in Next.js",
+      "url":"/posts/creating-a-reusable-layout-in-nextjs/"
+   },
+   
+   {
+      "title":"Retrieving the primary WordPress menu in Next.js",
+      "url":"/posts/retrieving-the-primary-wordpress-menu-in-nextjs/"
+   },
+   
+   {
+      "title":"Rendering all WordPress pages in Next.js",
+      "url":"/posts/rendering-all-wordpress-pages-in-nextjs/"
+   },
+   
+   {
+      "title":"Loading WordPress posts in Next.js",
+      "url":"/posts/loading-wordpress-posts-in-nextjs/"
+   },
+   
+   {
+      "title":"WordPress Headless CMS + GraphQL",
+      "url":"/posts/wordpress-headless-cms-graphql/"
+   },
+   
+   {
+      "title":"Revisiting Tailwind square divs with aspect ratio",
+      "url":"/posts/revisiting-tailwind-square-divs-with-aspect-ratio/"
+   },
+   
+   {
+      "title":"Next.js page options and how they work",
+      "url":"/posts/nextjs-page-options-and-how-they-work/"
+   },
+   
+   {
+      "title":"Setting up Next.js with Tailwind CSS",
+      "url":"/posts/setting-up-nextjs-with-tailwind-css/"
+   },
+   
+   {
+      "title":"We are the example",
+      "url":"/posts/we-are-the-example/"
+   },
+   
+   {
+      "title":"Tailwind CSS fullscreen header image",
+      "url":"/posts/tailwind-css-fullscreen-header-image/"
+   },
+   
+   {
+      "title":"Tailwind group hover, the state you missed",
+      "url":"/posts/tailwind-group-hover-the-state-you-missed/"
+   },
+   
+   {
+      "title":"Using WordPress as a headless CMS",
+      "url":"/posts/using-wordpress-as-a-headless-cms/"
+   },
+   
+   {
+      "title":"Learn how to come up with article ideas and stay consistent",
+      "url":"/posts/learn-how-to-come-up-with-article-ideas-and-stay-consistent/"
+   },
+   
+   {
+      "title":"Tailwind CSS responsive square divs",
+      "url":"/posts/tailwind-css-responsive-square-divs/"
+   },
+   
+   {
+      "title":"Guide to set up your WordPress site in Docker",
+      "url":"/posts/guide-to-set-up-your-wordpress-site-in-docker/"
+   },
+   
+   {
+      "title":"JavaScript stop form submit",
+      "url":"/posts/javascript-stop-form-submit/"
+   },
+   
+   {
+      "title":"Creating a Notion page through a Node express app",
+      "url":"/posts/creating-a-notion-page-through-a-node-express-app/"
+   },
+   
+   {
+      "title":"Double down on the basics of web development",
+      "url":"/posts/double-down-on-the-basics-of-web-development/"
+   },
+   
+   {
+      "title":"Updating a Notion page through a node website",
+      "url":"/posts/updating-a-notion-page-through-a-node-website/"
+   },
+   
+   {
+      "title":"Node express showing Notion results in the front end",
+      "url":"/posts/node-express-showing-notion-results-in-the-front-end/"
+   },
+   
+   {
+      "title":"Node express query Notion database",
+      "url":"/posts/node-express-query-notion-database/"
+   },
+   
+   {
+      "title":"Configure Tailwind JIT for a node express app",
+      "url":"/posts/configure-tailwind-jit-for-a-node-express-app/"
+   },
+   
+   {
+      "title":"Getting started with the Notion API",
+      "url":"/posts/getting-started-with-the-notion-api/"
+   },
+   
+   {
+      "title":"This Tailwind CSS cut out effect will amaze you",
+      "url":"/posts/this-tailwind-css-cut-out-effect-will-amaze-you/"
+   },
+   
+   {
+      "title":"Creating Kirby with CSS art",
+      "url":"/posts/creating-kirby-with-css-art/"
+   },
+   
+   {
+      "title":"Developers mill",
+      "url":"/posts/developers-mill/"
+   },
+   
+   {
+      "title":"What a time to be alive",
+      "url":"/posts/what-a-time-to-be-alive/"
+   },
+   
+   {
+      "title":"My love letter to CodePen",
+      "url":"/posts/my-love-letter-to-codepen/"
+   },
+   
+   {
+      "title":"Multi-colored text in CSS",
+      "url":"/posts/multi-colored-text-in-css/"
+   },
+   
+   {
+      "title":"JavaScript basics error handling",
+      "url":"/posts/javascript-basics-error-handling/"
+   },
+   
+   {
+      "title":"JavaScript basics arithmetic operators",
+      "url":"/posts/javascript-basics-arithmetic-operators/"
+   },
+   
+   {
+      "title":"Astro moving from collections to dynamic routing",
+      "url":"/posts/astro-moving-from-collections-to-dynamic-routing/"
+   },
+   
+   {
+      "title":"JavaScript basics loops",
+      "url":"/posts/javascript-basics-loops/"
+   },
+   
+   {
+      "title":"JavaScript basics logical operators",
+      "url":"/posts/javascript-basics-logical-operators/"
+   },
+   
+   {
+      "title":"JavaScript basics comparison operators",
+      "url":"/posts/javascript-basics-comparison-operators/"
+   },
+   
+   {
+      "title":"JavaScript basics if...else statement",
+      "url":"/posts/javascript-basics-if-else-statement/"
+   },
+   
+   {
+      "title":"JavaScript optional chaining (?.) to the rescue",
+      "url":"/posts/javascript-optional-chaining-to-the-rescue/"
+   },
+   
+   {
+      "title":"Adding Auth0 to a Flutter application",
+      "url":"/posts/adding-auth0-to-a-flutter-application/"
+   },
+   
+   {
+      "title":"Creating dialogs in Flutter",
+      "url":"/posts/creating-dialogs-in-flutter/"
+   },
+   
+   {
+      "title":"Flutter 3D pan effect",
+      "url":"/posts/flutter-3d-pan-effect/"
+   },
+   
+   {
+      "title":"Building A Motivating Discord Bot In Node.js",
+      "url":"/posts/building-a-motivating-discord-bot-in-nodejs/"
+   },
+   
+   {
+      "title":"You don&#39;t need --save anymore for NPM installs",
+      "url":"/posts/you-dont-need-save-anymore-for-npm-installs/"
+   },
+   
+   {
+      "title":"Getting unique values from a JavaScript array using Set",
+      "url":"/posts/getting-unique-values-from-a-javascript-array-using-set/"
+   },
+   
+   {
+      "title":"Astro recipe collection website - Part 5 Hosting on Netlify",
+      "url":"/posts/astro-recipe-collection-website-part-5-hosting-on-netlify/"
+   },
+   
+   {
+      "title":"Astro recipe collection website - Part 4 Styling the website",
+      "url":"/posts/astro-recipe-collection-website-part-4-styling-the-website/"
+   },
+   
+   {
+      "title":"Astro recipe collection website - Part 3 Category filter pages",
+      "url":"/posts/astro-recipe-collection-website-part-3-category-filter-pages/"
+   },
+   
+   {
+      "title":"Astro recipe collection website - Part 2 Homepage rendering",
+      "url":"/posts/astro-recipe-collection-website-part-2-homepage-rendering/"
+   },
+   
+   {
+      "title":"Astro recipe collection website - Part 1 Setup collections",
+      "url":"/posts/astro-recipe-collection-website-part-1-setup-collections/"
+   },
+   
+   {
+      "title":"Adding a snackbar in Flutter",
+      "url":"/posts/adding-a-snackbar-in-flutter/"
+   },
+   
+   {
+      "title":"Enabling Flutter desktop applications",
+      "url":"/posts/enabling-flutter-desktop-applications/"
+   },
+   
+   {
+      "title":"5 things I learned from writing 500 tech articles",
+      "url":"/posts/5-things-i-learned-from-writing-500-tech-articles/"
+   },
+   
+   {
+      "title":"Flutter drawer sidebar menu",
+      "url":"/posts/flutter-drawer-sidebar-menu/"
+   },
+   
+   {
+      "title":"Flutter expandable list items",
+      "url":"/posts/flutter-expandable-list-items/"
+   },
+   
+   {
+      "title":"Mobile Security Framework (MobSF) for automated Mobile security testing",
+      "url":"/posts/mobile-security-framework-mobsf-for-automated-mobile-security-testing/"
+   },
+   
+   {
+      "title":"Animating a photo across screens in Flutter",
+      "url":"/posts/animating-a-photo-across-screens-in-flutter/"
+   },
+   
+   {
+      "title":"How to solve App Tracking Transparency app store rejection in Ionic",
+      "url":"/posts/how-to-solve-app-tracking-transparency-app-store-rejection-in-ionic/"
+   },
+   
+   {
+      "title":"How to create gradient text in Flutter",
+      "url":"/posts/how-to-create-gradient-text-in-flutter/"
+   },
+   
+   {
+      "title":"Using gradients in Flutter",
+      "url":"/posts/using-gradients-in-flutter/"
+   },
+   
+   {
+      "title":"Flutter scrollable horizontal avatar list",
+      "url":"/posts/flutter-scrollable-horizontal-avatar-list/"
+   },
+   
+   {
+      "title":"Flutter create a search bar for a list view",
+      "url":"/posts/flutter-create-a-search-bar-for-a-list-view/"
+   },
+   
+   {
+      "title":"Building a photo grid view in Flutter",
+      "url":"/posts/building-a-photo-grid-view-in-flutter/"
+   },
+   
+   {
+      "title":"How to test your NPM package locally",
+      "url":"/posts/how-to-test-your-npm-package-locally/"
+   },
+   
+   {
+      "title":"Publish your own NPM package",
+      "url":"/posts/publish-your-own-npm-package/"
+   },
+   
+   {
+      "title":"I refactored all my articles",
+      "url":"/posts/i-refactored-all-my-articles/"
+   },
+   
+   {
+      "title":"How to clip elements in CSS using clip-path",
+      "url":"/posts/how-to-clip-elements-in-css-using-clip-path/"
+   },
+   
+   {
+      "title":"How to use Tailwind CSS in Astro",
+      "url":"/posts/how-to-use-tailwind-css-in-astro/"
+   },
+   
+   {
+      "title":"Adding a detail data fetching screen in Flutter",
+      "url":"/posts/adding-a-detail-data-fetching-screen-in-flutter/"
+   },
+   
+   {
+      "title":"How to render individual pages from an external collection",
+      "url":"/posts/how-to-render-individual-pages-from-an-external-collection/"
+   },
+   
+   {
+      "title":"Using React components in Astro for better loading",
+      "url":"/posts/using-react-components-in-astro-for-better-loading/"
+   },
+   
+   {
+      "title":"Recreating my portfolio website in Astro",
+      "url":"/posts/recreating-my-portfolio-website-in-astro/"
+   },
+   
+   {
+      "title":"Top anime shows Flutter app",
+      "url":"/posts/top-anime-shows-flutter-app/"
+   },
+   
+   {
+      "title":"Sending data to a new screen in Flutter",
+      "url":"/posts/sending-data-to-a-new-screen-in-flutter/"
+   },
+   
+   {
+      "title":"Navigate to a new screen and back in Flutter",
+      "url":"/posts/navigate-to-a-new-screen-and-back-in-flutter/"
+   },
+   
+   {
+      "title":"A first look at Astro, astronomical results",
+      "url":"/posts/a-first-look-at-astra-astronomical-results/"
+   },
+   
+   {
+      "title":"No, they didn&#39;t make a mistake",
+      "url":"/posts/no-they-didnt-make-a-mistake/"
+   },
+   
+   {
+      "title":"How to use Google Fonts in a Flutter application",
+      "url":"/posts/how-to-use-google-fonts-in-a-flutter-application/"
+   },
+   
+   {
+      "title":"How to import a local widget in Flutter",
+      "url":"/posts/how-to-import-a-local-widget-in-flutter/"
+   },
+   
+   {
+      "title":"How to verify your commits on GitHub",
+      "url":"/posts/how-to-verify-your-commits-on-github/"
+   },
+   
+   {
+      "title":"Flutter bottom TabBar placement",
+      "url":"/posts/flutter-bottom-tabbar-placement/"
+   },
+   
+   {
+      "title":"Flutter TabBar the basics",
+      "url":"/posts/flutter-tabbar-the-basics/"
+   },
+   
+   {
+      "title":"Generating Flutter app icons automatically",
+      "url":"/posts/generating-flutter-app-icons-automatically/"
+   },
+   
+   {
+      "title":"Running a Flutter app on iOS and Android emulators",
+      "url":"/posts/running-a-flutter-app-on-ios-and-android-emulators/"
+   },
+   
+   {
+      "title":"Build a todo list app with Flutter",
+      "url":"/posts/build-a-todo-list-app-with-flutter/"
+   },
+   
+   {
+      "title":"Exploring the Flutter layout flow",
+      "url":"/posts/exploring-the-flutter-layout-flow/"
+   },
+   
+   {
+      "title":"Running a node script continuously on Heroku",
+      "url":"/posts/running-a-node-script-continuously-on-heroku/"
+   },
+   
+   {
+      "title":"How I made my Twitter header dynamic",
+      "url":"/posts/how-i-made-my-twitter-header-dynamic/"
+   },
+   
+   {
+      "title":"Flutter Stateful and Stateless widgets",
+      "url":"/posts/flutter-stateful-and-stateless-widgets/"
+   },
+   
+   {
+      "title":"Flutter how it works, Hello World",
+      "url":"/posts/flutter-how-it-works-hello-world/"
+   },
+   
+   {
+      "title":"Installing Flutter on a Mac",
+      "url":"/posts/installing-flutter-on-a-mac/"
+   },
+   
+   {
+      "title":"Connect to Docker database with an external tool",
+      "url":"/posts/connect-to-docker-database-with-an-external-tool/"
+   },
+   
+   {
+      "title":"I&#39;m not an expert; I&#39;m learning",
+      "url":"/posts/im-not-an-expert-im-learning/"
+   },
+   
+   {
+      "title":"Performance heads-up display in Chrome",
+      "url":"/posts/performance-heads-up-display-in-chrome/"
+   },
+   
+   {
+      "title":"Keep improving your lighthouse score",
+      "url":"/posts/keep-improving-your-lighthouse-score/"
+   },
+   
+   {
+      "title":"Moving from GIF to video format",
+      "url":"/posts/moving-from-gif-to-video-format/"
+   },
+   
+   {
+      "title":"Tailwind CSS gradient text tutorial",
+      "url":"/posts/making-gradient-text-with-tailwind-css/"
+   },
+   
+   {
+      "title":"Center elements with Tailwind CSS",
+      "url":"/posts/center-elements-with-tailwind-css/"
+   },
+   
+   {
+      "title":"Tailwind CSS equal height columns",
+      "url":"/posts/tailwind-css-equal-height-columns/"
+   },
+   
+   {
+      "title":"Top 5 Password managers for Mac",
+      "url":"/posts/top-5-password-managers-for-mac/"
+   },
+   
+   {
+      "title":"PM2 Startup script, always keep processes running",
+      "url":"/posts/pm2-startup-script-always-keep-processes-running/"
+   },
+   
+   {
+      "title":"Speedtest your connection in Python",
+      "url":"/posts/speedtest-your-connection-in-python/"
+   },
+   
+   {
+      "title":"Why PM2 is the process manager you&#39;re missing",
+      "url":"/posts/why-pm2-is-the-process-manager-youre-missing/"
+   },
+   
+   {
+      "title":"Eleventy creating a static JavaScript search",
+      "url":"/posts/eleventy-creating-a-static-javascript-search/"
+   },
+   
+   {
+      "title":"Eleventy JSON endpoint with posts",
+      "url":"/posts/eleventy-json-endpoint-with-posts/"
+   },
+   
+   {
+      "title":"Exploring :visited state possibilities",
+      "url":"/posts/exploring-visited-state-possibilities/"
+   },
+   
+   {
+      "title":"CSS :visited state, why we should use it",
+      "url":"/posts/css-visited-state-why-we-should-use-it/"
+   },
+   
+   {
+      "title":"Linux zip files",
+      "url":"/posts/linux-zip-files/"
+   },
+   
+   {
+      "title":"Linux adding a timestamp to the bash history",
+      "url":"/posts/linux-adding-a-timestamp-to-the-bash-history/"
+   },
+   
+   {
+      "title":"JavaScript insert newly created element after another element",
+      "url":"/posts/javascript-insert-newly-created-element-after-another-element/"
+   },
+   
+   {
+      "title":"JavaScript insert newly created element before another element",
+      "url":"/posts/javascript-insert-newly-created-element-before-another-element/"
+   },
+   
+   {
+      "title":"Running WordPress locally on Mac OS X",
+      "url":"/posts/running-wordpress-locally-on-mac-os-x/"
+   },
+   
+   {
+      "title":"Making htaccess work on Mac OS X",
+      "url":"/posts/making-htaccess-work-on-mac-os-x/"
+   },
+   
+   {
+      "title":"Mac OS X setting up virtual hosts",
+      "url":"/posts/mac-os-x-setting-up-virtual-hosts/"
+   },
+   
+   {
+      "title":"An automated GitHub-Discord bot",
+      "url":"/posts/an-automated-github-discord-bot/"
+   },
+   
+   {
+      "title":"F-strings in Python",
+      "url":"/posts/f-strings-in-python/"
+   },
+   
+   {
+      "title":"Python reduce() function",
+      "url":"/posts/python-reduce-function/"
+   },
+   
+   {
+      "title":"Python map() function",
+      "url":"/posts/python-map-function/"
+   },
+   
+   {
+      "title":"Python filter() function",
+      "url":"/posts/python-filter-function/"
+   },
+   
+   {
+      "title":"NumPy arrays, a broader look",
+      "url":"/posts/numpy-arrays-a-broader-look/"
+   },
+   
+   {
+      "title":"Installing and using NumPy in Python",
+      "url":"/posts/installing-and-using-numpy-in-python/"
+   },
+   
+   {
+      "title":"Formatting strings in Python",
+      "url":"/posts/formatting-strings-in-python/"
+   },
+   
+   {
+      "title":"Python Lambda functions",
+      "url":"/posts/python-lambda-functions/"
+   },
+   
+   {
+      "title":"Regular Expressions in Python",
+      "url":"/posts/regular-expressions-in-python/"
+   },
+   
+   {
+      "title":"Python write data to a Google sheet",
+      "url":"/posts/python-write-data-to-a-google-sheet/"
+   },
+   
+   {
+      "title":"Python read data from a Google sheet",
+      "url":"/posts/python-read-data-from-a-google-sheet/"
+   },
+   
+   {
+      "title":"Python read and write files",
+      "url":"/posts/python-read-and-write-files/"
+   },
+   
+   {
+      "title":"Writing functions in Python",
+      "url":"/posts/writing-functions-in-python/"
+   },
+   
+   {
+      "title":"Generating barcodes in Google Sheets",
+      "url":"/posts/generating-barcodes-in-google-sheets/"
+   },
+   
+   {
+      "title":"Python loops explained",
+      "url":"/posts/python-loops-explained/"
+   },
+   
+   {
+      "title":"Generating QR Codes in Google Sheets",
+      "url":"/posts/generating-qr-codes-in-google-sheets/"
+   },
+   
+   {
+      "title":"Python if...else statements",
+      "url":"/posts/python-if-else-statements/"
+   },
+   
+   {
+      "title":"Data types in Python",
+      "url":"/posts/data-types-in-python/"
+   },
+   
+   {
+      "title":"User input in Python",
+      "url":"/posts/user-input-in-python/"
+   },
+   
+   {
+      "title":"Ionic tab bar circle middle button",
+      "url":"/posts/ionic-tab-bar-circle-middle-button/"
+   },
+   
+   {
+      "title":"Python virtual environments",
+      "url":"/posts/python-virtual-environments/"
+   },
+   
+   {
+      "title":"Setting Visual Studio code up for Python",
+      "url":"/posts/setting-visual-studio-code-up-for-python/"
+   },
+   
+   {
+      "title":"Setting up Python on macOS",
+      "url":"/posts/setting-up-python-on-macos/"
+   },
+   
+   {
+      "title":"Host images via Google Drive",
+      "url":"/posts/host-images-via-google-drive/"
+   },
+   
+   {
+      "title":"Yes, I do",
+      "url":"/posts/yes-i-do/"
+   },
+   
+   {
+      "title":"Using min-width Media query for Mobile first design",
+      "url":"/posts/using-min-width-media-query-for-mobile-first-design/"
+   },
+   
+   {
+      "title":"Common HTML Element Types",
+      "url":"/posts/common-html-element-types/"
+   },
+   
+   {
+      "title":"Creating a One-on-One Interactive Video Meeting Web Tool Using Agora",
+      "url":"/posts/creating-a-one-on-one-interactive-video-meeting-web-tool-using-agora/"
+   },
+   
+   {
+      "title":"Detecting faces from the webcam in JavaScript",
+      "url":"/posts/detecting-faces-from-the-webcam-in-javascript/"
+   },
+   
+   {
+      "title":"Javascript native face detector API",
+      "url":"/posts/javascript-native-face-detector-api/"
+   },
+   
+   {
+      "title":"Detecting barcodes from the webcam",
+      "url":"/posts/detecting-barcodes-from-the-webcam/"
+   },
+   
+   {
+      "title":"Javascript native barcode detector API",
+      "url":"/posts/javascript-native-barcode-detector-api/"
+   },
+   
+   {
+      "title":"CSS Modern multi-line ellipsis",
+      "url":"/posts/css-modern-multi-line-ellipsis/"
+   },
+   
+   {
+      "title":"Chrome DevTools: Flex Debugger",
+      "url":"/posts/chrome-devtools-flex-debugger/"
+   },
+   
+   {
+      "title":"Public talking is liberating, check out some of my talks",
+      "url":"/posts/public-talking-is-liberating-check-out-some-of-my-talks/"
+   },
+   
+   {
+      "title":"Tailwind grid responsive 4 column blocks",
+      "url":"/posts/tailwind-grid-responsive-4-column-blocks/"
+   },
+   
+   {
+      "title":"Interaction beats consumption",
+      "url":"/posts/interaction-beats-consumption/"
+   },
+   
+   {
+      "title":"JavaScript remove elements",
+      "url":"/posts/javascript-remove-elements/"
+   },
+   
+   {
+      "title":"JavaScript creating a new element",
+      "url":"/posts/javascript-creating-a-new-element/"
+   },
+   
+   {
+      "title":"Appreciate yourself and improve yourself instead of feeling bad",
+      "url":"/posts/appreciate-yourself-and-improve-yourself-instead-of-feeling-bad/"
+   },
+   
+   {
+      "title":"Creating an SSH connection to a server",
+      "url":"/posts/creating-an-ssh-connection-to-a-server/"
+   },
+   
+   {
+      "title":"Not all developer job interviews are the same",
+      "url":"/posts/not-all-developer-job-interviews-are-the-same/"
+   },
+   
+   {
+      "title":"Why Tailwind JIT compiler is amazing",
+      "url":"/posts/why-tailwind-jit-compiler-is-amazing/"
+   },
+   
+   {
+      "title":"JavaScript detecting key combinations",
+      "url":"/posts/javascript-detecting-key-combinations/"
+   },
+   
+   {
+      "title":"Some console command you might not know",
+      "url":"/posts/some-console-command-you-might-not-know/"
+   },
+   
+   {
+      "title":"Hacking time management",
+      "url":"/posts/hacking-time-management/"
+   },
+   
+   {
+      "title":"JavaScript detecting which key is pressed",
+      "url":"/posts/javascript-detecting-which-key-is-pressed/"
+   },
+   
+   {
+      "title":"Making CSS perspective text",
+      "url":"/posts/making-css-perspective-text/"
+   },
+   
+   {
+      "title":"5 MacOS tips that will make you more productive",
+      "url":"/posts/5-macos-tips-that-will-make-you-more-productive/"
+   },
+   
+   {
+      "title":"Accepting all invites on LinkedIn",
+      "url":"/posts/accepting-all-invites-on-linkedin/"
+   },
+   
+   {
+      "title":"Spice up your console logs with styling",
+      "url":"/posts/spice-up-your-console-logs-with-styling/"
+   },
+   
+   {
+      "title":"Testing API calls in Insomnia",
+      "url":"/posts/testing-api-calls-in-insomnia/"
+   },
+   
+   {
+      "title":"Easy way to create API documentation in Laravel with Scribe",
+      "url":"/posts/easy-way-to-create-api-documentation-in-laravel/"
+   },
+   
+   {
+      "title":"Protecting our Laravel API with Sanctum",
+      "url":"/posts/protecting-our-laravel-api-with-sanctum/"
+   },
+   
+   {
+      "title":"Laravel basic API routes",
+      "url":"/posts/laravel-basic-api-routes/"
+   },
+   
+   {
+      "title":"Laravel relational database models",
+      "url":"/posts/laravel-relational-database-models/"
+   },
+   
+   {
+      "title":"Laravel seeding the database",
+      "url":"/posts/laravel-seeding-the-database/"
+   },
+   
+   {
+      "title":"Laravel creating our first database table",
+      "url":"/posts/laravel-creating-our-first-database-table/"
+   },
+   
+   {
+      "title":"Tailwind expanding slider",
+      "url":"/posts/tailwind-expanding-slider/"
+   },
+   
+   {
+      "title":"Angular dynamic classes using ngClass",
+      "url":"/posts/angular-dynamic-classes-using-ngclass/"
+   },
+   
+   {
+      "title":"Angular dynamically change form validators",
+      "url":"/posts/angular-dynamically-change-form-validators/"
+   },
+   
+   {
+      "title":"How to start blogging",
+      "url":"/posts/how-to-start-blogging/"
+   },
+   
+   {
+      "title":"Tailwind CSS skew cards",
+      "url":"/posts/tailwind-css-skew-cards/"
+   },
+   
+   {
+      "title":"Native CSS Masonry layouts",
+      "url":"/posts/native-css-masonry-layouts/"
+   },
+   
+   {
+      "title":"Vanilla JavaScript date toLocaleString",
+      "url":"/posts/vanilla-javascript-date-tolocalestring/"
+   },
+   
+   {
+      "title":"CSS Shapes - Other shapes",
+      "url":"/posts/css-shapes-other-shapes/"
+   },
+   
+   {
+      "title":"CSS Shapes - Triangles",
+      "url":"/posts/css-shapes-triangles/"
+   },
+   
+   {
+      "title":"CSS Shapes - The basics",
+      "url":"/posts/css-shapes-the-basics/"
+   },
+   
+   {
+      "title":"Chrome devtools capture full page",
+      "url":"/posts/chrome-devtools-capture-full-page/"
+   },
+   
+   {
+      "title":"Making scrollable sections snap",
+      "url":"/posts/making-scrollable-sections-snap/"
+   },
+   
+   {
+      "title":"Fading images using JavaScript",
+      "url":"/posts/fading-images-using-javascript/"
+   },
+   
+   {
+      "title":"I blogged every single day for a year",
+      "url":"/posts/i-blogged-every-single-day-for-a-year/"
+   },
+   
+   {
+      "title":"Delay your CSS animations to make them cleaner",
+      "url":"/posts/delay-your-css-animations-to-make-them-cleaner/"
+   },
+   
+   {
+      "title":"Ionic skeleton loader",
+      "url":"/posts/ionic-skeleton-loader/"
+   },
+   
+   {
+      "title":"HTML spellcheck attribute",
+      "url":"/posts/html-spellcheck-attribute/"
+   },
+   
+   {
+      "title":"HTML meter tag",
+      "url":"/posts/html-meter-tag/"
+   },
+   
+   {
+      "title":"CSS image reflections with box-reflect",
+      "url":"/posts/css-image-reflections-with-box-reflect/"
+   },
+   
+   {
+      "title":"HTML ordered list options",
+      "url":"/posts/html-ordered-list-options/"
+   },
+   
+   {
+      "title":"Ionic adding checkboxes to a form",
+      "url":"/posts/ionic-adding-checkboxes-to-a-form/"
+   },
+   
+   {
+      "title":"Ionic adding reactive forms",
+      "url":"/posts/ionic-adding-reactive-forms/"
+   },
+   
+   {
+      "title":"Creating segment tabs in Ionic",
+      "url":"/posts/creating-segment-tabs-in-ionic/"
+   },
+   
+   {
+      "title":"HTML Autocomplete sms code",
+      "url":"/posts/html-autocomplete-sms-code/"
+   },
+   
+   {
+      "title":"Ionic welcome tour slider",
+      "url":"/posts/ionic-welcome-tour-slider/"
+   },
+   
+   {
+      "title":"Using alerts in Ionic",
+      "url":"/posts/using-alerts-in-ionic/"
+   },
+   
+   {
+      "title":"Ionic adding toast messages",
+      "url":"/posts/ionic-adding-toast-messages/"
+   },
+   
+   {
+      "title":"HTML Detail Summary element",
+      "url":"/posts/html-detail-summary-element/"
+   },
+   
+   {
+      "title":"Ionic modals passing and receiving data",
+      "url":"/posts/ionic-modals-passing-and-receiving-data/"
+   },
+   
+   {
+      "title":"Adding modals to an Ionic app",
+      "url":"/posts/adding-modals-to-an-ionic-app/"
+   },
+   
+   {
+      "title":"Ionic adding a side menu",
+      "url":"/posts/ionic-adding-a-side-menu/"
+   },
+   
+   {
+      "title":"Netlify Drop - the easiest deployment ever",
+      "url":"/posts/netlify-drop-the-easiest-deployment-ever/"
+   },
+   
+   {
+      "title":"Using Google Fonts in a Tailwind project",
+      "url":"/posts/using-google-fonts-in-a-tailwind-project/"
+   },
+   
+   {
+      "title":"Plain HTML starter with Tailwind CSS",
+      "url":"/posts/plain-html-starter-with-tailwind-css/"
+   },
+   
+   {
+      "title":"Tailwind CSS fixed and scrollable section",
+      "url":"/posts/tailwind-css-fixed-and-scrollable-section/"
+   },
+   
+   {
+      "title":"Top 5 MySQL clients for Mac",
+      "url":"/posts/top-5-mysql-clients-for-mac/"
+   },
+   
+   {
+      "title":"HTML mark tag a digital marker",
+      "url":"/posts/html-mark-tag-a-digital-marker/"
+   },
+   
+   {
+      "title":"CSS for the Scrollbar",
+      "url":"/posts/styling-scrollbars-with-css/"
+   },
+   
+   {
+      "title":"CSS hide scrollbars",
+      "url":"/posts/css-hide-scrollbars/"
+   },
+   
+   {
+      "title":"Starting your first Laravel project",
+      "url":"/posts/starting-your-first-laravel-project/"
+   },
+   
+   {
+      "title":"Keep your projects up to date with Dependabot",
+      "url":"/posts/keep-your-projects-up-to-date-with-dependabot/"
+   },
+   
+   {
+      "title":"5 Websites for color inspiration",
+      "url":"/posts/5-websites-for-color-inspiration/"
+   },
+   
+   {
+      "title":"Tailwind image zoom",
+      "url":"/posts/tailwind-zooming-background-images/"
+   },
+   
+   {
+      "title":"Hosting Angular Universal on a server",
+      "url":"/posts/hosting-angular-universal-on-a-server/"
+   },
+   
+   {
+      "title":"Optimizing Angular Universal for SEO",
+      "url":"/posts/optimizing-angular-universal-for-seo/"
+   },
+   
+   {
+      "title":"Help my browser API&#39;s stopped working in Angular Universal",
+      "url":"/posts/help-my-browser-apis-stopped-working-in-angular-universal/"
+   },
+   
+   {
+      "title":"Converting a regular Angular application into Angular Universal",
+      "url":"/posts/converting-a-regular-angular-application-into-angular-universal/"
+   },
+   
+   {
+      "title":"CSS Styling the link underline",
+      "url":"/posts/css-styling-the-link-underline/"
+   },
+   
+   {
+      "title":"How to record your iPhone screen with a Macbook",
+      "url":"/posts/how-to-record-your-iphone-screen-with-a-macbook/"
+   },
+   
+   {
+      "title":"Console.log on Chrome for iOS",
+      "url":"/posts/console-log-on-chrome-for-ios/"
+   },
+   
+   {
+      "title":"How to use WebP images",
+      "url":"/posts/how-to-use-webp-images/"
+   },
+   
+   {
+      "title":"Reverse an Array in Vanilla JavaScript",
+      "url":"/posts/vanilla-javascript-reverse-an-array/"
+   },
+   
+   {
+      "title":"Ionic Master Detail view",
+      "url":"/posts/ionic-master-detail-view/"
+   },
+   
+   {
+      "title":"Ionic getting Pokemon cards from an API",
+      "url":"/posts/ionic-getting-pokemon-cards-from-an-api/"
+   },
+   
+   {
+      "title":"Firebase authenticated user routes in Ionic",
+      "url":"/posts/firebase-authenticated-user-routes-in-ionic/"
+   },
+   
+   {
+      "title":"Ionic store data for a user in Firebase",
+      "url":"/posts/ionic-store-data-for-a-user-in-firebase/"
+   },
+   
+   {
+      "title":"Adding Firebase Google authentication to an Ionic app",
+      "url":"/posts/adding-firebase-google-authentication-to-an-ionic-app/"
+   },
+   
+   {
+      "title":"Adding static pages to an Eleventy blog",
+      "url":"/posts/adding-static-pages-to-an-eleventy-blog/"
+   },
+   
+   {
+      "title":"Installing PHP on your Mac",
+      "url":"/posts/installing-php-on-your-mac/"
+   },
+   
+   {
+      "title":"CSS Aspect Ratio it&#39;s finally here",
+      "url":"/posts/css-aspect-ratio-its-finally-here/"
+   },
+   
+   {
+      "title":"Build a vertical slider with Tailwind and Eleventy",
+      "url":"/posts/making-a-fullscreen-vertical-slider-with-tailwind-and-eleventy/"
+   },
+   
+   {
+      "title":"HTML Input multiple attribute",
+      "url":"/posts/html-input-multiple-attribute/"
+   },
+   
+   {
+      "title":"Adding a sitemap in Eleventy",
+      "url":"/posts/adding-a-sitemap-in-eleventy/"
+   },
+   
+   {
+      "title":"Chrome DevTools: CSS Angle debugging",
+      "url":"/posts/chrome-devtools-css-angle-debugging/"
+   },
+   
+   {
+      "title":"Eleventy two column post layout",
+      "url":"/posts/eleventy-two-column-post-layout/"
+   },
+   
+   {
+      "title":"Making a post slider in Eleventy with Tailwind",
+      "url":"/posts/making-a-post-slider-in-eleventy-with-tailwind/"
+   },
+   
+   {
+      "title":"Creating a newsletter layout with Tailwind",
+      "url":"/posts/creating-a-newsletter-layout-with-tailwind/"
+   },
+   
+   {
+      "title":"It&#39;s alright to take a break",
+      "url":"/posts/its-alright-to-take-a-break/"
+   },
+   
+   {
+      "title":"Creating a custom Eleventy filter",
+      "url":"/posts/creating-a-custom-eleventy-filter/"
+   },
+   
+   {
+      "title":"Convert existing CSS into Tailwind classes",
+      "url":"/posts/converting-existing-css-into-tailwind-classes/"
+   },
+   
+   {
+      "title":"Adding Tailwind to Eleventy",
+      "url":"/posts/adding-tailwind-to-eleventy/"
+   },
+   
+   {
+      "title":"Adding posts to my lifestyle blog in Eleventy - part-2",
+      "url":"/posts/adding-posts-to-my-lifestyle-blog-in-eleventy-part-2/"
+   },
+   
+   {
+      "title":"Rebuilding my lifestyle blog in eleventy - part-1",
+      "url":"/posts/rebuilding-my-lifestyle-blog-in-eleventy-part-1/"
+   },
+   
+   {
+      "title":"Vanilla JavaScript get current timestamp",
+      "url":"/posts/vanilla-javascript-get-current-timestamp/"
+   },
+   
+   {
+      "title":"JavaScript unique object properties from object array",
+      "url":"/posts/javascript-unique-object-properties-from-object-array/"
+   },
+   
+   {
+      "title":"JavaScript reduce on multiple properties",
+      "url":"/posts/javascript-reduce-on-multiple-properties/"
+   },
+   
+   {
+      "title":"Deploy Eleventy to Netlify using GitHub actions",
+      "url":"/posts/deploy-eleventy-to-netlify-using-github-actions/"
+   },
+   
+   {
+      "title":"Refactoring old code",
+      "url":"/posts/refactoring-old-code/"
+   },
+   
+   {
+      "title":"What I&#39;ve learned from doing a 64 hour fast",
+      "url":"/posts/what-ive-learned-from-doing-a-64-hour-fast/"
+   },
+   
+   {
+      "title":"10 ways to use the spread operator in JavaScript",
+      "url":"/posts/10-ways-to-use-the-spread-operator-in-javascript/"
+   },
+   
+   {
+      "title":"Angular search pipe for a list",
+      "url":"/posts/angular-search-pipe-for-a-list/"
+   },
+   
+   {
+      "title":"JavaScript string repeat",
+      "url":"/posts/javascript-string-repeat/"
+   },
+   
+   {
+      "title":"Hosting Sendy on Digital Ocean",
+      "url":"/posts/hosting-sendy-on-digital-ocean/"
+   },
+   
+   {
+      "title":"Moving from Mailchimp to Sendy",
+      "url":"/posts/moving-from-mailchimp-to-sendy/"
+   },
+   
+   {
+      "title":"Automate Netlify deployments with Zapier",
+      "url":"/posts/automate-netlify-deployments-with-zapier/"
+   },
+   
+   {
+      "title":"A letter to my future self 💌",
+      "url":"/posts/a-letter-to-my-future-self/"
+   },
+   
+   {
+      "title":"Mac installing MariaDB",
+      "url":"/posts/mac-installing-mariadb/"
+   },
+   
+   {
+      "title":"Mac installing MySQL",
+      "url":"/posts/mac-installing-mysql/"
+   },
+   
+   {
+      "title":"Convert existing local project into git project",
+      "url":"/posts/convert-existing-local-project-into-git-project/"
+   },
+   
+   {
+      "title":"Homebrew - One package manager to rule them all",
+      "url":"/posts/homebrew-one-package-manager-to-rule-them-all/"
+   },
+   
+   {
+      "title":"Firefox dev tools - Animations",
+      "url":"/posts/firefox-dev-tools-animations/"
+   },
+   
+   {
+      "title":"HTML5 Starting boilerplate template",
+      "url":"/posts/html5-starting-boilerplate-template/"
+   },
+   
+   {
+      "title":"Vanilla JavaScript get all elements in a form",
+      "url":"/posts/vanilla-javascript-get-all-elements-in-a-form/"
+   },
+   
+   {
+      "title":"Creating day-night CSS only toggle switch",
+      "url":"/posts/creating-day-night-css-only-toggle-switch/"
+   },
+   
+   {
+      "title":"How I made a no-div playground in Vanilla JavaScript",
+      "url":"/posts/how-i-made-a-no-div-playground-in-vanilla-javascript/"
+   },
+   
+   {
+      "title":"Firefox clip-path editor",
+      "url":"/posts/firefox-clip-path-editor/"
+   },
+   
+   {
+      "title":"Making a footer stick to the bottom with CSS",
+      "url":"/posts/making-a-footer-stick-to-the-bottom-with-css/"
+   },
+   
+   {
+      "title":"Giveaway! Three copies of Florin Pop&#39;s ten ways to make money as a developer",
+      "url":"/posts/giveaway-three-copies-of-florin-pop-ten-ways-to-make-money-as-a-developer/"
+   },
+   
+   {
+      "title":"Vanilla JavaScript get form element&#39;s form",
+      "url":"/posts/vanilla-javascript-get-form-elements-form/"
+   },
+   
+   {
+      "title":"Vanilla JavaScript get following Monday",
+      "url":"/posts/vanilla-javascript-get-following-monday/"
+   },
+   
+   {
+      "title":"JavaScript get HTML elements from a string",
+      "url":"/posts/javascript-get-html-elements-from-a-string/"
+   },
+   
+   {
+      "title":"CSS Frosted glass credit card",
+      "url":"/posts/css-frosted-glass-credit-card/"
+   },
+   
+   {
+      "title":"Vanilla JavaScript time of day greeting",
+      "url":"/posts/vanilla-javascript-time-of-day-greeting/"
+   },
+   
+   {
+      "title":"Tailwind CSS full-screen video header",
+      "url":"/posts/tailwind-css-full-screen-video-header/"
+   },
+   
+   {
+      "title":"Tailwind CSS parallax effect",
+      "url":"/posts/tailwind-css-parallax-effect/"
+   },
+   
+   {
+      "title":"CSS Gradient text effect",
+      "url":"/posts/css-gradient-text-effect/"
+   },
+   
+   {
+      "title":"How to use the shy soft hyphen in HTML",
+      "url":"/posts/using-the-shy-soft-hyphen-in-html/"
+   },
+   
+   {
+      "title":"Vanilla JavaScript speech-to-text 🦻",
+      "url":"/posts/vanilla-javascript-speech-to-text/"
+   },
+   
+   {
+      "title":"Making divs user resizable with CSS",
+      "url":"/posts/making-divs-user-resizable-with-css/"
+   },
+   
+   {
+      "title":"Vanilla JavaScript text-to-speech 💬",
+      "url":"/posts/vanilla-javascript-text-to-speech/"
+   },
+   
+   {
+      "title":"Experience story: My first job",
+      "url":"/posts/experience-story-my-first-job/"
+   },
+   
+   {
+      "title":"HTML output element",
+      "url":"/posts/html-output-element/"
+   },
+   
+   {
+      "title":"Header with responsive image in Tailwind CSS",
+      "url":"/posts/responsive-header-in-tailwind-css/"
+   },
+   
+   {
+      "title":"What is the &lt;wbr&gt; HTML tag and why do I need it?",
+      "url":"/posts/what-is-the-wbr-html-tag-and-why-do-i-need-it/"
+   },
+   
+   {
+      "title":"Three Christmas trees in CSS 🎄",
+      "url":"/posts/three-christmas-trees-in-css/"
+   },
+   
+   {
+      "title":"CSS Grid most easy center vertical and horizontal",
+      "url":"/posts/css-grid-most-easy-center-vertical-and-horizontal/"
+   },
+   
+   {
+      "title":"Chrome DevTools: Grid Explorer",
+      "url":"/posts/chrome-devtools-grid-explorer/"
+   },
+   
+   {
+      "title":"Angular 10 Transclusion: When and Why You`ll Need It",
+      "url":"/posts/angular-10-transclusion-when-and-why-youll-need-it/"
+   },
+   
+   {
+      "title":"JavaScript loop querySelectorAll results",
+      "url":"/posts/javascript-loop-queryselectorall-results/"
+   },
+   
+   {
+      "title":"JavaScript array join() method",
+      "url":"/posts/javascript-array-join-method/"
+   },
+   
+   {
+      "title":"Vanilla JavaScript four-digit pincode field",
+      "url":"/posts/vanilla-javascript-four-digit-pincode-field/"
+   },
+   
+   {
+      "title":"JavaScript match values in two arrays",
+      "url":"/posts/javascript-match-values-in-two-arrays/"
+   },
+   
+   {
+      "title":"CSS :not selector for negation",
+      "url":"/posts/css-not-selector/"
+   },
+   
+   {
+      "title":"JavaScript find() method",
+      "url":"/posts/javascript-find-function/"
+   },
+   
+   {
+      "title":"JavaScript removing HTML tags",
+      "url":"/posts/javascript-removing-html-tags/"
+   },
+   
+   {
+      "title":"Adding Netlify redirects to an Eleventy site",
+      "url":"/posts/adding-netlify-redirects-to-an-eleventy-site/"
+   },
+   
+   {
+      "title":"I finally changed the default Mac mail behaviour",
+      "url":"/posts/i-finally-changed-the-default-mac-mail-behaviour/"
+   },
+   
+   {
+      "title":"JavaScript every() method",
+      "url":"/posts/javascript-every-method/"
+   },
+   
+   {
+      "title":"JavaScript some() method",
+      "url":"/posts/javascript-some-method/"
+   },
+   
+   {
+      "title":"CSS :placeholder-shown class",
+      "url":"/posts/css-placeholder-shown-class/"
+   },
+   
+   {
+      "title":"JavaScript map() method",
+      "url":"/posts/javascript-map-method/"
+   },
+   
+   {
+      "title":"JavaScript reduce() method",
+      "url":"/posts/javascript-reduce-method/"
+   },
+   
+   {
+      "title":"JavaScript filter() method",
+      "url":"/posts/javascript-filter-method/"
+   },
+   
+   {
+      "title":"JavaScript lightbox effect without using plugins",
+      "url":"/posts/javascript-lightbox-effect-without-using-plugins/"
+   },
+   
+   {
+      "title":"Focus on one of these 9 backend frameworks to become a backend wizard",
+      "url":"/posts/focus-on-one-of-these-9-backend-frameworks-to-become-a-backend-wizard/"
+   },
+   
+   {
+      "title":"How to make money with your content?",
+      "url":"/posts/how-to-make-money-with-your-content/"
+   },
+   
+   {
+      "title":"Software design principles: DRY",
+      "url":"/posts/software-design-principles-dry/"
+   },
+   
+   {
+      "title":"CSS focus powered dropdown menu",
+      "url":"/posts/css-focus-powered-dropdown-menu/"
+   },
+   
+   {
+      "title":"Vanilla JavaScript countdown clock",
+      "url":"/posts/vanilla-javascript-countdown-clock/"
+   },
+   
+   {
+      "title":"Vanilla JavaScript detecting the operating system",
+      "url":"/posts/vanilla-javascript-detecting-the-operating-system/"
+   },
+   
+   {
+      "title":"15 better Lorem Ipsum generators",
+      "url":"/posts/15-better-lorem-ipsum-generators/"
+   },
+   
+   {
+      "title":"CSS equal height columns",
+      "url":"/posts/css-equal-height-columns/"
+   },
+   
+   {
+      "title":"Why CSS :focus-within is amazing",
+      "url":"/posts/why-css-focus-within-is-amazing/"
+   },
+   
+   {
+      "title":"JavaScript template literals",
+      "url":"/posts/javascript-template-literals/"
+   },
+   
+   {
+      "title":"CSS custom numbered list styling",
+      "url":"/posts/css-custom-numbered-list-styling/"
+   },
+   
+   {
+      "title":"What I learned from these 4 legends during the Hashnode bootcamp",
+      "url":"/posts/what-i-learned-from-these-4-legends-during-the-hashnode-bootcamp/"
+   },
+   
+   {
+      "title":"Vanilla JavaScript live search",
+      "url":"/posts/vanilla-javascript-live-search/"
+   },
+   
+   {
+      "title":"Changing the text selection color with CSS",
+      "url":"/posts/changing-the-text-selection-color-with-css/"
+   },
+   
+   {
+      "title":"CSS nth-child selector basics",
+      "url":"/posts/css-nth-child-selector-basics/"
+   },
+   
+   {
+      "title":"Be aware when cloning objects in JavaScript! 👯‍♀️",
+      "url":"/posts/be-aware-when-cloning-objects-in-javascript/"
+   },
+   
+   {
+      "title":"CSS list style with Emojis",
+      "url":"/posts/css-emoji-list-style/"
+   },
+   
+   {
+      "title":"Ionic adding infinite scroll to our list",
+      "url":"/posts/ionic-adding-infinite-scroll-to-our-list/"
+   },
+   
+   {
+      "title":"Ionic showing API results in a list view",
+      "url":"/posts/ionic-showing-api-results-in-a-list-view/"
+   },
+   
+   {
+      "title":"Angular lazy loading routes",
+      "url":"/posts/angular-lazy-loading-routes/"
+   },
+   
+   {
+      "title":"Light and dark mode image in HTML",
+      "url":"/posts/light-and-dark-mode-image-in-html/"
+   },
+   
+   {
+      "title":"Vanilla JavaScript random colours",
+      "url":"/posts/vanilla-javascript-random-colours/"
+   },
+   
+   {
+      "title":"CSS SVG star rating ⭐️",
+      "url":"/posts/css-svg-star-rating/"
+   },
+   
+   {
+      "title":"Vanilla JavaScript data attribute filters",
+      "url":"/posts/vanilla-javascript-data-attribute-filters/"
+   },
+   
+   {
+      "title":"Angular adding a token to each API request",
+      "url":"/posts/angular-adding-a-token-to-each-api-request/"
+   },
+   
+   {
+      "title":"Protecting routes in Angular 👮‍♂️",
+      "url":"/posts/protecting-routes-in-angular/"
+   },
+   
+   {
+      "title":"Angular authenticating users from an API",
+      "url":"/posts/angular-authenticating-users-from-an-api/"
+   },
+   
+   {
+      "title":"Chrome find unused code 🔎",
+      "url":"/posts/chrome-find-unused-code/"
+   },
+   
+   {
+      "title":"Reactive forms in Angular the way to go",
+      "url":"/posts/reactive-forms-in-angular-the-way-to-go/"
+   },
+   
+   {
+      "title":"CSS cutout text with image background 🤯",
+      "url":"/posts/css-cut-out-effect-that-will-blow-your-mind/"
+   },
+   
+   {
+      "title":"Angular component interaction using @Input and @Output",
+      "url":"/posts/angular-component-interaction-using-input-and-output/"
+   },
+   
+   {
+      "title":"Angular 10 adding custom pipes",
+      "url":"/posts/angular-10-adding-custom-pipes/"
+   },
+   
+   {
+      "title":"Creating a movie fetching service in Angular",
+      "url":"/posts/creating-a-movie-fetching-service-in-angular/"
+   },
+   
+   {
+      "title":"Angular 10 routing this is what you need to know",
+      "url":"/posts/angular-10-routing-this-is-what-you-need-to-know/"
+   },
+   
+   {
+      "title":"My first experiences with Tailwind CSS",
+      "url":"/posts/my-first-experiences-with-tailwind-css/"
+   },
+   
+   {
+      "title":"Adding Tailwind CSS to an Angular project",
+      "url":"/posts/adding-tailwind-css-to-an-angular-project/"
+   },
+   
+   {
+      "title":"Creating our first Angular project",
+      "url":"/posts/creating-our-first-angular-project/"
+   },
+   
+   {
+      "title":"I failed the tech assessment and still got the job",
+      "url":"/posts/i-failed-the-tech-assessment-and-still-got-the-job/"
+   },
+   
+   {
+      "title":"Don&#39;t overcomplicate git 🙇‍♂️",
+      "url":"/posts/dont-overcomplicate-git/"
+   },
+   
+   {
+      "title":"Vanilla JavaScript palindrome checker in 3 lines",
+      "url":"/posts/vanilla-javascript-palindrome-checker-in-3-lines/"
+   },
+   
+   {
+      "title":"Make your first contribution during Hacktoberfest 🍁",
+      "url":"/posts/make-your-first-contribution-during-hacktoberfest/"
+   },
+   
+   {
+      "title":"5 amazing Chrome accessibility tools you didnt know!",
+      "url":"/posts/5-amazing-chrome-accessibility-tools-you-didnt-know/"
+   },
+   
+   {
+      "title":"JavaScript mouse drawing on the canvas 👨‍🎨",
+      "url":"/posts/javascript-mouse-drawing-on-the-canvas/"
+   },
+   
+   {
+      "title":"Resetting a WordPress admin password",
+      "url":"/posts/resetting-a-wordpress-admin-password/"
+   },
+   
+   {
+      "title":"🤫 The secret to my writing process",
+      "url":"/posts/the-secret-to-my-writing-process/"
+   },
+   
+   {
+      "title":"I wrote 200 articles during lockdown, what did you do? 🤔",
+      "url":"/posts/i-wrote-200-articles-during-lockdown-what-did-you-do/"
+   },
+   
+   {
+      "title":"Draggable Mr Potato Head Parts in JavaScript 🥔",
+      "url":"/posts/vanilla-javascript-draggable-mr-potato-head/"
+   },
+   
+   {
+      "title":"Node.js read and write from Azure Table Storage",
+      "url":"/posts/nodejs-read-and-write-from-azure-table-storage/"
+   },
+   
+   {
+      "title":"Adding SSL to our Azure Node app",
+      "url":"/posts/adding-ssl-to-our-azure-node-app/"
+   },
+   
+   {
+      "title":"Exploring 5 meta tags to help beginners with SEO",
+      "url":"/posts/exploring-5-meta-tags-to-help-beginners-with-seo/"
+   },
+   
+   {
+      "title":"How to password protect zips on Mac 🔑",
+      "url":"/posts/how-to-password-protect-zips-on-mac/"
+   },
+   
+   {
+      "title":"My personal top 15 Mac apps 👨‍💻",
+      "url":"/posts/my-personal-top-15-mac-apps/"
+   },
+   
+   {
+      "title":"Azure App Service: Add a custom domain",
+      "url":"/posts/adding-a-custom-domain-to-azure-app-service/"
+   },
+   
+   {
+      "title":"GitHub automated deployments to Azure",
+      "url":"/posts/github-automated-deployments-to-azure/"
+   },
+   
+   {
+      "title":"Deploying a Node app to Azure",
+      "url":"/posts/deploying-a-node-app-to-azure/"
+   },
+   
+   {
+      "title":"I made my website 28ms faster with content-visibility 🤓",
+      "url":"/posts/i-made-my-website-28ms-faster-with-content-visibility/"
+   },
+   
+   {
+      "title":"Checkboxify your images with JavaScript ✅",
+      "url":"/posts/checkboxify-your-images-with-javascript/"
+   },
+   
+   {
+      "title":"Node.js read and write post status to a JSON file",
+      "url":"/posts/nodejs-read-and-write-post-status-to-a-json-file/"
+   },
+   
+   {
+      "title":"Implementing Webmentions on a 11ty blog",
+      "url":"/posts/implementing-webmentions-on-a-11ty-blog/"
+   },
+   
+   {
+      "title":"Goodbye comments, welcome Webmentions 🙋🏼‍♂️",
+      "url":"/posts/goodbye-comments-welcome-webmentions/"
+   },
+   
+   {
+      "title":"Meet Monica Lent, a self-employed software engineer",
+      "url":"/posts/meet-monica-lent-a-self-employed-software-engineer/"
+   },
+   
+   {
+      "title":"Vanilla JavaScript canvas images to black and white",
+      "url":"/posts/vanilla-javascript-canvas-images-to-black-and-white/"
+   },
+   
+   {
+      "title":"Vanilla JavaScript images in canvas",
+      "url":"/posts/vanilla-javascript-images-in-canvas/"
+   },
+   
+   {
+      "title":"Vanilla JavaScript colouring our canvas elements 🌈",
+      "url":"/posts/vanilla-javascript-colouring-our-canvas-elements/"
+   },
+   
+   {
+      "title":"Vanilla JavaScript save canvas as an image",
+      "url":"/posts/vanilla-javascript-save-canvas-as-an-image/"
+   },
+   
+   {
+      "title":"Getting started with the HTML canvas",
+      "url":"/posts/getting-started-with-the-html-canvas/"
+   },
+   
+   {
+      "title":"Top 10 Chrome extensions for developers 👀",
+      "url":"/posts/top-10-chrome-extensions-for-developers/"
+   },
+   
+   {
+      "title":"🛑 Stop using pixels in CSS",
+      "url":"/posts/stop-using-pixels-in-css/"
+   },
+   
+   {
+      "title":"Bash CleanMyMac alternative 🧼",
+      "url":"/posts/bash-cleanmymac-alternative/"
+   },
+   
+   {
+      "title":"Gmail plus make your life easier 😙",
+      "url":"/posts/gmail-plus-make-your-life-easier/"
+   },
+   
+   {
+      "title":"Console log with params",
+      "url":"/posts/console-log-with-params/"
+   },
+   
+   {
+      "title":"Node.js write data in a Google Sheet",
+      "url":"/posts/nodejs-write-data-in-a-google-sheet/"
+   },
+   
+   {
+      "title":"Read a Google Sheet in Node.js with NPM 🤓",
+      "url":"/posts/nodejs-reading-a-google-sheet/"
+   },
+   
+   {
+      "title":"CSS makes the world go round 🌎",
+      "url":"/posts/css-makes-the-world-go-round/"
+   },
+   
+   {
+      "title":"Interview with Shawn swyx Wang, from Finance to Tech",
+      "url":"/posts/interview-with-shawn-swyx-wang-from-finance-to-tech/"
+   },
+   
+   {
+      "title":"Bash ~ never forget to git commit again 💥",
+      "url":"/posts/bash-never-forget-to-git-commit-again/"
+   },
+   
+   {
+      "title":"Double-click to like Instagram effect in JavaScript ❤️",
+      "url":"/posts/double-click-to-like-instagram-effect-in-javascript/"
+   },
+   
+   {
+      "title":"A clear mind starts with a clear inbox",
+      "url":"/posts/a-clear-mind-starts-with-a-clear-inbox/"
+   },
+   
+   {
+      "title":"Top 10 Visual Studio Code extensions you need to install",
+      "url":"/posts/top-10-visual-studio-code-extensions-you-need-to-install/"
+   },
+   
+   {
+      "title":"I&#39;ve automated my morning routine 🤖",
+      "url":"/posts/ive-automated-my-morning-routine/"
+   },
+   
+   {
+      "title":"Chrome copy all CSS for an element",
+      "url":"/posts/chrome-copy-all-css-for-an-element/"
+   },
+   
+   {
+      "title":"Getting notified in JavaScript when a Media Query changes",
+      "url":"/posts/getting-notified-in-javascript-when-a-media-query-changes/"
+   },
+   
+   {
+      "title":"5 full-stack projects to add to your portfolio before 2020 ends 🤯",
+      "url":"/posts/5-full-stack-projects-to-add-to-your-portfolio-before-2020-ends/"
+   },
+   
+   {
+      "title":"What is the difference between two times? ⌚️",
+      "url":"/posts/what-is-the-difference-between-two-times/"
+   },
+   
+   {
+      "title":"Learn how to convert a list into an array in JavaScript",
+      "url":"/posts/learn-how-to-convert-a-list-into-an-array-in-javascript/"
+   },
+   
+   {
+      "title":"Did you know HTML elements can be editable?",
+      "url":"/posts/did-you-know-html-elements-can-be-editable/"
+   },
+   
+   {
+      "title":"CSS exploring all cursor options",
+      "url":"/posts/css-exploring-all-cursor-options/"
+   },
+   
+   {
+      "title":"JavaScript Mouse Tracking Eyes 👀",
+      "url":"/posts/javascript-mouse-tracking-eyes/"
+   },
+   
+   {
+      "title":"Bootstrap your successful software startup",
+      "url":"/posts/bootstrap-your-successful-software-startup/"
+   },
+   
+   {
+      "title":"CSS Neon Animation",
+      "url":"/posts/css-neon-animation/"
+   },
+   
+   {
+      "title":"CSS Drop Shadow vs Box Shadow",
+      "url":"/posts/css-drop-shadow-vs-box-shadow/"
+   },
+   
+   {
+      "title":"HTML Picture Element Responsive Images",
+      "url":"/posts/html-picture-element-responsive-images/"
+   },
+   
+   {
+      "title":"How is Your Year Loading?",
+      "url":"/posts/how-is-your-year-loading/"
+   },
+   
+   {
+      "title":"Vanilla JavaScript Modal Popup Box",
+      "url":"/posts/vanilla-javascript-modal-pop-up/"
+   },
+   
+   {
+      "title":"Weekend Tip: Microsoft Node.js Docs",
+      "url":"/posts/weekend-tip-microsoft-nodejs-docs/"
+   },
+   
+   {
+      "title":"Building a Realtime Photoshop 🎨",
+      "url":"/posts/building-a-realtime-photoshop/"
+   },
+   
+   {
+      "title":"CSS Disco Text",
+      "url":"/posts/css-disco-text/"
+   },
+   
+   {
+      "title":"Vanilla JavaScript Email Validation",
+      "url":"/posts/vanilla-javascript-email-validation/"
+   },
+   
+   {
+      "title":"Vanilla JavaScript Replace All Whitespaces",
+      "url":"/posts/vanilla-javascript-replace-all-whitespaces/"
+   },
+   
+   {
+      "title":"Deno Render HTML with view engine and ejs",
+      "url":"/posts/deno-render-html-files/"
+   },
+   
+   {
+      "title":"CSS Only Tooltips Alternative",
+      "url":"/posts/css-only-tooltips-alternative/"
+   },
+   
+   {
+      "title":"Deno Pokemon API",
+      "url":"/posts/deno-pokemon-api/"
+   },
+   
+   {
+      "title":"Google Sheets Translate ",
+      "url":"/posts/google-sheets-translate/"
+   },
+   
+   {
+      "title":"CSS Only Tooltips",
+      "url":"/posts/css-only-tooltips/"
+   },
+   
+   {
+      "title":"Getting Started with Deno 🦕",
+      "url":"/posts/getting-started-with-deno/"
+   },
+   
+   {
+      "title":"Pimp Your GitHub Profile",
+      "url":"/posts/pimp-your-github-profile/"
+   },
+   
+   {
+      "title":"Vanilla JavaScript String to Number",
+      "url":"/posts/vanilla-javascript-string-to-number/"
+   },
+   
+   {
+      "title":"SVG Blur Filter",
+      "url":"/posts/svg-blur-filter/"
+   },
+   
+   {
+      "title":"SCSS Mixins",
+      "url":"/posts/scss-mixins/"
+   },
+   
+   {
+      "title":"SCSS Nesting",
+      "url":"/posts/scss-nesting/"
+   },
+   
+   {
+      "title":"SCSS Variables",
+      "url":"/posts/scss-variables/"
+   },
+   
+   {
+      "title":"SCSS @import, import sub files in CSS",
+      "url":"/posts/scss-import/"
+   },
+   
+   {
+      "title":"SCSS Introduction",
+      "url":"/posts/scss-introduction/"
+   },
+   
+   {
+      "title":"JavaScript Remove Duplicates from Array",
+      "url":"/posts/javascript-remove-duplicates-from-array/"
+   },
+   
+   {
+      "title":"Vanilla JavaScript Chicken or Egg?",
+      "url":"/posts/vanilla-javascript-chicken-or-egg/"
+   },
+   
+   {
+      "title":"Resetting a Form",
+      "url":"/posts/resetting-a-form/"
+   },
+   
+   {
+      "title":"SVG animateTransform",
+      "url":"/posts/svg-animatetransform/"
+   },
+   
+   {
+      "title":"SVG Colouring Paths",
+      "url":"/posts/svg-colouring-paths/"
+   },
+   
+   {
+      "title":"SVG Sprites, defining, styling and using them",
+      "url":"/posts/svg-sprites/"
+   },
+   
+   {
+      "title":"Detect Adblockers",
+      "url":"/posts/detect-adblockers/"
+   },
+   
+   {
+      "title":"CSS Animated Submit Loading",
+      "url":"/posts/css-animated-submit-loading/"
+   },
+   
+   {
+      "title":"I Challenge You!",
+      "url":"/posts/i-challenge-you/"
+   },
+   
+   {
+      "title":"Vanilla JavaScript Quick Testing",
+      "url":"/posts/vanilla-javascript-quick-testing/"
+   },
+   
+   {
+      "title":"Dynamically call a Function in JavaScript",
+      "url":"/posts/vanilla-javascript-dynamically-calling-a-function/"
+   },
+   
+   {
+      "title":"CSS Grid Item",
+      "url":"/posts/css-grid-item/"
+   },
+   
+   {
+      "title":"CSS Grid Container",
+      "url":"/posts/css-grid-container/"
+   },
+   
+   {
+      "title":"CSS Grid Introduction",
+      "url":"/posts/css-grid-introduction/"
+   },
+   
+   {
+      "title":"Vanilla JavaScript toggleAttribute",
+      "url":"/posts/vanilla-javascript-toggleattribute/"
+   },
+   
+   {
+      "title":"Vanilla JavaScript Closest",
+      "url":"/posts/vanilla-javascript-closest/"
+   },
+   
+   {
+      "title":"Why Conferences Are Awesome",
+      "url":"/posts/why-conferences-are-awesome/"
+   },
+   
+   {
+      "title":"Vanilla JavaScript Cookies 🍪",
+      "url":"/posts/vanilla-javascript-cookies/"
+   },
+   
+   {
+      "title":"CSS Truncate Text With Ellipsis",
+      "url":"/posts/css-truncate-text-with-ellipsis/"
+   },
+   
+   {
+      "title":"CSS Writing Mode",
+      "url":"/posts/css-writing-mode/"
+   },
+   
+   {
+      "title":"Vanilla JavaScript Stop Form Submit",
+      "url":"/posts/vanilla-javascript-stop-form-submit/"
+   },
+   
+   {
+      "title":"Vanilla JavaScript Browser Detection",
+      "url":"/posts/vanilla-javascript-browser-detection/"
+   },
+   
+   {
+      "title":"Getting Started With the Terminal",
+      "url":"/posts/getting-started-with-the-terminal/"
+   },
+   
+   {
+      "title":"Adding pages in Ionic using App-Explore-Container",
+      "url":"/posts/ionic-adding-pages/"
+   },
+   
+   {
+      "title":"Redirecting a Web Page",
+      "url":"/posts/redirecting-a-web-page/"
+   },
+   
+   {
+      "title":"Ionic Resources",
+      "url":"/posts/ionic-resources/"
+   },
+   
+   {
+      "title":"Our First Ionic App",
+      "url":"/posts/our-first-ionic-app/"
+   },
+   
+   {
+      "title":"CSS Radial Gradients",
+      "url":"/posts/css-radial-gradients/"
+   },
+   
+   {
+      "title":"CSS Linear Gradients",
+      "url":"/posts/css-linear-gradients/"
+   },
+   
+   {
+      "title":"Vanilla JavaScript History API",
+      "url":"/posts/vanilla-javascript-history-api/"
+   },
+   
+   {
+      "title":"Vanilla JavaScript Update URL without Refresh",
+      "url":"/posts/vanilla-javascript-update-url-without-refresh/"
+   },
+   
+   {
+      "title":"Vanilla JavaScript URL Object",
+      "url":"/posts/vanilla-javascript-url-object/"
+   },
+   
+   {
+      "title":"100 Articles 🥳",
+      "url":"/posts/100-articles/"
+   },
+   
+   {
+      "title":"HTML Datalist, a select alternative",
+      "url":"/posts/html-datalist/"
+   },
+   
+   {
+      "title":"Fontawesome SVG Alternative",
+      "url":"/posts/fontawesome-svg-alternative/"
+   },
+   
+   {
+      "title":"Asking Questions?",
+      "url":"/posts/asking-questions/"
+   },
+   
+   {
+      "title":"How to use Fontawesome",
+      "url":"/posts/how-to-use-fontawesome/"
+   },
+   
+   {
+      "title":"Vanilla JavaScript Shuffle Array",
+      "url":"/posts/vanilla-javascript-shuffle-array/"
+   },
+   
+   {
+      "title":"Chrome Lighthouse Report",
+      "url":"/posts/chrome-lighthouse-report/"
+   },
+   
+   {
+      "title":"Vanilla JavaScript Countdown",
+      "url":"/posts/vanilla-javascript-countdown/"
+   },
+   
+   {
+      "title":"Vanilla JavaScript Timer",
+      "url":"/posts/vanilla-javascript-timer/"
+   },
+   
+   {
+      "title":"HTML Clickable Image Alternative",
+      "url":"/posts/html-clickable-image-alternative/"
+   },
+   
+   {
+      "title":"HTML Image Map, a multi click image",
+      "url":"/posts/html-image-map/"
+   },
+   
+   {
+      "title":"Plain HTML Scroll to Top",
+      "url":"/posts/plain-html-scroll-to-top/"
+   },
+   
+   {
+      "title":"Vanilla JavaScript localStorage",
+      "url":"/posts/vanilla-javascript-localstorage/"
+   },
+   
+   {
+      "title":"Vanilla JavaScript Scroll to Top",
+      "url":"/posts/vanilla-javascript-scroll-to-top/"
+   },
+   
+   {
+      "title":"Slide Down Menu on Scroll",
+      "url":"/posts/slide-down-menu-on-scroll/"
+   },
+   
+   {
+      "title":"CSS Blurry Background Image",
+      "url":"/posts/css-blurry-background-image/"
+   },
+   
+   {
+      "title":"Vanilla JavaScript Check if Date is in the Past",
+      "url":"/posts/vanilla-javascript-check-if-date-is-in-the-past/"
+   },
+   
+   {
+      "title":"Vanilla JavaScript Comparison Operators",
+      "url":"/posts/vanilla-javascript-comparison-operators/"
+   },
+   
+   {
+      "title":"Vanilla JavaScript == vs ===",
+      "url":"/posts/vanilla-javascript-==-vs-===/"
+   },
+   
+   {
+      "title":"CSS Offset background-position",
+      "url":"/posts/css-offset-background-position/"
+   },
+   
+   {
+      "title":"Image Lazy Loading",
+      "url":"/posts/image-lazy-loading/"
+   },
+   
+   {
+      "title":"CSS Double Border Radius",
+      "url":"/posts/css-double-border-radius/"
+   },
+   
+   {
+      "title":"CSS Rounded Corners",
+      "url":"/posts/css-rounded-corners/"
+   },
+   
+   {
+      "title":"Vanilla JavaScript String Split",
+      "url":"/posts/vanilla-javascript-string-split/"
+   },
+   
+   {
+      "title":"CSS Calc Function",
+      "url":"/posts/css-calc-function/"
+   },
+   
+   {
+      "title":"Vanilla JavaScript Random Number",
+      "url":"/posts/vanilla-javascript-random-number/"
+   },
+   
+   {
+      "title":"JavaScript Sort Array of Objects by Value",
+      "url":"/posts/javascript-sort-array-of-objects-by-value/"
+   },
+   
+   {
+      "title":"Vanilla JavaScript Slice vs Splice",
+      "url":"/posts/vanilla-javascript-slice-vs-splice/"
+   },
+   
+   {
+      "title":"Vanilla JavaScript get timestamp",
+      "url":"/posts/vanilla-javascript-get-timestamp/"
+   },
+   
+   {
+      "title":"Vanilla JavaScript Chunk Array",
+      "url":"/posts/vanilla-javascript-chunk-array/"
+   },
+   
+   {
+      "title":"JavaScript Arrow Function",
+      "url":"/posts/javascript-arrow-function/"
+   },
+   
+   {
+      "title":"Basic Developer Path",
+      "url":"/posts/basic-developer-path/"
+   },
+   
+   {
+      "title":"CSS Shorthand Properties",
+      "url":"/posts/css-shorthand-properties/"
+   },
+   
+   {
+      "title":"HTML a href Download Attribute",
+      "url":"/posts/html-a-href-download-attribute/"
+   },
+   
+   {
+      "title":"Vanilla JavaScript Number toLocaleString",
+      "url":"/posts/vanilla-javascript-number-tolocalestring/"
+   },
+   
+   {
+      "title":"Vanilla JavaScript get Month Name",
+      "url":"/posts/vanilla-javascript-get-month-name/"
+   },
+   
+   {
+      "title":"Vanilla JavaScript How many Days Between Two Dates",
+      "url":"/posts/vanilla-javascript-days-between-two-dates/"
+   },
+   
+   {
+      "title":"CSS Attribute Selectors",
+      "url":"/posts/css-attribute-selectors/"
+   },
+   
+   {
+      "title":"Vanilla JavaScript Drag n Drop Position",
+      "url":"/posts/vanilla-javascript-drag-n-drop-position/"
+   },
+   
+   {
+      "title":"Vanilla JavaScript Removing an Element",
+      "url":"/posts/vanilla-javascript-removing-an-element/"
+   },
+   
+   {
+      "title":"Vanilla JavaScript Drag and Drop",
+      "url":"/posts/vanilla-javascript-drag-n-drop/"
+   },
+   
+   {
+      "title":"CSS Only Word Rotator",
+      "url":"/posts/css-only-word-rotator/"
+   },
+   
+   {
+      "title":"Chrome Screenshot Specific Element",
+      "url":"/posts/chrome-screenshot-specific-element/"
+   },
+   
+   {
+      "title":"CSS Easy Masonry Grid",
+      "url":"/posts/css-easy-masonry-grid/"
+   },
+   
+   {
+      "title":"Vanilla JavaScript Trim White Space",
+      "url":"/posts/vanilla-javascript-trim-white-space/"
+   },
+   
+   {
+      "title":"HTML Input Types",
+      "url":"/posts/html-input-types/"
+   },
+   
+   {
+      "title":"CSS Only Loader",
+      "url":"/posts/css-only-loader/"
+   },
+   
+   {
+      "title":"Vanilla JavaScript string includes",
+      "url":"/posts/vanilla-javascript-string-includes/"
+   },
+   
+   {
+      "title":"Pointer Events explained",
+      "url":"/posts/pointer-events-explained/"
+   },
+   
+   {
+      "title":"Happy Birthday CSS animation with confetti",
+      "url":"/posts/happy-birthday-confetti-animation/"
+   },
+   
+   {
+      "title":"CSS Toggle grid or List view",
+      "url":"/posts/css-grid-list-view-toggle/"
+   },
+   
+   {
+      "title":"Vanilla JavaScript string endsWith",
+      "url":"/posts/vanilla-javascript-string-endswith/"
+   },
+   
+   {
+      "title":"Vanilla JavaScript string startsWith",
+      "url":"/posts/vanilla-javascript-string-startswith/"
+   },
+   
+   {
+      "title":"CSS Font-display and how to use it",
+      "url":"/posts/css-font-display-and-how-to-use-it/"
+   },
+   
+   {
+      "title":"How to use Google Fonts",
+      "url":"/posts/how-to-use-google-fonts/"
+   },
+   
+   {
+      "title":"How to use CSS Vars",
+      "url":"/posts/how-to-use-css-vars/"
+   },
+   
+   {
+      "title":"CSS Flip Card",
+      "url":"/posts/css-flip-cards/"
+   },
+   
+   {
+      "title":"Vanilla JS add event listener on multiple elements",
+      "url":"/posts/vanilla-javascript-event-listener-on-multiple-elements/"
+   },
+   
+   {
+      "title":"Vanilla JavaScript Timing Functions",
+      "url":"/posts/vanilla-javascript-timing-functions/"
+   },
+   
+   {
+      "title":"Vanilla JavaScript Element.scrollIntoView",
+      "url":"/posts/vanilla-javascript-element-scrollintoview/"
+   },
+   
+   {
+      "title":"Vanilla JavaScript Image Magnifier 🔎",
+      "url":"/posts/vanilla-javascript-image-magnify/"
+   },
+   
+   {
+      "title":"Animated Hamburger Side Menu 🍔",
+      "url":"/posts/animated-hamburger-side-menu/"
+   },
+   
+   {
+      "title":"CSS Pseudo-elements",
+      "url":"/posts/css-pseudo-elements/"
+   },
+   
+   {
+      "title":"CSS Custom Checkbox ✅",
+      "url":"/posts/css-custom-checkbox/"
+   },
+   
+   {
+      "title":"Adding Pages to Eleventy",
+      "url":"/posts/adding-pages-to-eleventy/"
+   },
+   
+   {
+      "title":"Vanilla JavaScript Fullscreen Video",
+      "url":"/posts/vanilla-javascript-fullscreen-video/"
+   },
+   
+   {
+      "title":"Hosting a Static Blog on Netlify",
+      "url":"/posts/hosting-a-static-blog-on-netlify/"
+   },
+   
+   {
+      "title":"Building a Static Blog with 11ty",
+      "url":"/posts/building-a-static-blog-with-11ty/"
+   },
+   
+   {
+      "title":"Get and Set Data Attributes with JavaScript",
+      "url":"/posts/vanilla-javascript-data-attributes/"
+   },
+   
+   {
+      "title":"CSS Animated snake 🐍",
+      "url":"/posts/css-animated-snake/"
+   },
+   
+   {
+      "title":"CSS Only Accordion",
+      "url":"/posts/css-only-accordion/"
+   },
+   
+   {
+      "title":"Vanilla JavaScript try...catch",
+      "url":"/posts/vanilla-javascript-try-catch/"
+   },
+   
+   {
+      "title":"CSS only Parallax Scrolling",
+      "url":"/posts/css-only-parallax-scrolling/"
+   },
+   
+   {
+      "title":"Vanilla JS classLists: Add, Remove &amp; Toggle",
+      "url":"/posts/vanilla-javascript-classlist/"
+   },
+   
+   {
+      "title":"CSS only expanding slider 😲",
+      "url":"/posts/css-only-expanding-slider/"
+   },
+   
+   {
+      "title":"Vanilla JavaScript playing Audio",
+      "url":"/posts/vanilla-javascript-playing-audio/"
+   },
+   
+   {
+      "title":"React props and components",
+      "url":"/posts/react-props-and-components/"
+   },
+   
+   {
+      "title":"Our first React application",
+      "url":"/posts/our-first-react-application/"
+   },
+   
+   {
+      "title":"Basic Node.js Express application",
+      "url":"/posts/basic-nodejs-express-application/"
+   },
+   
+   {
+      "title":"Vanilla JavaScript Copy Text to Clipboard with document.execCommand",
+      "url":"/posts/vanilla-javascript-copy-text-to-clipboard-with-document.execcommand/"
+   },
+   
+   {
+      "title":"Vanilla JavaScript Copy Text with the Clipboard API",
+      "url":"/posts/vanilla-javascript-copy-text-to-clipboard-with-clipboard-api/"
+   },
+   
+   {
+      "title":"CSS Flexbox most easy center vertical and horizontal",
+      "url":"/posts/css-flexbox-most-easy-center-vertical-and-horizontal/"
+   },
+   
+   {
+      "title":"Vanilla JavaScript Switch statement",
+      "url":"/posts/vanilla-javascript-switch-statement/"
+   },
+   
+   {
+      "title":"JavaScript ES6 Sets",
+      "url":"/posts/javascript-es6-sets/"
+   },
+   
+   {
+      "title":"Vanilla JavaScript clone a DOM element",
+      "url":"/posts/vanilla-javascript-clone-a-dom-element/"
+   },
+   
+   {
+      "title":"CSS keyframe animation floating blocks",
+      "url":"/posts/css-keyframe-animation-floating-blocks/"
+   },
+   
+   {
+      "title":"Fetch API in Vanilla JavaScript",
+      "url":"/posts/fetch-api-in-vanilla-javascript/"
+   },
+   
+   {
+      "title":"CSS Text color difference based on background",
+      "url":"/posts/css-text-color-difference-based-on-background/"
+   },
+   
+   {
+      "title":"Vanilla JavaScript add leading zeroes to date",
+      "url":"/posts/vanilla-javascript-add-leading-zeroes-to-date/"
+   },
+   
+   {
+      "title":"How to use CSS position:sticky 🦎",
+      "url":"/posts/how-to-use-css-position-sticky/"
+   },
+   
+   {
+      "title":"Theme switching Favicon? 🙊",
+      "url":"/posts/theme-switching-favicon/"
+   },
+   
+   {
+      "title":"Read and write a JSON file in Node.js",
+      "url":"/posts/read-and-write-a-json-file-in-node-js/"
+   },
+   
+   {
+      "title":"How to work with CSS Viewport units",
+      "url":"/posts/how-to-work-with-css-viewport-units/"
+   },
+   
+   {
+      "title":"Posting to Twitter via Node.js",
+      "url":"/posts/posting-to-twitter-via-node-js/"
+   },
+   
+   {
+      "title":"Posting with the Facebook API via Node.js",
+      "url":"/posts/posting-with-the-facebook-api-via-node-js/"
+   },
+   
+   {
+      "title":"RSS reader in node.js",
+      "url":"/posts/rss-reader-in-node-js/"
+   },
+   
+   {
+      "title":"String replace in Vanilla JS",
+      "url":"/posts/string-replace-in-vanilla-js/"
+   },
+   
+   {
+      "title":"Weekend tip: Watch the Vue documentary",
+      "url":"/posts/weekend-tip-watch-the-vue-documentary/"
+   },
+   
+   {
+      "title":"Promise chains in JavaScript",
+      "url":"/posts/promise-chains-in-javascript/"
+   },
+   
+   {
+      "title":"Match all urls from a string in vanilla JS",
+      "url":"/posts/match-all-urls-from-a-string-in-vanilla-js/"
+   }
+    
+]

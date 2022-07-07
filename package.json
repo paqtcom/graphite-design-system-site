@@ -68,5 +68,8 @@
     "*.json": [
       "prettier --write"
     ]
+  },
+  "dependencies": {
+    "@graphiteds/core": "^1.9.1"
   }
 }
