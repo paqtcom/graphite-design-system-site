@@ -70,6 +70,6 @@
     ]
   },
   "dependencies": {
-    "@graphiteds/core": "^1.9.1"
+    "@graphiteds/core": "^1.9.2"
   }
 }

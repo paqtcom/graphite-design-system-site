@@ -12,20 +12,20 @@ title: Tab - Graphite Design System
 
 <div class="example-block">
   <gr-tab-group>
-    <gr-tab slot="nav" panel="general">Option 1</gr-tab>
+    <gr-tab slot="nav" panel="first">Option 1</gr-tab>
     <gr-tab slot="nav" panel="second">Option 2</gr-tab>
-    <gr-tab-panel name="general">General</gr-tab-panel>
-    <gr-tab-panel name="second">Second</gr-tab-panel>
+    <gr-tab-panel name="first">Content 1</gr-tab-panel>
+    <gr-tab-panel name="second">Content 2</gr-tab-panel>
   </gr-tab-group> 
 </div>
 
 ```html
 <gr-tab-group>
-  <gr-tab slot="nav" panel="general">Option 1</gr-tab>
+  <gr-tab slot="nav" panel="first">Option 1</gr-tab>
   <gr-tab slot="nav" panel="second">Option 2</gr-tab>
 
-  <gr-tab-panel name="general">General</gr-tab-panel>
-  <gr-tab-panel name="second">Second</gr-tab-panel>
+  <gr-tab-panel name="first">Content 1</gr-tab-panel>
+  <gr-tab-panel name="second">Content 2</gr-tab-panel>
 </gr-tab-group>
 ```
 
@@ -37,18 +37,16 @@ Use the `panel` attribute to reference to a content panel. Used by the [tab-pane
 
 <div class="example-block">
   <gr-tab-group>
-    <gr-tab slot="nav" panel="content">Option 1</gr-tab>
-
-    <gr-tab-panel name="content">Content</gr-tab-panel>
-
+    <gr-tab slot="nav" panel="first">Option 1</gr-tab>
+    <gr-tab-panel name="first">Content</gr-tab-panel>
   </gr-tab-group>
 </div>
 
 ```html
 <gr-tab-group>
-  <gr-tab slot="nav" panel="content">Tab content</gr-tab>
+  <gr-tab slot="nav" panel="first">Option 1</gr-tab>
 
-  <gr-tab-panel name="content">Content</gr-tab-panel>
+  <gr-tab-panel name="first">Content</gr-tab-panel>
 </gr-tab-group>
 ```
 
@@ -57,11 +55,11 @@ Use the `panel` attribute to reference to a content panel. Used by the [tab-pane
 Use the `disabled` attribute to disable the tab. Clicks will be suppressed until the disabled state is removed.
 
 <div class="example-block">
-    <gr-tab slot="nav" panel="content" disabled>Disabled</gr-tab>
+  <gr-tab slot="nav" disabled>Disabled</gr-tab>
 </div>
 
 ```html
-<gr-tab slot="nav" panel="content" disabled>Disabled</gr-tab>
+<gr-tab slot="nav" disabled>Disabled</gr-tab>
 ```
 
 ### Active
@@ -69,11 +67,11 @@ Use the `disabled` attribute to disable the tab. Clicks will be suppressed until
 Use the `active` attribute to activate the tab.
 
 <div class="example-block">
-  <gr-tab slot="nav" panel="content" active>Active</gr-tab>
+  <gr-tab slot="nav"  active>Active</gr-tab>
 </div>
 
 ```html
-<gr-tab slot="nav" panel="content" active>Active</gr-tab>
+<gr-tab slot="nav" active>Active</gr-tab>
 ```
 
 ## Properties
@@ -88,7 +86,7 @@ Use the `active` attribute to activate the tab.
 
 ### `removeFocus() => Promise<void>`
 
-Removes focus from the menu item.
+Removes focus from the tab.
 
 #### Returns
 
@@ -96,32 +94,25 @@ Type: `Promise<void>`
 
 ### `setFocus(options?: FocusOptions) => Promise<void>`
 
-Sets focus on the menu item.
+Sets focus on the tab.
 
-#### Returns
+## Events
 
-Type: `Promise<void>`
+| Event      | Description                       | Type                |
+| ---------- | --------------------------------- | ------------------- |
+| `gr-blur`  | Emitted when the tab loses focus. | `CustomEvent<void>` |
+| `gr-focus` | Emitted when the tab has focus.   | `CustomEvent<void>` |
 
 ## Slots
 
-| Slot        | Description                                                                                                           |
-| ----------- | --------------------------------------------------------------------------------------------------------------------- |
-| `(default)` | The menu item's label.                                                                                                |
-| `"end"`     | Content is placed to the right of the menu item's label (will be to the left when we support right-to-left direction) |
-| `"start"`   | Content is placed to the left of the menu item's label (will be to the right when we support right-to-left direction) |
+| Slot        | Description      |
+| ----------- | ---------------- |
+| `(default)` | The tab's label. |
 
 ## CSS custom properties
 
-| Name                         | Description                                                                                   |
-| ---------------------------- | --------------------------------------------------------------------------------------------- |
-| `--background-color`         | Background color of the menu item                                                             |
-| `--background-color-focused` | Background color of the menu item when focused                                                |
-| `--color`                    | Text color of the menu item                                                                   |
-| `--color-disabled`           | Text color of the menu item when disabled                                                     |
-| `--color-focused`            | Text color of the menu item when focused                                                      |
-| `--line-height`              | Line height of the menu item                                                                  |
-| `--padding-bottom`           | Bottom padding of the menu item                                                               |
-| `--padding-end`              | Right padding of the menu item (will be left padding when we support right-to-left direction) |
-| `--padding-start`            | Left padding of the menu item (will be right padding when we support right-to-left direction) |
-| `--padding-top`              | Top padding of the menu item                                                                  |
-| `--transition`               | Transition of the menu item                                                                   |
+| Name               | Description                         |
+| ------------------ | ----------------------------------- |
+| `--color`          | Text color of the tab               |
+| `--color-disabled` | Text color of the tab when disabled |
+| `--color-focused`  | Text color of the tab when focused  |
