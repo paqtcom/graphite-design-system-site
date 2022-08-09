@@ -12,20 +12,20 @@ title: Tab - Graphite Design System
 
 <div class="example-block">
   <gr-tab-group>
-    <gr-tab slot="nav" panel="first">Option 1</gr-tab>
-    <gr-tab slot="nav" panel="second">Option 2</gr-tab>
-    <gr-tab-panel name="first">Content 1</gr-tab-panel>
-    <gr-tab-panel name="second">Content 2</gr-tab-panel>
+    <gr-tab panel="first-tab">Tab 1</gr-tab>
+    <gr-tab panel="second-tab">Tab 2</gr-tab>
+    <gr-tab-panel name="first-tab">Content 1</gr-tab-panel>
+    <gr-tab-panel name="second-tab">Content 2</gr-tab-panel>
   </gr-tab-group> 
 </div>
 
 ```html
 <gr-tab-group>
-  <gr-tab slot="nav" panel="first">Option 1</gr-tab>
-  <gr-tab slot="nav" panel="second">Option 2</gr-tab>
+  <gr-tab panel="first-tab">Tab 1</gr-tab>
+  <gr-tab panel="second-tab">Tab 2</gr-tab>
 
-  <gr-tab-panel name="first">Content 1</gr-tab-panel>
-  <gr-tab-panel name="second">Content 2</gr-tab-panel>
+  <gr-tab-panel name="first-tab">Content 1</gr-tab-panel>
+  <gr-tab-panel name="second-tab">Content 2</gr-tab-panel>
 </gr-tab-group>
 ```
 
@@ -37,16 +37,16 @@ Use the `panel` attribute to reference to a content panel. Used by the [tab-pane
 
 <div class="example-block">
   <gr-tab-group>
-    <gr-tab slot="nav" panel="first">Option 1</gr-tab>
-    <gr-tab-panel name="first">Content</gr-tab-panel>
+    <gr-tab panel="tab">Tab</gr-tab>
+    <gr-tab-panel name="tab">Content</gr-tab-panel>
   </gr-tab-group>
 </div>
 
 ```html
 <gr-tab-group>
-  <gr-tab slot="nav" panel="first">Option 1</gr-tab>
+  <gr-tab panel="tab">Tab</gr-tab>
 
-  <gr-tab-panel name="first">Content</gr-tab-panel>
+  <gr-tab-panel name="tab">Content</gr-tab-panel>
 </gr-tab-group>
 ```
 
@@ -55,11 +55,11 @@ Use the `panel` attribute to reference to a content panel. Used by the [tab-pane
 Use the `disabled` attribute to disable the tab. Clicks will be suppressed until the disabled state is removed.
 
 <div class="example-block">
-  <gr-tab slot="nav" disabled>Disabled</gr-tab>
+  <gr-tab disabled>Disabled</gr-tab>
 </div>
 
 ```html
-<gr-tab slot="nav" disabled>Disabled</gr-tab>
+<gr-tab disabled>Disabled</gr-tab>
 ```
 
 ### Active
@@ -67,11 +67,11 @@ Use the `disabled` attribute to disable the tab. Clicks will be suppressed until
 Use the `active` attribute to activate the tab.
 
 <div class="example-block">
-  <gr-tab slot="nav"  active>Active</gr-tab>
+  <gr-tab active>Active</gr-tab>
 </div>
 
 ```html
-<gr-tab slot="nav" active>Active</gr-tab>
+<gr-tab active>Active</gr-tab>
 ```
 
 ## Properties
