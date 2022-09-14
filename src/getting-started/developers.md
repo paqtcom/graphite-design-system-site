@@ -15,14 +15,14 @@ Add the following code to the head of your page:
 ```html
 <link
   rel="stylesheet"
-  href="https://cdn.jsdelivr.net/npm/@graphiteds/core@1.9.4/css/graphite.bundle.css"
+  href="https://cdn.jsdelivr.net/npm/@graphiteds/core@1.9.5/css/graphite.bundle.css"
   integrity="sha256-gFHf9tmgozxinafVf1kRA43fM6cmXpQecxRncZdH3NI="
   crossorigin="anonymous"
 />
 <script
   type="module"
-  src="https://cdn.jsdelivr.net/npm/@graphiteds/core@1.9.4/dist/core/core.esm.js"
-  integrity="sha256-q5Jy9Y8HgOTpcoKEX2Z4uve7lucflCGuaxcMQezTtog="
+  src="https://cdn.jsdelivr.net/npm/@graphiteds/core@1.9.5/dist/core/core.esm.js"
+  integrity="sha256-X596KR2pkHnXVlgT0v2btsGxOW0eUVIPb8mcQnfiRko="
   crossorigin="anonymous"
 ></script>
 ```
