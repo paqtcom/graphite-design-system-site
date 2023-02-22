@@ -154,11 +154,11 @@ We recommend using kebab-case for our components and PascalCase for your own Vue
 
 ### Recommended editors
 
-[VSCode](https://code.visualstudio.com) with [Vetur](https://marketplace.visualstudio.com/items?itemName=octref.vetur) and this setting:
+[VSCode](https://code.visualstudio.com) with these plugins:
+- [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar)
+- [TypeScript Vue Plugin](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin)
 
-```json
-"vetur.experimental.templateInterpolationService": true
-```
+Also make sure to enable Takeover Mode in VSCode: [Vue docs: Volar Takeover Mode](https://vuejs.org/guide/typescript/overview.html#volar-takeover-mode)
 
 Or [WebStorm](https://www.jetbrains.com/webstorm/).
 
