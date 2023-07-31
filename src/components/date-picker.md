@@ -140,6 +140,49 @@ Below is an example how you can implement a date range using the date picker:
 </script>
 ```
 
+### Custom localization
+
+The localization translations of the date picker can be customized using the `localization` attribute. This value is specified in a object.
+
+Below is an example how you can implement custom localization translations:
+
+```html
+  <gr-date-picker :localization="customLocalizationTranslations"></gr-date-picker>
+```
+
+```javascript
+const customLocalizationTranslations = {
+  buttonLabel: 'Choose date',
+  placeholder: '',
+  helpText: 'Custom Format: dd-mm-yyyy',
+  selectedDateMessage: 'Selected date is',
+  prevMonthLabel: 'Previous month',
+  nextMonthLabel: 'Next month',
+  monthSelectLabel: 'Month',
+  yearSelectLabel: 'Year',
+  closeLabel: 'Close window',
+  calendarHeading: 'Choose a date',
+  dayNames: ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'],
+  monthNames: [
+    'January',
+    'February',
+    'March',
+    'April',
+    'May',
+    'June',
+    'July',
+    'August',
+    'September',
+    'October',
+    'November',
+    'December',
+  ],
+  monthNamesShort: ['Jan2', 'Feb2', 'Mar2', 'Apr2', 'May2', 'Jun2', 'Jul2', 'Aug2', 'Sep2', 'Oct2', 'Nov2', 'Dec2'],
+  locale: 'en-GB',
+}
+
+```
+
 ### Opening the calendar modal progammatically
 
 Use the `show()` method to show the calendar modal, moving focus to the calendar inside.
@@ -614,6 +657,7 @@ Invalid text should be written in 1-2 short, complete sentences and in a clear a
 | `invalidText`       | `invalid-text`       | The date picker's invalid text. Alternatively, you can use the invalid-text slot.                                                                                                                                              | `string`                                                                                                                                                  | `''`                |
 | `isDateDisabled`    | --                   | Controls which days are disabled and therefore disallowed. For example, this can be used to disallow selection of weekends.                                                                                                    | `(date: Date) => boolean`                                                                                                                                 | `() => false`       |
 | `label`             | `label`              | The date picker's label. Alternatively, you can use the label slot.                                                                                                                                                            | `string`                                                                                                                                                  | `''`                |
+| `localization` | `localization` | The date picker's custom localization. | `object` | Users browser language or default 'EN' when not supported |
 | `max`               | `max`                | Maximum date allowed to be picked. Must be in IS0-8601 format: YYYY-MM-DD. This setting can be used alone or together with the min property.                                                                                   | `string`                                                                                                                                                  | `''`                |
 | `min`               | `min`                | Minimum date allowed to be picked. Must be in IS0-8601 format: YYYY-MM-DD. This setting can be used alone or together with the max property.                                                                                   | `string`                                                                                                                                                  | `''`                |
 | `name`              | `name`               | Name of the date picker input.                                                                                                                                                                                                 | `string`                                                                                                                                                  | `''`                |
